@@ -17,6 +17,22 @@ export const projects = [
     tools: ["Python", "Flask", "OpenAI API"],
     demoLink: "#",
     sourceCode: "#"
+  },
+  {
+    title: "Project Alpha",
+    type: "Mobile App",
+    description: "A cross-platform mobile application for tracking personal finance and investments with real-time market data integration.",
+    tools: ["React Native", "Firebase", "Redux"],
+    demoLink: "#",
+    sourceCode: "#"
+  },
+  {
+    title: "Project Beta",
+    type: "Machine Learning",
+    description: "An image recognition system designed to classify and tag photos automatically using deep learning models.",
+    tools: ["TensorFlow", "Keras", "Python"],
+    demoLink: "#",
+    sourceCode: "#"
   }
 ];
 
