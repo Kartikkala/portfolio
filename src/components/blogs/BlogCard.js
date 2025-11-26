@@ -3,9 +3,9 @@ import { FaBookOpen } from "react-icons/fa";
 export default function Blog({ title, summary, date, link }) {
     return (
         <a href={link} target="_blank" rel="noopener noreferrer" className="block group h-full">
-            <div className="flex flex-col h-full gap-4 p-6 rounded-xl bg-[#313244] hover:bg-[#45475a] transition-colors duration-200 border border-transparent hover:border-[#b4befe]/30">
+            <div className="flex flex-col h-full gap-4 p-6 rounded-xl neu-flat hover:scale-[1.02] transition-transform duration-200">
                 <div className="flex justify-between items-start">
-                    <div className="p-2 rounded-lg bg-[#b4befe]/10 text-[#b4befe]">
+                    <div className="p-3 rounded-lg neu-pressed text-[#b4befe]">
                         <FaBookOpen size={20} />
                     </div>
                     <span className="text-sm text-[#a6adc8]">{date}</span>

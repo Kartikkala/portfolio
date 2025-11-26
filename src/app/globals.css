@@ -26,17 +26,45 @@ body {
   width: 100%;
 }
 
-@keyframes customPulse {
-      0%   { transform: scale(1);   opacity:1; }
-      10%  { transform: scale(1.25); opacity:0; }  /* fast blast */
-      100% { transform: scale(1.25); opacity:0; }   /* stay dead */
-    }
 
-    .pulse-ring {
-      animation: customPulse 3s ease-out infinite;
-    }
-    group:hover .pulse-ring {
-      animation-play-state: paused;
-      opacity:0; /* optional: hide ring instantly when hover */
-    }
-    
+
+/* Neumorphic Utilities */
+.neu-flat {
+  background: #313244;
+  box-shadow: 5px 5px 10px #282938,
+    -5px -5px 10px #3a3b50;
+}
+
+.neu-pressed {
+  background: #313244;
+  box-shadow: inset 5px 5px 10px #282938,
+    inset -5px -5px 10px #3a3b50;
+}
+
+.neu-btn {
+  background: #313244;
+  box-shadow: 5px 5px 10px #282938,
+    -5px -5px 10px #3a3b50;
+  transition: all 0.2s ease;
+}
+
+.neu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 7px 7px 14px #282938,
+    -7px -7px 14px #3a3b50;
+}
+
+.neu-btn:active {
+  transform: translateY(0);
+  box-shadow: inset 3px 3px 6px #282938,
+    inset -3px -3px 6px #3a3b50;
+}
+
+/* Light mode overrides if needed, but we are mostly dark mode based on current palette */
+/* For the floating navbar */
+.neu-float {
+  background: #313244;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
