@@ -1,15 +1,19 @@
+"use client";
+
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import Projects from "../components/projects/Projects";
 import Certifications from "../components/certifications/Certifications";
 import Blogs from "../components/blogs/Blogs";
 import Contact from "../components/contact/Contact";
+import ScrollNavigation from "../components/common/ScrollNavigation";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-background font-sans relative text-text-muted overflow-x-hidden">
+    <div id="main-scroll-container" className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-background font-sans relative text-text-muted overflow-x-hidden">
 
       <Navbar />
+      <ScrollNavigation />
 
       {/* Main parent container containing sections */}
       <div className="flex flex-col w-full max-w-7xl mx-auto px-6 md:px-12">

@@ -1,4 +1,7 @@
-[00:00:00.651] Server  LOG      ✓ Ready in 391ms
-[00:08:45.424] Server  LOG      ✓ Compiled in 58ms
-[00:10:09.936] Server  LOG      ✓ Compiled in 14ms
-[00:14:54.003] Server  LOG      ✓ Compiled in 39ms
+[00:00:00.706] Server  LOG      ✓ Ready in 446ms
+[00:07:18.419] Browser ERROR   fullPage: Incorrect `licenseKey`. Get one for fullPage.js version 4 here:
+[00:07:18.419] Browser ERROR   fullPage: https://alvarotrigo.com/fullPage/pricing
+[00:07:18.419] Browser ERROR   fullPage: Incorrect `licenseKey`. Get one for fullPage.js version 4 here:
+[00:07:18.419] Browser ERROR   fullPage: https://alvarotrigo.com/fullPage/pricing
+[00:08:05.415] Browser ERROR   fullPage: Incorrect `licenseKey`. Get one for fullPage.js version 4 here:
+[00:08:05.415] Browser ERROR   fullPage: https://alvarotrigo.com/fullPage/pricing

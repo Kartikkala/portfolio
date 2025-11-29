@@ -32,20 +32,20 @@ body {
 /* Neumorphic Utilities */
 .neu-flat {
   background: var(--background);
-  box-shadow: 7px 7px 14px var(--shadow-dark),
-    -7px -7px 14px var(--shadow-light);
+  box-shadow: 5px 5px 10px var(--shadow-dark),
+    -5px -5px 10px var(--shadow-light);
 }
 
 .neu-pressed {
   background: var(--background);
-  box-shadow: inset 7px 7px 14px var(--shadow-dark),
-    inset -7px -7px 14px var(--shadow-light);
+  box-shadow: inset 5px 5px 10px var(--shadow-dark),
+    inset -5px -5px 10px var(--shadow-light);
 }
 
 .neu-btn {
   background: var(--background);
-  box-shadow: 6px 6px 12px var(--shadow-dark),
-    -6px -6px 12px var(--shadow-light);
+  box-shadow: 4px 4px 8px var(--shadow-dark),
+    -4px -4px 8px var(--shadow-light);
   color: var(--text-muted);
   transition: all 0.2s ease;
 }
@@ -53,19 +53,19 @@ body {
 .neu-btn:hover {
   color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 8px 8px 16px var(--shadow-dark),
-    -8px -8px 16px var(--shadow-light);
+  box-shadow: 6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--shadow-light);
 }
 
 .neu-btn:active {
   transform: translateY(0);
-  box-shadow: inset 4px 4px 8px var(--shadow-dark),
-    inset -4px -4px 8px var(--shadow-light);
+  box-shadow: inset 3px 3px 6px var(--shadow-dark),
+    inset -3px -3px 6px var(--shadow-light);
 }
 
 .neu-float {
   background: var(--background);
-  box-shadow: 10px 10px 20px var(--shadow-dark),
-    -10px -10px 20px var(--shadow-light);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
   border: 1px solid rgba(255, 255, 255, 0.02);
 }
