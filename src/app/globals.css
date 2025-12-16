@@ -1,71 +1,101 @@
 @import "tailwindcss";
 
 :root {
-  --background: #21242b;
-  --surface: #2b303b;
-  --shadow-dark: #16181d;
-  --shadow-light: #262a33;
-  --accent: #ff4d6d;
-  --text-main: #ffffff;
-  --text-muted: #8b9bb4;
+  /* New Theme Variables */
+  --hero-bg: #0a192f;
+  --hero-text: #e6f1ff;
+  --hero-muted: #8892b0;
+  --hero-accent: #64ffda;
+  --bg-overlay: rgba(10, 25, 47, 0.85);
+
+  /* Retaining some variable names for compatibility but mapping to new theme */
+  --background: var(--hero-bg);
+  --surface: #112240;
+  --text-main: var(--hero-text);
+  --text-muted: var(--hero-muted);
+  --accent: var(--hero-accent);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
-  --color-shadow-dark: var(--shadow-dark);
-  --color-shadow-light: var(--shadow-light);
   --color-accent: var(--accent);
   --color-text-main: var(--text-main);
   --color-text-muted: var(--text-muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-oswald: "Oswald", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+section {
+  height: 100vh;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
   color: var(--text-main);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* Default body font */
   width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-/* Neumorphic Utilities */
-.neu-flat {
-  background: var(--background);
-  box-shadow: 5px 5px 10px var(--shadow-dark),
-    -5px -5px 10px var(--shadow-light);
+/* Add an overlay to ensure text readability over the image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-overlay);
+  z-index: -1;
+  pointer-events: none;
 }
 
-.neu-pressed {
-  background: var(--background);
-  box-shadow: inset 5px 5px 10px var(--shadow-dark),
-    inset -5px -5px 10px var(--shadow-light);
+
+/* Typography Utilities */
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
 }
 
-.neu-btn {
-  background: var(--background);
-  box-shadow: 4px 4px 8px var(--shadow-dark),
-    -4px -4px 8px var(--shadow-light);
-  color: var(--text-muted);
-  transition: all 0.2s ease;
+.font-playfair {
+  font-family: 'Playfair Display', serif;
 }
 
-.neu-btn:hover {
+/* Button Styles */
+.btn-primary {
+  background: transparent;
+  border: 1px solid var(--accent);
   color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 6px 6px 12px var(--shadow-dark),
-    -6px -6px 12px var(--shadow-light);
+  padding: 0.75rem 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
-.neu-btn:active {
-  transform: translateY(0);
-  box-shadow: inset 3px 3px 6px var(--shadow-dark),
-    inset -3px -3px 6px var(--shadow-light);
+.btn-primary:hover {
+  background: rgba(100, 255, 218, 0.1);
 }
 
-.neu-float {
-  background: var(--background);
-  box-shadow: 8px 8px 16px var(--shadow-dark),
-    -8px -8px 16px var(--shadow-light);
-  border: 1px solid rgba(255, 255, 255, 0.02);
+.btn-solid {
+  background: var(--text-main);
+  color: var(--background);
+  border: 1px solid var(--text-main);
+  padding: 0.75rem 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-solid:hover {
+  background: transparent;
+  color: var(--text-main);
 }

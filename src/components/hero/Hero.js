@@ -2,45 +2,48 @@ import { socials } from "../../app/data";
 
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center pt-24 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <section id="hero" className="h-screen w-full relative overflow-hidden bg-transparent">
 
-                {/* Text Content */}
-                <div className="flex flex-col items-center md:items-start text-center md:text-left z-10 gap-6">
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-text-main tracking-tight leading-none drop-shadow-lg">
-                        Building Digital <br />
-                        <span className="text-accent">Experiences</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-text-muted max-w-2xl leading-normal">
-                        I engineer software where performance is intentional, control is explicit, and customisation isn’t optional.
-                    </p>
+            {/* Background Elements (Grain is global) */}
 
-                    <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-2">
-                        {socials.map((social, index) => (
-                            <a key={index} href={social.link} target="_blank" rel="noopener noreferrer" className="p-4 rounded-xl neu-btn text-text-muted hover:text-accent transition-all duration-200">
-                                <span className="text-2xl">{social.icon}</span>
-                            </a>
-                        ))}
-                    </div>
-
-                    <div className="flex flex-col sm:flex-row gap-6 mt-4 w-full sm:w-auto">
-                        <a href="#projects" className="rounded-xl neu-btn p-4 px-8 font-bold text-text-main hover:text-accent duration-200 transition-colors text-center">View My Work</a>
-                        <a href="mailto:hello@example.com" className="rounded-xl neu-pressed p-4 px-8 font-bold text-text-muted hover:text-text-main duration-200 transition-colors text-center">Contact Me</a>
-                    </div>
+            {/* Center: Silhouette / Image */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                <div className="relative flex items-center justify-center">
+                    <img
+                        src="/bg.jpg"
+                        alt="Profile Silhouette"
+                        className="w-full h-full object-contain opacity-80"
+                    />
                 </div>
+            </div>
 
-                {/* Photo Content */}
-                <div className="flex justify-center md:justify-end z-10 relative">
-                    <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-full neu-flat p-2 flex items-center justify-center overflow-hidden border-4 border-surface">
-                        {/* Placeholder Image - Replace with actual photo */}
-                        <img
-                            src="https://placehold.co/500"
-                            alt="Profile"
-                            className="w-full h-full object-cover rounded-full opacity-90 hover:opacity-100 transition-opacity duration-300"
-                        />
-                    </div>
+            {/* Bottom Left: Large Headline */}
+            <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 z-10 max-w-2xl">
+                <h2 className="font-oswald text-5xl md:text-8xl lg:text-9xl font-bold text-text-main leading-[0.85] tracking-tight uppercase">
+                    Creative <br />
+                    <span className="text-text-muted">Designer</span> <br />
+                    & Developer.
+                </h2>
+            </div>
+
+            {/* Bottom Right: Description & CTA */}
+            <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 z-10 flex flex-col items-end text-right gap-6 max-w-md">
+                <p className="text-text-muted text-sm md:text-base leading-relaxed hidden md:block">
+                    A designer who loves to code and a developer who loves to design. I create things that look simple, but feel alive.
+                </p>
+
+                <h3 className="font-oswald text-2xl md:text-3xl text-text-main uppercase hidden md:block">
+                    Move People, <br /> Not Just <span className="font-playfair italic lowercase">screens.</span>
+                </h3>
+
+                <div className="flex gap-4">
+                    <a href="#contact" className="btn-primary uppercase text-sm tracking-widest">
+                        Let's Collaborate
+                    </a>
+                    <a href="mailto:hello@example.com" className="btn-solid uppercase text-sm tracking-widest">
+                        Hire Me
+                    </a>
                 </div>
-
             </div>
         </section>
     );
