@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
 
-        <section id="projects">
+        <section id="projects" className="min-h-screen justify-center">
 
         </section>
 

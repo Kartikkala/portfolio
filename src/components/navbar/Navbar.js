@@ -38,10 +38,10 @@ export default function Navbar() {
             </div>
             {/* Navigation Links - Aligned to Top Right */}
             <nav className="absolute right-4 md:right-10 pointer-events-auto flex gap-8 items-center font-oswald tracking-wider text-sm md:text-base">
-                <a href="#about" className="text-text-muted hover:text-accent transition-colors uppercase">About</a>
-                <a href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase">Projects</a>
-                <a href="#recognition" className="text-text-muted hover:text-accent transition-colors uppercase">Recognition</a>
-                <a href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase">Contact</a>
+                <a href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">About</a>
+                <a href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Projects</a>
+                <a href="#recognition" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Recognition</a>
+                <a href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Contact</a>
 
                 <a href="/resume.pdf" download className="border border-text-muted px-4 py-2 hover:bg-accent hover:text-surface hover:border-accent transition-all duration-300 uppercase">
                     Resume
