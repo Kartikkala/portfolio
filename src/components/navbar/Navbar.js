@@ -1,4 +1,3 @@
-import { MdOutlineFileDownload } from "react-icons/md";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";

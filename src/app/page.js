@@ -2,7 +2,7 @@
 
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
-import Tools from "../components/tools/ToolsMain"
+import Tools from "../components/tools/Tools"
 import ScrollSmoother from "gsap/dist/ScrollSmoother";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -20,6 +20,7 @@ export default function Home() {
       wrapper : mainPage,
       content : contentRef.current
     })
+
 
   }, [])
   return (

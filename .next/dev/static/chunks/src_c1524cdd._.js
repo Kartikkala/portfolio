@@ -8,20 +8,65 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/gsap/dist/ScrollTrigger.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 ;
 function Navbar() {
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "ef8d5cabc9f2a708ac8dc35cf5eb661473d168428c306cb1c1048d85dd7860ae") {
-        for(let $i = 0; $i < 3; $i += 1){
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "d90482325ab940b33d2ab8656972c101486de30071ccac2bb88c0c44e06e9b32") {
+        for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "ef8d5cabc9f2a708ac8dc35cf5eb661473d168428c306cb1c1048d85dd7860ae";
+        $[0] = "d90482325ab940b33d2ab8656972c101486de30071ccac2bb88c0c44e06e9b32";
     }
+    const nav = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
+    let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t0 = ({
+            "Navbar[useEffect()]": ()=>{
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
+                const navbar = nav.current;
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
+                    start: "top top",
+                    end: 999,
+                    scrub: 3,
+                    onUpdate: (self)=>{
+                        if (self.direction === 1) {
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
+                                y: -160,
+                                duration: 2.9,
+                                ease: "circ.out"
+                            });
+                        } else {
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
+                                y: 0,
+                                duration: 2.9,
+                                ease: "circ.out"
+                            });
+                        }
+                    }
+                });
+            }
+        })["Navbar[useEffect()]"];
+        t1 = [];
+        $[1] = t0;
+        $[2] = t1;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "absolute top-4 left-4 md:top-10 md:left-10 z-10 flex flex-col",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -29,7 +74,7 @@ function Navbar() {
                     children: "Kartik Kala"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 13,
+                    lineNumber: 53,
                     columnNumber: 89
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -37,25 +82,26 @@ function Navbar() {
                     children: "Portfolio'25"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 13,
+                    lineNumber: 53,
                     columnNumber: 219
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 13,
+            lineNumber: 53,
             columnNumber: 10
         }, this);
-        $[1] = t0;
+        $[3] = t2;
     } else {
-        t0 = $[1];
+        t2 = $[3];
     }
-    let t1;
-    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t3;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex fixed z-50 p-4 md:p-10 pointer-events-none w-full",
+            ref: nav,
             children: [
-                t0,
+                t2,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                     className: "absolute right-4 md:right-10 pointer-events-auto flex gap-8 items-center font-oswald tracking-wider text-sm md:text-base",
                     children: [
@@ -65,8 +111,8 @@ function Navbar() {
                             children: "About"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 20,
-                            columnNumber: 224
+                            lineNumber: 60,
+                            columnNumber: 234
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#projects",
@@ -74,8 +120,8 @@ function Navbar() {
                             children: "Projects"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 20,
-                            columnNumber: 324
+                            lineNumber: 60,
+                            columnNumber: 334
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#recognition",
@@ -83,8 +129,8 @@ function Navbar() {
                             children: "Recognition"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 20,
-                            columnNumber: 430
+                            lineNumber: 60,
+                            columnNumber: 440
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#contact",
@@ -92,8 +138,8 @@ function Navbar() {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 20,
-                            columnNumber: 542
+                            lineNumber: 60,
+                            columnNumber: 552
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "/resume.pdf",
@@ -102,27 +148,28 @@ function Navbar() {
                             children: "Resume"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 20,
-                            columnNumber: 646
+                            lineNumber: 60,
+                            columnNumber: 656
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 20,
-                    columnNumber: 86
+                    lineNumber: 60,
+                    columnNumber: 96
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 20,
+            lineNumber: 60,
             columnNumber: 10
         }, this);
-        $[2] = t1;
+        $[4] = t3;
     } else {
-        t1 = $[2];
+        t3 = $[4];
     }
-    return t1;
+    return t3;
 }
+_s(Navbar, "VTin4RjEAA594oHXs+1qiNLp7pw=");
 _c = Navbar;
 var _c;
 __turbopack_context__.k.register(_c, "Navbar");
@@ -294,11 +341,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2e$js__$5
 ;
 function Hero() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "984733b31973e24dc113cb72f556efe7d2a35e9d6fcdfb6667a3e1a0cb91fb9e") {
+    if ($[0] !== "8dfd64b0cb29faeefd07ced8681941f481f608a6dbe326b76532bc02d0b107d7") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "984733b31973e24dc113cb72f556efe7d2a35e9d6fcdfb6667a3e1a0cb91fb9e";
+        $[0] = "8dfd64b0cb29faeefd07ced8681941f481f608a6dbe326b76532bc02d0b107d7";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -309,10 +356,7 @@ function Hero() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "/bg.jpg",
                     alt: "Profile Silhouette",
-                    className: "w-full h-full object-contain opacity-80 mix-blend-luminosity mask-image-gradient",
-                    style: {
-                        maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)"
-                    }
+                    className: "w-full h-full object-contain opacity-80"
                 }, void 0, false, {
                     fileName: "[project]/src/components/hero/Hero.js",
                     lineNumber: 13,
@@ -337,15 +381,15 @@ function Hero() {
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 23,
+            lineNumber: 21,
             columnNumber: 10
         }, this);
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "text-text-muted opacity-80",
+            className: "text-text-muted",
             children: "Designer"
         }, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 24,
+            lineNumber: 22,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -367,19 +411,19 @@ function Hero() {
                     " ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/components/hero/Hero.js",
-                        lineNumber: 33,
+                        lineNumber: 31,
                         columnNumber: 235
                     }, this),
                     "& Developer."
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/hero/Hero.js",
-                lineNumber: 33,
+                lineNumber: 31,
                 columnNumber: 91
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 33,
+            lineNumber: 31,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -393,7 +437,7 @@ function Hero() {
             children: "A designer who loves to code and a developer who loves to design. I create things that look simple, but feel alive."
         }, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 40,
+            lineNumber: 38,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -404,7 +448,7 @@ function Hero() {
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 47,
+            lineNumber: 45,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -424,13 +468,13 @@ function Hero() {
                     children: "screens."
                 }, void 0, false, {
                     fileName: "[project]/src/components/hero/Hero.js",
-                    lineNumber: 54,
+                    lineNumber: 52,
                     columnNumber: 127
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 54,
+            lineNumber: 52,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -459,7 +503,7 @@ function Hero() {
                                     children: "Let's Collaborate"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/hero/Hero.js",
-                                    lineNumber: 61,
+                                    lineNumber: 59,
                                     columnNumber: 264
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -468,25 +512,25 @@ function Hero() {
                                     children: "Hire Me"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/hero/Hero.js",
-                                    lineNumber: 61,
+                                    lineNumber: 59,
                                     columnNumber: 362
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/hero/Hero.js",
-                            lineNumber: 61,
+                            lineNumber: 59,
                             columnNumber: 236
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/hero/Hero.js",
-                    lineNumber: 61,
+                    lineNumber: 59,
                     columnNumber: 105
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 61,
+            lineNumber: 59,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -513,106 +557,158 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/navbar/Navbar.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$hero$2f$Hero$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/hero/Hero.js [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '../components/tools/ToolsMain'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/gsap/dist/ScrollSmoother.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 ;
+;
+;
+;
 function Home() {
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "442c1836ee370b0c5604476138b7c2da609ff34b3a10c7ba6e126a5df632ea09") {
-        for(let $i = 0; $i < 3; $i += 1){
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
+    if ($[0] !== "4f89aef7253097bf0651c74d63eae3b1ae5c07fcf72b9fd48f4a8d4b245b782c") {
+        for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "442c1836ee370b0c5604476138b7c2da609ff34b3a10c7ba6e126a5df632ea09";
+        $[0] = "4f89aef7253097bf0651c74d63eae3b1ae5c07fcf72b9fd48f4a8d4b245b782c";
     }
+    const mainRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const contentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
+    let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-            fileName: "[project]/src/app/page.js",
-            lineNumber: 16,
-            columnNumber: 10
-        }, this);
+        t0 = ({
+            "Home[useEffect()]": ()=>{
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
+                const mainPage = mainRef.current;
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
+                    wrapper: mainPage,
+                    content: contentRef.current
+                });
+            }
+        })["Home[useEffect()]"];
+        t1 = [];
         $[1] = t0;
+        $[2] = t1;
     } else {
         t0 = $[1];
+        t1 = $[2];
     }
-    let t1;
-    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/page.js",
+            lineNumber: 43,
+            columnNumber: 10
+        }, this);
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    let t3;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "min-h-screen flex flex-col justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$hero$2f$Hero$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/page.js",
+                lineNumber: 50,
+                columnNumber: 73
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/app/page.js",
+            lineNumber: 50,
+            columnNumber: 10
+        }, this);
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: mainRef,
             id: "main-scroll-container",
             className: "min-h-screen bg-background font-sans relative text-text-muted overflow-x-hidden w-full",
             children: [
-                t0,
+                t2,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: contentRef,
                     className: "flex flex-col w-full",
                     children: [
+                        t3,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            className: "min-h-screen flex flex-col justify-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$hero$2f$Hero$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            id: "tools_technologies",
+                            className: "min-h-screen justify-center flex",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Tools, {}, void 0, false, {
                                 fileName: "[project]/src/app/page.js",
-                                lineNumber: 23,
-                                columnNumber: 246
+                                lineNumber: 57,
+                                columnNumber: 296
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 183
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "tools_technologies",
-                            children: "Tools"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 264
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "stats"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 312
+                            lineNumber: 57,
+                            columnNumber: 218
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                             id: "projects"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 334
+                            lineNumber: 57,
+                            columnNumber: 315
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                             id: "certifications"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 359
+                            lineNumber: 57,
+                            columnNumber: 340
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            id: "stats"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.js",
+                            lineNumber: 57,
+                            columnNumber: 371
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                             id: "contact"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 23,
-                            columnNumber: 390
+                            lineNumber: 57,
+                            columnNumber: 393
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.js",
-                    lineNumber: 23,
-                    columnNumber: 145
+                    lineNumber: 57,
+                    columnNumber: 159
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.js",
-            lineNumber: 23,
+            lineNumber: 57,
             columnNumber: 10
         }, this);
-        $[2] = t1;
+        $[5] = t4;
     } else {
-        t1 = $[2];
+        t4 = $[5];
     }
-    return t1;
+    return t4;
 }
+_s(Home, "Mn9bn+xmMNNeNZ2CNJxTDxxO9QU=");
 _c = Home;
 var _c;
 __turbopack_context__.k.register(_c, "Home");

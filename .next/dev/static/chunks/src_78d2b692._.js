@@ -17,15 +17,14 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
 function Navbar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "d9381187ffbeb1c3b40315eb10ef73a9db72cd22ed762ded91b14e7a3fdfdb84") {
+    if ($[0] !== "d90482325ab940b33d2ab8656972c101486de30071ccac2bb88c0c44e06e9b32") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d9381187ffbeb1c3b40315eb10ef73a9db72cd22ed762ded91b14e7a3fdfdb84";
+        $[0] = "d90482325ab940b33d2ab8656972c101486de30071ccac2bb88c0c44e06e9b32";
     }
     const nav = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
@@ -75,7 +74,7 @@ function Navbar() {
                     children: "Kartik Kala"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 54,
+                    lineNumber: 53,
                     columnNumber: 89
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -83,13 +82,13 @@ function Navbar() {
                     children: "Portfolio'25"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 54,
+                    lineNumber: 53,
                     columnNumber: 219
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 54,
+            lineNumber: 53,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -112,7 +111,7 @@ function Navbar() {
                             children: "About"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 234
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -121,7 +120,7 @@ function Navbar() {
                             children: "Projects"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 334
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -130,7 +129,7 @@ function Navbar() {
                             children: "Recognition"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 440
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -139,7 +138,7 @@ function Navbar() {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 552
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -149,19 +148,19 @@ function Navbar() {
                             children: "Resume"
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 656
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 61,
+                    lineNumber: 60,
                     columnNumber: 96
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 61,
+            lineNumber: 60,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -556,104 +555,330 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/si/index.mjs [app-client] (ecmascript)");
+;
 ;
 ;
 function Tools(t0) {
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "c526e23aa7f8d2631d43f473720abc90261439986a0879db4ac7c04c64ee8166") {
-        for(let $i = 0; $i < 2; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "362c4ea71e319c347d79e78f6d4ac628190f6883c16a0780a2f4b61f9f6bd612") {
+        for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c526e23aa7f8d2631d43f473720abc90261439986a0879db4ac7c04c64ee8166";
+        $[0] = "362c4ea71e319c347d79e78f6d4ac628190f6883c16a0780a2f4b61f9f6bd612";
     }
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-3 gap-4 my-auto",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "Typescript"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 58
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "Next.js"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 111
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "GSAP"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 161
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "React.js"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 208
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "PostgreSQL"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 259
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "Linux"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 312
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "Supabase"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 360
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "Docker"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 411
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    class: "bg-black/30 p-20 px-50 ",
-                    children: "JWT"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/tools/ToolsMain.js",
-                    lineNumber: 12,
-                    columnNumber: 460
-                }, this)
-            ]
-        }, void 0, true, {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+            className: "self-center mt-10 text-3xl font-oswald",
+            children: "Tools I use"
+        }, void 0, false, {
             fileName: "[project]/src/components/tools/ToolsMain.js",
-            lineNumber: 12,
+            lineNumber: 13,
             columnNumber: 10
         }, this);
         $[1] = t1;
     } else {
         t1 = $[1];
     }
-    return t1;
+    let t2;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiNextdotjs"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 20,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "Next.js"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 20,
+                    columnNumber: 195
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 20,
+            columnNumber: 10
+        }, this);
+        $[2] = t2;
+    } else {
+        t2 = $[2];
+    }
+    let t3;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiTypescript"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 27,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "TypeScript"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 27,
+                    columnNumber: 196
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 27,
+            columnNumber: 10
+        }, this);
+        $[3] = t3;
+    } else {
+        t3 = $[3];
+    }
+    let t4;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiGreensock"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 34,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "GSAP"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 34,
+                    columnNumber: 195
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 34,
+            columnNumber: 10
+        }, this);
+        $[4] = t4;
+    } else {
+        t4 = $[4];
+    }
+    let t5;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiSpring"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 41,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "Spring Boot"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 41,
+                    columnNumber: 192
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 41,
+            columnNumber: 10
+        }, this);
+        $[5] = t5;
+    } else {
+        t5 = $[5];
+    }
+    let t6;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiPostgresql"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 48,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "PostgreSQL"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 48,
+                    columnNumber: 196
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 48,
+            columnNumber: 10
+        }, this);
+        $[6] = t6;
+    } else {
+        t6 = $[6];
+    }
+    let t7;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiArchlinux"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 55,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "Arch Linux"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 55,
+                    columnNumber: 195
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 55,
+            columnNumber: 10
+        }, this);
+        $[7] = t7;
+    } else {
+        t7 = $[7];
+    }
+    let t8;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiDocker"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 62,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "Docker"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 62,
+                    columnNumber: 192
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 62,
+            columnNumber: 10
+        }, this);
+        $[8] = t8;
+    } else {
+        t8 = $[8];
+    }
+    let t9;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiJenkins"], {
+                    className: "text-white text-5xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 69,
+                    columnNumber: 148
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-gray-300 font-medium",
+                    children: "Jenkins"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 69,
+                    columnNumber: 193
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 69,
+            columnNumber: 10
+        }, this);
+        $[9] = t9;
+    } else {
+        t9 = $[9];
+    }
+    let t10;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex flex-col w-[95%] gap-8",
+            children: [
+                t1,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-3 gap-4 w-full",
+                    children: [
+                        t2,
+                        t3,
+                        t4,
+                        t5,
+                        t6,
+                        t7,
+                        t8,
+                        t9,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white/5 flex flex-col justify-center items-center py-10 px-1 gap-4 hover:bg-white/20 transition-colors cursor-pointer",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$si$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiNodedotjs"], {
+                                    className: "text-white text-5xl"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                                    lineNumber: 76,
+                                    columnNumber: 277
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-gray-300 font-medium",
+                                    children: "Node.js"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                                    lineNumber: 76,
+                                    columnNumber: 324
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/tools/ToolsMain.js",
+                            lineNumber: 76,
+                            columnNumber: 139
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/tools/ToolsMain.js",
+                    lineNumber: 76,
+                    columnNumber: 60
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/tools/ToolsMain.js",
+            lineNumber: 76,
+            columnNumber: 11
+        }, this);
+        $[10] = t10;
+    } else {
+        t10 = $[10];
+    }
+    return t10;
 }
 _c = Tools;
 var _c;
@@ -690,11 +915,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "3b1893307f4d921a00d8f993034017bce380ef3d57eb44ef2b82d8180b9271bf") {
+    if ($[0] !== "4f89aef7253097bf0651c74d63eae3b1ae5c07fcf72b9fd48f4a8d4b245b782c") {
         for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3b1893307f4d921a00d8f993034017bce380ef3d57eb44ef2b82d8180b9271bf";
+        $[0] = "4f89aef7253097bf0651c74d63eae3b1ae5c07fcf72b9fd48f4a8d4b245b782c";
     }
     const mainRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const contentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
