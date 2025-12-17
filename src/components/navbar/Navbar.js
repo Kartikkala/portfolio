@@ -10,7 +10,7 @@ export default function Navbar() {
         
         ScrollTrigger.create({
             start: "top top",
-            end: 999,
+            end: 999999,
             scrub : 3,
             onUpdate: (self) => {
               if (self.direction === 1) {

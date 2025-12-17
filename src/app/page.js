@@ -3,6 +3,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import Tools from "../components/tools/Tools"
+import Projects from "@/components/projects/Projects";
 import ScrollSmoother from "gsap/dist/ScrollSmoother";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -41,7 +42,7 @@ export default function Home() {
 
 
         <section id="projects" className="min-h-screen justify-center">
-
+          <Projects/>
         </section>
 
         <section id="certifications">

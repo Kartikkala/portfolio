@@ -1,123 +1,161 @@
-[00:00:00.746] Server  LOG      ✓ Ready in 460ms
-[00:00:57.107] Server  LOG      ○ Compiling / ...
-[00:06:27.148] Server  LOG      ✓ Compiled in 87ms
-[00:06:29.886] Server  LOG      ✓ Compiled in 56ms
-[00:06:38.738] Server  LOG      ✓ Compiled in 58ms
-[00:06:44.193] Server  LOG      ✓ Compiled in 59ms
-[00:06:47.788] Server  LOG      ✓ Compiled in 56ms
-[00:06:51.787] Server  LOG      ✓ Compiled in 45ms
-[00:07:02.136] Server  LOG      ✓ Compiled in 30ms
-[00:07:06.423] Server  LOG      ✓ Compiled in 24ms
-[00:07:12.033] Server  LOG      ✓ Compiled in 28ms
-[00:07:16.537] Server  LOG      ✓ Compiled in 47ms
-[00:08:00.207] Server  LOG      ✓ Compiled in 26ms
-[00:11:47.758] Server  LOG      ✓ Compiled in 40ms
-[00:11:54.546] Server  LOG      ✓ Compiled in 43ms
-[00:11:57.678] Server  LOG      ✓ Compiled in 36ms
-[00:11:59.165] Server  LOG      ✓ Compiled in 35ms
-[00:12:01.551] Server  LOG      ✓ Compiled in 37ms
-[00:12:07.251] Server  LOG      ✓ Compiled in 72ms
-[00:14:27.678] Server  LOG      ✓ Compiled in 53ms
-[00:14:45.080] Server  LOG      ✓ Compiled in 28ms
-[00:15:17.055] Server  LOG      ✓ Compiled in 43ms
-[00:15:22.199] Server  LOG      ✓ Compiled in 23ms
-[00:15:24.642] Server  LOG      ✓ Compiled in 43ms
-[00:15:35.280] Server  LOG      ✓ Compiled in 15ms
-[00:15:36.312] Browser ERROR   ./src/components/hero/Hero.js:15:15
+[00:00:00.814] Server  LOG      ✓ Ready in 528ms
+[00:00:03.883] Server  LOG      ○ Compiling / ...
+[00:03:35.168] Server  LOG      ✓ Compiled in 65ms
+[00:04:04.315] Browser ERROR   uncaughtError: ReferenceError: handleActivate is not defined
+[00:04:14.538] Server  LOG      ✓ Compiled in 27ms
+[00:04:41.951] Server  LOG      ✓ Compiled in 45ms
+[00:04:44.941] Server  LOG      ✓ Compiled in 59ms
+[00:04:53.996] Server  LOG      ✓ Compiled in 26ms
+[00:04:54.979] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:54.980] Browser ERROR   uncaughtError: ReferenceError: ha is not defined
+[00:04:55.006] Server  LOG      ✓ Compiled in 22ms
+[00:05:01.583] Server  LOG      ✓ Compiled in 21ms
+[00:08:04.664] Server  LOG      ✓ Compiled in 46ms
+[00:08:17.401] Server  LOG      ✓ Compiled in 27ms
+[00:08:18.580] Server  LOG      ✓ Compiled in 43ms
+[00:08:20.089] Server  LOG      ✓ Compiled in 35ms
+[00:08:21.125] Server  LOG      ✓ Compiled in 44ms
+[00:08:27.602] Server  LOG      ✓ Compiled in 23ms
+[00:08:31.648] Server  LOG      ✓ Compiled in 39ms
+[00:08:35.950] Server  LOG      ✓ Compiled in 39ms
+[00:08:37.224] Server  LOG      ✓ Compiled in 34ms
+[00:09:39.877] Server  LOG      ✓ Compiled in 14ms
+[00:09:40.198] Browser ERROR   ./src/components/projects/ProjectButton.js:1:73
 Parsing ecmascript source code failed
-  13 |                     />
-  14 |                 </div>
-> 15 |             </div>
-     |               ^^^
-  16 |
-  17 |             {/* Bottom Left: Large Headline */}
-  18 |             <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 z-10 max-w-2xl">
+> 1 | export default function ProjectButton({img, setActiveProjectImage, acti setMouseState}){
+    |                                                                         ^^^^^^^^^^^^^
+  2 |     const handleActivate = () => {
+  3 |         setActiveProjectImage(img);
+  4 |         setMouseState(true);
 
-Expected corresponding JSX closing tag for <section>
+Expected ',', got 'setMouseState'
 
 Import traces:
   Client Component Browser:
-    ./src/components/hero/Hero.js [Client Component Browser]
+    ./src/components/projects/ProjectButton.js [Client Component Browser]
+    ./src/components/projects/Projects.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/hero/Hero.js [Client Component SSR]
+    ./src/components/projects/ProjectButton.js [Client Component SSR]
+    ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:15:42.445] Server  LOG      ✓ Compiled in 49ms
-[00:18:55.344] Server  LOG      ✓ Compiled in 48ms
-[00:19:00.140] Server  LOG      ✓ Compiled in 46ms
-[00:19:05.335] Server  LOG      ✓ Compiled in 44ms
-[00:19:07.659] Server  LOG      ✓ Compiled in 38ms
-[00:19:12.758] Server  LOG      ✓ Compiled in 38ms
-[00:19:31.135] Server  LOG      ✓ Compiled in 43ms
-[00:19:35.080] Server  LOG      ✓ Compiled in 36ms
-[00:19:36.169] Server  LOG      ✓ Compiled in 36ms
-[00:19:42.115] Server  LOG      ✓ Compiled in 38ms
-[00:19:43.349] Server  LOG      ✓ Compiled in 35ms
-[00:19:49.362] Server  LOG      ✓ Compiled in 39ms
-[00:19:54.569] Server  LOG      ✓ Compiled in 37ms
-[00:20:05.012] Server  LOG      ✓ Compiled in 37ms
-[00:20:29.887] Server  LOG      ✓ Compiled in 44ms
-[00:21:05.256] Server  LOG      ✓ Compiled in 42ms
-[00:21:09.420] Server  LOG      ✓ Compiled in 35ms
-[00:21:15.071] Server  LOG      ✓ Compiled in 42ms
-[00:21:16.489] Server  LOG      ✓ Compiled in 36ms
-[00:21:21.939] Server  LOG      ✓ Compiled in 36ms
-[00:21:25.050] Server  LOG      ✓ Compiled in 34ms
-[00:21:32.252] Server  LOG      ✓ Compiled in 55ms
-[00:21:40.215] Server  LOG      ✓ Compiled in 44ms
-[00:21:43.597] Server  LOG      ✓ Compiled in 40ms
-[00:22:14.177] Server  LOG      ✓ Compiled in 45ms
-[00:22:18.001] Server  LOG      ✓ Compiled in 34ms
-[00:22:25.910] Server  LOG      ✓ Compiled in 43ms
-[00:22:29.331] Server  LOG      ✓ Compiled in 31ms
-[00:22:33.846] Server  LOG      ✓ Compiled in 37ms
-[00:23:13.837] Server  LOG      ✓ Compiled in 36ms
-[00:23:16.295] Server  LOG      ✓ Compiled in 34ms
-[00:23:19.111] Server  LOG      ✓ Compiled in 37ms
-[00:23:23.435] Server  LOG      ✓ Compiled in 18ms
-[00:23:24.587] Server  LOG      ✓ Compiled in 39ms
-[00:23:29.888] Server  LOG      ✓ Compiled in 35ms
-[00:23:43.559] Server  LOG      ✓ Compiled in 21ms
-[00:24:12.435] Server  LOG      ✓ Compiled in 39ms
-[00:24:16.700] Server  LOG      ✓ Compiled in 20ms
-[00:24:33.757] Server  LOG      ✓ Compiled in 42ms
-[00:24:41.116] Server  LOG      ✓ Compiled in 37ms
-[00:24:42.230] Server  LOG      ✓ Compiled in 32ms
-[00:24:45.197] Server  LOG      ✓ Compiled in 29ms
-[00:25:11.000] Server  LOG      ✓ Compiled in 37ms
-[00:25:14.711] Server  LOG      ✓ Compiled in 36ms
-[00:25:36.591] Server  LOG      ✓ Compiled in 35ms
-[00:25:38.500] Server  LOG      ✓ Compiled in 31ms
-[00:25:40.000] Server  LOG      ✓ Compiled in 39ms
-[00:25:51.854] Server  LOG      ✓ Compiled in 35ms
-[00:26:02.510] Server  LOG      ✓ Compiled in 35ms
-[00:26:19.713] Server  LOG      ✓ Compiled in 36ms
-[00:26:22.949] Server  LOG      ✓ Compiled in 31ms
-[00:26:29.676] Server  LOG      ✓ Compiled in 31ms
-[00:26:31.490] Server  LOG      ✓ Compiled in 37ms
-[00:26:43.773] Server  LOG      ✓ Compiled in 35ms
-[00:26:54.108] Server  LOG      ✓ Compiled in 37ms
-[00:27:08.557] Server  LOG      ✓ Compiled in 36ms
-[00:27:23.572] Server  LOG      ✓ Compiled in 34ms
-[00:27:28.412] Server  LOG      ✓ Compiled in 29ms
-[00:27:33.762] Server  LOG      ✓ Compiled in 31ms
-[00:27:57.036] Server  LOG      ✓ Compiled in 37ms
-[00:28:04.798] Server  LOG      ✓ Compiled in 35ms
-[00:29:14.115] Server  LOG      ✓ Compiled in 35ms
-[00:29:17.036] Server  LOG      ✓ Compiled in 28ms
-[00:30:15.796] Server  LOG      ✓ Compiled in 35ms
-[00:30:19.812] Server  LOG      ✓ Compiled in 30ms
-[00:30:22.036] Server  LOG      ✓ Compiled in 31ms
-[00:30:56.688] Server  LOG      ✓ Compiled in 33ms
-[00:31:00.446] Server  LOG      ✓ Compiled in 29ms
-[00:31:52.789] Server  LOG      ✓ Compiled in 41ms
-[00:32:09.259] Server  LOG      ✓ Compiled in 39ms
-[00:32:15.812] Server  LOG      ✓ Compiled in 36ms
-[00:33:36.666] Server  LOG      ✓ Compiled in 34ms
-[00:33:38.999] Server  LOG      ✓ Compiled in 38ms
-[00:33:45.589] Server  LOG      ✓ Compiled in 40ms
-[00:33:49.845] Server  LOG      ✓ Compiled in 61ms
-[00:34:00.159] Server  LOG      ✓ Compiled in 47ms
+[00:09:51.269] Server  LOG      ✓ Compiled in 13ms
+[00:09:52.356] Browser ERROR   ./src/components/projects/Projects.js:55:147
+Parsing ecmascript source code failed
+  53 |                     <div className="z-10 flex flex-row md:items-end gap-4 md:justify-end">
+  54 |                         {projects.map((project, key)=>{
+> 55 |                             return <ProjectButton key={key} img={project.img} setActiveProjectImage={setActiveProjectImage} activeProjectImage={} setMouseState={setMouseState}/>
+     |                                                                                                                                                   ^^^^^^^^^^^^^
+  56 |                         })}
+  57 |                     </div>
+  58 |                 </div>
+
+Expected '</', got 'setMouseState'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:09:54.976] Server  LOG      ✓ Compiled in 13ms
+[00:09:55.357] Browser ERROR   ./src/components/projects/Projects.js:55:153
+Parsing ecmascript source code failed
+  53 |                     <div className="z-10 flex flex-row md:items-end gap-4 md:justify-end">
+  54 |                         {projects.map((project, key)=>{
+> 55 |                             return <ProjectButton key={key} img={project.img} setActiveProjectImage={setActiveProjectImage} activeProjectImage={project.} setMouseState={setMouseState}/>
+     |                                                                                                                                                         ^
+  56 |                         })}
+  57 |                     </div>
+  58 |                 </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:09:59.436] Browser ERROR   uncaughtError: ReferenceError: acti is not defined
+[00:10:00.188] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:10:00.214] Server  LOG      ✓ Compiled in 61ms
+[00:10:03.439] Server  LOG      ✓ Compiled in 52ms
+[00:10:05.378] Server  LOG      ✓ Compiled in 50ms
+[00:10:08.351] Server  LOG      ✓ Compiled in 45ms
+[00:10:45.422] Server  LOG      ✓ Compiled in 29ms
+[00:15:47.940] Server  LOG      ✓ Compiled in 62ms
+[00:16:14.763] Server  LOG      ✓ Compiled in 52ms
+[00:16:26.018] Server  LOG      ✓ Compiled in 49ms
+[00:16:27.594] Server  LOG      ✓ Compiled in 43ms
+[00:16:49.437] Server  LOG      ✓ Compiled in 78ms
+[00:17:09.044] Server  LOG      ✓ Compiled in 58ms
+[00:17:14.445] Server  LOG      ✓ Compiled in 46ms
+[00:17:15.578] Server  LOG      ✓ Compiled in 48ms
+[00:17:25.697] Server  LOG      ✓ Compiled in 59ms
+[00:17:40.061] Server  LOG      ✓ Compiled in 46ms
+[00:17:53.336] Server  LOG      ✓ Compiled in 46ms
+[00:17:57.471] Server  LOG      ✓ Compiled in 42ms
+[00:18:25.330] Server  LOG      ✓ Compiled in 49ms
+[00:18:27.533] Server  LOG      ✓ Compiled in 40ms
+[00:18:29.949] Server  LOG      ✓ Compiled in 44ms
+[00:18:33.624] Server  LOG      ✓ Compiled in 38ms
+[00:18:43.936] Server  LOG      ✓ Compiled in 56ms
+[00:18:59.635] Server  LOG      ✓ Compiled in 45ms
+[00:19:03.501] Server  LOG      ✓ Compiled in 44ms
+[00:19:18.918] Server  LOG      ✓ Compiled in 49ms
+[00:19:20.693] Server  LOG      ✓ Compiled in 56ms
+[00:29:15.759] Server  LOG      ✓ Compiled in 75ms
+[00:29:23.386] Server  LOG      ✓ Compiled in 34ms
+[00:31:49.114] Server  LOG      ✓ Compiled in 60ms
+[00:32:38.503] Server  LOG      ✓ Compiled in 57ms
+[00:32:41.043] Server  LOG      ✓ Compiled in 34ms
+[00:39:43.217] Server  LOG      ✓ Compiled in 36ms
+[00:39:46.022] Server  LOG      ✓ Compiled in 54ms
+[00:39:54.690] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+                          >
+                  ...
+ {"name":"Stack","stack":"\nbody@unknown:0:0"}
+[00:40:54.171] Server  LOG      ✓ Compiled in 32ms
