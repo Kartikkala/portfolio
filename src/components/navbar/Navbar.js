@@ -26,7 +26,7 @@ export default function Navbar() {
 
 
     return (
-        <div className="flex fixed z-50 p-4 md:p-10 pointer-events-none w-full" ref={nav}>
+        <div className="flex fixed z-15 p-4 md:p-10 pointer-events-none w-full" ref={nav}>
             {/* Top Left: Name & Year */}
             <div className="absolute top-4 left-4 md:top-10 md:left-10 z-10 flex flex-col">
                 <h1 className="font-oswald text-4xl md:text-6xl font-bold tracking-tighter text-text-main leading-none uppercase">

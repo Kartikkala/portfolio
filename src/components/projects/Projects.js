@@ -52,7 +52,7 @@ export default function Projects({}){
                     </p>
                     <div className="z-10 flex flex-row md:items-end gap-4 md:justify-end">
                         {projects.map((project, key)=>{
-                            return <ProjectButton key={key} img={project.img} 
+                            return <ProjectButton projectData={project} key={key} img={project.img} 
                             setActiveProjectImage={setActiveProjectImage} 
                             activeProjectImage={activeProjectImage} 
                             setMouseState={setMouseState}/>

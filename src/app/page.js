@@ -5,6 +5,7 @@ import Hero from "../components/hero/Hero";
 import Tools from "../components/tools/Tools"
 import Projects from "@/components/projects/Projects";
 import ScrollSmoother from "gsap/dist/ScrollSmoother";
+import ProjectDetailsOverlay from "@/components/projects/project_details/ProjectDetailsOverlay";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <div ref={mainRef} id="main-scroll-container" className="min-h-screen bg-background font-sans relative text-text-muted overflow-x-hidden w-full">
 
+      <ProjectDetailsOverlay/>
       <Navbar />
 
       {/* Main parent container containing sections */}

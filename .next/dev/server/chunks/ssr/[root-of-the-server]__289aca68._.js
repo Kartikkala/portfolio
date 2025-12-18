@@ -132,7 +132,7 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$p
 ;
 ;
 const metadata = {
-    title: "Swaraj Singh | Portfolio",
+    title: "Kartik Kala | Portfolio",
     description: "Creative Designer and Developer"
 };
 function RootLayout({ children }) {

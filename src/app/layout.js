@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Oswald, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Swaraj Singh | Portfolio",
+  title: "Kartik Kala | Portfolio",
   description: "Creative Designer and Developer",
 };
 
@@ -32,7 +33,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${playfair.variable} antialiased`}
       >
-        {children}
+        <StoreProvider>
+          {children}
+        </StoreProvider>
       </body>
     </html>
   );
