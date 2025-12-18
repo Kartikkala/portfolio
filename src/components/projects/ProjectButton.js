@@ -1,20 +1,20 @@
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { openProject } from "@/lib/slices/projectSlice";
+import { openProject, setMouseInsideProject } from "@/lib/slices/projectSlice";
 import { useEffect } from "react";
 
-export default function ProjectButton({projectData, img, setActiveProjectImage, activeProjectImage, setMouseState}){
+export default function ProjectButton({projectData, img, setActiveProjectImage}){
     const {isOverlayOpen} = useAppSelector((state)=> state.project)
     const dispatch = useAppDispatch();
 
     useEffect(()=>{
         if(!isOverlayOpen){
-            setMouseState(false)
+            dispatch(setMouseInsideProject(false))
         }
     }, [isOverlayOpen])
     
     const handleActivate = (e) => {
         setActiveProjectImage(img);
-        setMouseState(true);
+        dispatch(setMouseInsideProject(true));
     };
 
     const handleClick = (e)=>{
@@ -43,7 +43,7 @@ export default function ProjectButton({projectData, img, setActiveProjectImage, 
         onClick={handleClick}
         onMouseLeave={()=> {
             if(!isOverlayOpen)
-                setMouseState(false)
+                dispatch(setMouseInsideProject(false))
             }}>
             <div>
                 <img

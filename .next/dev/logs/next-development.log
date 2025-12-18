@@ -1,96 +1,68 @@
-[00:00:01.007] Server  LOG      ✓ Ready in 678ms
-[00:00:04.134] Server  LOG      ○ Compiling / ...
-[00:00:15.363] Browser LOG     Close called!
-[00:00:27.106] Browser LOG     Close called!
-[00:01:09.630] Server  LOG      ✓ Compiled in 71ms
-[00:01:12.260] Server  LOG      ✓ Compiled in 49ms
-[00:01:22.255] Browser LOG     Close called!
-[00:01:28.150] Server  LOG      ✓ Compiled in 25ms
-[00:01:42.476] Server  LOG      ✓ Compiled in 107ms
-[00:01:49.114] Browser LOG     Close called!
-[00:02:18.663] Browser LOG     Close called!
-[00:02:37.791] Browser LOG     Close called!
-[00:02:44.616] Browser LOG     Close called!
-[00:02:58.039] Server  LOG      ✓ Compiled in 51ms
-[00:03:01.012] Browser LOG     Clicked!
-[00:03:06.551] Browser LOG     Close called!
-[00:03:12.644] Server  LOG      ✓ Compiled in 52ms
-[00:05:49.966] Server  LOG      ✓ Compiled in 99ms
-[00:06:00.511] Browser LOG     Close called!
-[00:06:05.191] Browser LOG     Close called!
-[00:06:09.047] Browser LOG     Close called!
-[00:06:12.474] Browser LOG     Close called!
-[00:07:24.853] Browser LOG     Close called!
-[00:07:38.545] Server  LOG      ✓ Compiled in 108ms
-[00:07:45.318] Browser LOG     Close called!
-[00:07:50.584] Browser LOG     Close called!
-[00:07:55.312] Browser LOG     Close called!
-[00:07:58.875] Browser LOG     Close called!
-[00:08:56.946] Server  LOG      ✓ Compiled in 114ms
-[00:09:03.654] Browser LOG     Close called!
-[00:09:09.828] Server  LOG      ✓ Compiled in 77ms
-[00:09:16.022] Browser LOG     Close called!
-[00:09:32.312] Browser LOG     Close called!
-[00:09:32.573] Browser LOG     Close called!
-[00:10:19.566] Server  LOG      ✓ Compiled in 51ms
-[00:10:20.950] Server  LOG      ✓ Compiled in 60ms
-[00:10:27.440] Browser LOG     Close called!
-[00:10:32.890] Server  LOG      ✓ Compiled in 48ms
-[00:10:37.525] Server  LOG      ✓ Compiled in 40ms
-[00:10:44.050] Browser LOG     Close called!
-[00:10:47.529] Browser LOG     Close called!
-[00:10:50.205] Browser LOG     Close called!
-[00:11:39.693] Browser LOG     Close called!
-[00:11:43.067] Browser LOG     Close called!
-[00:11:45.850] Browser LOG     Close called!
-[00:11:49.115] Browser LOG     Close called!
-[00:12:21.272] Server  LOG      ✓ Compiled in 34ms
-[00:12:26.426] Browser LOG     Close called!
-[00:12:46.532] Server  LOG      ✓ Compiled in 54ms
-[00:19:22.734] Browser LOG     Close called!
-[00:19:32.359] Server  LOG      ✓ Compiled in 74ms
-[00:19:34.127] Server  LOG      ✓ Compiled in 73ms
-[00:19:35.772] Server  LOG      ✓ Compiled in 72ms
-[00:19:38.353] Browser LOG     Close called!
-[00:19:41.503] Server  LOG      ✓ Compiled in 62ms
-[00:19:44.676] Server  LOG      ✓ Compiled in 65ms
-[00:19:54.920] Browser LOG     Close called!
-[00:20:02.220] Server  LOG      ✓ Compiled in 77ms
-[00:20:13.153] Server  LOG      ✓ Compiled in 30ms
-[00:20:15.728] Server  LOG      ✓ Compiled in 53ms
-[00:20:22.229] Browser LOG     Close called!
-[00:20:26.215] Browser LOG     Close called!
-[00:20:31.631] Server  LOG      ✓ Compiled in 51ms
-[00:20:33.121] Server  LOG      ✓ Compiled in 54ms
-[00:20:42.941] Server  LOG      ✓ Compiled in 47ms
-[00:20:52.915] Browser LOG     Close called!
-[00:20:57.247] Server  LOG      ✓ Compiled in 51ms
-[00:27:21.530] Browser LOG     Close called!
-[00:27:24.944] Browser LOG     Close called!
-[00:28:03.626] Server  LOG      ✓ Compiled in 67ms
-[00:28:08.125] Browser LOG     Close called!
-[00:28:10.369] Server  LOG      ✓ Compiled in 26ms
-[00:28:22.959] Server  LOG      ✓ Compiled in 46ms
-[00:28:25.835] Server  LOG      ✓ Compiled in 22ms
-[00:28:29.856] Browser LOG     Close called!
-[00:28:51.692] Server  LOG      ✓ Compiled in 42ms
-[00:28:55.867] Server  LOG      ✓ Compiled in 21ms
-[00:28:59.081] Server  LOG      ✓ Compiled in 43ms
-[00:28:59.851] Browser LOG     Close called!
-[00:29:01.210] Browser ERROR   uncaughtError: TypeError: e_0.stopPropargation is not a function
-[00:29:12.678] Server  LOG      ✓ Compiled in 44ms
-[00:30:59.896] Server  LOG      ✓ Compiled in 17ms
-[00:31:00.607] Browser ERROR   ./src/components/projects/ProjectButton.js:6:11
-Parsing ecmascript source code failed
-  4 | export default function ProjectButton({projectData, img, setActiveProjectImage, activeProjectImage, setMouseState}){
-  5 |     const dispatch = useAppDispatch();
-> 6 |     const isClicked
-    |           ^^^^^^^^^
-  7 |     
-  8 |     const handleActivate = (e) => {
-  9 |         setActiveProjectImage(img);
+[00:00:00.645] Server  LOG      ✓ Ready in 389ms
+[00:00:04.723] Server  LOG      ○ Compiling / ...
+[00:04:41.728] Browser LOG     Close called!
+[00:06:06.196] Server  LOG      ✓ Compiled in 75ms
+[00:06:06.576] Browser ERROR   ./src/components/projects/ProjectButton.js
+Error evaluating Node.js code
+SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
 
-'const' declarations must be initialized
+   9 |     useEffect(()=>{
+  10 |         if(!isOverlayOpen){
+> 11 |             setMouseInsideProject({false})
+     |                                    ^
+  12 |         }
+  13 |     }, [isOverlayOpen])
+  14 |     
+    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
+    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
+    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
+    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
+    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
+    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
+    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
+    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
+    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
+    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
+    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
+    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
+    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
 
 Import traces:
   Client Component Browser:
@@ -104,18 +76,68 @@ Import traces:
     ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:31:23.636] Server  LOG      ✓ Compiled in 16ms
-[00:31:24.653] Browser ERROR   ./src/components/projects/ProjectButton.js:22:34
-Parsing ecmascript source code failed
-  20 |         onClick={handleClick}
-  21 |         onMouseLeave={()=> {
-> 22 |             setMouseState(false)}>
-     |                                  ^
-  23 |             <div>
-  24 |                 <img
-  25 |                     src={img}
+[00:06:41.511] Server  LOG      ✓ Compiled in 19ms
+[00:06:41.805] Browser ERROR   ./src/components/projects/ProjectButton.js
+Error evaluating Node.js code
+SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
 
-Expected a semicolon
+   9 |     useEffect(()=>{
+  10 |         if(!isOverlayOpen){
+> 11 |             setMouseInsideProject({false})
+     |                                    ^
+  12 |         }
+  13 |     }, [isOverlayOpen])
+  14 |     
+    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
+    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
+    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
+    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
+    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
+    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
+    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
+    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
+    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
+    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
+    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
+    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
+    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
 
 Import traces:
   Client Component Browser:
@@ -129,613 +151,28 @@ Import traces:
     ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:31:24.653] Browser ERROR   ./src/components/projects/ProjectButton.js:29:10
+[00:06:41.805] Browser ERROR   ./src/lib/slices/projectSlice.js:16:9
 Parsing ecmascript source code failed
-  27 |                 />
-  28 |             </div>
-> 29 |         </div>
-     |          ^^^^^
-  30 |     )
-  31 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:31:34.466] Server  LOG      ✓ Compiled in 75ms
-[00:31:36.401] Server  LOG      ✓ Compiled in 47ms
-[00:31:44.546] Server  LOG      ✓ Compiled in 47ms
-[00:31:45.646] Server  LOG      ✓ Compiled in 69ms
-[00:31:48.268] Server  LOG      ✓ Compiled in 57ms
-[00:31:49.819] Server  LOG      ✓ Compiled in 46ms
-[00:31:57.546] Browser LOG     Close called!
-[00:32:19.050] Server  LOG      ✓ Compiled in 47ms
-[00:32:24.971] Server  LOG      ✓ Compiled in 15ms
-[00:32:25.994] Browser ERROR   ./src/components/projects/ProjectButton.js:7:5
-Parsing ecmascript source code failed
-   5 | export default function ProjectButton({projectData, img, setActiveProjectImage, activeProjectImage, setMouseState}){
-   6 |     const 
->  7 |     const dispatch = useAppDispatch();
-     |     ^^^^^
-   8 |     const [isClicked, setIsClicked] = useState(false)
-   9 |     
-  10 |     const handleActivate = (e) => {
+  14 |         setMouseInsideProject: (state, action) =>{
+  15 |             state.mouseInsideProject = action.payload.
+> 16 |         },
+     |         ^
+  17 |         // Call this when user clicks a project
+  18 |         openProject: (state, action) => {
+  19 |             state.selectedProject = action.payload.project;
 
 Expected ident
 
 Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:32:51.825] Server  LOG      ✓ Compiled in 21ms
-[00:32:51.928] Browser ERROR   ./src/components/projects/ProjectButton.js:6:11
-Parsing ecmascript source code failed
-  4 |
-  5 | export default function ProjectButton({projectData, img, setActiveProjectImage, activeProjectImage, setMouseState}){
-> 6 |     const isOverlayOpen
-    |           ^^^^^^^^^^^^^
-  7 |     const dispatch = useAppDispatch();
-  8 |     const [isClicked, setIsClicked] = useState(false)
-  9 |     
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:33:03.556] Server  LOG      ✓ Compiled in 54ms
-[00:33:04.132] Browser ERROR   uncaughtError: ReferenceError: useApp is not defined
-[00:33:06.083] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:06.112] Server  LOG      ✓ Compiled in 32ms
-[00:33:07.175] Server  LOG      ✓ Compiled in 41ms
-[00:33:07.596] Browser ERROR   uncaughtError: Error: You must pass a selector to useSelector
-[00:33:08.908] Server  LOG      ✓ Compiled in 13ms
-[00:33:09.604] Browser ERROR   ./src/components/projects/ProjectButton.js:6:42
-Parsing ecmascript source code failed
-  4 |
-  5 | export default function ProjectButton({projectData, img, setActiveProjectImage, activeProjectImage, setMouseState}){
-> 6 |     const isOverlayOpen = useAppSelector(())
-    |                                          ^^
-  7 |     const dispatch = useAppDispatch();
-  8 |     const [isClicked, setIsClicked] = useState(false)
-  9 |     
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:33:11.519] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:11.545] Server  LOG      ✓ Compiled in 36ms
-[00:33:11.944] Server  ERROR    ⨯ ReferenceError: project is not defined
-[00:33:12.522] Browser ERROR   uncaughtError: ReferenceError: project is not defined
-[00:33:22.498] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:22.624] Server  LOG      ✓ Compiled in 82ms
-[00:33:50.932] Server  LOG      ✓ Compiled in 58ms
-[00:33:56.200] Server  LOG      ✓ Compiled in 55ms
-[00:34:03.117] Server  LOG      ✓ Compiled in 45ms
-[00:34:09.190] Server  LOG      ✓ Compiled in 50ms
-[00:34:17.274] Server  LOG      ✓ Compiled in 51ms
-[00:34:25.305] Server  LOG      ✓ Compiled in 54ms
-[00:34:34.273] Browser LOG     Close called!
-[00:34:43.586] Browser LOG     Close called!
-[00:34:56.077] Browser LOG     Close called!
-[00:35:19.616] Server  LOG      ✓ Compiled in 47ms
-[00:35:26.422] Server  LOG      ✓ Compiled in 52ms
-[00:35:34.463] Server  LOG      ✓ Compiled in 16ms
-[00:35:34.719] Browser ERROR   ./src/components/projects/ProjectButton.js:11:5
-Parsing ecmascript source code failed
-   9 |     useEffect(()=>{
-  10 |         if(isOverlayOpen)
-> 11 |     }, [isOverlayOpen])
-     |     ^
-  12 |     
-  13 |     const handleActivate = (e) => {
-  14 |         setActiveProjectImage(img);
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:35:37.783] Browser ERROR   ./src/components/projects/ProjectButton.js:11:5
-Parsing ecmascript source code failed
-   9 |     useEffect(()=>{
-  10 |         if(!isOverlayOpen)
-> 11 |     }, [isOverlayOpen])
-     |     ^
-  12 |     
-  13 |     const handleActivate = (e) => {
-  14 |         setActiveProjectImage(img);
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:35:39.784] Browser ERROR   ./src/components/projects/ProjectButton.js:12:5
-Parsing ecmascript source code failed
-  10 |         if(!isOverlayOpen)
-  11 |             
-> 12 |     }, [isOverlayOpen])
-     |     ^
-  13 |     
-  14 |     const handleActivate = (e) => {
-  15 |         setActiveProjectImage(img);
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:35:44.976] Browser ERROR   %c%s received a final argument during this render, but not during the previous render. Even though the final argument is optional, its type cannot change between renders. color: rgba(124, 124, 124, 0.75) useEffect
-[00:35:44.976] Browser ERROR   %c%s received a final argument during this render, but not during the previous render. Even though the final argument is optional, its type cannot change between renders. color: rgba(124, 124, 124, 0.75) useEffect
-[00:35:44.976] Browser ERROR   %c%s received a final argument during this render, but not during the previous render. Even though the final argument is optional, its type cannot change between renders. color: rgba(124, 124, 124, 0.75) useEffect
-[00:35:44.976] Browser ERROR   %c%s received a final argument during this render, but not during the previous render. Even though the final argument is optional, its type cannot change between renders. color: rgba(124, 124, 124, 0.75) useEffect
-[00:35:57.407] Browser LOG     Close called!
-[00:36:01.970] Browser LOG     Close called!
-[00:36:28.274] Server  LOG      ✓ Compiled in 13ms
-[00:39:13.588] Server  LOG      ✓ Compiled in 94ms
-[00:39:29.974] Browser LOG     Close called!
-[00:40:07.748] Browser LOG     Close called!
-[00:40:17.447] Browser LOG     Close called!
-[00:40:22.281] Browser LOG     Close called!
-[00:59:08.138] Browser LOG     Close called!
-[00:59:26.226] Browser LOG     Close called!
-[00:59:30.654] Browser LOG     Close called!
-[00:59:34.344] Browser LOG     Close called!
-[00:59:39.831] Browser LOG     Close called!
-[00:59:46.067] Browser LOG     Close called!
-[00:59:52.840] Browser LOG     Close called!
-[01:00:07.681] Browser LOG     Close called!
-[01:00:26.788] Browser LOG     Close called!
-[01:00:31.171] Browser LOG     Close called!
-[01:00:49.683] Server  LOG      ✓ Compiled in 65ms
-[01:00:54.084] Server  LOG      ✓ Compiled in 35ms
-[01:00:56.233] Server  LOG      ✓ Compiled in 72ms
-[01:01:03.050] Browser LOG     Close called!
-[01:01:14.848] Server  LOG      ✓ Compiled in 64ms
-[01:01:19.624] Browser LOG     Close called!
-[01:01:20.084] Browser LOG     Close called!
-[01:01:23.694] Browser LOG     Close called!
-[01:01:28.630] Browser LOG     Close called!
-[01:01:31.445] Browser LOG     Close called!
-[01:02:01.252] Browser LOG     Close called!
-[01:02:07.667] Browser LOG     Close called!
-[01:02:11.708] Browser LOG     Close called!
-[01:02:48.823] Browser LOG     Close called!
-[01:03:00.559] Server  LOG      ✓ Compiled in 58ms
-[01:03:03.971] Server  LOG      ✓ Compiled in 53ms
-[01:03:05.876] Server  LOG      ✓ Compiled in 15ms
-[01:03:06.901] Browser ERROR   ./src/components/projects/ProjectButton.js:21:20
-Parsing ecmascript source code failed
-  19 |     const handleClick = (e)=>{
-  20 |         handleActivate(e)
-> 21 |         setTimeout(())
-     |                    ^^
-  22 |         dispatch(openProject(projectData))
-  23 |     }
-  24 |     return (
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:03:09.021] Server  LOG      ✓ Compiled in 45ms
-[01:03:14.148] Server  LOG      ✓ Compiled in 68ms
-[01:03:17.134] Server  LOG      ✓ Compiled in 55ms
-[01:03:19.654] Server  LOG      ✓ Compiled in 58ms
-[01:03:37.256] Browser LOG     Close called!
-[01:03:39.772] Browser LOG     Close called!
-[01:03:52.856] Browser LOG     Close called!
-[01:03:56.061] Browser LOG     Close called!
-[01:03:59.265] Browser LOG     Close called!
-[01:04:04.551] Browser LOG     Close called!
-[01:04:08.381] Browser LOG     Close called!
-[01:04:12.075] Browser LOG     Close called!
-[01:04:21.191] Browser LOG     Close called!
-[01:04:23.937] Browser LOG     Close called!
-[01:04:26.806] Browser LOG     Close called!
-[01:04:29.382] Browser LOG     Close called!
-[01:04:33.642] Server  LOG      ✓ Compiled in 98ms
-[01:04:44.889] Browser LOG     Close called!
-[01:04:47.374] Browser LOG     Close called!
-[01:04:50.185] Browser LOG     Close called!
-[01:04:52.263] Browser LOG     Close called!
-[01:05:05.081] Browser LOG     Close called!
-[01:05:07.959] Browser LOG     Close called!
-[01:05:10.533] Browser LOG     Close called!
-[01:05:14.730] Browser LOG     Close called!
-[01:05:18.403] Browser LOG     Close called!
-[01:05:28.523] Browser LOG     Close called!
-[01:09:00.935] Server  LOG      ✓ Compiled in 43ms
-[01:09:03.203] Server  LOG      ✓ Compiled in 34ms
-[01:09:48.269] Server  LOG      ✓ Compiled in 60ms
-[01:10:28.913] Server  LOG      ✓ Compiled in 36ms
-[01:10:35.731] Server  LOG      ✓ Compiled in 33ms
-[01:10:37.988] Server  LOG      ✓ Compiled in 37ms
-[01:10:42.605] Server  LOG      ✓ Compiled in 56ms
-[01:10:45.068] Server  LOG      ✓ Compiled in 26ms
-[01:10:53.242] Server  LOG      ✓ Compiled in 30ms
-[01:11:00.752] Server  LOG      ✓ Compiled in 53ms
-[01:11:02.844] Server  LOG      ✓ Compiled in 49ms
-[01:11:08.810] Server  LOG      ✓ Compiled in 58ms
-[01:11:13.837] Server  LOG      ✓ Compiled in 31ms
-[01:11:15.053] Server  LOG      ✓ Compiled in 29ms
-[01:11:20.565] Server  LOG      ✓ Compiled in 58ms
-[01:11:21.533] Server  LOG      ✓ Compiled in 32ms
-[01:11:24.415] Server  LOG      ✓ Compiled in 60ms
-[01:11:27.443] Server  LOG      ✓ Compiled in 54ms
-[01:11:38.773] Browser LOG     553
-[01:11:38.773] Browser LOG     383.5
-[01:11:38.773] Browser LOG     1645.25
-[01:11:38.773] Browser LOG     987
-[01:11:50.053] Browser LOG     414.3999938964844
-[01:11:50.053] Browser LOG     383.5
-[01:11:50.053] Browser LOG     96.75
-[01:11:50.053] Browser LOG     729.5999755859375
-[01:11:53.529] Browser LOG     Close called!
-[01:11:53.529] Browser LOG     414.3999938964844
-[01:11:53.529] Browser LOG     383.5
-[01:11:53.529] Browser LOG     96.75
-[01:11:53.529] Browser LOG     729.5999755859375
-[01:11:55.306] Browser LOG     414.3999938964844
-[01:11:55.306] Browser LOG     383.5
-[01:11:55.306] Browser LOG     96.75
-[01:11:55.306] Browser LOG     729.5999755859375
-[01:11:55.306] Browser LOG     414.3999938964844
-[01:11:55.306] Browser LOG     383.5
-[01:11:55.306] Browser LOG     96.75
-[01:11:55.306] Browser LOG     729.5999755859375
-[01:11:56.970] Browser LOG     414.3999938964844
-[01:11:56.970] Browser LOG     383.5
-[01:11:56.970] Browser LOG     96.75
-[01:11:56.970] Browser LOG     729.5999755859375
-[01:11:59.101] Browser LOG     Close called!
-[01:11:59.101] Browser LOG     414.3999938964844
-[01:11:59.101] Browser LOG     383.5
-[01:11:59.101] Browser LOG     96.75
-[01:11:59.101] Browser LOG     729.5999755859375
-[01:12:01.246] Browser LOG     414.3999938964844
-[01:12:01.246] Browser LOG     383.5
-[01:12:01.246] Browser LOG     96.75
-[01:12:01.246] Browser LOG     729.5999755859375
-[01:12:02.268] Browser LOG     414.3999938964844
-[01:12:02.268] Browser LOG     383.5
-[01:12:02.268] Browser LOG     96.75
-[01:12:02.268] Browser LOG     729.5999755859375
-[01:12:03.822] Browser LOG     414.3999938964844
-[01:12:03.822] Browser LOG     383.5
-[01:12:03.822] Browser LOG     96.75
-[01:12:03.822] Browser LOG     729.5999755859375
-[01:12:05.759] Browser LOG     Close called!
-[01:12:05.759] Browser LOG     414.3999938964844
-[01:12:05.759] Browser LOG     383.5
-[01:12:05.759] Browser LOG     96.75
-[01:12:05.759] Browser LOG     729.5999755859375
-[01:12:07.004] Browser LOG     414.3999938964844
-[01:12:07.004] Browser LOG     383.5
-[01:12:07.004] Browser LOG     96.75
-[01:12:07.004] Browser LOG     729.5999755859375
-[01:12:08.319] Browser LOG     Close called!
-[01:12:08.319] Browser LOG     414.3999938964844
-[01:12:08.319] Browser LOG     383.5
-[01:12:08.319] Browser LOG     96.75
-[01:12:08.319] Browser LOG     729.5999755859375
-[01:12:23.083] Server  LOG      ✓ Compiled in 17ms
-[01:12:24.122] Browser ERROR   ./src/components/projects/ProjectShowcase.js:10:5
-Parsing ecmascript source code failed
-   8 |     const 
-   9 |
-> 10 |     useEffect(() => {
-     |     ^^^^^^^^^
-  11 |         // Get dimensions of the showcase
-  12 |         const rect = containerRef.current.getBoundingClientRect();
-  13 |
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:12:24.122] Browser ERROR   ./src/components/projects/ProjectShowcase.js:10:14
-Parsing ecmascript source code failed
-   8 |     const 
-   9 |
-> 10 |     useEffect(() => {
-     |              ^
-  11 |         // Get dimensions of the showcase
-  12 |         const rect = containerRef.current.getBoundingClientRect();
-  13 |
-
-Expected a semicolon
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:12:35.459] Server  LOG      ✓ Compiled in 25ms
-[01:12:36.190] Browser ERROR   uncaughtError: ReferenceError: useApp is not defined
-[01:12:37.636] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:37.663] Server  LOG      ✓ Compiled in 39ms
-[01:12:38.070] Server  ERROR    ⨯ Error: You must pass a selector to useSelector
-[01:12:39.167] Browser ERROR   uncaughtError: Error: You must pass a selector to useSelector
-[01:12:39.286] Server  LOG      ✓ Compiled in 12ms
-[01:12:40.306] Browser ERROR   ./src/components/projects/ProjectShowcase.js:9:42
-Parsing ecmascript source code failed
-   7 |     const maskRef = useRef(null); // The div that unfolds (Clip Path)
-   8 |     const imgRef = useRef(null);  // The image that scales (Zoom)
->  9 |     const isOverlayOpen = useAppSelector(const {isOverlayOpen} = useAppSelector((state)=> state.project))
-     |                                          ^^^^^
-  10 |
-  11 |     useEffect(() => {
-  12 |         // Get dimensions of the showcase
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:12:40.541] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:40.569] Server  LOG      ✓ Compiled in 33ms
-[01:12:40.609] Server  ERROR    ⨯ Error: You must pass a selector to useSelector
-[01:12:41.682] Browser ERROR   uncaughtError: Error: You must pass a selector to useSelector
-[01:12:43.667] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:43.694] Server  LOG      ✓ Compiled in 32ms
-[01:12:45.223] Browser LOG     414.3999938964844
-[01:12:45.223] Browser LOG     383.5
-[01:12:45.223] Browser LOG     1645.75
-[01:12:45.223] Browser LOG     729.5999755859375
-[01:13:01.571] Server  LOG      ✓ Compiled in 14ms
-[01:13:02.322] Browser ERROR   ./src/components/projects/ProjectShowcase.js:14:9
-Parsing ecmascript source code failed
-  12 |         // Get dimensions of the showcase
-  13 |         if(isOverlayOpen)
-> 14 |         const rect = containerRef.current.getBoundingClientRect();
-     |         ^^^^^
-  15 |
-  16 |         console.log(rect.width)
-  17 |         console.log(rect.height)
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:13:03.438] Browser LOG     414.3999938964844
-[01:13:03.438] Browser LOG     383.5
-[01:13:03.438] Browser LOG     1645.75
-[01:13:03.438] Browser LOG     729.5999755859375
-[01:13:14.852] Browser LOG     Close called!
-[01:13:17.835] Browser LOG     Close called!
-[01:13:40.016] Server  LOG      ✓ Compiled in 38ms
-[01:13:40.239] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [false, /p1.webp] [false, /p1.webp, false]
-[01:13:45.831] Browser LOG     414.3999938964844
-[01:13:45.831] Browser LOG     383.5
-[01:13:45.831] Browser LOG     97.75
-[01:13:45.831] Browser LOG     729.5999755859375
-[01:13:47.723] Browser LOG     Close called!
-[01:13:49.097] Browser LOG     414.3999938964844
-[01:13:49.097] Browser LOG     383.5
-[01:13:49.097] Browser LOG     97.75
-[01:13:49.097] Browser LOG     729.5999755859375
-[01:13:50.757] Browser LOG     Close called!
-[01:14:20.381] Server  LOG      ✓ Compiled in 56ms
-[01:14:56.326] Server  LOG      ✓ Compiled in 79ms
-[01:15:07.838] Browser LOG     414.3999938964844
-[01:15:07.838] Browser LOG     383.5
-[01:15:07.838] Browser LOG     97.75
-[01:15:07.838] Browser LOG     729.5999755859375
-[01:15:11.661] Browser LOG     Close called!
-[01:15:15.701] Browser LOG     414.3999938964844
-[01:15:15.701] Browser LOG     383.5
-[01:15:15.701] Browser LOG     97.75
-[01:15:15.701] Browser LOG     729.5999755859375
-[01:15:17.433] Browser LOG     Close called!
-[01:15:36.666] Server  LOG      ✓ Compiled in 63ms
-[01:15:39.399] Server  LOG      ✓ Compiled in 71ms
-[01:15:43.783] Browser LOG     414.3999938964844
-[01:15:43.783] Browser LOG     383.5
-[01:15:43.783] Browser LOG     97.75
-[01:15:43.783] Browser LOG     729.5999755859375
-[01:15:45.735] Browser LOG     Close called!
-[01:15:47.983] Browser LOG     414.3999938964844
-[01:15:47.983] Browser LOG     383.5
-[01:15:47.983] Browser LOG     97.75
-[01:15:47.983] Browser LOG     729.5999755859375
-[01:15:49.893] Browser LOG     Close called!
-[01:15:52.531] Browser LOG     414.3999938964844
-[01:15:52.531] Browser LOG     383.5
-[01:15:52.531] Browser LOG     -29.116668701171875
-[01:15:52.531] Browser LOG     729.5999755859375
-[01:15:54.593] Browser LOG     Close called!
-[01:15:56.274] Browser LOG     414.3999938964844
-[01:15:56.274] Browser LOG     383.5
-[01:15:56.274] Browser LOG     97.75
-[01:15:56.274] Browser LOG     729.5999755859375
-[01:15:57.837] Browser LOG     Close called!
-[01:16:04.157] Browser LOG     414.3999938964844
-[01:16:04.157] Browser LOG     383.5
-[01:16:04.157] Browser LOG     61.78334045410156
-[01:16:04.157] Browser LOG     729.5999755859375
-[01:16:06.002] Browser LOG     Close called!
-[01:16:08.519] Browser LOG     414.3999938964844
-[01:16:08.519] Browser LOG     383.5
-[01:16:08.519] Browser LOG     94.58332824707031
-[01:16:08.519] Browser LOG     729.5999755859375
-[01:16:09.886] Browser LOG     Close called!
-[01:16:11.956] Browser LOG     414.3999938964844
-[01:16:11.956] Browser LOG     383.5
-[01:16:11.956] Browser LOG     94.75
-[01:16:11.956] Browser LOG     729.5999755859375
-[01:16:13.810] Browser LOG     Close called!
-[01:16:16.384] Browser LOG     414.3999938964844
-[01:16:16.384] Browser LOG     383.5
-[01:16:16.384] Browser LOG     94.75
-[01:16:16.384] Browser LOG     729.5999755859375
-[01:16:18.086] Browser LOG     Close called!
-[01:16:18.086] Browser LOG     Close called!
-[01:16:20.911] Browser LOG     414.3999938964844
-[01:16:20.911] Browser LOG     383.5
-[01:16:20.911] Browser LOG     94.75
-[01:16:20.911] Browser LOG     729.5999755859375
-[01:16:23.014] Browser LOG     Close called!
-[01:16:27.043] Browser LOG     553
-[01:16:27.043] Browser LOG     383.5
-[01:16:27.043] Browser LOG     94.96665954589844
-[01:16:27.043] Browser LOG     987
-[01:16:28.900] Browser LOG     Close called!
-[01:16:40.637] Browser LOG     553
-[01:16:40.637] Browser LOG     383.5
-[01:16:40.637] Browser LOG     94.75
-[01:16:40.637] Browser LOG     987
-[01:16:43.033] Browser LOG     Close called!
-[01:16:47.774] Browser LOG     553
-[01:16:47.774] Browser LOG     383.5
-[01:16:47.774] Browser LOG     94.75
-[01:16:47.774] Browser LOG     987
-[01:16:50.300] Browser LOG     Close called!
-[01:16:52.224] Browser LOG     553
-[01:16:52.224] Browser LOG     383.5
-[01:16:52.224] Browser LOG     94.75
-[01:16:52.224] Browser LOG     987
-[01:16:54.315] Browser LOG     Close called!
-[01:17:08.325] Server  LOG      ✓ Compiled in 39ms
-[01:17:11.099] Server  LOG      ✓ Compiled in 33ms
-[01:17:24.063] Server  LOG      ✓ Compiled in 15ms
-[01:17:24.337] Browser ERROR   ./src/lib/slices/projectSlice.js:7:1
-Parsing ecmascript source code failed
-   5 |     isOverlayOpen: false,
-   6 |     rectPos :
->  7 | };
-     | ^
-   8 |
-   9 | export const projectSlice = createSlice({
-  10 |     name: 'project',
-
-Expression expected
-
-Import traces:
   #1 [Client Component Browser]:
     ./src/lib/slices/projectSlice.js [Client Component Browser]
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   #2 [Client Component SSR]:
     ./src/lib/slices/projectSlice.js [Client Component SSR]
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
 
@@ -752,123 +189,129 @@ Import traces:
     ./src/app/StoreProvider.jsx [Client Component SSR]
     ./src/app/StoreProvider.jsx [Server Component]
     ./src/app/layout.js [Server Component]
-[01:18:24.834] Server  LOG      ✓ Compiled in 14ms
-[01:18:34.288] Server  LOG      ✓ Compiled in 16ms
-[01:18:36.725] Server  LOG      ✓ Compiled in 13ms
-[01:18:40.591] Server  LOG      ✓ Compiled in 14ms
-[01:18:43.367] Server  LOG      ✓ Compiled in 13ms
-[01:18:58.077] Server  LOG      ✓ Compiled in 14ms
-[01:19:55.626] Server  LOG      ✓ Compiled in 62ms
-[01:19:58.702] Server  LOG      ✓ Compiled in 16ms
-[01:19:58.820] Browser ERROR   ./src/components/projects/ProjectButton.js:25:46
-Parsing ecmascript source code failed
-  23 |         handleActivate(e)
-  24 |         setTimeout(()=>{
-> 25 |             dispatch(openProject({projectData.}))
-     |                                              ^
-  26 |         }, 0.6)
-  27 |     }
-  28 |     return (
-
-Unexpected token `.`. Expected ... , *,  (, [, :, , ?, = or an identifier
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:20:01.202] Server  LOG      ✓ Compiled in 63ms
-[01:21:01.480] Server  LOG      ✓ Compiled in 37ms
-[01:21:07.435] Server  LOG      ✓ Compiled in 34ms
-[01:21:16.294] Server  LOG      ✓ Compiled in 31ms
-[01:21:42.521] Server  LOG      ✓ Compiled in 38ms
-[01:21:48.101] Server  LOG      ✓ Compiled in 31ms
-[01:21:54.352] Server  LOG      ✓ Compiled in 51ms
-[01:21:55.522] Server  LOG      ✓ Compiled in 65ms
-[01:21:58.211] Server  LOG      ✓ Compiled in 57ms
-[01:22:22.570] Server  LOG      ✓ Compiled in 36ms
-[01:22:27.113] Server  LOG      ✓ Compiled in 28ms
-[01:22:33.540] Server  LOG      ✓ Compiled in 52ms
-[01:22:44.818] Server  LOG      ✓ Compiled in 58ms
-[01:22:47.326] Server  LOG      ✓ Compiled in 62ms
-[01:22:56.782] Server  LOG      ✓ Compiled in 86ms
-[01:23:14.774] Server  LOG      ✓ Compiled in 71ms
-[01:23:18.634] Server  LOG      ✓ Compiled in 71ms
-[01:23:22.569] Server  LOG      ✓ Compiled in 63ms
-[01:23:26.330] Server  LOG      ✓ Compiled in 17ms
-[01:23:27.124] Browser ERROR   ./src/components/projects/ProjectButton.js:47:1
-Parsing ecmascript source code failed
-  45 |         </div>
-  46 |     )
-> 47 | }
-     | ^
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:23:30.374] Server  LOG      ✓ Compiled in 84ms
-[01:23:34.528] Server  LOG      ✓ Compiled in 67ms
-[01:23:36.867] Server  LOG      ✓ Compiled in 71ms
-[01:23:39.191] Server  LOG      ✓ Compiled in 63ms
-[01:23:57.019] Browser ERROR   A non-serializable value was detected in an action, in the path: `payload.rect`. Value: {"bottom":352.8833312988281,"height":383.5,"left":987,"right":1540,"top":-30.616668701171875,"width":553,"x":987,"y":-30.616668701171875} 
-Take a look at the logic that dispatched this action:  {"payload":{"projectData":{"description":"This is some desc about the cloud drive project.","id":1,"img":"/p1.webp","name":"Cloud Drive"},"rect":{"bottom":352.8833312988281,"height":383.5,"left":987,"right":1540,"top":-30.616668701171875,"width":553,"x":987,"y":-30.616668701171875}},"type":"project/openProject"} 
-(See https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants) 
-(To allow non-serializable values see: https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)
-[01:23:57.019] Browser ERROR   A non-serializable value was detected in the state, in the path: `project.rectPos`. Value: {"bottom":352.8833312988281,"height":383.5,"left":987,"right":1540,"top":-30.616668701171875,"width":553,"x":987,"y":-30.616668701171875} 
-Take a look at the reducer(s) handling this action type: project/openProject.
-(See https://redux.js.org/faq/organizing-state#can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state)
-[01:24:31.904] Server  LOG      ✓ Compiled in 92ms
-[01:24:36.138] Server  LOG      ✓ Compiled in 68ms
-[01:24:44.362] Server  LOG      ✓ Compiled in 78ms
-[01:24:47.744] Server  LOG      ✓ Compiled in 58ms
-[01:25:03.887] Browser ERROR   A non-serializable value was detected in an action, in the path: `payload.rect`. Value: {"bottom":481.25,"height":383.5,"left":987,"right":1540,"top":97.75,"width":553,"x":987,"y":97.75} 
-Take a look at the logic that dispatched this action:  {"payload":{"project":{"description":"This is some desc about the cloud drive project.","id":1,"img":"/p1.webp","name":"Cloud Drive"},"rect":{"bottom":481.25,"height":383.5,"left":987,"right":1540,"top":97.75,"width":553,"x":987,"y":97.75}},"type":"project/openProject"} 
-(See https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants) 
-(To allow non-serializable values see: https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)
-[01:25:03.887] Browser ERROR   A non-serializable value was detected in the state, in the path: `project.rectPos`. Value: {"bottom":481.25,"height":383.5,"left":987,"right":1540,"top":97.75,"width":553,"x":987,"y":97.75} 
-Take a look at the reducer(s) handling this action type: project/openProject.
-(See https://redux.js.org/faq/organizing-state#can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state)
-[01:25:54.346] Server  LOG      ✓ Compiled in 44ms
-[01:25:54.599] Browser ERROR   ./src/components/projects/ProjectButton.js
+[00:06:43.439] Server  LOG      ✓ Compiled in 16ms
+[00:06:43.805] Browser ERROR   ./src/components/projects/ProjectButton.js
 Error evaluating Node.js code
-SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Identifier 'rect' has already been declared. (25:14)
+SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
 
-  23 |         const showcase = document.getElementById("project_showcase")
-  24 |         const rect = showcase.getBoundingClientRect();
-> 25 |         const rect = {
-     |               ^
-  26 |         top: rawRect.top,
-  27 |         left: rawRect.left,
-  28 |         width: rawRect.width,
+   9 |     useEffect(()=>{
+  10 |         if(!isOverlayOpen){
+> 11 |             setMouseInsideProject({false})
+     |                                    ^
+  12 |         }
+  13 |     }, [isOverlayOpen])
+  14 |     
     [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
     [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
-    [at ScopeHandler.checkRedeclarationInScope (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:163166)]
-    [at ScopeHandler.declareName (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:162529)]
-    [at JSXParserMixin.declareNameFromIdentifier (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:279226)]
-    [at JSXParserMixin.checkIdentifier (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:279152)]
-    [at JSXParserMixin.checkLVal (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:278197)]
-    [at JSXParserMixin.parseVarId (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:403644)]
-    [at JSXParserMixin.parseVar (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:402884)]
-    [at JSXParserMixin.parseVarStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
+    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
+    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
+    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
+    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
+    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
+    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
+    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
+    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
+    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
+    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
+    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
+    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
+    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
+    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
+    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/ProjectButton.js [Client Component Browser]
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/ProjectButton.js [Client Component SSR]
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:06:54.793] Server  LOG      ✓ Compiled in 17ms
+[00:06:54.952] Browser ERROR   ./src/components/projects/ProjectButton.js
+Error evaluating Node.js code
+SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'true'. (17:31)
+
+  15 |     const handleActivate = (e) => {
+  16 |         setActiveProjectImage(img);
+> 17 |         setMouseInsideProject({true});
+     |                                ^
+  18 |     };
+  19 |
+  20 |     const handleClick = (e)=>{
+    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
+    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
+    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
+    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
+    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
+    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
+    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
+    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
+    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
+    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
+    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
+    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
+    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
+    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
+    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
+    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
+    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
+    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
+    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
+    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
+    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
+    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
+    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
+    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
+    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
+    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
     [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
     [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
     [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
@@ -883,31 +326,6 @@ SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectBut
     [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
     [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
     [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
-    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
-    [at JSXParserMixin.parseVar (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:402967)]
-    [at JSXParserMixin.parseVarStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:399366)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391398)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
-    [at JSXParserMixin.parseFunctionBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:378053)]
-    [at JSXParserMixin.parseFunctionBodyAndFinish (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:377675)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:404308]
-    [at JSXParserMixin.withSmartMixTopicForbiddingContext (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383677)]
-    [at JSXParserMixin.parseFunction (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:404262)]
-    [at JSXParserMixin.parseExportDefaultExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:414860)]
-    [at JSXParserMixin.parseExport (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:413097)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391808)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseModuleItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389055)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401400)]
 
 Import traces:
   Client Component Browser:
@@ -921,17 +339,36 @@ Import traces:
     ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:25:54.599] Browser ERROR   ./src/components/projects/ProjectButton.js:25:15
-Ecmascript file had an error
-  23 |         const showcase = document.getElementById("project_showcase")
-  24 |         const rect = showcase.getBoundingClientRect();
-> 25 |         const rect = {
-     |               ^^^^
-  26 |         top: rawRect.top,
-  27 |         left: rawRect.left,
-  28 |         width: rawRect.width,
+[00:07:04.108] Server  LOG      ✓ Compiled in 59ms
+[00:07:18.843] Server  LOG      ✓ Compiled in 62ms
+[00:07:22.405] Server  LOG      ✓ Compiled in 75ms
+[00:07:43.474] Server  LOG      ✓ Compiled in 13ms
+[00:07:46.794] Server  LOG      ✓ Compiled in 14ms
+[00:08:01.347] Server  LOG      ✓ Compiled in 14ms
+[00:08:07.917] Server  LOG      ✓ Compiled in 15ms
+[00:08:10.265] Server  LOG      ✓ Compiled in 14ms
+[00:08:14.426] Server  LOG      ✓ Compiled in 13ms
+[00:09:28.173] Server  LOG      ✓ Compiled in 55ms
+[00:09:32.274] Browser LOG     Called!
+[00:09:33.315] Browser LOG     Called!
+[00:09:34.224] Browser LOG     Called!
+[00:09:37.894] Server  LOG      ✓ Compiled in 71ms
+[00:09:39.994] Server  LOG      ✓ Compiled in 66ms
+[00:10:45.165] Server  LOG      ✓ Compiled in 13ms
+[00:11:01.183] Server  LOG      ✓ Compiled in 70ms
+[00:11:10.708] Server  LOG      ✓ Compiled in 68ms
+[00:11:24.341] Server  LOG      ✓ Compiled in 15ms
+[00:11:24.847] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
+Parsing ecmascript source code failed
+  44 |         onMouseLeave={()=> {
+  45 |             if(!isOverlayOpen)
+> 46 |                 setMouseInsideProject(false))
+     |                                             ^
+  47 |             }}>
+  48 |             <div>
+  49 |                 <img
 
-the name `rect` is defined multiple times
+Expected ';', '}' or <eof>
 
 Import traces:
   Client Component Browser:
@@ -945,78 +382,72 @@ Import traces:
     ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:26:01.583] Server  LOG      ✓ Compiled in 88ms
-[01:26:04.805] Server  LOG      ✓ Compiled in 79ms
-[01:26:13.973] Server  LOG      ✓ Compiled in 94ms
-[01:26:21.616] Server  LOG      ✓ Compiled in 72ms
-[01:26:29.631] Server  LOG      ✓ Compiled in 70ms
-[01:26:31.838] Server  LOG      ✓ Compiled in 61ms
-[01:26:39.801] Browser LOG     Close called!
-[01:26:46.001] Browser LOG     Close called!
-[01:27:27.725] Server  LOG      ✓ Compiled in 91ms
-[01:27:35.945] Server  LOG      ✓ Compiled in 83ms
-[01:29:05.623] Server  LOG      ✓ Compiled in 128ms
-[01:29:06.598] Browser ERROR   uncaughtError: ReferenceError: ghostImgRef is not defined
-[01:29:55.198] Server  LOG      ✓ Compiled in 21ms
-[01:29:55.841] Browser ERROR   ./src/components/projects/project_details/Overlay.js:15:5
+[00:11:27.992] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
 Parsing ecmascript source code failed
-  13 |     const { rectPos, selectedProject, isOverlayOpen } = useAppSelector((state) => state.project);
-  14 |     const ghostImgRef = 
-> 15 |     const dispatch = useAppDispatch();
-     |     ^^^^^
-  16 |
-  17 |     const containerRef = useRef(null);
-  18 |     const barsRef = useRef([]); // To store references to the 5 bars
+  44 |         onMouseLeave={()=> {
+  45 |             if(!isOverlayOpen)
+> 46 |                 setMouseInsideProject(false))
+     |                                             ^
+  47 |             }}>
+  48 |             <div>
+  49 |                 <img
 
-Expression expected
+Expected ';', '}' or <eof>
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
+    ./src/components/projects/ProjectButton.js [Client Component Browser]
+    ./src/components/projects/Projects.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
+    ./src/components/projects/ProjectButton.js [Client Component SSR]
+    ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:29:58.899] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:29:58.923] Server  LOG      ✓ Compiled in 80ms
-[01:30:07.716] Server  LOG      ✓ Compiled in 94ms
-[01:30:09.614] Server  LOG      ✓ Compiled in 77ms
-[01:30:17.118] Server  LOG      ✓ Compiled in 77ms
-[01:30:18.791] Server  LOG      ✓ Compiled in 75ms
-[01:30:21.256] Server  LOG      ✓ Compiled in 83ms
-[01:30:22.391] Server  LOG      ✓ Compiled in 67ms
-[01:30:27.147] Server  LOG      ✓ Compiled in 72ms
-[01:30:40.528] Server  LOG      ✓ Compiled in 92ms
-[01:31:27.788] Server  LOG      ✓ Compiled in 135ms
-[01:31:29.452] Server  LOG      ✓ Compiled in 105ms
-[01:31:41.373] Browser LOG     Close called!
-[01:31:54.449] Server  LOG      ✓ Compiled in 113ms
-[01:32:59.342] Server  LOG      ✓ Compiled in 87ms
-[01:33:22.307] Server  LOG      ✓ Compiled in 85ms
-[01:33:29.199] Server  LOG      ✓ Compiled in 84ms
-[01:33:36.181] Server  LOG      ✓ Compiled in 81ms
-[01:33:37.613] Server  LOG      ✓ Compiled in 79ms
-[01:33:40.004] Server  LOG      ✓ Compiled in 76ms
-[01:33:42.311] Server  LOG      ✓ Compiled in 97ms
-[01:33:45.949] Server  LOG      ✓ Compiled in 77ms
-[01:33:49.182] Server  LOG      ✓ Compiled in 72ms
-[01:34:05.494] Server  LOG      ✓ Compiled in 26ms
-[01:34:08.170] Server  LOG      ✓ Compiled in 23ms
-[01:34:10.377] Server  LOG      ✓ Compiled in 16ms
-[01:34:10.515] Browser ERROR   ./src/components/projects/ProjectShowcase.js:60:37
+[00:11:27.992] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
 Parsing ecmascript source code failed
-  58 |
-  59 |     return (
-> 60 |         <div ref={containerRef} id= className="lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full">
-     |                                     ^^^^^^^^^
-  61 |             <div 
-  62 |                 ref={maskRef}
-  63 |                 className="w-full h-full overflow-hidden" 
+  44 |         onMouseLeave={()=> {
+  45 |             if(!isOverlayOpen)
+> 46 |                 setMouseInsideProject(false))
+     |                                             ^
+  47 |             }}>
+  48 |             <div>
+  49 |                 <img
 
-JSX value should be either an expression or a quoted JSX text
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/ProjectButton.js [Client Component Browser]
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/ProjectButton.js [Client Component SSR]
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:11:28.883] Server  LOG      ✓ Compiled in 940ms
+[00:11:40.907] Browser LOG     Close called!
+[00:11:50.363] Server  LOG      ✓ Compiled in 106ms
+[00:11:54.396] Server  LOG      ✓ Compiled in 41ms
+[00:12:00.328] Server  LOG      ✓ Compiled in 77ms
+[00:15:07.235] Server  LOG      ✓ Compiled in 40ms
+[00:15:09.721] Server  LOG      ✓ Compiled in 16ms
+[00:15:10.481] Browser ERROR   ./src/components/projects/ProjectShowcase.js:13:9
+Parsing ecmascript source code failed
+  11 |     useEffect(() => {
+  12 |         const 
+> 13 |         gsap.context(() => {
+     |         ^^^^
+  14 |             if (mouseInsideProject) {
+  15 |                 // 1. UN-FOLD THE WRAPPER (Mask)
+  16 |                 gsap.fromTo(maskRef.current,
+
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
@@ -1030,1426 +461,35 @@ Import traces:
     ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:34:11.695] Server  LOG      ✓ Compiled in 30ms
-[01:34:16.549] Server  LOG      ✓ Compiled in 27ms
-[01:34:24.610] Server  LOG      ✓ Compiled in 49ms
-[01:34:40.821] Browser LOG     553
-[01:34:40.821] Browser LOG     383.5
-[01:34:40.821] Browser LOG     97.75
-[01:34:40.821] Browser LOG     987
-[01:35:16.617] Server  LOG      ✓ Compiled in 34ms
-[01:35:19.571] Server  LOG      ✓ Compiled in 33ms
-[01:35:22.110] Server  LOG      ✓ Compiled in 30ms
-[01:35:35.565] Server  LOG      ✓ Compiled in 88ms
-[01:35:36.196] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [] [[object Object]]
-[01:35:41.543] Browser LOG     Rect pos from redux :
-[01:35:41.543] Browser LOG     226.73333740234375
-[01:35:41.543] Browser LOG     729.5999755859375
-[01:35:41.543] Browser LOG     414.3999938964844
-[01:35:41.543] Browser LOG     383.5
-[01:35:41.543] Browser LOG     Original project picture dimensions: 
-[01:35:41.543] Browser LOG     414.3999938964844
-[01:35:41.543] Browser LOG     383.5
-[01:35:41.543] Browser LOG     226.73333740234375
-[01:35:41.543] Browser LOG     729.5999755859375
-[01:35:48.350] Browser LOG     Close called!
-[01:35:53.570] Browser LOG     Rect pos from redux :
-[01:35:53.570] Browser LOG     97.63333129882812
-[01:35:53.570] Browser LOG     987
-[01:35:53.570] Browser LOG     553
-[01:35:53.570] Browser LOG     383.5
-[01:35:53.570] Browser LOG     Original project picture dimensions: 
-[01:35:53.570] Browser LOG     553
-[01:35:53.570] Browser LOG     383.5
-[01:35:53.570] Browser LOG     97.63333129882812
-[01:35:53.570] Browser LOG     987
-[01:35:55.544] Browser LOG     Close called!
-[01:35:58.866] Browser LOG     Rect pos from redux :
-[01:35:58.866] Browser LOG     97.75
-[01:35:58.866] Browser LOG     987
-[01:35:58.866] Browser LOG     553
-[01:35:58.866] Browser LOG     383.5
-[01:35:58.866] Browser LOG     Original project picture dimensions: 
-[01:35:58.866] Browser LOG     553
-[01:35:58.866] Browser LOG     383.5
-[01:35:58.866] Browser LOG     97.75
-[01:35:58.866] Browser LOG     987
-[01:36:01.174] Browser LOG     Close called!
-[01:36:05.452] Browser LOG     Rect pos from redux :
-[01:36:05.452] Browser LOG     97.75
-[01:36:05.452] Browser LOG     987
-[01:36:05.453] Browser LOG     553
-[01:36:05.453] Browser LOG     383.5
-[01:36:05.453] Browser LOG     Original project picture dimensions: 
-[01:36:05.453] Browser LOG     553
-[01:36:05.453] Browser LOG     383.5
-[01:36:05.453] Browser LOG     97.75
-[01:36:05.453] Browser LOG     987
-[01:36:41.183] Server  LOG      ✓ Compiled in 100ms
-[01:36:42.862] Server  LOG      ✓ Compiled in 17ms
-[01:36:43.652] Browser ERROR   ./src/components/projects/project_details/Overlay.js:50:21
+[00:15:10.481] Browser ERROR   ./src/components/projects/ProjectShowcase.js:13:13
 Parsing ecmascript source code failed
-  48 |                     width: rectPos.width,
-  49 |                     height: rectPos.height
-> 50 |                     opacity: 1
-     |                     ^^^^^^^
-  51 |                 }, 0); // Start at time 0
-  52 |
-  53 |                 
-
-Expected ',', got 'opacity'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:36:58.813] Browser LOG     Rect pos from redux :
-[01:36:58.813] Browser LOG     97.75
-[01:36:58.813] Browser LOG     987
-[01:36:58.813] Browser LOG     553
-[01:36:58.813] Browser LOG     383.5
-[01:36:58.813] Browser LOG     Original project picture dimensions: 
-[01:36:58.813] Browser LOG     553
-[01:36:58.813] Browser LOG     383.5
-[01:36:58.813] Browser LOG     97.75
-[01:36:58.813] Browser LOG     987
-[01:37:02.248] Browser LOG     Close called!
-[01:37:03.350] Browser LOG     Close called!
-[01:37:03.839] Browser LOG     Close called!
-[01:37:04.051] Browser LOG     Close called!
-[01:37:04.225] Browser LOG     Close called!
-[01:37:04.426] Browser LOG     Close called!
-[01:37:04.610] Browser LOG     Close called!
-[01:37:05.718] Browser LOG     Close called!
-[01:37:05.899] Browser LOG     Close called!
-[01:37:13.700] Browser LOG     Rect pos from redux :
-[01:37:13.700] Browser LOG     97.76666259765625
-[01:37:13.700] Browser LOG     987
-[01:37:13.700] Browser LOG     553
-[01:37:13.700] Browser LOG     383.5
-[01:37:13.700] Browser LOG     Original project picture dimensions: 
-[01:37:13.700] Browser LOG     553
-[01:37:13.700] Browser LOG     383.5
-[01:37:13.700] Browser LOG     97.76666259765625
-[01:37:13.700] Browser LOG     987
-[01:37:41.109] Server  LOG      ✓ Compiled in 137ms
-[01:37:41.646] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [[object Object]] []
-[01:37:45.029] Server  LOG      ✓ Compiled in 134ms
-[01:37:45.077] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [] [[object Object]]
-[01:37:50.008] Browser LOG     Original project picture dimensions: 
-[01:37:50.008] Browser LOG     553
-[01:37:50.008] Browser LOG     383.5
-[01:37:50.008] Browser LOG     97.75
-[01:37:50.008] Browser LOG     987
-[01:37:53.120] Browser LOG     Close called!
-[01:37:57.370] Browser LOG     Original project picture dimensions: 
-[01:37:57.370] Browser LOG     553
-[01:37:57.370] Browser LOG     383.5
-[01:37:57.370] Browser LOG     97.75
-[01:37:57.370] Browser LOG     987
-[01:38:18.832] Browser LOG     Original project picture dimensions: 
-[01:38:18.832] Browser LOG     553
-[01:38:18.832] Browser LOG     383.5
-[01:38:18.832] Browser LOG     97.75
-[01:38:18.832] Browser LOG     987
-[01:38:50.606] Server  LOG      ✓ Compiled in 17ms
-[01:38:51.653] Browser ERROR   ./src/components/projects/project_details/Overlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                     ease: "power4.inOut",
-  59 |                     delay : 
-> 60 |                 }, 0.1); // Start slightly after bars begin
-     |                 ^
-  61 |             }
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:38:54.524] Server  LOG      ✓ Compiled in 151ms
-[01:38:57.941] Browser LOG     Original project picture dimensions: 
-[01:38:57.941] Browser LOG     553
-[01:38:57.941] Browser LOG     383.5
-[01:38:57.941] Browser LOG     97.75
-[01:38:57.941] Browser LOG     987
-[01:39:01.087] Browser LOG     Close called!
-[01:39:04.949] Browser LOG     Original project picture dimensions: 
-[01:39:04.949] Browser LOG     553
-[01:39:04.949] Browser LOG     383.5
-[01:39:04.949] Browser LOG     97.75
-[01:39:04.949] Browser LOG     987
-[01:39:23.342] Server  LOG      ✓ Compiled in 138ms
-[01:39:41.254] Browser LOG     Original project picture dimensions: 
-[01:39:41.254] Browser LOG     553
-[01:39:41.254] Browser LOG     383.5
-[01:39:41.254] Browser LOG     97.75
-[01:39:41.254] Browser LOG     987
-[01:41:51.001] Server  LOG      ✓ Compiled in 112ms
-[01:43:02.887] Server  LOG      ✓ Compiled in 107ms
-[01:43:09.723] Browser LOG     Original project picture dimensions: 
-[01:43:09.723] Browser LOG     553
-[01:43:09.723] Browser LOG     383.5
-[01:43:09.723] Browser LOG     97.75
-[01:43:09.723] Browser LOG     987
-[01:43:13.280] Browser LOG     Close called!
-[01:43:13.770] Browser LOG     Close called!
-[01:43:14.156] Browser LOG     Close called!
-[01:43:14.344] Browser LOG     Close called!
-[01:43:19.774] Browser LOG     Original project picture dimensions: 
-[01:43:19.774] Browser LOG     553
-[01:43:19.774] Browser LOG     383.5
-[01:43:19.774] Browser LOG     97.75
-[01:43:19.774] Browser LOG     987
-[01:43:23.666] Browser LOG     Close called!
-[01:43:44.209] Server  LOG      ✓ Compiled in 100ms
-[01:43:48.087] Server  LOG      ✓ Compiled in 45ms
-[01:45:05.917] Browser LOG     Original project picture dimensions: 
-[01:45:05.917] Browser LOG     553
-[01:45:05.917] Browser LOG     383.5
-[01:45:05.917] Browser LOG     97.75
-[01:45:05.917] Browser LOG     987
-[01:45:09.818] Browser LOG     Close called!
-[01:45:22.237] Server  LOG      ✓ Compiled in 109ms
-[01:45:26.336] Browser LOG     Original project picture dimensions: 
-[01:45:26.336] Browser LOG     553
-[01:45:26.336] Browser LOG     383.5
-[01:45:26.336] Browser LOG     97.75
-[01:45:26.336] Browser LOG     987
-[01:45:33.018] Server  LOG      ✓ Compiled in 96ms
-[01:45:37.071] Browser LOG     Original project picture dimensions: 
-[01:45:37.071] Browser LOG     553
-[01:45:37.071] Browser LOG     383.5
-[01:45:37.071] Browser LOG     97.75
-[01:45:37.071] Browser LOG     987
-[01:45:45.539] Browser LOG     Original project picture dimensions: 
-[01:45:45.540] Browser LOG     553
-[01:45:45.540] Browser LOG     383.5
-[01:45:45.540] Browser LOG     -31.23333740234375
-[01:45:45.540] Browser LOG     987
-[01:46:27.708] Browser LOG     Original project picture dimensions: 
-[01:46:27.708] Browser LOG     553
-[01:46:27.708] Browser LOG     383.5
-[01:46:27.708] Browser LOG     97.75
-[01:46:27.708] Browser LOG     987
-[01:50:03.653] Browser LOG     Original project picture dimensions: 
-[01:50:03.653] Browser LOG     553
-[01:50:03.653] Browser LOG     383.5
-[01:50:03.653] Browser LOG     97.75
-[01:50:03.653] Browser LOG     987
-[01:50:07.586] Browser LOG     Close called!
-[01:50:09.618] Browser LOG     Close called!
-[01:50:09.856] Browser LOG     Close called!
-[01:50:11.398] Browser LOG     Close called!
-[01:50:11.585] Browser LOG     Close called!
-[01:50:11.913] Browser LOG     Close called!
-[01:52:25.185] Server  LOG      ✓ Compiled in 100ms
-[01:52:29.608] Browser LOG     Original project picture dimensions: 
-[01:52:29.608] Browser LOG     553
-[01:52:29.608] Browser LOG     383.5
-[01:52:29.608] Browser LOG     99.21665954589844
-[01:52:29.608] Browser LOG     987
-[01:52:33.101] Browser LOG     Close called!
-[01:52:33.703] Browser LOG     Close called!
-[01:52:33.961] Browser LOG     Close called!
-[01:52:44.538] Server  LOG      ✓ Compiled in 128ms
-[01:52:45.498] Browser LOG     Close called!
-[01:52:46.027] Browser LOG     Close called!
-[01:52:46.773] Browser LOG     Close called!
-[01:52:53.562] Browser LOG     Close called!
-[01:52:54.116] Browser LOG     Close called!
-[01:52:54.587] Browser LOG     Close called!
-[01:52:59.493] Server  LOG      ✓ Compiled in 107ms
-[01:53:00.517] Browser LOG     Close called!
-[01:53:01.040] Browser LOG     Close called!
-[01:53:01.464] Browser LOG     Close called!
-[01:53:30.255] Server  LOG      ✓ Compiled in 119ms
-[01:53:31.901] Browser LOG     Close called!
-[01:53:33.391] Browser LOG     Close called!
-[01:53:34.254] Browser LOG     Close called!
-[01:53:34.459] Browser LOG     Close called!
-[01:53:38.568] Browser LOG     Original project picture dimensions: 
-[01:53:38.568] Browser LOG     553
-[01:53:38.568] Browser LOG     383.5
-[01:53:38.569] Browser LOG     97.75
-[01:53:38.569] Browser LOG     987
-[01:53:41.558] Browser LOG     Close called!
-[01:53:42.173] Browser LOG     Close called!
-[01:53:43.192] Browser LOG     Close called!
-[01:53:43.416] Browser LOG     Close called!
-[01:54:11.421] Browser LOG     Close called!
-[01:54:11.635] Browser LOG     Close called!
-[01:54:11.803] Browser LOG     Close called!
-[01:54:15.345] Server  LOG      ✓ Compiled in 125ms
-[01:54:19.199] Browser LOG     Original project picture dimensions: 
-[01:54:19.199] Browser LOG     553
-[01:54:19.199] Browser LOG     383.5
-[01:54:19.199] Browser LOG     -31.25
-[01:54:19.199] Browser LOG     987
-[01:54:26.769] Browser LOG     Close called!
-[01:54:27.305] Browser LOG     Close called!
-[01:54:27.632] Browser LOG     Close called!
-[01:54:27.883] Browser LOG     Close called!
-[01:54:55.760] Server  LOG      ✓ Compiled in 17ms
-[01:54:56.278] Browser ERROR   ./src/components/projects/project_details/Overlay.js:73:27
-Parsing ecmascript source code failed
-  71 |                 tlRef.current.play();
-  72 |         else
-> 73 |             tlRef.current.();
-     |                           ^
-  74 |     }, [isOverlayOpen])
-  75 |
-  76 |     const addToRefs = (el) => {
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:04.101] Server  LOG      ✓ Compiled in 17ms
-[01:55:04.284] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
+  11 |     useEffect(() => {
+  12 |         const 
+> 13 |         gsap.context(() => {
      |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
+  14 |             if (mouseInsideProject) {
+  15 |                 // 1. UN-FOLD THE WRAPPER (Mask)
+  16 |                 gsap.fromTo(maskRef.current,
 
-Expected ident
+Expected a semicolon
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
+    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
+    ./src/components/projects/Projects.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
+    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
+    ./src/components/projects/Projects.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:55:12.680] Server  LOG      ✓ Compiled in 19ms
-[01:55:13.315] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
-     |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:17.387] Server  LOG      ✓ Compiled in 18ms
-[01:55:18.420] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
-     |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:19.421] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
-     |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:31.145] Server  LOG      ✓ Compiled in 16ms
-[01:55:31.770] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
-     |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:32.769] Browser ERROR   ./src/components/projects/project_details/Overlay.js:63:13
-Parsing ecmascript source code failed
-  61 |
-  62 |                 tl.
-> 63 |             }
-     |             ^
-  64 |
-  65 |             tlRef.current = tl;
-  66 |             
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/Overlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/Overlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:55:49.805] Server  LOG      ✓ Compiled in 158ms
-[01:55:50.618] Browser LOG     Close called!
-[01:55:54.874] Browser LOG     Close called!
-[01:56:10.079] Server  LOG      ✓ Compiled in 132ms
-[01:56:15.921] Browser LOG     Original project picture dimensions: 
-[01:56:15.921] Browser LOG     553
-[01:56:15.921] Browser LOG     383.5
-[01:56:15.921] Browser LOG     226.75
-[01:56:15.921] Browser LOG     987
-[01:56:18.078] Browser LOG     Close called!
-[01:56:18.380] Browser LOG     Close called!
-[01:56:18.639] Browser LOG     Close called!
-[01:56:56.214] Server  LOG      ✓ Compiled in 137ms
-[01:56:59.991] Browser LOG     Original project picture dimensions: 
-[01:56:59.991] Browser LOG     553
-[01:56:59.991] Browser LOG     383.5
-[01:56:59.991] Browser LOG     96.66667175292969
-[01:56:59.991] Browser LOG     987
-[01:57:02.247] Browser LOG     Close called!
-[01:57:03.370] Browser LOG     Close called!
-[01:57:03.886] Browser LOG     Close called!
-[01:57:06.269] Server  LOG      ✓ Compiled in 110ms
-[01:57:22.670] Server  LOG      ✓ Compiled in 94ms
-[01:57:26.565] Browser LOG     Original project picture dimensions: 
-[01:57:26.565] Browser LOG     553
-[01:57:26.565] Browser LOG     383.5
-[01:57:26.565] Browser LOG     -32.76666259765625
-[01:57:26.565] Browser LOG     987
-[01:57:36.193] Server  LOG      ✓ Compiled in 103ms
-[01:57:40.213] Browser LOG     Original project picture dimensions: 
-[01:57:40.213] Browser LOG     553
-[01:57:40.213] Browser LOG     383.5
-[01:57:40.213] Browser LOG     -160.23333740234375
-[01:57:40.213] Browser LOG     987
-[01:57:42.079] Browser LOG     Close called!
-[01:57:43.991] Browser LOG     Close called!
-[01:57:46.934] Server  LOG      ✓ Compiled in 60ms
-[01:58:17.683] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.683] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.685] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.686] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.700] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.701] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.701] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.702] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.704] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.705] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.706] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.707] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.709] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.710] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.711] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.713] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.715] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.717] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.718] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.720] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.721] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.722] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.724] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.725] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.728] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.728] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.729] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.730] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.731] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.733] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.734] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.735] Server  ERROR    ⨯ ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:58:17.736] Server  LOG      ✓ Compiled in 36ms
-[01:58:18.071] Browser ERROR   ./src/app/page.js:8:1
-Module not found: Can't resolve '@/components/projects/project_details/Overlay'
-   6 | import Projects from "@/components/projects/Projects";
-   7 | import ScrollSmoother from "gsap/dist/ScrollSmoother";
->  8 | import ProjectDetailsOverlay from "@/components/projects/project_details/Overlay";
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { useEffect, useRef } from "react";
-  10 | import gsap from "gsap";
-  11 |
-
-Import map: aliased to relative './src/components/projects/project_details/Overlay' inside of [project]/
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[01:58:23.670] Browser LOG     Original project picture dimensions: 
-[01:58:23.670] Browser LOG     553
-[01:58:23.670] Browser LOG     383.5
-[01:58:23.670] Browser LOG     97.78334045410156
-[01:58:23.670] Browser LOG     987
-[01:58:26.136] Browser LOG     Close called!
-[01:58:26.346] Browser LOG     Close called!
-[01:58:48.341] Server  LOG      ✓ Compiled in 116ms
-[01:58:59.775] Server  LOG      ✓ Compiled in 125ms
-[01:59:01.355] Server  LOG      ✓ Compiled in 110ms
-[01:59:04.530] Server  LOG      ✓ Compiled in 47ms
-[01:59:05.606] Server  LOG      ✓ Compiled in 87ms
-[01:59:51.323] Server  LOG      ✓ Compiled in 102ms
-[01:59:53.356] Browser LOG     Else!
-[02:00:00.641] Browser LOG     Original project picture dimensions: 
-[02:00:00.641] Browser LOG     414.3999938964844
-[02:00:00.641] Browser LOG     383.5
-[02:00:00.641] Browser LOG     -31.25
-[02:00:00.641] Browser LOG     729.5999755859375
-[02:00:04.077] Browser LOG     Close called!
-[02:00:04.077] Browser LOG     Else!
-[02:00:15.213] Server  LOG      ✓ Compiled in 88ms
-[02:00:17.446] Server  LOG      ✓ Compiled in 44ms
-[02:00:20.518] Server  LOG      ✓ Compiled in 80ms
-[02:00:21.859] Server  LOG      ✓ Compiled in 42ms
-[02:00:28.507] Server  LOG      ✓ Compiled in 41ms
-[02:00:46.241] Server  LOG      ✓ Compiled in 87ms
-[02:01:01.846] Browser LOG     Original project picture dimensions: 
-[02:01:01.846] Browser LOG     553
-[02:01:01.846] Browser LOG     383.5
-[02:01:01.846] Browser LOG     97.75
-[02:01:01.846] Browser LOG     987
-[02:01:14.906] Server  LOG      ✓ Compiled in 81ms
-[02:01:16.867] Server  LOG      ✓ Compiled in 86ms
-[02:01:18.624] Server  LOG      ✓ Compiled in 79ms
-[02:04:25.153] Server  LOG      ✓ Compiled in 15ms
-[02:05:13.584] Browser LOG     Original project picture dimensions: 
-[02:05:13.584] Browser LOG     553
-[02:05:13.584] Browser LOG     383.5
-[02:05:13.584] Browser LOG     97.75
-[02:05:13.584] Browser LOG     987
-[02:05:15.928] Browser LOG     Close called!
-[02:05:21.524] Browser LOG     Original project picture dimensions: 
-[02:05:21.524] Browser LOG     553
-[02:05:21.524] Browser LOG     383.5
-[02:05:21.524] Browser LOG     97.75
-[02:05:21.524] Browser LOG     987
-[02:05:24.803] Browser LOG     Close called!
-[02:05:48.883] Browser LOG     Original project picture dimensions: 
-[02:05:48.883] Browser LOG     553
-[02:05:48.883] Browser LOG     383.5
-[02:05:48.883] Browser LOG     97.75
-[02:05:48.883] Browser LOG     987
-[02:05:52.346] Browser LOG     Close called!
-[02:05:59.509] Browser LOG     Original project picture dimensions: 
-[02:05:59.509] Browser LOG     553
-[02:05:59.509] Browser LOG     383.5
-[02:05:59.509] Browser LOG     -31.183334350585938
-[02:05:59.509] Browser LOG     987
-[02:06:02.052] Browser LOG     Close called!
-[02:07:32.092] Browser LOG     Original project picture dimensions: 
-[02:07:32.092] Browser LOG     553
-[02:07:32.092] Browser LOG     383.5
-[02:07:32.092] Browser LOG     97.75
-[02:07:32.092] Browser LOG     987
-[02:07:34.876] Browser LOG     Close called!
-[02:08:08.944] Server  LOG      ✓ Compiled in 58ms
-[02:08:16.885] Server  LOG      ✓ Compiled in 46ms
-[02:08:21.505] Server  LOG      ✓ Compiled in 35ms
-[02:08:54.029] Server  LOG      ✓ Compiled in 70ms
-[02:09:11.982] Server  LOG      ✓ Compiled in 76ms
-[02:09:19.954] Server  LOG      ✓ Compiled in 66ms
-[02:10:07.356] Server  LOG      ✓ Compiled in 18ms
-[02:10:07.767] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:25:13
-Parsing ecmascript source code failed
-  23 |                 paused : true,
-  24 |                 onReverseComplete : 
-> 25 |             });
-     |             ^
-  26 |
-  27 |             tl
-  28 |             .to(containerRef.current, {
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:10:09.767] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:24:37
-Parsing ecmascript source code failed
-  22 |             const tl = gsap.timeline({
-  23 |                 paused : true,
-> 24 |                 onReverseComplete : ()
-     |                                     ^^
-  25 |             });
-  26 |
-  27 |             tl
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:10:14.385] Server  LOG      ✓ Compiled in 54ms
-[02:10:23.326] Browser LOG     Close called!
-[02:10:32.403] Server  LOG      ✓ Compiled in 57ms
-[02:10:38.121] Server  LOG      ✓ Compiled in 57ms
+[00:15:18.404] Server  LOG      ✓ Compiled in 46ms
+[00:15:19.924] Server  LOG      ✓ Compiled in 68ms
+[00:15:25.900] Server  LOG      ✓ Compiled in 65ms
+[00:15:29.850] Server  LOG      ✓ Compiled in 56ms
+[00:15:31.981] Server  LOG      ✓ Compiled in 60ms
+[00:15:45.925] Server  LOG      ✓ Compiled in 85ms
+[00:15:48.412] Server  LOG      ✓ Compiled in 60ms
+[00:15:57.225] Server  LOG      ✓ Compiled in 60ms

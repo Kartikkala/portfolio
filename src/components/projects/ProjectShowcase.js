@@ -2,15 +2,15 @@ import { useAppSelector } from "@/lib/hooks";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-export default function ProjectShowcase({ activeProjectImage, mouseState }) {
+export default function ProjectShowcase({ activeProjectImage }) {
     const containerRef = useRef(null);
     const maskRef = useRef(null); // The div that unfolds (Clip Path)
     const imgRef = useRef(null);  // The image that scales (Zoom)
-    const {isOverlayOpen} = useAppSelector((state)=> state.project)
+    const {isOverlayOpen, mouseInsideProject} = useAppSelector((state)=> state.project)
 
     useEffect(() => {
         gsap.context(() => {
-            if (mouseState) {
+            if (mouseInsideProject) {
                 // 1. UN-FOLD THE WRAPPER (Mask)
                 gsap.fromTo(maskRef.current,
                     {
@@ -52,7 +52,7 @@ export default function ProjectShowcase({ activeProjectImage, mouseState }) {
                 });
             }
         }, containerRef);
-    }, [mouseState, activeProjectImage, isOverlayOpen]);
+    }, [mouseInsideProject, activeProjectImage, isOverlayOpen]);
 
     return (
         <div ref={containerRef} id="project_showcase" className="lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full">

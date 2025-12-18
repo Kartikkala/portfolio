@@ -3,13 +3,17 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     selectedProject: null,
     isOverlayOpen: false,
-    rectPos : null
+    rectPos : null,
+    mouseInsideProject : false,
 };
 
 export const projectSlice = createSlice({
     name: 'project',
     initialState,
     reducers: {
+        setMouseInsideProject: (state, action) =>{
+            state.mouseInsideProject = action.payload
+        },
         // Call this when user clicks a project
         openProject: (state, action) => {
             state.selectedProject = action.payload.project;
@@ -23,5 +27,5 @@ export const projectSlice = createSlice({
     },
 });
 
-export const { openProject, closeProject } = projectSlice.actions;
+export const { openProject, closeProject, setMouseInsideProject } = projectSlice.actions;
 export default projectSlice.reducer;

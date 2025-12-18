@@ -16,19 +16,25 @@ __turbopack_context__.s([
     "openProject",
     ()=>openProject,
     "projectSlice",
-    ()=>projectSlice
+    ()=>projectSlice,
+    "setMouseInsideProject",
+    ()=>setMouseInsideProject
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs [app-ssr] (ecmascript) <locals>");
 ;
 const initialState = {
     selectedProject: null,
     isOverlayOpen: false,
-    rectPos: null
+    rectPos: null,
+    mouseInsideProject: false
 };
 const projectSlice = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createSlice"])({
     name: 'project',
     initialState,
     reducers: {
+        setMouseInsideProject: (state, action)=>{
+            state.mouseInsideProject = action.payload;
+        },
         // Call this when user clicks a project
         openProject: (state, action)=>{
             state.selectedProject = action.payload.project;
@@ -41,7 +47,7 @@ const projectSlice = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
         }
     }
 });
-const { openProject, closeProject } = projectSlice.actions;
+const { openProject, closeProject, setMouseInsideProject } = projectSlice.actions;
 const __TURBOPACK__default__export__ = projectSlice.reducer;
 }),
 "[project]/src/lib/store.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {

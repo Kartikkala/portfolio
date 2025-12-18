@@ -31,11 +31,11 @@ const projects = [
 
 export default function Projects({}){
     const [activeProjectImage, setActiveProjectImage] = useState(null)
-    const [mouseState, setMouseState] = useState(false)
+    
     return (
         <div className="h-screen w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
             <div className="absolute md:right-10 h-full w-[90%] md:w-fit self-center flex flex-col justify-center mb-20">
-                <ProjectShowcase activeProjectImage={activeProjectImage} mouseState={mouseState}/>
+                <ProjectShowcase activeProjectImage={activeProjectImage}/>
             </div>
 
             <div className="gap-4 w-full flex p-4 md:justify-between md:p-10 flex-col">
@@ -54,8 +54,7 @@ export default function Projects({}){
                         {projects.map((project, key)=>{
                             return <ProjectButton projectData={project} key={key} img={project.img} 
                             setActiveProjectImage={setActiveProjectImage} 
-                            activeProjectImage={activeProjectImage} 
-                            setMouseState={setMouseState}/>
+                            activeProjectImage={activeProjectImage} />
                         })}
                     </div>
                 </div>
