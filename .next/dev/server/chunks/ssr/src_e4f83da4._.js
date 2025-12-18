@@ -797,53 +797,45 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 function ProjectShowcase({ activeProjectImage }) {
-    const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const maskRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null); // The div that unfolds (Clip Path)
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null); // The image that scales (Zoom)
+    const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const { isOverlayOpen, mouseInsideProject } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAppSelector"])((state)=>state.project);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context(()=>{
-            if (mouseInsideProject) {
-                // 1. UN-FOLD THE WRAPPER (Mask)
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(maskRef.current, {
-                    clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
-                }, {
-                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                    duration: 0.7,
-                    ease: "power3.out",
-                    overwrite: true
-                });
-                // 2. ZOOM THE IMAGE (Inside the mask)
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(imgRef.current, {
-                    scale: 1.3
-                }, {
-                    scale: 1,
-                    duration: 0.5,
-                    ease: "power3.out",
-                    overwrite: true
-                });
-            } else {
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(maskRef.current, {
-                    clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
-                    duration: 0.7,
-                    ease: "power3.in",
-                    overwrite: true
-                });
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(imgRef.current, {
-                    duration: 0.8,
-                    scale: 1.3,
-                    ease: "power3.in",
-                    overwrite: true
-                });
-            }
-        }, containerRef);
+        const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
+            paused: true
+        });
+        tl.fromTo(maskRef.current, {
+            clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+        }, {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            duration: 0.7,
+            ease: "power3.out",
+            overwrite: true
+        }).fromTo(imgRef.current, {
+            scale: 1.3
+        }, {
+            scale: 1,
+            duration: 0.5,
+            ease: "power3.out",
+            overwrite: true
+        }, "<");
+        tlRef.current = tl;
+    }, [
+        activeProjectImage
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!tlRef.current) return;
+        else if (mouseInsideProject) tlRef.current.play();
+        else {
+            tlRef.current.reverse();
+        }
     }, [
         mouseInsideProject,
         activeProjectImage,
         isOverlayOpen
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: containerRef,
         id: "project_showcase",
         className: "lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -858,17 +850,17 @@ function ProjectShowcase({ activeProjectImage }) {
                 className: "object-cover w-full h-full origin-center"
             }, void 0, false, {
                 fileName: "[project]/src/components/projects/ProjectShowcase.js",
-                lineNumber: 64,
+                lineNumber: 58,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/ProjectShowcase.js",
-            lineNumber: 59,
+            lineNumber: 53,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/projects/ProjectShowcase.js",
-        lineNumber: 58,
+        lineNumber: 52,
         columnNumber: 9
     }, this);
 }
@@ -1039,6 +1031,7 @@ function ProjectDetailsOverlay() {
             paused: true,
             onReverseComplete: ()=>{
                 document.body.style.overflow = "";
+                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["closeProject"])());
             }
         });
         tl.to(containerRef.current, {
@@ -1079,8 +1072,7 @@ function ProjectDetailsOverlay() {
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (!tlRef.current) return;
-        else if (isOverlayOpen) tlRef.current.play();
-        else tlRef.current.reverse();
+        if (isOverlayOpen) tlRef.current.play();
     }, [
         isOverlayOpen
     ]);
@@ -1090,8 +1082,7 @@ function ProjectDetailsOverlay() {
         }
     };
     const handleClose = ()=>{
-        dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["closeProject"])());
-        console.log("Close called!");
+        tlRef.current.reverse();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: containerRef,
@@ -1104,7 +1095,7 @@ function ProjectDetailsOverlay() {
                     className: "w-1/5 h-full bg-amber-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 99,
+                    lineNumber: 97,
                     columnNumber: 17
                 }, this)),
             selectedProject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1114,7 +1105,7 @@ function ProjectDetailsOverlay() {
                 className: "fixed z-35 object-cover shadow-2xl opacity-0"
             }, void 0, false, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 108,
+                lineNumber: 106,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1127,25 +1118,25 @@ function ProjectDetailsOverlay() {
                             children: "X"
                         }, void 0, false, {
                             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                            lineNumber: 117,
+                            lineNumber: 115,
                             columnNumber: 81
                         }, this),
                         " Close"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 117,
+                    lineNumber: 115,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 116,
+                lineNumber: 114,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-        lineNumber: 96,
+        lineNumber: 94,
         columnNumber: 9
     }, this);
 }

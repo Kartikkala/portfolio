@@ -1,495 +1,327 @@
-[00:00:00.645] Server  LOG      ✓ Ready in 389ms
-[00:00:04.723] Server  LOG      ○ Compiling / ...
-[00:04:41.728] Browser LOG     Close called!
-[00:06:06.196] Server  LOG      ✓ Compiled in 75ms
-[00:06:06.576] Browser ERROR   ./src/components/projects/ProjectButton.js
-Error evaluating Node.js code
-SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
+[00:00:00.656] Server  LOG      ✓ Ready in 397ms
+[00:00:05.136] Server  LOG      ○ Compiling / ...
+[00:00:14.746] Browser LOG     Close called!
+[00:00:45.988] Server  LOG      ✓ Compiled in 87ms
+[00:00:46.757] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-   9 |     useEffect(()=>{
-  10 |         if(!isOverlayOpen){
-> 11 |             setMouseInsideProject({false})
-     |                                    ^
-  12 |         }
-  13 |     }, [isOverlayOpen])
-  14 |     
-    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
-    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
-    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
-    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
-    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
-    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
-    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
-    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
-    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
-    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
-    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
-    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
-    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
-    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
-    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
+Previous: %s
+Incoming: %s useEffect [] [false, /p1.webp]
+[00:01:31.709] Server  LOG      ✓ Compiled in 70ms
+[00:01:34.427] Server  LOG      ✓ Compiled in 35ms
+[00:01:40.461] Server  LOG      ✓ Compiled in 36ms
+[00:01:43.463] Server  LOG      ✓ Compiled in 57ms
+[00:01:51.114] Browser LOG     Close called!
+[00:02:01.505] Server  LOG      ✓ Compiled in 62ms
+[00:02:02.641] Server  LOG      ✓ Compiled in 67ms
+[00:02:07.772] Browser LOG     Close called!
+[00:02:17.239] Server  LOG      ✓ Compiled in 34ms
+[00:02:18.658] Server  LOG      ✓ Compiled in 53ms
+[00:02:21.145] Server  LOG      ✓ Compiled in 29ms
+[00:02:39.878] Server  LOG      ✓ Compiled in 69ms
+[00:02:39.970] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:41.511] Server  LOG      ✓ Compiled in 19ms
-[00:06:41.805] Browser ERROR   ./src/components/projects/ProjectButton.js
-Error evaluating Node.js code
-SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
-
-   9 |     useEffect(()=>{
-  10 |         if(!isOverlayOpen){
-> 11 |             setMouseInsideProject({false})
-     |                                    ^
-  12 |         }
-  13 |     }, [isOverlayOpen])
-  14 |     
-    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
-    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
-    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
-    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
-    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
-    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
-    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
-    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
-    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
-    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
-    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
-    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
-    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
-    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
-    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:41.805] Browser ERROR   ./src/lib/slices/projectSlice.js:16:9
+Previous: %s
+Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [false, /p1.webp] [/p1.webp]
+[00:02:54.176] Browser LOG     Close called!
+[00:03:01.761] Server  LOG      ✓ Compiled in 34ms
+[00:04:57.675] Server  LOG      ✓ Compiled in 128ms
+[00:05:08.754] Server  LOG      ✓ Compiled in 88ms
+[00:06:54.457] Server  LOG      ✓ Compiled in 16ms
+[00:06:55.206] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:19:11
 Parsing ecmascript source code failed
-  14 |         setMouseInsideProject: (state, action) =>{
-  15 |             state.mouseInsideProject = action.payload.
-> 16 |         },
-     |         ^
-  17 |         // Call this when user clicks a project
-  18 |         openProject: (state, action) => {
-  19 |             state.selectedProject = action.payload.project;
-
-Expected ident
-
-Import traces:
-  #1 [Client Component Browser]:
-    ./src/lib/slices/projectSlice.js [Client Component Browser]
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  #2 [Client Component SSR]:
-    ./src/lib/slices/projectSlice.js [Client Component SSR]
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-
-  #3 [Client Component Browser]:
-    ./src/lib/slices/projectSlice.js [Client Component Browser]
-    ./src/lib/store.js [Client Component Browser]
-    ./src/app/StoreProvider.jsx [Client Component Browser]
-    ./src/app/StoreProvider.jsx [Server Component]
-    ./src/app/layout.js [Server Component]
-
-  #4 [Client Component SSR]:
-    ./src/lib/slices/projectSlice.js [Client Component SSR]
-    ./src/lib/store.js [Client Component SSR]
-    ./src/app/StoreProvider.jsx [Client Component SSR]
-    ./src/app/StoreProvider.jsx [Server Component]
-    ./src/app/layout.js [Server Component]
-[00:06:43.439] Server  LOG      ✓ Compiled in 16ms
-[00:06:43.805] Browser ERROR   ./src/components/projects/ProjectButton.js
-Error evaluating Node.js code
-SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'false'. (11:35)
-
-   9 |     useEffect(()=>{
-  10 |         if(!isOverlayOpen){
-> 11 |             setMouseInsideProject({false})
-     |                                    ^
-  12 |         }
-  13 |     }, [isOverlayOpen])
-  14 |     
-    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
-    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
-    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
-    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
-    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
-    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
-    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
-    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
-    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
-    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
-    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
-    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
-    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
-    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:391525)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389328)]
-    [at JSXParserMixin.parseIfStatement (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:397209)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:390238)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:54.793] Server  LOG      ✓ Compiled in 17ms
-[00:06:54.952] Browser ERROR   ./src/components/projects/ProjectButton.js
-Error evaluating Node.js code
-SyntaxError: /home/sirkartik/vscode/portfolio/src/components/projects/ProjectButton.js: Unexpected keyword 'true'. (17:31)
-
-  15 |     const handleActivate = (e) => {
-  16 |         setActiveProjectImage(img);
-> 17 |         setMouseInsideProject({true});
-     |                                ^
-  18 |     };
-  19 |
-  20 |     const handleClick = (e)=>{
-    [at constructor (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:137105)]
-    [at JSXParserMixin.raise (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:194164)]
-    [at JSXParserMixin.checkReservedWord (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:380094)]
-    [at JSXParserMixin.parseObjectProperty (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375135)]
-    [at JSXParserMixin.parseObjPropValue (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:375659)]
-    [at JSXParserMixin.parsePropertyDefinition (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:374146)]
-    [at JSXParserMixin.parseObjectLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:372491)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361743)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350260]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383968)]
-    [at JSXParserMixin.parseMaybeAssignAllowIn (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350239)]
-    [at JSXParserMixin.parseExprListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:379439)]
-    [at JSXParserMixin.parseCallExpressionArguments (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:359871)]
-    [at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:358287)]
-    [at JSXParserMixin.parseSubscript (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:357044)]
-    [at JSXParserMixin.parseSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356583)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356437)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-    [at JSXParserMixin.parseExprOps (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352281)]
-    [at JSXParserMixin.parseMaybeConditional (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:351760)]
-    [at JSXParserMixin.parseMaybeAssign (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:350714)]
-    [at JSXParserMixin.parseExpressionBase (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349863)]
-    [at /home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349774]
-    [at JSXParserMixin.allowInAnd (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:383926)]
-    [at JSXParserMixin.parseExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:349753)]
-    [at JSXParserMixin.parseStatementContent (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:392082)]
-    [at JSXParserMixin.parseStatementLike (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389494)]
-    [at JSXParserMixin.parseStatementListItem (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:389120)]
-    [at JSXParserMixin.parseBlockOrModuleBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401423)]
-    [at JSXParserMixin.parseBlockBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:401223)]
-    [at JSXParserMixin.parseBlock (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:400923)]
-    [at JSXParserMixin.parseFunctionBody (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:378053)]
-    [at JSXParserMixin.parseArrowExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:377398)]
-    [at JSXParserMixin.parseParenAndDistinguishExpression (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:369594)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:361477)]
-    [at JSXParserMixin.parseExprAtom (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:269272)]
-    [at JSXParserMixin.parseExprSubscripts (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:356364)]
-    [at JSXParserMixin.parseUpdate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355963)]
-    [at JSXParserMixin.parseMaybeUnary (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:355527)]
-    [at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/sirkartik/vscode/portfolio/node_modules/next/dist/compiled/babel/bundle.js:191:352169)]
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:04.108] Server  LOG      ✓ Compiled in 59ms
-[00:07:18.843] Server  LOG      ✓ Compiled in 62ms
-[00:07:22.405] Server  LOG      ✓ Compiled in 75ms
-[00:07:43.474] Server  LOG      ✓ Compiled in 13ms
-[00:07:46.794] Server  LOG      ✓ Compiled in 14ms
-[00:08:01.347] Server  LOG      ✓ Compiled in 14ms
-[00:08:07.917] Server  LOG      ✓ Compiled in 15ms
-[00:08:10.265] Server  LOG      ✓ Compiled in 14ms
-[00:08:14.426] Server  LOG      ✓ Compiled in 13ms
-[00:09:28.173] Server  LOG      ✓ Compiled in 55ms
-[00:09:32.274] Browser LOG     Called!
-[00:09:33.315] Browser LOG     Called!
-[00:09:34.224] Browser LOG     Called!
-[00:09:37.894] Server  LOG      ✓ Compiled in 71ms
-[00:09:39.994] Server  LOG      ✓ Compiled in 66ms
-[00:10:45.165] Server  LOG      ✓ Compiled in 13ms
-[00:11:01.183] Server  LOG      ✓ Compiled in 70ms
-[00:11:10.708] Server  LOG      ✓ Compiled in 68ms
-[00:11:24.341] Server  LOG      ✓ Compiled in 15ms
-[00:11:24.847] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
-Parsing ecmascript source code failed
-  44 |         onMouseLeave={()=> {
-  45 |             if(!isOverlayOpen)
-> 46 |                 setMouseInsideProject(false))
-     |                                             ^
-  47 |             }}>
-  48 |             <div>
-  49 |                 <img
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:11:27.992] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
-Parsing ecmascript source code failed
-  44 |         onMouseLeave={()=> {
-  45 |             if(!isOverlayOpen)
-> 46 |                 setMouseInsideProject(false))
-     |                                             ^
-  47 |             }}>
-  48 |             <div>
-  49 |                 <img
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:11:27.992] Browser ERROR   ./src/components/projects/ProjectButton.js:46:45
-Parsing ecmascript source code failed
-  44 |         onMouseLeave={()=> {
-  45 |             if(!isOverlayOpen)
-> 46 |                 setMouseInsideProject(false))
-     |                                             ^
-  47 |             }}>
-  48 |             <div>
-  49 |                 <img
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/ProjectButton.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/ProjectButton.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:11:28.883] Server  LOG      ✓ Compiled in 940ms
-[00:11:40.907] Browser LOG     Close called!
-[00:11:50.363] Server  LOG      ✓ Compiled in 106ms
-[00:11:54.396] Server  LOG      ✓ Compiled in 41ms
-[00:12:00.328] Server  LOG      ✓ Compiled in 77ms
-[00:15:07.235] Server  LOG      ✓ Compiled in 40ms
-[00:15:09.721] Server  LOG      ✓ Compiled in 16ms
-[00:15:10.481] Browser ERROR   ./src/components/projects/ProjectShowcase.js:13:9
-Parsing ecmascript source code failed
-  11 |     useEffect(() => {
-  12 |         const 
-> 13 |         gsap.context(() => {
-     |         ^^^^
-  14 |             if (mouseInsideProject) {
-  15 |                 // 1. UN-FOLD THE WRAPPER (Mask)
-  16 |                 gsap.fromTo(maskRef.current,
+  17 |     const containerRef = useRef(null);
+  18 |     const ghostImgRef = useRef(null);
+> 19 |     const local
+     |           ^^^^^
+  20 |     const tlRef = useRef(null);
+  21 |
+  22 |     useEffect(() => {
 
 'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:15:10.481] Browser ERROR   ./src/components/projects/ProjectShowcase.js:13:13
+[00:06:57.207] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:5
 Parsing ecmascript source code failed
-  11 |     useEffect(() => {
-  12 |         const 
-> 13 |         gsap.context(() => {
-     |             ^
-  14 |             if (mouseInsideProject) {
-  15 |                 // 1. UN-FOLD THE WRAPPER (Mask)
-  16 |                 gsap.fromTo(maskRef.current,
+  18 |     const ghostImgRef = useRef(null);
+  19 |     const 
+> 20 |     const tlRef = useRef(null);
+     |     ^^^^^
+  21 |
+  22 |     useEffect(() => {
+  23 |             const tl = gsap.timeline({
 
-Expected a semicolon
+Expected ident
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/ProjectShowcase.js [Client Component Browser]
-    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/ProjectShowcase.js [Client Component SSR]
-    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:15:18.404] Server  LOG      ✓ Compiled in 46ms
-[00:15:19.924] Server  LOG      ✓ Compiled in 68ms
-[00:15:25.900] Server  LOG      ✓ Compiled in 65ms
-[00:15:29.850] Server  LOG      ✓ Compiled in 56ms
-[00:15:31.981] Server  LOG      ✓ Compiled in 60ms
-[00:15:45.925] Server  LOG      ✓ Compiled in 85ms
-[00:15:48.412] Server  LOG      ✓ Compiled in 60ms
-[00:15:57.225] Server  LOG      ✓ Compiled in 60ms
+[00:06:58.208] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:19:11
+Parsing ecmascript source code failed
+  17 |     const containerRef = useRef(null);
+  18 |     const ghostImgRef = useRef(null);
+> 19 |     const local
+     |           ^^^^^
+  20 |     const tlRef = useRef(null);
+  21 |
+  22 |     useEffect(() => {
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:03.336] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:11
+Parsing ecmascript source code failed
+  18 |     const ghostImgRef = useRef(null);
+  19 |     const tlRef = useRef(null);
+> 20 |     const localOverlay
+     |           ^^^^^^^^^^^^
+  21 |
+  22 |     useEffect(() => {
+  23 |             const tl = gsap.timeline({
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:05.337] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
+Parsing ecmascript source code failed
+  19 |     const tlRef = useRef(null);
+  20 |     
+> 21 |     const localOverlay
+     |           ^^^^^^^^^^^^
+  22 |
+  23 |     useEffect(() => {
+  24 |             const tl = gsap.timeline({
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:07.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:11
+Parsing ecmascript source code failed
+  18 |     const ghostImgRef = useRef(null);
+  19 |     const tlRef = useRef(null);
+> 20 |     const localOverlay
+     |           ^^^^^^^^^^^^
+  21 |
+  22 |     useEffect(() => {
+  23 |             const tl = gsap.timeline({
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:08.356] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
+Parsing ecmascript source code failed
+  19 |     const tlRef = useRef(null);
+  20 |     
+> 21 |     const localOverlay
+     |           ^^^^^^^^^^^^
+  22 |
+  23 |     useEffect(() => {
+  24 |             const tl = gsap.timeline({
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:13.535] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
+Parsing ecmascript source code failed
+  19 |     const tlRef = useRef(null);
+  20 |
+> 21 |     const [localOverlay]
+     |           ^^^^^^^^^^^^^^
+  22 |
+  23 |     useEffect(() => {
+  24 |             const tl = gsap.timeline({
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:07:22.199] Server  LOG      ✓ Compiled in 77ms
+[00:07:24.590] Server  LOG      ✓ Compiled in 111ms
+[00:07:33.609] Server  LOG      ✓ Compiled in 94ms
+[00:07:37.261] Server  LOG      ✓ Compiled in 89ms
+[00:07:53.635] Server  LOG      ✓ Compiled in 98ms
+[00:08:01.191] Server  LOG      ✓ Compiled in 77ms
+[00:08:33.272] Server  LOG      ✓ Compiled in 141ms
+[00:08:44.302] Server  LOG      ✓ Compiled in 99ms
+[00:08:48.252] Server  LOG      ✓ Compiled in 51ms
+[00:09:10.123] Server  LOG      ✓ Compiled in 55ms
+[00:09:22.152] Server  LOG      ✓ Compiled in 53ms
+[00:09:32.926] Server  LOG      ✓ Compiled in 87ms
+[00:12:51.699] Server  LOG      ✓ Compiled in 103ms
+[00:12:58.949] Server  LOG      ✓ Compiled in 83ms
+[00:13:03.174] Server  LOG      ✓ Compiled in 18ms
+[00:13:03.364] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:100:7
+Parsing ecmascript source code failed
+   98 |             tlRef.current.reverse();
+   99 |         }
+> 100 |     };)
+      |       ^
+  101 |     };
+  102 |
+  103 |     return (
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:13:07.427] Server  LOG      ✓ Compiled in 829ms
+[00:13:09.934] Server  LOG      ✓ Compiled in 21ms
+[00:13:10.403] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:95:9
+Parsing ecmascript source code failed
+  93 |
+  94 |     const handleClose = () => {
+> 95 |         )
+     |         ^
+  96 |     };
+  97 |
+  98 |     return (
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:13:15.491] Server  LOG      ✓ Compiled in 15ms
+[00:13:16.441] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:96:5
+Parsing ecmascript source code failed
+  94 |     const handleClose = () => {
+  95 |         tl.
+> 96 |     };
+     |     ^
+  97 |
+  98 |     return (
+  99 |         <div ref={containerRef} className="fixed inset-0 w-screen h-screen z-20 flex -translate-y-full">
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:13:19.506] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:95:5
+Parsing ecmascript source code failed
+  93 |     const handleClose = () => {
+  94 |         tl.
+> 95 |     };
+     |     ^
+  96 |
+  97 |     return (
+  98 |         <div ref={containerRef} className="fixed inset-0 w-screen h-screen z-20 flex -translate-y-full">
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:13:34.577] Server  LOG      ✓ Compiled in 152ms
+[00:13:40.085] Server  LOG      ✓ Compiled in 128ms
+[00:13:41.994] Server  LOG      ✓ Compiled in 96ms
+[00:14:21.262] Server  LOG      ✓ Compiled in 108ms
+[00:14:27.337] Server  LOG      ✓ Compiled in 90ms
+[00:15:11.431] Server  LOG      ✓ Compiled in 93ms
+[00:15:13.388] Server  LOG      ✓ Compiled in 71ms
+[00:15:13.439] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [/p1.webp] [/p1.webp, false]
+[00:15:36.690] Server  LOG      ✓ Compiled in 71ms
+[00:15:36.735] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [, false] []

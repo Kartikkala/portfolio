@@ -1108,125 +1108,138 @@ var _s = __turbopack_context__.k.signature();
 ;
 function ProjectShowcase(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
-    if ($[0] !== "d72673c552cca067f5074ece97a81beda3e0936c4148a984f0c2fbd30f1a434e") {
-        for(let $i = 0; $i < 10; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
+    if ($[0] !== "d3c157ca08b96485830983ea3bc2675ebbffe17e029a67f94b7d88fa575a5f15") {
+        for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d72673c552cca067f5074ece97a81beda3e0936c4148a984f0c2fbd30f1a434e";
+        $[0] = "d3c157ca08b96485830983ea3bc2675ebbffe17e029a67f94b7d88fa575a5f15";
     }
     const { activeProjectImage } = t0;
-    const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const maskRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const { isOverlayOpen, mouseInsideProject } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"])(_ProjectShowcaseUseAppSelector);
     let t1;
-    if ($[1] !== mouseInsideProject) {
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = ({
             "ProjectShowcase[useEffect()]": ()=>{
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context({
-                    "ProjectShowcase[useEffect() > gsap.context()]": ()=>{
-                        if (mouseInsideProject) {
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(maskRef.current, {
-                                clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
-                            }, {
-                                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                                duration: 0.7,
-                                ease: "power3.out",
-                                overwrite: true
-                            });
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(imgRef.current, {
-                                scale: 1.3
-                            }, {
-                                scale: 1,
-                                duration: 0.5,
-                                ease: "power3.out",
-                                overwrite: true
-                            });
-                        } else {
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(maskRef.current, {
-                                clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
-                                duration: 0.7,
-                                ease: "power3.in",
-                                overwrite: true
-                            });
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(imgRef.current, {
-                                duration: 0.8,
-                                scale: 1.3,
-                                ease: "power3.in",
-                                overwrite: true
-                            });
-                        }
-                    }
-                }["ProjectShowcase[useEffect() > gsap.context()]"], containerRef);
+                const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
+                    paused: true
+                });
+                tl.fromTo(maskRef.current, {
+                    clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+                }, {
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                    duration: 0.7,
+                    ease: "power3.out",
+                    overwrite: true
+                }).fromTo(imgRef.current, {
+                    scale: 1.3
+                }, {
+                    scale: 1,
+                    duration: 0.5,
+                    ease: "power3.out",
+                    overwrite: true
+                }, "<");
+                tlRef.current = tl;
             }
         })["ProjectShowcase[useEffect()]"];
-        $[1] = mouseInsideProject;
-        $[2] = t1;
+        $[1] = t1;
     } else {
-        t1 = $[2];
+        t1 = $[1];
     }
     let t2;
-    if ($[3] !== activeProjectImage || $[4] !== isOverlayOpen || $[5] !== mouseInsideProject) {
+    if ($[2] !== activeProjectImage) {
         t2 = [
+            activeProjectImage
+        ];
+        $[2] = activeProjectImage;
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
+    let t3;
+    if ($[4] !== mouseInsideProject) {
+        t3 = ({
+            "ProjectShowcase[useEffect()]": ()=>{
+                if (!tlRef.current) {
+                    return;
+                } else {
+                    if (mouseInsideProject) {
+                        tlRef.current.play();
+                    } else {
+                        tlRef.current.reverse();
+                    }
+                }
+            }
+        })["ProjectShowcase[useEffect()]"];
+        $[4] = mouseInsideProject;
+        $[5] = t3;
+    } else {
+        t3 = $[5];
+    }
+    let t4;
+    if ($[6] !== activeProjectImage || $[7] !== isOverlayOpen || $[8] !== mouseInsideProject) {
+        t4 = [
             mouseInsideProject,
             activeProjectImage,
             isOverlayOpen
         ];
-        $[3] = activeProjectImage;
-        $[4] = isOverlayOpen;
-        $[5] = mouseInsideProject;
-        $[6] = t2;
+        $[6] = activeProjectImage;
+        $[7] = isOverlayOpen;
+        $[8] = mouseInsideProject;
+        $[9] = t4;
     } else {
-        t2 = $[6];
+        t4 = $[9];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
-    let t3;
-    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-        t3 = {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t3, t4);
+    let t5;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = {
             clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
         };
-        $[7] = t3;
+        $[10] = t5;
     } else {
-        t3 = $[7];
+        t5 = $[10];
     }
-    let t4;
-    if ($[8] !== activeProjectImage) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            ref: containerRef,
+    let t6;
+    if ($[11] !== activeProjectImage) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             id: "project_showcase",
             className: "lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: maskRef,
                 className: "w-full h-full overflow-hidden",
-                style: t3,
+                style: t5,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     ref: imgRef,
                     src: activeProjectImage,
                     className: "object-cover w-full h-full origin-center"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/ProjectShowcase.js",
-                    lineNumber: 91,
-                    columnNumber: 180
+                    lineNumber: 103,
+                    columnNumber: 161
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/projects/ProjectShowcase.js",
-                lineNumber: 91,
-                columnNumber: 108
+                lineNumber: 103,
+                columnNumber: 89
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/ProjectShowcase.js",
-            lineNumber: 91,
+            lineNumber: 103,
             columnNumber: 10
         }, this);
-        $[8] = activeProjectImage;
-        $[9] = t4;
+        $[11] = activeProjectImage;
+        $[12] = t6;
     } else {
-        t4 = $[9];
+        t6 = $[12];
     }
-    return t4;
+    return t6;
 }
-_s(ProjectShowcase, "quHOXSCsHBChJhLYWbXVD7a+Hl4=", false, function() {
+_s(ProjectShowcase, "nCa0eysXDOG7QhfMKirKnlmAZLc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"]
     ];
@@ -1472,12 +1485,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function ProjectDetailsOverlay() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(20);
-    if ($[0] !== "2151652717dec62c9e0cf0a8aa14094631e5dd7abce72e043cca25bf1e185d8e") {
-        for(let $i = 0; $i < 20; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
+    if ($[0] !== "4c81007cd2d42082ece01bb3cab49c04f0320f3289f9dd5e6ee974b2cb50e302") {
+        for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2151652717dec62c9e0cf0a8aa14094631e5dd7abce72e043cca25bf1e185d8e";
+        $[0] = "4c81007cd2d42082ece01bb3cab49c04f0320f3289f9dd5e6ee974b2cb50e302";
     }
     const { rectPos, selectedProject, isOverlayOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"])(_ProjectDetailsOverlayUseAppSelector);
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppDispatch"])();
@@ -1493,13 +1506,15 @@ function ProjectDetailsOverlay() {
     const ghostImgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t1;
-    let t2;
-    if ($[2] !== rectPos) {
+    if ($[2] !== dispatch || $[3] !== rectPos) {
         t1 = ({
             "ProjectDetailsOverlay[useEffect()]": ()=>{
                 const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                     paused: true,
-                    onReverseComplete: _temp
+                    onReverseComplete: ()=>{
+                        document.body.style.overflow = "";
+                        dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["closeProject"])());
+                    }
                 });
                 tl.to(containerRef.current, {
                     yPercent: 100,
@@ -1534,46 +1549,49 @@ function ProjectDetailsOverlay() {
                 tlRef.current = tl;
             }
         })["ProjectDetailsOverlay[useEffect()]"];
+        $[2] = dispatch;
+        $[3] = rectPos;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    let t2;
+    if ($[5] !== rectPos) {
         t2 = [
             rectPos
         ];
-        $[2] = rectPos;
-        $[3] = t1;
-        $[4] = t2;
+        $[5] = rectPos;
+        $[6] = t2;
     } else {
-        t1 = $[3];
-        t2 = $[4];
+        t2 = $[6];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
     let t3;
     let t4;
-    if ($[5] !== isOverlayOpen) {
+    if ($[7] !== isOverlayOpen) {
         t3 = ({
             "ProjectDetailsOverlay[useEffect()]": ()=>{
                 if (!tlRef.current) {
                     return;
-                } else {
-                    if (isOverlayOpen) {
-                        tlRef.current.play();
-                    } else {
-                        tlRef.current.reverse();
-                    }
+                }
+                if (isOverlayOpen) {
+                    tlRef.current.play();
                 }
             }
         })["ProjectDetailsOverlay[useEffect()]"];
         t4 = [
             isOverlayOpen
         ];
-        $[5] = isOverlayOpen;
-        $[6] = t3;
-        $[7] = t4;
+        $[7] = isOverlayOpen;
+        $[8] = t3;
+        $[9] = t4;
     } else {
-        t3 = $[6];
-        t4 = $[7];
+        t3 = $[8];
+        t4 = $[9];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t3, t4);
     let t5;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = ({
             "ProjectDetailsOverlay[addToRefs]": (el)=>{
                 if (el && !barsRef.current.includes(el)) {
@@ -1581,27 +1599,25 @@ function ProjectDetailsOverlay() {
                 }
             }
         })["ProjectDetailsOverlay[addToRefs]"];
-        $[8] = t5;
+        $[10] = t5;
     } else {
-        t5 = $[8];
+        t5 = $[10];
     }
     const addToRefs = t5;
     let t6;
-    if ($[9] !== dispatch) {
+    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
         t6 = ({
             "ProjectDetailsOverlay[handleClose]": ()=>{
-                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["closeProject"])());
-                console.log("Close called!");
+                tlRef.current.reverse();
             }
         })["ProjectDetailsOverlay[handleClose]"];
-        $[9] = dispatch;
-        $[10] = t6;
+        $[11] = t6;
     } else {
-        t6 = $[10];
+        t6 = $[11];
     }
     const handleClose = t6;
     let t7;
-    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
         t7 = [
             ...Array(5)
         ].map({
@@ -1610,16 +1626,16 @@ function ProjectDetailsOverlay() {
                     className: "w-1/5 h-full bg-amber-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 145,
+                    lineNumber: 148,
                     columnNumber: 57
                 }, this)
         }["ProjectDetailsOverlay[(anonymous)()]"]);
-        $[11] = t7;
+        $[12] = t7;
     } else {
-        t7 = $[11];
+        t7 = $[12];
     }
     let t8;
-    if ($[12] !== selectedProject) {
+    if ($[13] !== selectedProject) {
         t8 = selectedProject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
             ref: ghostImgRef,
             src: selectedProject.img,
@@ -1627,75 +1643,66 @@ function ProjectDetailsOverlay() {
             className: "fixed z-35 object-cover shadow-2xl opacity-0"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 153,
+            lineNumber: 156,
             columnNumber: 29
         }, this);
-        $[12] = selectedProject;
-        $[13] = t8;
+        $[13] = selectedProject;
+        $[14] = t8;
     } else {
-        t8 = $[13];
+        t8 = $[14];
     }
     let t9;
-    if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            children: "X"
-        }, void 0, false, {
-            fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 161,
-            columnNumber: 10
-        }, this);
-        $[14] = t9;
-    } else {
-        t9 = $[14];
-    }
-    let t10;
-    if ($[15] !== handleClose) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-col w-full h-full absolute z-30",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "text-white w-fit z-40",
                 onClick: handleClose,
                 children: [
-                    t9,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: "X"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
+                        lineNumber: 164,
+                        columnNumber: 133
+                    }, this),
                     " Close"
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 168,
-                columnNumber: 70
+                lineNumber: 164,
+                columnNumber: 69
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 168,
-            columnNumber: 11
+            lineNumber: 164,
+            columnNumber: 10
         }, this);
-        $[15] = handleClose;
-        $[16] = t10;
+        $[15] = t9;
     } else {
-        t10 = $[16];
+        t9 = $[15];
     }
-    let t11;
-    if ($[17] !== t10 || $[18] !== t8) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t10;
+    if ($[16] !== t8) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             ref: containerRef,
             className: "fixed inset-0 w-screen h-screen z-20 flex -translate-y-full",
             children: [
                 t7,
                 t8,
-                t10
+                t9
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 176,
+            lineNumber: 171,
             columnNumber: 11
         }, this);
+        $[16] = t8;
         $[17] = t10;
-        $[18] = t8;
-        $[19] = t11;
     } else {
-        t11 = $[19];
+        t10 = $[17];
     }
-    return t11;
+    return t10;
 }
 _s(ProjectDetailsOverlay, "yTUeF+8N6O/mwqayGzAiWyo502E=", false, function() {
     return [
@@ -1704,9 +1711,6 @@ _s(ProjectDetailsOverlay, "yTUeF+8N6O/mwqayGzAiWyo502E=", false, function() {
     ];
 });
 _c = ProjectDetailsOverlay;
-function _temp() {
-    document.body.style.overflow = "";
-}
 function _ProjectDetailsOverlayUseAppSelector(state) {
     return state.project;
 }

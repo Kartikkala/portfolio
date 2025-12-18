@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { closeProject } from "@/lib/slices/projectSlice";
 
@@ -23,7 +23,7 @@ export default function ProjectDetailsOverlay() {
                 paused : true,
                 onReverseComplete : ()=>{
                     document.body.style.overflow = "";
-                    
+                    dispatch(closeProject());
                 }
             });
 
@@ -75,10 +75,9 @@ export default function ProjectDetailsOverlay() {
     useEffect(()=>{
         if(!tlRef.current)
             return;
-        else if(isOverlayOpen)
+        if(isOverlayOpen)
             tlRef.current.play();
-        else
-            tlRef.current.reverse();
+        
     }, [isOverlayOpen])
 
     const addToRefs = (el) => {
@@ -88,8 +87,7 @@ export default function ProjectDetailsOverlay() {
     };
 
     const handleClose = () => {
-        dispatch(closeProject())
-        console.log("Close called!")
+        tlRef.current.reverse();
     };
 
     return (
