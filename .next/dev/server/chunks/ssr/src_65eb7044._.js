@@ -1014,6 +1014,99 @@ function Projects({}) {
     }, this);
 }
 }),
+"[project]/src/components/utils/AnimatedButton.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AnimatedButton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+;
+;
+function AnimatedButton({ buttonText, onClickFn }) {
+    const buttonRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
+            paused: true
+        });
+        tl.to(".char", {
+            yPercent: -100,
+            duration: 0.2,
+            stagger: 0.015,
+            ease: "power2.inOut"
+        });
+        tlRef.current = tl;
+    }, [
+        tlRef.current
+    ]);
+    const handleMouseEnter = ()=>{
+        tlRef.current?.play();
+    };
+    const handleMouseLeave = ()=>{
+        tlRef.current?.reverse();
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
+        ref: buttonRef,
+        className: "text-white font-oswald border border-white p-1 overflow-hidden w-fit",
+        onClick: onClickFn,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "h-[2rem] flex flex-col overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex",
+                    children: buttonText && buttonText.split('').map((character, idx)=>{
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "char inline-block",
+                            children: character
+                        }, idx, false, {
+                            fileName: "[project]/src/components/utils/AnimatedButton.js",
+                            lineNumber: 38,
+                            columnNumber: 28
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/utils/AnimatedButton.js",
+                    lineNumber: 35,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex",
+                    children: buttonText && buttonText.split('').map((character, idx)=>{
+                        const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "char inline-block",
+                            children: character
+                        }, idx, false, {
+                            fileName: "[project]/src/components/utils/AnimatedButton.js",
+                            lineNumber: 45,
+                            columnNumber: 28
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/utils/AnimatedButton.js",
+                    lineNumber: 41,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/utils/AnimatedButton.js",
+            lineNumber: 34,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/utils/AnimatedButton.js",
+        lineNumber: 30,
+        columnNumber: 5
+    }, this);
+}
+}),
 "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1026,11 +1119,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$inde
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/hooks.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/slices/projectSlice.js [app-ssr] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '@/components/utils/Button'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/AnimatedButton.js [app-ssr] (ecmascript)");
 ;
 ;
 ;
@@ -1044,6 +1133,7 @@ function ProjectDetailsOverlay() {
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ghostImgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ghostImgFinalPosRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const contentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
@@ -1082,7 +1172,11 @@ function ProjectDetailsOverlay() {
                 borderRadius: "12px",
                 duration: 1.2,
                 ease: "power4.inOut"
-            });
+            }).to(contentRef.current, {
+                opacity: 1,
+                duration: 0.6,
+                ease: "power2.out"
+            }, "<0.3");
         }
         tlRef.current = tl;
     }, [
@@ -1111,10 +1205,10 @@ function ProjectDetailsOverlay() {
                 ...Array(5)
             ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: addToRefs,
-                    className: "w-1/5 h-full bg-amber-800 relative pointer-events-auto -translate-y-full"
+                    className: "w-1/5 h-full bg-green-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 97,
+                    lineNumber: 104,
                     columnNumber: 17
                 }, this)),
             selectedProject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1124,18 +1218,19 @@ function ProjectDetailsOverlay() {
                 className: "fixed z-35 object-cover shadow-2xl w-[35vw] h-[40vh] rounded-md"
             }, void 0, false, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 106,
+                lineNumber: 113,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50",
+                ref: contentRef,
+                className: "flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50 opacity-0",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedButton, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         onClickFn: handleClose,
                         buttonText: "CLOSE"
                     }, void 0, false, {
                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                        lineNumber: 115,
+                        lineNumber: 122,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1147,7 +1242,7 @@ function ProjectDetailsOverlay() {
                                 children: selectedProject && selectedProject.name
                             }, void 0, false, {
                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                lineNumber: 119,
+                                lineNumber: 126,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1158,20 +1253,20 @@ function ProjectDetailsOverlay() {
                                         children: selectedProject && selectedProject.year
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 123,
+                                        lineNumber: 130,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: selectedProject && selectedProject.tagline
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 126,
+                                        lineNumber: 133,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                lineNumber: 122,
+                                lineNumber: 129,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1182,20 +1277,20 @@ function ProjectDetailsOverlay() {
                                         children: "Live Link"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 131,
+                                        lineNumber: 138,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         children: "Github Link"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 134,
+                                        lineNumber: 141,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                lineNumber: 130,
+                                lineNumber: 137,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1204,10 +1299,10 @@ function ProjectDetailsOverlay() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         ref: ghostImgFinalPosRef,
                                         id: "img_div",
-                                        className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh] bg-black"
+                                        className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 137,
+                                        lineNumber: 144,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1218,7 +1313,7 @@ function ProjectDetailsOverlay() {
                                                 children: "Description"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                lineNumber: 139,
+                                                lineNumber: 146,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1226,7 +1321,7 @@ function ProjectDetailsOverlay() {
                                                 children: selectedProject && selectedProject.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                lineNumber: 140,
+                                                lineNumber: 147,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1239,7 +1334,7 @@ function ProjectDetailsOverlay() {
                                                             children: "Tech Stack"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                            lineNumber: 143,
+                                                            lineNumber: 150,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1249,54 +1344,54 @@ function ProjectDetailsOverlay() {
                                                                     children: tool
                                                                 }, idx, false, {
                                                                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                                    lineNumber: 146,
+                                                                    lineNumber: 153,
                                                                     columnNumber: 52
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                            lineNumber: 144,
+                                                            lineNumber: 151,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                    lineNumber: 142,
+                                                    lineNumber: 149,
                                                     columnNumber: 33
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                                lineNumber: 141,
+                                                lineNumber: 148,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                        lineNumber: 138,
+                                        lineNumber: 145,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                                lineNumber: 136,
+                                lineNumber: 143,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                        lineNumber: 118,
+                        lineNumber: 125,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 114,
+                lineNumber: 121,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-        lineNumber: 94,
+        lineNumber: 101,
         columnNumber: 9
     }, this);
 }
@@ -1432,4 +1527,4 @@ function Home() {
 }),
 ];
 
-//# sourceMappingURL=src_e4f83da4._.js.map
+//# sourceMappingURL=src_65eb7044._.js.map

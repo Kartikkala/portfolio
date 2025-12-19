@@ -1,7 +1,8 @@
 import gsap from "gsap";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { closeProject } from "@/lib/slices/projectSlice";
+import AnimatedButton from "@/components/utils/AnimatedButton";
 
 // projectName : string,
 // projectDesc : string,
@@ -17,6 +18,7 @@ export default function ProjectDetailsOverlay() {
     const containerRef = useRef(null);
     const ghostImgRef = useRef(null);
     const ghostImgFinalPosRef = useRef(null);
+    const contentRef = useRef(null);
     const tlRef = useRef(null);
 
     useEffect(() => {
@@ -65,7 +67,13 @@ export default function ProjectDetailsOverlay() {
                     duration: 1.2,
                     ease: "power4.inOut",
                 },
-            );}
+            )
+            .to(contentRef.current, {
+                opacity : 1,
+                duration : 0.6,
+                ease : "power2.out"
+            }, "<0.3")
+            ;}
 
             tlRef.current = tl;
             
@@ -96,7 +104,7 @@ export default function ProjectDetailsOverlay() {
                 <div
                     key={i}
                     ref={addToRefs}
-                    className="w-1/5 h-full bg-amber-800 relative pointer-events-auto -translate-y-full" 
+                    className="w-1/5 h-full bg-green-800 relative pointer-events-auto -translate-y-full" 
                 >
                 </div>
             ))}
@@ -110,11 +118,12 @@ export default function ProjectDetailsOverlay() {
                 />
             )}
 
-            <div className="flex flex-col w-full h-full absolute z-30 p-5 justify-between text-teal-50">
-                <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+            <div ref={contentRef} className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50 opacity-0">
+                <AnimatedButton onClickFn={handleClose} buttonText={"CLOSE"}/>
+
                 {/* Content div */}
                 <div id="project_content" className="flex flex-col gap-2">
-                    <h1 className="text-8xl font-oswald font-bold">
+                    <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
                         {selectedProject && (selectedProject.name)}
                     </h1>
                     <div className="flex gap-6">
@@ -126,13 +135,15 @@ export default function ProjectDetailsOverlay() {
                         </div>
                     </div>
                     <div className="flex gap-6 font-oswald">
-                        <button>Live Link</button>
+                        <button className="">
+                            Live Link
+                        </button>
                         <button>Github Link</button>
                     </div>
-                    <div  className="flex items-end gap-8">
-                        <div ref={ghostImgFinalPosRef} id="img_div" className="w-[45vw] h-[60vh] bg-black"></div>
-                        <div className="flex flex-col gap-6 max-w-1/2">
-                            <h2 className="text-5xl font-oswald">Description</h2>
+                    <div  className="flex md:flex-row flex-col items-end md:gap-8 gap-2">
+                        <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]"></div>
+                        <div className="flex flex-col md:gap-6 gap-4 md:max-w-1/2">
+                            <h2 className="md:text-[clamp(2rem,3vw,3rem)] text-[clamp(1rem,2rem,8rem)] font-oswald">Description</h2>
                             <p className="">{selectedProject && selectedProject.description}</p>
                             <div className="flex">
                                 <div className="flex flex-col gap-2">

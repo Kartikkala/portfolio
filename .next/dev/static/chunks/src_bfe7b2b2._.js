@@ -1476,6 +1476,112 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/src/components/utils/AnimatedButton.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AnimatedButton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+function AnimatedButton({ buttonText, onClickFn }) {
+    _s();
+    var _s1 = __turbopack_context__.k.signature();
+    const buttonRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AnimatedButton.useEffect": ()=>{
+            const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
+                paused: true
+            });
+            tl.to(".char", {
+                yPercent: -100,
+                duration: 0.2,
+                stagger: 0.015,
+                ease: "power2.inOut"
+            });
+            tlRef.current = tl;
+        }
+    }["AnimatedButton.useEffect"], [
+        tlRef.current
+    ]);
+    const handleMouseEnter = ()=>{
+        tlRef.current?.play();
+    };
+    const handleMouseLeave = ()=>{
+        tlRef.current?.reverse();
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
+        ref: buttonRef,
+        className: "text-white font-oswald border border-white p-1 overflow-hidden w-fit",
+        onClick: onClickFn,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "h-[2rem] flex flex-col overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex",
+                    children: buttonText && buttonText.split('').map((character, idx)=>{
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "char inline-block",
+                            children: character
+                        }, idx, false, {
+                            fileName: "[project]/src/components/utils/AnimatedButton.js",
+                            lineNumber: 31,
+                            columnNumber: 18
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/utils/AnimatedButton.js",
+                    lineNumber: 29,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex",
+                    children: buttonText && buttonText.split('').map(_s1((character_0, idx_0)=>{
+                        _s1();
+                        const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "char inline-block",
+                            children: character_0
+                        }, idx_0, false, {
+                            fileName: "[project]/src/components/utils/AnimatedButton.js",
+                            lineNumber: 37,
+                            columnNumber: 18
+                        }, this);
+                    }, "QMBuJFIdzLIeqBcFwhMf246mjOM="))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/utils/AnimatedButton.js",
+                    lineNumber: 34,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/utils/AnimatedButton.js",
+            lineNumber: 28,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/utils/AnimatedButton.js",
+        lineNumber: 27,
+        columnNumber: 10
+    }, this);
+}
+_s(AnimatedButton, "2j//9QKLVPBqARb+IvJWP2QpNAo=");
+_c = AnimatedButton;
+var _c;
+__turbopack_context__.k.register(_c, "AnimatedButton");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1489,11 +1595,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$inde
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/hooks.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/slices/projectSlice.js [app-client] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '@/components/utils/Button'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/AnimatedButton.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 ;
@@ -1505,11 +1607,11 @@ var _s = __turbopack_context__.k.signature();
 function ProjectDetailsOverlay() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(45);
-    if ($[0] !== "e13ca5ea527adf1eadc3232958efc116cb5e8324e59052940e9f628cc39e8a4c") {
+    if ($[0] !== "d7b7ca6b225c71503d39e5fde61ec2929ca1df4c8a62cdda2ba91d22ce7b20ac") {
         for(let $i = 0; $i < 45; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "e13ca5ea527adf1eadc3232958efc116cb5e8324e59052940e9f628cc39e8a4c";
+        $[0] = "d7b7ca6b225c71503d39e5fde61ec2929ca1df4c8a62cdda2ba91d22ce7b20ac";
     }
     const { rectPos, selectedProject, isOverlayOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"])(_ProjectDetailsOverlayUseAppSelector);
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppDispatch"])();
@@ -1524,6 +1626,7 @@ function ProjectDetailsOverlay() {
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ghostImgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ghostImgFinalPosRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const contentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const tlRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t1;
     if ($[2] !== dispatch || $[3] !== rectPos) {
@@ -1564,7 +1667,11 @@ function ProjectDetailsOverlay() {
                         borderRadius: "12px",
                         duration: 1.2,
                         ease: "power4.inOut"
-                    });
+                    }).to(contentRef.current, {
+                        opacity: 1,
+                        duration: 0.6,
+                        ease: "power2.out"
+                    }, "<0.3");
                 }
                 tlRef.current = tl;
             }
@@ -1644,10 +1751,10 @@ function ProjectDetailsOverlay() {
         ].map({
             "ProjectDetailsOverlay[(anonymous)()]": (_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: addToRefs,
-                    className: "w-1/5 h-full bg-amber-800 relative pointer-events-auto -translate-y-full"
+                    className: "w-1/5 h-full bg-green-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 150,
+                    lineNumber: 155,
                     columnNumber: 57
                 }, this)
         }["ProjectDetailsOverlay[(anonymous)()]"]);
@@ -1664,7 +1771,7 @@ function ProjectDetailsOverlay() {
             className: "fixed z-35 object-cover shadow-2xl w-[35vw] h-[40vh] rounded-md"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 158,
+            lineNumber: 163,
             columnNumber: 29
         }, this);
         $[13] = selectedProject;
@@ -1674,12 +1781,12 @@ function ProjectDetailsOverlay() {
     }
     let t9;
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedButton, {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             onClickFn: handleClose,
             buttonText: "CLOSE"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 166,
+            lineNumber: 171,
             columnNumber: 10
         }, this);
         $[15] = t9;
@@ -1694,7 +1801,7 @@ function ProjectDetailsOverlay() {
             children: t10
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 174,
+            lineNumber: 179,
             columnNumber: 11
         }, this);
         $[16] = t10;
@@ -1710,7 +1817,7 @@ function ProjectDetailsOverlay() {
             children: t12
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 183,
+            lineNumber: 188,
             columnNumber: 11
         }, this);
         $[18] = t12;
@@ -1725,7 +1832,7 @@ function ProjectDetailsOverlay() {
             children: t14
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 192,
+            lineNumber: 197,
             columnNumber: 11
         }, this);
         $[20] = t14;
@@ -1743,7 +1850,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 200,
+            lineNumber: 205,
             columnNumber: 11
         }, this);
         $[22] = t13;
@@ -1762,20 +1869,20 @@ function ProjectDetailsOverlay() {
                     children: "Live Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 209,
+                    lineNumber: 214,
                     columnNumber: 51
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     children: "Github Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 209,
+                    lineNumber: 214,
                     columnNumber: 90
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 209,
+            lineNumber: 214,
             columnNumber: 11
         }, this);
         $[25] = t17;
@@ -1787,10 +1894,10 @@ function ProjectDetailsOverlay() {
         t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             ref: ghostImgFinalPosRef,
             id: "img_div",
-            className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh] bg-black"
+            className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh]"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 216,
+            lineNumber: 221,
             columnNumber: 11
         }, this);
         $[26] = t18;
@@ -1804,7 +1911,7 @@ function ProjectDetailsOverlay() {
             children: "Description"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 223,
+            lineNumber: 228,
             columnNumber: 11
         }, this);
         $[27] = t19;
@@ -1819,7 +1926,7 @@ function ProjectDetailsOverlay() {
             children: t20
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 231,
+            lineNumber: 236,
             columnNumber: 11
         }, this);
         $[28] = t20;
@@ -1834,7 +1941,7 @@ function ProjectDetailsOverlay() {
             children: "Tech Stack"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 239,
+            lineNumber: 244,
             columnNumber: 11
         }, this);
         $[30] = t22;
@@ -1862,18 +1969,18 @@ function ProjectDetailsOverlay() {
                         children: t23
                     }, void 0, false, {
                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                        lineNumber: 254,
+                        lineNumber: 259,
                         columnNumber: 75
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 254,
+                lineNumber: 259,
                 columnNumber: 33
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 254,
+            lineNumber: 259,
             columnNumber: 11
         }, this);
         $[33] = t23;
@@ -1896,13 +2003,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 262,
+                    lineNumber: 267,
                     columnNumber: 84
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 262,
+            lineNumber: 267,
             columnNumber: 11
         }, this);
         $[35] = t21;
@@ -1914,7 +2021,8 @@ function ProjectDetailsOverlay() {
     let t26;
     if ($[38] !== t11 || $[39] !== t16 || $[40] !== t25) {
         t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50",
+            ref: contentRef,
+            className: "flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50 opacity-0",
             children: [
                 t9,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1928,13 +2036,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 271,
-                    columnNumber: 114
+                    lineNumber: 276,
+                    columnNumber: 141
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 271,
+            lineNumber: 276,
             columnNumber: 11
         }, this);
         $[38] = t11;
@@ -1956,7 +2064,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 281,
+            lineNumber: 286,
             columnNumber: 11
         }, this);
         $[42] = t26;
@@ -1967,7 +2075,7 @@ function ProjectDetailsOverlay() {
     }
     return t27;
 }
-_s(ProjectDetailsOverlay, "hJykPKQR/i3rYGw0fpKoBTQwXi4=", false, function() {
+_s(ProjectDetailsOverlay, "KkZ+N0La94Bm55n1RIR3K/C+yiA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppDispatch"]
@@ -1979,7 +2087,7 @@ function _ProjectDetailsOverlaySelectedProjectToolsMap(tool, idx) {
         children: tool
     }, idx, false, {
         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-        lineNumber: 291,
+        lineNumber: 296,
         columnNumber: 10
     }, this);
 }
@@ -2186,4 +2294,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_b46a4a67._.js.map
+//# sourceMappingURL=src_bfe7b2b2._.js.map

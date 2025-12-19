@@ -3,7 +3,7 @@ import { openProject, setMouseInsideProject } from "@/lib/slices/projectSlice";
 import { useEffect } from "react";
 
 export default function ProjectButton({projectData, img, setActiveProjectImage}){
-    const {isOverlayOpen} = useAppSelector((state)=> state.project)
+    const {isOverlayOpen, mouseInsideProject} = useAppSelector((state)=> state.project)
     const dispatch = useAppDispatch();
 
     useEffect(()=>{
@@ -29,14 +29,17 @@ export default function ProjectButton({projectData, img, setActiveProjectImage})
             width: rawRect.width,
             height: rawRect.height
         };
-
+        let delay = 100;
+        if(!mouseInsideProject){
+            delay = 600;
+        }
         handleActivate(e)
         setTimeout(()=>{
             dispatch(openProject({
                 project : projectData, 
                 rect : rect
             }))
-        }, 0.6)
+        }, delay)
     }
     return (
         <div className="md:w-[10vw] md:h-[15vh] w-[20vw] h-[10vh]" onMouseEnter={handleActivate} 

@@ -1,266 +1,181 @@
-[00:00:00.660] Server  LOG      ✓ Ready in 400ms
-[00:00:05.420] Server  LOG      ○ Compiling / ...
-[00:27:50.127] Server  LOG      ✓ Compiled in 147ms
-[00:28:31.318] Server  LOG      ✓ Compiled in 106ms
-[00:28:39.007] Server  LOG      ✓ Compiled in 105ms
-[00:28:40.311] Server  LOG      ✓ Compiled in 98ms
-[00:28:45.894] Server  LOG      ✓ Compiled in 18ms
-[00:28:46.583] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:58:35
+[00:00:00.671] Server  LOG      ✓ Ready in 409ms
+[00:00:03.912] Server  LOG      ○ Compiling / ...
+[00:00:29.709] Server  LOG      ✓ Compiled in 199ms
+[00:02:33.717] Server  LOG      ✓ Compiled in 159ms
+[00:02:38.657] Server  LOG      ✓ Compiled in 154ms
+[00:02:40.677] Server  LOG      ✓ Compiled in 141ms
+[00:02:45.880] Server  LOG      ✓ Compiled in 171ms
+[00:03:01.479] Server  LOG      ✓ Compiled in 125ms
+[00:03:07.768] Server  LOG      ✓ Compiled in 137ms
+[00:03:11.459] Server  LOG      ✓ Compiled in 64ms
+[00:03:17.817] Server  LOG      ✓ Compiled in 135ms
+[00:03:23.451] Server  LOG      ✓ Compiled in 114ms
+[00:03:28.917] Server  LOG      ✓ Compiled in 137ms
+[00:03:33.660] Server  LOG      ✓ Compiled in 61ms
+[00:03:37.613] Server  LOG      ✓ Compiled in 78ms
+[00:03:40.450] Server  LOG      ✓ Compiled in 122ms
+[00:03:42.857] Server  LOG      ✓ Compiled in 113ms
+[00:03:45.516] Server  LOG      ✓ Compiled in 127ms
+[00:03:47.922] Server  LOG      ✓ Compiled in 63ms
+[00:06:38.180] Server  LOG      ✓ Compiled in 137ms
+[00:07:01.549] Server  LOG      ✓ Compiled in 110ms
+[00:09:18.717] Server  LOG      ✓ Compiled in 161ms
+[00:09:23.665] Server  LOG      ✓ Compiled in 71ms
+[00:09:26.765] Server  LOG      ✓ Compiled in 71ms
+[00:09:31.912] Server  LOG      ✓ Compiled in 147ms
+[00:09:35.616] Server  LOG      ✓ Compiled in 60ms
+[00:09:40.487] Server  LOG      ✓ Compiled in 104ms
+[00:09:44.596] Server  LOG      ✓ Compiled in 112ms
+[00:10:58.335] Server  LOG      ✓ Compiled in 201ms
+[00:11:00.529] Server  LOG      ✓ Compiled in 70ms
+[00:11:03.505] Server  LOG      ✓ Compiled in 164ms
+[00:11:13.342] Server  LOG      ✓ Compiled in 81ms
+[00:12:06.071] Server  LOG      ✓ Compiled in 123ms
+[00:12:08.477] Server  LOG      ✓ Compiled in 62ms
+[00:12:14.078] Server  LOG      ✓ Compiled in 125ms
+[00:12:18.760] Server  LOG      ✓ Compiled in 70ms
+[00:12:26.999] Server  LOG      ✓ Compiled in 96ms
+[00:12:37.229] Server  LOG      ✓ Compiled in 120ms
+[00:13:16.503] Server  LOG      ✓ Compiled in 231ms
+[00:13:22.702] Server  LOG      ✓ Compiled in 141ms
+[00:13:25.780] Server  LOG      ✓ Compiled in 83ms
+[00:13:48.153] Server  LOG      ✓ Compiled in 72ms
+[00:13:55.188] Server  LOG      ✓ Compiled in 124ms
+[00:13:57.700] Server  LOG      ✓ Compiled in 115ms
+[00:13:59.910] Server  LOG      ✓ Compiled in 67ms
+[00:14:03.678] Server  LOG      ✓ Compiled in 61ms
+[00:14:07.527] Server  LOG      ✓ Compiled in 104ms
+[00:14:25.242] Server  LOG      ✓ Compiled in 63ms
+[00:14:37.111] Server  LOG      ✓ Compiled in 107ms
+[00:14:45.147] Server  LOG      ✓ Compiled in 122ms
+[00:14:49.389] Server  LOG      ✓ Compiled in 108ms
+[00:14:51.198] Server  LOG      ✓ Compiled in 65ms
+[00:14:53.845] Server  LOG      ✓ Compiled in 95ms
+[00:14:57.707] Server  LOG      ✓ Compiled in 116ms
+[00:15:00.785] Server  LOG      ✓ Compiled in 51ms
+[00:15:01.932] Server  LOG      ✓ Compiled in 94ms
+[00:15:29.786] Server  LOG      ✓ Compiled in 110ms
+[00:15:32.593] Server  LOG      ✓ Compiled in 86ms
+[00:15:34.794] Server  LOG      ✓ Compiled in 136ms
+[00:15:38.201] Server  LOG      ✓ Compiled in 76ms
+[00:15:39.564] Server  LOG      ✓ Compiled in 72ms
+[00:15:43.756] Server  LOG      ✓ Compiled in 108ms
+[00:16:07.312] Server  LOG      ✓ Compiled in 120ms
+[00:16:10.451] Server  LOG      ✓ Compiled in 60ms
+[00:16:15.149] Server  LOG      ✓ Compiled in 66ms
+[00:16:18.793] Server  LOG      ✓ Compiled in 68ms
+[00:16:20.844] Server  LOG      ✓ Compiled in 125ms
+[00:16:24.742] Server  LOG      ✓ Compiled in 54ms
+[00:16:27.523] Server  LOG      ✓ Compiled in 60ms
+[00:16:29.968] Server  LOG      ✓ Compiled in 96ms
+[00:16:33.336] Server  LOG      ✓ Compiled in 53ms
+[00:16:38.549] Server  LOG      ✓ Compiled in 113ms
+[00:16:42.319] Server  LOG      ✓ Compiled in 95ms
+[00:16:45.501] Server  LOG      ✓ Compiled in 54ms
+[00:16:57.674] Server  LOG      ✓ Compiled in 110ms
+[00:17:00.235] Server  LOG      ✓ Compiled in 95ms
+[00:17:08.554] Server  LOG      ✓ Compiled in 190ms
+[00:17:12.975] Server  LOG      ✓ Compiled in 145ms
+[00:17:19.430] Server  LOG      ✓ Compiled in 118ms
+[00:17:38.142] Server  LOG      ✓ Compiled in 120ms
+[00:17:43.928] Server  LOG      ✓ Compiled in 111ms
+[00:17:52.249] Server  LOG      ✓ Compiled in 175ms
+[00:18:01.070] Server  LOG      ✓ Compiled in 131ms
+[00:18:09.650] Server  LOG      ✓ Compiled in 66ms
+[00:18:12.855] Server  LOG      ✓ Compiled in 145ms
+[00:18:19.527] Server  LOG      ✓ Compiled in 105ms
+[00:20:23.277] Server  LOG      ✓ Compiled in 118ms
+[00:20:28.150] Server  LOG      ✓ Compiled in 129ms
+[00:21:20.065] Server  LOG      ✓ Compiled in 115ms
+[00:21:23.180] Server  LOG      ✓ Compiled in 58ms
+[00:21:24.590] Server  LOG      ✓ Compiled in 51ms
+[00:21:27.725] Server  LOG      ✓ Compiled in 122ms
+[00:21:28.742] Server  LOG      ✓ Compiled in 99ms
+[00:21:30.292] Server  LOG      ✓ Compiled in 55ms
+[00:21:36.830] Server  LOG      ✓ Compiled in 52ms
+[00:21:53.588] Server  LOG      ✓ Compiled in 51ms
+[00:21:55.662] Server  LOG      ✓ Compiled in 93ms
+[00:22:01.850] Server  LOG      ✓ Compiled in 119ms
+[00:22:11.118] Server  LOG      ✓ Compiled in 52ms
+[00:22:16.132] Server  LOG      ✓ Compiled in 117ms
+[00:22:20.596] Server  LOG      ✓ Compiled in 94ms
+[00:22:21.942] Server  LOG      ✓ Compiled in 59ms
+[00:24:30.673] Server  LOG      ✓ Compiled in 109ms
+[00:24:34.271] Server  LOG      ✓ Compiled in 58ms
+[00:24:42.809] Server  LOG      ✓ Compiled in 67ms
+[00:24:46.031] Server  LOG      ✓ Compiled in 118ms
+[00:24:47.373] Server  LOG      ✓ Compiled in 99ms
+[00:24:55.266] Server  LOG      ✓ Compiled in 111ms
+[00:25:01.234] Server  LOG      ✓ Compiled in 51ms
+[00:25:16.686] Server  LOG      ✓ Compiled in 94ms
+[00:25:21.017] Server  LOG      ✓ Compiled in 111ms
+[00:25:32.069] Server  LOG      ✓ Compiled in 96ms
+[00:25:38.361] Server  LOG      ✓ Compiled in 48ms
+[00:28:42.142] Server  LOG      ✓ Compiled in 125ms
+[00:28:46.339] Server  LOG      ✓ Compiled in 58ms
+[00:29:01.394] Server  LOG      ✓ Compiled in 117ms
+[00:29:09.464] Server  LOG      ✓ Compiled in 129ms
+[00:29:14.583] Server  LOG      ✓ Compiled in 102ms
+[00:32:12.582] Server  LOG      ✓ Compiled in 27ms
+[00:33:04.911] Server  LOG      ✓ Compiled in 114ms
+[00:33:06.341] Server  LOG      ✓ Compiled in 122ms
+[00:33:09.555] Server  LOG      ✓ Compiled in 87ms
+[00:33:36.198] Server  LOG      ✓ Compiled in 16ms
+[00:33:36.704] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:19
 Parsing ecmascript source code failed
-  56 |                 tl.from(ghostImgRef.current, {
-  57 |                     top: rectPos.top,       // Final Y pos
-> 58 |                     left: rectPos.,       // Final X pos
-     |                                   ^
-  59 |                     width: "40vw",    // Final Width
-  60 |                     height: "60vh",   // Final Height
-  61 |                     borderRadius: "12px",
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:29:00.732] Server  LOG      ✓ Compiled in 118ms
-[00:29:06.778] Server  LOG      ✓ Compiled in 98ms
-[00:29:12.606] Server  LOG      ✓ Compiled in 132ms
-[00:29:21.138] Server  LOG      ✓ Compiled in 16ms
-[00:29:21.661] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:63:21
-Parsing ecmascript source code failed
-  61 |                     borderRadius: "0px",
-  62 |                     opacity : 1
-> 63 |                     objectFit: "cover", // Ensure image doesn't stretch weirdly
-     |                     ^^^^^^^^^
-  64 |                     duration: 1.2,
-  65 |                     ease: "power4.inOut",
-  66 |                     delay : 0.1
-
-Expected ',', got 'objectFit'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:29:35.047] Server  LOG      ✓ Compiled in 90ms
-[00:29:40.175] Server  LOG      ✓ Compiled in 135ms
-[00:29:49.636] Server  LOG      ✓ Compiled in 53ms
-[00:30:52.309] Server  LOG      ✓ Compiled in 107ms
-[00:30:54.462] Server  LOG      ✓ Compiled in 94ms
-[00:30:55.612] Server  LOG      ✓ Compiled in 90ms
-[00:31:00.408] Server  LOG      ✓ Compiled in 104ms
-[00:31:01.897] Server  LOG      ✓ Compiled in 81ms
-[00:31:03.896] Server  LOG      ✓ Compiled in 77ms
-[00:31:06.781] Server  LOG      ✓ Compiled in 81ms
-[00:31:10.207] Server  LOG      ✓ Compiled in 90ms
-[00:31:15.657] Server  LOG      ✓ Compiled in 75ms
-[00:31:17.912] Server  LOG      ✓ Compiled in 81ms
-[00:31:20.601] Server  LOG      ✓ Compiled in 75ms
-[00:31:22.235] Server  LOG      ✓ Compiled in 72ms
-[00:31:24.695] Server  LOG      ✓ Compiled in 72ms
-[00:31:30.142] Server  LOG      ✓ Compiled in 70ms
-[00:31:32.823] Server  LOG      ✓ Compiled in 71ms
-[00:31:39.899] Server  LOG      ✓ Compiled in 15ms
-[00:31:40.123] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:101:14
-Parsing ecmascript source code failed
-   99 |                     className="fixed z-35 object-cover shadow-2xl w-[20vw] h-3px" // Start hidden, GSAP makes it visible
-  100 |                 />
-> 101 |             )}
-      |              ^
-  102 |
-  103 |             <div className="flex flex-col w-full h-full absolute z-30">
-  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:31:48.576] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'img')
-[00:31:49.204] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
-[00:32:21.532] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:32:21.672] Server  LOG      ✓ Compiled in 124ms
-[00:32:26.323] Server  LOG      ✓ Compiled in 114ms
-[00:32:28.733] Server  LOG      ✓ Compiled in 86ms
-[00:32:32.404] Server  LOG      ✓ Compiled in 16ms
-[00:32:33.033] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:101:14
-Parsing ecmascript source code failed
-   99 |                     className="fixed z-35 object-cover shadow-2xl w-[20vw] h-3px" // Start hidden, GSAP makes it visible
-  100 |                 />
-> 101 |             )}
-      |              ^
-  102 |
-  103 |             <div className="flex flex-col w-full h-full absolute z-30">
-  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:32:34.414] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
-[00:32:35.861] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'img')
-[00:32:36.454] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
-[00:32:54.515] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:32:54.540] Server  LOG      ✓ Compiled in 95ms
-[00:32:58.735] Server  LOG      ✓ Compiled in 76ms
-[00:33:00.333] Server  LOG      ✓ Compiled in 79ms
-[00:33:14.935] Server  LOG      ✓ Compiled in 78ms
-[00:33:22.609] Server  LOG      ✓ Compiled in 77ms
-[00:33:23.669] Server  LOG      ✓ Compiled in 87ms
-[00:33:33.474] Server  LOG      ✓ Compiled in 114ms
-[00:33:38.942] Server  LOG      ✓ Compiled in 88ms
-[00:33:40.194] Server  LOG      ✓ Compiled in 80ms
-[00:34:09.598] Server  LOG      ✓ Compiled in 85ms
-[00:34:13.772] Server  LOG      ✓ Compiled in 73ms
-[00:34:15.524] Server  LOG      ✓ Compiled in 81ms
-[00:34:16.758] Server  LOG      ✓ Compiled in 75ms
-[00:34:19.771] Server  LOG      ✓ Compiled in 78ms
-[00:34:23.383] Server  LOG      ✓ Compiled in 65ms
-[00:34:26.229] Server  LOG      ✓ Compiled in 65ms
-[00:34:39.925] Server  LOG      ✓ Compiled in 68ms
-[00:34:43.616] Server  LOG      ✓ Compiled in 69ms
-[00:34:46.695] Server  LOG      ✓ Compiled in 66ms
-[00:34:48.761] Server  LOG      ✓ Compiled in 80ms
-[00:35:01.399] Server  LOG      ✓ Compiled in 124ms
-[00:35:04.573] Server  LOG      ✓ Compiled in 111ms
-[00:35:30.572] Server  LOG      ✓ Compiled in 85ms
-[00:35:32.719] Server  LOG      ✓ Compiled in 76ms
-[00:35:33.951] Server  LOG      ✓ Compiled in 76ms
-[00:35:35.977] Server  LOG      ✓ Compiled in 70ms
-[00:35:41.334] Server  LOG      ✓ Compiled in 83ms
-[00:35:53.039] Server  LOG      ✓ Compiled in 68ms
-[00:36:11.606] Server  LOG      ✓ Compiled in 77ms
-[00:36:31.747] Server  LOG      ✓ Compiled in 77ms
-[00:36:50.816] Server  LOG      ✓ Compiled in 94ms
-[00:37:06.875] Server  LOG      ✓ Compiled in 99ms
-[00:37:08.419] Server  LOG      ✓ Compiled in 103ms
-[00:37:13.656] Server  LOG      ✓ Compiled in 74ms
-[00:37:17.855] Server  LOG      ✓ Compiled in 87ms
-[00:41:30.140] Server  LOG      ✓ Compiled in 76ms
-[00:41:33.418] Server  LOG      ✓ Compiled in 17ms
-[00:41:33.543] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:105:23
-Parsing ecmascript source code failed
-  103 |             <div className="flex flex-col w-full h-full absolute z-30">
-  104 |                 <div>
-> 105 |                     </>
-      |                       ^
-  106 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-  107 |             </div>
-  108 |         </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:41:33.543] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:107:14
-Parsing ecmascript source code failed
-  105 |                     </>
-  106 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-> 107 |             </div>
-      |              ^^^^^
-  108 |         </div>
-  109 |     );
-  110 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:41:35.580] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:23
-Parsing ecmascript source code failed
-  104 |                 <div>
-  105 |                     
-> 106 |                     </>
-      |                       ^
-  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-  108 |             </div>
-  109 |         </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:41:35.580] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:14
-Parsing ecmascript source code failed
-  106 |                     </>
-  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-> 108 |             </div>
-      |              ^^^^^
-  109 |         </div>
-  110 |     );
-  111 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:41:36.736] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:19
-Parsing ecmascript source code failed
-  104 |                 <div>
-  105 |                     
-> 106 |                 </>
+  113 |
+  114 |             <div className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50">
+> 115 |                 <>>
       |                   ^
-  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-  108 |             </div>
-  109 |         </div>
+  116 |
+  117 |                 {/* Content div */}
+  118 |                 <div id="project_content" className="flex flex-col gap-2">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:33:39.704] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:154:19
+Parsing ecmascript source code failed
+  152 |                     </div>
+  153 |                 </div>
+> 154 |             </div>
+      |                   ^
+> 155 |         </div>
+      | ^^^^^^^^^
+  156 |     );
+  157 | }
+
+Expected '</', got 'jsx text (
+        )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:33:43.705] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:38
+Parsing ecmascript source code failed
+  113 |
+  114 |             <div className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50">
+> 115 |                 <Button onClickFn={}/>
+      |                                      ^
+  116 |
+  117 |                 {/* Content div */}
+  118 |                 <div id="project_content" className="flex flex-col gap-2">
 
 Expression expected
 
@@ -274,44 +189,15 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:41:36.736] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:14
+[00:33:50.758] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:18
 Parsing ecmascript source code failed
-  106 |                 </>
-  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-> 108 |             </div>
-      |              ^^^^^
-  109 |         </div>
-  110 |     );
-  111 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:41:40.459] Server  LOG      ✓ Compiled in 117ms
-[00:41:43.731] Server  LOG      ✓ Compiled in 98ms
-[00:41:46.512] Server  LOG      ✓ Compiled in 89ms
-[00:42:43.796] Server  LOG      ✓ Compiled in 140ms
-[00:42:45.951] Server  LOG      ✓ Compiled in 106ms
-[00:42:50.085] Server  LOG      ✓ Compiled in 100ms
-[00:42:52.271] Server  LOG      ✓ Compiled in 20ms
-[00:42:53.299] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:13
-Parsing ecmascript source code failed
-  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-  105 |                 <h1></>
-> 106 |             </div>
-      |             ^
-  107 |         </div>
-  108 |     );
-  109 | }
+  113 |
+  114 |             <div className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50">
+> 115 |                 <<button className="text-white w-fit z-40 right-2" onClick={handleClose}><span>X</span> Close</button>>
+      |                  ^
+  116 |
+  117 |                 {/* Content div */}
+  118 |                 <div id="project_content" className="flex flex-col gap-2">
 
 Expression expected
 
@@ -325,70 +211,18 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:42:53.299] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:14
+[00:33:56.979] Server  LOG      ✓ Compiled in 185ms
+[00:34:00.746] Server  LOG      ✓ Compiled in 140ms
+[00:34:05.352] Server  LOG      ✓ Compiled in 20ms
+[00:34:06.379] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:63
 Parsing ecmascript source code failed
-  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-  105 |                 <h1></>
-> 106 |             </div>
-      |              ^^^^^
-  107 |         </div>
-  108 |     );
-  109 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:42:55.017] Server  LOG      ✓ Compiled in 834ms
-[00:42:55.928] Server  LOG      ✓ Compiled in 116ms
-[00:43:06.285] Server  LOG      ✓ Compiled in 16ms
-[00:43:06.403] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:21
-Parsing ecmascript source code failed
-  106 |                     {
-  107 |                         selectedProject && 
-> 108 |                     }
-      |                     ^
-  109 |                 </h1>
-  110 |             </div>
-  111 |         </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:43:19.909] Server  LOG      ✓ Compiled in 144ms
-[00:43:24.287] Server  LOG      ✓ Compiled in 99ms
-[00:43:48.023] Server  LOG      ✓ Compiled in 136ms
-[00:43:53.383] Server  LOG      ✓ Compiled in 112ms
-[00:43:54.784] Server  LOG      ✓ Compiled in 95ms
-[00:44:00.634] Server  LOG      ✓ Compiled in 89ms
-[00:44:16.148] Server  LOG      ✓ Compiled in 108ms
-[00:44:17.485] Server  LOG      ✓ Compiled in 17ms
-[00:44:17.694] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:13
-Parsing ecmascript source code failed
-  107 |                 </h1>
-  108 |                 <div></>
-> 109 |             </div>
-      |             ^
-  110 |         </div>
-  111 |     );
-  112 | }
+  113 |
+  114 |             <div className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50">
+> 115 |                 <Button onClickFn={handleClose} buttonText={}/>
+      |                                                               ^
+  116 |
+  117 |                 {/* Content div */}
+  118 |                 <div id="project_content" className="flex flex-col gap-2">
 
 Expression expected
 
@@ -402,1737 +236,1887 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:44:17.694] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:14
+[00:34:08.212] Server  LOG      ✓ Compiled in 97ms
+[00:34:13.381] Server  LOG      ✓ Compiled in 15ms
+[00:34:17.050] Server  LOG      ✓ Compiled in 24ms
+[00:34:51.290] Server  LOG      ✓ Compiled in 182ms
+[00:34:53.271] Server  LOG      ✓ Compiled in 147ms
+[00:34:55.791] Server  LOG      ✓ Compiled in 149ms
+[00:34:59.636] Server  LOG      ✓ Compiled in 125ms
+[00:35:03.786] Server  LOG      ✓ Compiled in 149ms
+[00:35:05.877] Server  LOG      ✓ Compiled in 134ms
+[00:35:11.699] Server  LOG      ✓ Compiled in 145ms
+[00:35:29.170] Server  LOG      ✓ Compiled in 17ms
+[00:35:31.535] Server  LOG      ✓ Compiled in 25ms
+[00:35:33.342] Server  LOG      ✓ Compiled in 16ms
+[00:35:35.691] Server  LOG      ✓ Compiled in 24ms
+[00:35:38.359] Server  LOG      ✓ Compiled in 14ms
+[00:35:40.582] Server  LOG      ✓ Compiled in 21ms
+[00:36:01.808] Server  LOG      ✓ Compiled in 19ms
+[00:36:03.856] Server  LOG      ✓ Compiled in 16ms
+[00:36:12.712] Server  LOG      ✓ Compiled in 20ms
+[00:36:14.849] Server  LOG      ✓ Compiled in 17ms
+[00:36:20.363] Server  LOG      ✓ Compiled in 17ms
+[00:37:37.023] Server  LOG      ✓ Compiled in 19ms
+[00:37:38.055] Browser ERROR   ./src/components/utils/Button.js:7:16
 Parsing ecmascript source code failed
-  107 |                 </h1>
-  108 |                 <div></>
-> 109 |             </div>
-      |              ^^^^^
-  110 |         </div>
-  111 |     );
-  112 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:44:22.075] Server  LOG      ✓ Compiled in 158ms
-[00:44:24.675] Server  LOG      ✓ Compiled in 102ms
-[00:44:37.096] Server  LOG      ✓ Compiled in 137ms
-[00:44:44.425] Server  LOG      ✓ Compiled in 111ms
-[00:44:49.799] Server  LOG      ✓ Compiled in 89ms
-[00:44:52.347] Server  LOG      ✓ Compiled in 130ms
-[00:44:56.662] Server  LOG      ✓ Compiled in 87ms
-[00:44:58.066] Server  LOG      ✓ Compiled in 92ms
-[00:45:06.127] Server  LOG      ✓ Compiled in 91ms
-[00:45:12.886] Server  LOG      ✓ Compiled in 89ms
-[00:45:20.994] Server  LOG      ✓ Compiled in 145ms
-[00:45:28.826] Server  LOG      ✓ Compiled in 123ms
-[00:45:54.043] Server  LOG      ✓ Compiled in 81ms
-[00:46:00.390] Server  LOG      ✓ Compiled in 17ms
-[00:46:00.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:13
-Parsing ecmascript source code failed
-  115 |                 </div>
-  116 |                 <div></>
-> 117 |             </div>
-      |             ^
-  118 |         </div>
-  119 |     );
-  120 | }
+   5 |     return (
+   6 |     <button className="text-white font-oswald border border-white p-2 w-fit flex flex-col" onClick={onClickFn}>
+>  7 |         <div></>
+     |                ^
+   8 |         <div className="inline-block ">
+   9 |             {buttonText}
+  10 |         </div>
 
 Expression expected
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:46:00.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:14
+[00:37:40.288] Server  LOG      ✓ Compiled in 15ms
+[00:37:43.070] Server  LOG      ✓ Compiled in 15ms
+[00:37:48.593] Server  LOG      ✓ Compiled in 25ms
+[00:37:51.025] Server  LOG      ✓ Compiled in 23ms
+[00:38:12.279] Server  LOG      ✓ Compiled in 32ms
+[00:38:18.271] Server  LOG      ✓ Compiled in 30ms
+[00:38:22.089] Server  LOG      ✓ Compiled in 16ms
+[00:39:11.474] Server  LOG      ✓ Compiled in 17ms
+[00:39:13.942] Server  LOG      ✓ Compiled in 29ms
+[00:39:20.821] Server  LOG      ✓ Compiled in 16ms
+[00:39:25.221] Server  LOG      ✓ Compiled in 20ms
+[00:39:26.673] Server  LOG      ✓ Compiled in 22ms
+[00:39:37.449] Server  LOG      ✓ Compiled in 31ms
+[00:39:46.313] Server  LOG      ✓ Compiled in 16ms
+[00:39:50.026] Server  LOG      ✓ Compiled in 29ms
+[00:39:57.384] Server  LOG      ✓ Compiled in 15ms
+[00:39:59.534] Server  LOG      ✓ Compiled in 17ms
+[00:40:02.194] Server  LOG      ✓ Compiled in 34ms
+[00:40:08.674] Server  LOG      ✓ Compiled in 17ms
+[00:40:12.685] Server  LOG      ✓ Compiled in 23ms
+[00:40:36.871] Server  LOG      ✓ Compiled in 19ms
+[00:40:43.681] Server  LOG      ✓ Compiled in 16ms
+[00:40:47.548] Server  LOG      ✓ Compiled in 18ms
+[00:41:38.660] Server  LOG      ✓ Compiled in 30ms
+[00:41:40.486] Server  LOG      ✓ Compiled in 37ms
+[00:41:43.599] Server  LOG      ✓ Compiled in 21ms
+[00:41:45.268] Server  LOG      ✓ Compiled in 33ms
+[00:41:49.350] Server  LOG      ✓ Compiled in 26ms
+[00:41:51.824] Server  LOG      ✓ Compiled in 14ms
+[00:41:57.090] Server  LOG      ✓ Compiled in 16ms
+[00:42:03.443] Server  LOG      ✓ Compiled in 32ms
+[00:42:06.235] Server  LOG      ✓ Compiled in 33ms
+[00:42:12.502] Server  LOG      ✓ Compiled in 28ms
+[00:42:16.039] Server  LOG      ✓ Compiled in 34ms
+[00:42:18.811] Server  LOG      ✓ Compiled in 15ms
+[00:42:25.111] Server  LOG      ✓ Compiled in 24ms
+[00:42:31.376] Server  LOG      ✓ Compiled in 31ms
+[00:43:06.578] Server  LOG      ✓ Compiled in 27ms
+[00:43:30.215] Server  LOG      ✓ Compiled in 25ms
+[00:43:33.142] Server  LOG      ✓ Compiled in 22ms
+[00:43:40.077] Server  LOG      ✓ Compiled in 31ms
+[00:43:41.461] Server  LOG      ✓ Compiled in 22ms
+[00:43:42.145] Browser WARN    React Hook useEffect requires an effect callback. Did you forget to pass a callback to the hook?
+[00:43:42.145] Browser WARN    React Hook useEffect requires an effect callback. Did you forget to pass a callback to the hook?
+[00:43:42.145] Browser ERROR   uncaughtError: TypeError: create is not a function
+[00:43:42.621] Server  LOG      ✓ Compiled in 18ms
+[00:43:43.637] Browser ERROR   ./src/components/utils/Button.js:5:15
 Parsing ecmascript source code failed
-  115 |                 </div>
-  116 |                 <div></>
-> 117 |             </div>
-      |              ^^^^^
-  118 |         </div>
-  119 |     );
-  120 | }
+  3 |
+  4 | export default function Button({buttonText, onClickFn}){
+> 5 |     useEffect(())
+    |               ^^
+  6 |
+  7 |     return (
+  8 |     <button className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
 
-Unterminated regexp literal
+Parenthesized expression cannot be empty
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:46:06.388] Server  LOG      ✓ Compiled in 136ms
-[00:46:12.259] Server  LOG      ✓ Compiled in 19ms
-[00:46:12.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:116:27
-Parsing ecmascript source code failed
-  114 |                     </div>
-  115 |                 </div>
-> 116 |                 <button></>
-      |                           ^
-  117 |                 <div className="flex">
-  118 |
-  119 |                 </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:46:12.611] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:120:14
-Parsing ecmascript source code failed
-  118 |
-  119 |                 </div>
-> 120 |             </div>
-      |              ^^^^^
-  121 |         </div>
-  122 |     );
-  123 | }
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:46:22.345] Server  LOG      ✓ Compiled in 75ms
-[00:46:26.837] Server  LOG      ✓ Compiled in 174ms
-[00:46:32.150] Server  LOG      ✓ Compiled in 17ms
-[00:46:32.857] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:17
-Parsing ecmascript source code failed
-  115 |                 </div>
-  116 |                 <
-> 117 |                 <button>Live Link</button>
-      |                 ^
-  118 |                 <div className="flex">
-  119 |
-  120 |                 </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:46:35.755] Server  LOG      ✓ Compiled in 20ms
-[00:46:35.859] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:116:24
-Parsing ecmascript source code failed
-  114 |                     </div>
-  115 |                 </div>
-> 116 |                 <div></>
-      |                        ^
-  117 |                 <button>Live Link</button>
-  118 |                 <div className="flex">
-  119 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:46:39.552] Server  LOG      ✓ Compiled in 78ms
-[00:46:41.944] Server  LOG      ✓ Compiled in 131ms
-[00:46:45.801] Server  LOG      ✓ Compiled in 124ms
-[00:46:50.291] Server  LOG      ✓ Compiled in 100ms
-[00:46:51.845] Server  LOG      ✓ Compiled in 138ms
-[00:47:01.003] Server  LOG      ✓ Compiled in 99ms
-[00:47:05.481] Server  LOG      ✓ Compiled in 102ms
-[00:47:07.600] Server  LOG      ✓ Compiled in 101ms
-[00:47:09.722] Server  LOG      ✓ Compiled in 101ms
-[00:47:15.154] Server  LOG      ✓ Compiled in 108ms
-[00:47:18.440] Server  LOG      ✓ Compiled in 107ms
-[00:47:19.765] Server  LOG      ✓ Compiled in 94ms
-[00:47:23.449] Server  LOG      ✓ Compiled in 88ms
-[00:47:39.494] Server  LOG      ✓ Compiled in 107ms
-[00:47:48.606] Server  LOG      ✓ Compiled in 146ms
-[00:47:57.561] Server  LOG      ✓ Compiled in 80ms
-[00:49:22.437] Server  LOG      ✓ Compiled in 117ms
-[00:49:29.814] Server  LOG      ✓ Compiled in 17ms
-[00:49:30.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div></>
-> 122 |                 </div>
-      |                 ^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:30.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div></>
-> 122 |                 </div>
-      |                  ^^^^^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:31.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div ></>
-> 122 |                 </div>
-      |                 ^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:31.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div ></>
-> 122 |                 </div>
-      |                  ^^^^^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:34.464] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id=""></>
-> 122 |                 </div>
-      |                 ^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:34.464] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id=""></>
-> 122 |                 </div>
-      |                  ^^^^^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:36.465] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id="img"></>
-> 122 |                 </div>
-      |                 ^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:36.465] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id="img"></>
-> 122 |                 </div>
-      |                  ^^^^^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:39.466] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id="img_div"></>
-> 122 |                 </div>
-      |                 ^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:39.466] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
-Parsing ecmascript source code failed
-  120 |                 <div className="flex items-start">
-  121 |                     <div id="img_div"></>
-> 122 |                 </div>
-      |                  ^^^^^
-  123 |             </div>
-  124 |         </div>
-  125 |     );
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:49:44.066] Server  LOG      ✓ Compiled in 132ms
-[00:49:47.868] Server  LOG      ✓ Compiled in 116ms
-[00:49:50.218] Server  LOG      ✓ Compiled in 104ms
-[00:49:53.460] Server  LOG      ✓ Compiled in 106ms
-[00:49:55.453] Server  LOG      ✓ Compiled in 97ms
-[00:49:57.169] Server  LOG      ✓ Compiled in 111ms
-[00:50:00.946] Server  LOG      ✓ Compiled in 99ms
-[00:50:03.271] Server  LOG      ✓ Compiled in 99ms
-[00:50:04.704] Server  LOG      ✓ Compiled in 96ms
-[00:50:08.087] Server  LOG      ✓ Compiled in 98ms
-[00:50:11.072] Server  LOG      ✓ Compiled in 92ms
-[00:50:44.087] Server  LOG      ✓ Compiled in 152ms
-[00:51:15.749] Server  LOG      ✓ Compiled in 131ms
-[00:51:33.879] Server  LOG      ✓ Compiled in 111ms
-[00:51:41.707] Server  LOG      ✓ Compiled in 16ms
-[00:51:42.190] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:121:29
-Parsing ecmascript source code failed
-  119 |                     <button>Github Link</button>
-  120 |                 </div>
-> 121 |                 <div ref={} className="flex items-start">
-      |                             ^^^^^^^^^
-  122 |                     <div  id="img_div" className="w-[35w] h-[40vh]"></div>
-  123 |                 </div>
-  124 |             </div>
-
-Expected '</', got 'className'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:51:57.303] Server  LOG      ✓ Compiled in 158ms
-[00:52:02.606] Server  LOG      ✓ Compiled in 115ms
-[00:52:03.914] Server  LOG      ✓ Compiled in 106ms
-[00:52:23.700] Server  LOG      ✓ Compiled in 162ms
-[00:52:25.849] Server  LOG      ✓ Compiled in 112ms
-[00:52:30.325] Server  LOG      ✓ Compiled in 126ms
-[00:52:34.028] Server  LOG      ✓ Compiled in 63ms
-[00:52:36.129] Server  LOG      ✓ Compiled in 102ms
-[00:52:37.707] Server  LOG      ✓ Compiled in 112ms
-[00:52:39.763] Server  LOG      ✓ Compiled in 100ms
-[00:52:43.019] Server  LOG      ✓ Compiled in 93ms
-[00:52:44.465] Server  LOG      ✓ Compiled in 114ms
-[00:52:45.475] Server  LOG      ✓ Compiled in 93ms
-[00:52:47.265] Server  LOG      ✓ Compiled in 96ms
-[00:52:50.764] Server  LOG      ✓ Compiled in 111ms
-[00:52:52.620] Server  LOG      ✓ Compiled in 15ms
-[00:52:53.647] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:59:17
-Parsing ecmascript source code failed
-  57 |                 {
-  58 |                     top : 
-> 59 |                 }
-     |                 ^
-  60 |             );}
-  61 |
-  62 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:01.715] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:09.866] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:12.867] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:14.917] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:18.917] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:43.922] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:44.922] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:46.923] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:48.935] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:61:17
-Parsing ecmascript source code failed
-  59 |                 {
-  60 |                     top : 
-> 61 |                 }
-     |                 ^
-  62 |             );}
-  63 |
-  64 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:53:52.963] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
-Parsing ecmascript source code failed
-  58 |                 {
-  59 |                     top : 
-> 60 |                 }
-     |                 ^
-  61 |             );}
-  62 |
-  63 |             tlRef.current = tl;
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:54:10.665] Server  LOG      ✓ Compiled in 173ms
-[00:54:17.733] Server  LOG      ✓ Compiled in 120ms
-[00:54:22.611] Server  LOG      ✓ Compiled in 137ms
-[00:54:25.788] Server  LOG      ✓ Compiled in 111ms
-[00:54:27.897] Server  LOG      ✓ Compiled in 113ms
-[00:56:10.507] Server  LOG      ✓ Compiled in 226ms
-[00:56:11.227] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+[00:43:46.665] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:43:46.695] Server  LOG      ✓ Compiled in 752ms
+[00:43:47.965] Server  LOG      ✓ Compiled in 49ms
+[00:43:48.203] Browser ERROR   %s received a final argument during this render, but not during the previous render. Even though the final argument is optional, its type cannot change between renders. useEffect
+[00:43:57.346] Server  LOG      ✓ Compiled in 50ms
+[00:44:00.529] Server  LOG      ✓ Compiled in 21ms
+[00:44:03.682] Server  LOG      ✓ Compiled in 32ms
+[00:44:10.620] Server  LOG      ✓ Compiled in 25ms
+[00:44:13.919] Server  LOG      ✓ Compiled in 25ms
+[00:44:14.735] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
 Previous: %s
-Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [[object Object]] [[object Object], [object Object]]
-[00:56:48.104] Server  LOG      ✓ Compiled in 137ms
-[00:57:20.582] Server  LOG      ✓ Compiled in 17ms
-[00:57:20.781] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:49:34
-Parsing ecmascript source code failed
-  47 |
-  48 |                 // 2. ANIMATE to Final Position (Floating to the left)
-> 49 |                 const finalTop = const finalTop = destRect.top + window.innerHeight;
-     |                                  ^^^^^
-  50 |                 tl.fromTo(ghostImgRef.current, {
-  51 |                     top: rectPos.top,       // Final Y pos
-  52 |                     left: rectPos.left,       // Final X pos
+Incoming: %s useEffect [] [[object Object]]
+[00:44:15.259] Server  LOG      ✓ Compiled in 24ms
+[00:44:33.146] Server  LOG      ✓ Compiled in 28ms
+[00:44:34.148] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-Expression expected
+Previous: %s
+Incoming: %s useEffect [[object Object]] []
+[00:44:39.996] Server  LOG      ✓ Compiled in 22ms
+[00:44:45.753] Server  LOG      ✓ Compiled in 17ms
+[00:44:46.151] Browser ERROR   ./src/components/utils/Button.js:12:18
+Parsing ecmascript source code failed
+  10 |     return (
+  11 |     <button 
+> 12 |     onMouseEnter={}
+     |                  ^^
+  13 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  14 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  15 |             <div className="inline-block ">
+
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:57:31.387] Server  LOG      ✓ Compiled in 144ms
-[00:57:53.577] Server  LOG      ✓ Compiled in 192ms
-[00:58:12.676] Server  LOG      ✓ Compiled in 127ms
-[00:58:14.265] Server  LOG      ✓ Compiled in 121ms
-[00:58:16.459] Server  LOG      ✓ Compiled in 124ms
-[00:58:18.848] Server  LOG      ✓ Compiled in 101ms
-[00:58:24.258] Server  LOG      ✓ Compiled in 101ms
-[01:32:48.063] Server  LOG      ✓ Compiled in 162ms
-[01:32:49.516] Server  LOG      ✓ Compiled in 136ms
-[01:33:12.396] Server  LOG      ✓ Compiled in 118ms
-[01:33:16.975] Server  LOG      ✓ Compiled in 113ms
-[01:33:18.139] Server  LOG      ✓ Compiled in 121ms
-[01:33:31.762] Server  LOG      ✓ Compiled in 95ms
-[01:33:34.098] Server  LOG      ✓ Compiled in 91ms
-[01:33:41.079] Server  LOG      ✓ Compiled in 86ms
-[01:34:29.357] Server  LOG      ✓ Compiled in 134ms
-[01:34:33.860] Server  LOG      ✓ Compiled in 133ms
-[01:34:44.539] Server  LOG      ✓ Compiled in 101ms
-[01:34:46.583] Server  LOG      ✓ Compiled in 93ms
-[01:34:48.812] Server  LOG      ✓ Compiled in 105ms
-[01:35:10.455] Server  LOG      ✓ Compiled in 100ms
-[01:35:11.985] Server  LOG      ✓ Compiled in 117ms
-[01:35:23.895] Server  LOG      ✓ Compiled in 97ms
-[01:35:33.534] Server  LOG      ✓ Compiled in 91ms
-[01:35:42.188] Server  LOG      ✓ Compiled in 96ms
-[01:35:49.798] Server  LOG      ✓ Compiled in 19ms
-[01:35:50.831] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:28
+[00:44:51.153] Browser ERROR   ./src/components/utils/Button.js:13:18
 Parsing ecmascript source code failed
-  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
-  132 |                     <div  id="img_div" className="bg-red-200 flex">
-> 133 |                         div>
-      |                            ^
-  134 |                     </div>
-  135 |                 </div>
-  136 |             </div>
+  11 |     return (
+  12 |     <button 
+> 13 |     onMouseEnter={}
+     |                  ^^
+  14 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  15 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  16 |             <div className="inline-block ">
 
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:35:50.893] Server  LOG      ✓ Compiled in 15ms
-[01:35:51.846] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+[00:44:54.154] Browser ERROR   ./src/components/utils/Button.js:6:11
 Parsing ecmascript source code failed
-  137 |         </div>
-  138 |     );
-> 139 | }
-      | ^
+  4 | export default function Button({buttonText, onClickFn}){
+  5 |     const buttonRef = useRef(null);
+> 6 |     const []
+    |           ^^
+  7 |     useEffect(()=>{
+  8 |
+  9 |     }, [])
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:35:52.879] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+[00:44:57.331] Browser ERROR   ./src/components/utils/Button.js:6:11
 Parsing ecmascript source code failed
-  137 |         </div>
-  138 |     );
-> 139 | }
-      | ^
+  4 | export default function Button({buttonText, onClickFn}){
+  5 |     const buttonRef = useRef(null);
+> 6 |     const [mouseState, ]
+    |           ^^^^^^^^^^^^^^
+  7 |     useEffect(()=>{
+  8 |
+  9 |     }, [])
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:35:55.967] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:34
+[00:45:05.528] Browser ERROR   ./src/components/utils/Button.js:13:18
 Parsing ecmascript source code failed
-  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
-  132 |                     <div  id="img_div" className="bg-red-200 flex">
-> 133 |                         <div><></div>
-      |                                  ^^^
-  134 |                     </div>
-  135 |                 </div>
-  136 |             </div>
+  11 |     return (
+  12 |     <button 
+> 13 |     onMouseEnter={}
+     |                  ^^
+  14 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  15 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  16 |             <div className="inline-block ">
 
-Expected '</', got 'div'
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:35:56.984] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:34
+[00:45:09.530] Browser ERROR   ./src/components/utils/Button.js:13:18
 Parsing ecmascript source code failed
-  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
-  132 |                     <div  id="img_div" className="bg-red-200 flex">
-> 133 |                         <div>/div>
-      |                                  ^
-  134 |                     </div>
-  135 |                 </div>
-  136 |             </div>
+  11 |     return (
+  12 |     <button 
+> 13 |     onMouseEnter={}
+     |                  ^^
+  14 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  15 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  16 |             <div className="inline-block ">
 
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:35:56.984] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+[00:45:12.547] Browser ERROR   ./src/components/utils/Button.js:13:18
 Parsing ecmascript source code failed
-  137 |         </div>
-  138 |     );
-> 139 | }
-      | ^
+  11 |     return (
+  12 |     <button 
+> 13 |     onMouseEnter={}
+     |                  ^^
+  14 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  15 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  16 |             <div className="inline-block ">
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:36:00.058] Server  LOG      ✓ Compiled in 89ms
-[01:36:15.859] Server  LOG      ✓ Compiled in 18ms
-[01:36:16.882] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:27
+[00:45:15.548] Browser ERROR   ./src/components/utils/Button.js:14:18
 Parsing ecmascript source code failed
-  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
-  132 |                     <div  id="img_div" className="bg-red-200 flex">
-> 133 |                         <>>
-      |                           ^
-  134 |                     </div>
-  135 |                 </div>
-  136 |             </div>
+  12 |     return (
+  13 |     <button 
+> 14 |     onMouseEnter={}
+     |                  ^^
+  15 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  16 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  17 |             <div className="inline-block ">
 
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
+JSX attributes must only be assigned a non-empty expression
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:36:19.899] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:134:27
+[00:45:18.549] Browser ERROR   ./src/components/utils/Button.js:14:19
 Parsing ecmascript source code failed
-  132 |                     <div  id="img_div" className="bg-red-200 flex">
-  133 |                         <h2><></>
-> 134 |                     </div>
-      |                           ^
-> 135 |                 </div>
-      | ^^^^^^^^^^^^^^^^^
-  136 |             </div>
-  137 |         </div>
-  138 |     );
+  12 |     return (
+  13 |     <button 
+> 14 |     onMouseEnter={()}
+     |                   ^^
+  15 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  16 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  17 |             <div className="inline-block ">
 
-Expected '</', got 'jsx text (
-                )'
+Parenthesized expression cannot be empty
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:36:28.424] Server  LOG      ✓ Compiled in 161ms
-[01:36:30.898] Server  LOG      ✓ Compiled in 136ms
-[01:36:32.886] Server  LOG      ✓ Compiled in 117ms
-[01:36:39.461] Server  LOG      ✓ Compiled in 115ms
-[01:36:41.834] Server  LOG      ✓ Compiled in 108ms
-[01:36:44.878] Server  LOG      ✓ Compiled in 19ms
-[01:36:45.956] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:135:21
+[00:45:25.844] Server  LOG      ✓ Compiled in 41ms
+[00:45:27.722] Server  LOG      ✓ Compiled in 33ms
+[00:45:33.761] Server  LOG      ✓ Compiled in 39ms
+[00:45:36.169] Server  LOG      ✓ Compiled in 47ms
+[00:45:40.244] Server  LOG      ✓ Compiled in 24ms
+[00:45:43.101] Server  LOG      ✓ Compiled in 43ms
+[00:45:46.329] Server  LOG      ✓ Compiled in 32ms
+[00:46:04.721] Server  LOG      ✓ Compiled in 17ms
+[00:46:05.240] Browser ERROR   ./src/components/utils/Button.js:19:31
 Parsing ecmascript source code failed
-  133 |                         <h2>Description</h2>
-  134 |                         <p></>
-> 135 |                     </div>
-      |                     ^
-  136 |                 </div>
-  137 |             </div>
-  138 |         </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:36:45.956] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:135:22
-Parsing ecmascript source code failed
-  133 |                         <h2>Description</h2>
-  134 |                         <p></>
-> 135 |                     </div>
-      |                      ^^^^^
-  136 |                 </div>
-  137 |             </div>
-  138 |         </div>
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:37:00.578] Server  LOG      ✓ Compiled in 182ms
-[01:37:14.450] Server  LOG      ✓ Compiled in 19ms
-[01:37:14.607] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:134:50
-Parsing ecmascript source code failed
-  132 |                     <div  id="img_div" className="bg-red-200 flex flex-col">
-  133 |                         <h2>Description</h2>
-> 134 |                         <p>{selectedProject && ()}</p>
-      |                                                  ^
-  135 |                     </div>
-  136 |                 </div>
-  137 |             </div>
+  17 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  18 |             <div className="inline-block ">
+> 19 |                 {buttonText ? }
+     |                               ^
+  20 |             </div>
+  21 |             <div className="inline-block ">
+  22 |                 {buttonText}
 
 Expected '</', got '}'
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:37:21.498] Server  LOG      ✓ Compiled in 174ms
-[01:37:28.876] Server  LOG      ✓ Compiled in 136ms
-[01:37:33.033] Server  LOG      ✓ Compiled in 130ms
-[01:37:34.847] Server  LOG      ✓ Compiled in 120ms
-[01:37:37.786] Server  LOG      ✓ Compiled in 113ms
-[01:37:53.315] Server  LOG      ✓ Compiled in 18ms
-[01:37:54.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:25
+[00:46:17.532] Server  LOG      ✓ Compiled in 39ms
+[00:46:21.719] Server  LOG      ✓ Compiled in 58ms
+[00:46:22.671] Browser ERROR   Functions are not valid as a React child. This may happen if you return %s instead of <%s /> from render. Or maybe you meant to call this function rather than return it.
+  <%s>{%s}</%s> map map div map div
+[00:46:22.872] Server  LOG      ✓ Compiled in 28ms
+[00:46:23.672] Browser ERROR   uncaughtError: TypeError: missing argument 0 when calling function Array.prototype.map
+[00:46:23.927] Server  LOG      ✓ Compiled in 18ms
+[00:46:24.945] Browser ERROR   ./src/components/utils/Button.js:20:44
 Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                         <div></>
-> 137 |                         </div>
-      |                         ^
-  138 |                     </div>
-  139 |                 </div>
-  140 |             </div>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:37:54.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:26
-Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                         <div></>
-> 137 |                         </div>
-      |                          ^^^^^
-  138 |                     </div>
-  139 |                 </div>
-  140 |             </div>
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:37:57.008] Server  LOG      ✓ Compiled in 168ms
-[01:37:59.327] Server  LOG      ✓ Compiled in 133ms
-[01:38:02.845] Server  LOG      ✓ Compiled in 157ms
-[01:38:15.195] Server  LOG      ✓ Compiled in 138ms
-[01:38:16.698] Server  LOG      ✓ Compiled in 113ms
-[01:38:19.116] Server  LOG      ✓ Compiled in 128ms
-[01:38:41.947] Server  LOG      ✓ Compiled in 126ms
-[01:38:42.609] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, img, name, description}). If you meant to render a collection of children, use an array instead.
-[01:38:45.435] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:38:45.461] Server  LOG      ✓ Compiled in 131ms
-[01:38:47.895] Server  LOG      ✓ Compiled in 20ms
-[01:38:48.010] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:52
-Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                             <div className="flex flex-col">
-> 137 |                                 {selectedProject & }
-      |                                                    ^
-  138 |                             </div>
-  139 |                         </div>
-  140 |                     </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:38:50.108] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:54
-Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                             <div className="flex flex-col">
-> 137 |                                 {selectedProject & ()}
-      |                                                      ^
-  138 |                             </div>
-  139 |                         </div>
-  140 |                     </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:38:53.111] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:69
-Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                             <div className="flex flex-col">
-> 137 |                                 {selectedProject & (selectedProject.)}
-      |                                                                     ^
-  138 |                             </div>
-  139 |                         </div>
-  140 |                     </div>
+  18 |             <div className="inline-block ">
+  19 |                 {buttonText && 
+> 20 |                 buttonText.split('').map(())}
+     |                                            ^
+  21 |             </div>
+  22 |             <div className="inline-block ">
+  23 |                 {buttonText}
 
 Expected '</', got ')'
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:39:00.314] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
-[01:39:02.465] Server  LOG      ✓ Compiled in 18ms
-[01:39:03.325] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:81
+[00:46:29.098] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:29.126] Server  LOG      ✓ Compiled in 29ms
+[00:46:29.516] Server  ERROR    ⨯ ReferenceError: character is not defined
+[00:46:30.653] Browser ERROR   uncaughtError: ReferenceError: idx is not defined
+[00:46:31.171] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:31.300] Server  LOG      ✓ Compiled in 30ms
+[00:46:32.613] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:46:38.549] Server  LOG      ✓ Compiled in 19ms
+[00:46:39.624] Browser ERROR   ./src/components/utils/Button.js:21:36
 Parsing ecmascript source code failed
-  135 |                         <div className="flex">
-  136 |                             <div className="flex flex-col">
-> 137 |                                 {selectedProject & (selectedProject.tools.map(()))}
-      |                                                                                 ^
-  138 |                             </div>
-  139 |                         </div>
-  140 |                     </div>
-
-Expected '</', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:39:06.304] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:39:06.332] Server  LOG      ✓ Compiled in 884ms
-[01:39:06.693] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'tools')
-[01:39:07.825] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
-[01:39:08.282] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:39:08.406] Server  LOG      ✓ Compiled in 173ms
-[01:39:08.635] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'tools')
-[01:39:09.732] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
-[01:39:23.917] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:39:23.942] Server  LOG      ✓ Compiled in 196ms
-[01:39:28.332] Server  LOG      ✓ Compiled in 137ms
-[01:39:34.372] Server  LOG      ✓ Compiled in 151ms
-[01:39:36.599] Server  LOG      ✓ Compiled in 23ms
-[01:39:37.630] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:138:44
-Parsing ecmascript source code failed
-  136 |                             <div className="flex flex-col">
-  137 |                                 {selectedProject && (selectedProject.tools.map((tool, idx)=>{
-> 138 |                                     <div></>
-      |                                            ^
-  139 |                                 }))}
-  140 |                             </div>
-  141 |                         </div>
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     return <span></>
+     |                                    ^
+  22 |                 })}
+  23 |             </div>
+  24 |             <div className="inline-block ">
 
 Expression expected
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:39:42.634] Server  LOG      ✓ Compiled in 97ms
-[01:39:46.479] Server  LOG      ✓ Compiled in 152ms
-[01:39:49.094] Server  LOG      ✓ Compiled in 128ms
-[01:40:16.458] Server  LOG      ✓ Compiled in 179ms
-[01:40:17.499] Server  LOG      ✓ Compiled in 18ms
-[01:40:18.513] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:138:33
+[00:46:41.387] Server  LOG      ✓ Compiled in 797ms
+[00:46:41.390] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:41.735] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `Button`. See https://react.dev/link/warning-keys for more information.
+[00:46:42.889] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Button`. 
+[00:46:42.889] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:46:43.841] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:43.959] Server  LOG      ✓ Compiled in 41ms
+[00:46:44.178] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `Button`. See https://react.dev/link/warning-keys for more information.
+[00:46:45.282] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Button`. 
+[00:46:45.282] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:46:46.703] Server  LOG      ✓ Compiled in 19ms
+[00:46:47.291] Browser ERROR   ./src/components/utils/Button.js:21:35
 Parsing ecmascript source code failed
-  136 |                             <div className="flex flex-col">
-  137 |                                 <
-> 138 |                                 {selectedProject && (selectedProject.tools.map((tool, idx)=>{
-      |                                 ^
-  139 |                                     <div key={idx}>{tool}</div>
-  140 |                                 }))}
-  141 |                             </div>
-
-Expected '</', got '{'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:40:20.360] Server  LOG      ✓ Compiled in 881ms
-[01:40:22.870] Server  LOG      ✓ Compiled in 26ms
-[01:40:23.380] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:29
-Parsing ecmascript source code failed
-  139 |                                     <div key={idx}>{tool}</div>
-  140 |                                 }))}
-> 141 |                             </div>
-      |                             ^
-  142 |                         </div>
-  143 |                     </div>
-  144 |                 </div>
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     return <span>{</span>
+     |                                   ^
+  22 |                 })}
+  23 |             </div>
+  24 |             <div className="inline-block ">
 
 Expression expected
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:40:23.380] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:30
+[00:46:47.291] Browser ERROR   ./src/components/utils/Button.js:21:36
 Parsing ecmascript source code failed
-  139 |                                     <div key={idx}>{tool}</div>
-  140 |                                 }))}
-> 141 |                             </div>
-      |                              ^^^^^
-  142 |                         </div>
-  143 |                     </div>
-  144 |                 </div>
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     return <span>{</span>
+     |                                    ^^^^^^
+  22 |                 })}
+  23 |             </div>
+  24 |             <div className="inline-block ">
 
 Unterminated regexp literal
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:40:29.425] Server  LOG      ✓ Compiled in 119ms
-[01:40:35.968] Server  LOG      ✓ Compiled in 187ms
-[01:40:38.303] Server  LOG      ✓ Compiled in 18ms
-[01:40:38.502] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:29
-Parsing ecmascript source code failed
-  140 |                                     <div key={idx}>{tool}</div>
-  141 |                                 }))}
-> 142 |                             </div>
-      |                             ^
-  143 |                         </div>
-  144 |                     </div>
-  145 |                 </div>
+[00:46:49.239] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:49.576] Server  ERROR   Each child in a list should have a unique "key" prop.
 
-Expression expected
+Check the render method of `Button`. See https://react.dev/link/warning-keys for more information.
+[00:46:50.699] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Button`. 
+[00:46:50.699] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:46:53.033] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:53.076] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `Button`. See https://react.dev/link/warning-keys for more information.
+[00:46:53.085] Server  LOG      ✓ Compiled in 46ms
+[00:46:54.194] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Button`. 
+[00:46:54.194] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:46:57.114] Server  LOG      ✓ Compiled in 18ms
+[00:46:58.309] Browser ERROR   ./src/components/utils/Button.js:21:36
+Parsing ecmascript source code failed
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     return <span va;>{character}</span>
+     |                                    ^
+  22 |                 })}
+  23 |             </div>
+  24 |             <div className="inline-block ">
+
+Expected '</', got ';'
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:40:38.502] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:30
+[00:47:03.244] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:47:36.153] Server  LOG      ✓ Compiled in 18ms
+[00:47:36.300] Browser ERROR   ./src/components/utils/Button.js:21:27
 Parsing ecmascript source code failed
-  140 |                                     <div key={idx}>{tool}</div>
-  141 |                                 }))}
-> 142 |                             </div>
-      |                              ^^^^^
-  143 |                         </div>
-  144 |                     </div>
-  145 |                 </div>
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     const ref
+     |                           ^^^
+  22 |                     return <span key={idx}>{character}</span>
+  23 |                 })}
+  24 |             </div>
 
-Unterminated regexp literal
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:40:45.160] Server  LOG      ✓ Compiled in 178ms
-[01:40:49.127] Server  LOG      ✓ Compiled in 148ms
-[01:40:59.967] Server  LOG      ✓ Compiled in 135ms
-[01:41:05.392] Server  LOG      ✓ Compiled in 153ms
-[01:41:05.947] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? typeOf typeof
-[01:41:08.707] Server  LOG      ✓ Compiled in 121ms
-[01:41:12.583] Server  LOG      ✓ Compiled in 20ms
-[01:41:12.990] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:37
+[00:47:39.301] Browser ERROR   ./src/components/utils/Button.js:21:27
 Parsing ecmascript source code failed
-  139 |                                     {selectedProject && (selectedProject.tools.map((tool, idx)=>{
-  140 |                                         <li key={idx}>{tool}</div>
-> 141 |                                     }))}
-      |                                     ^
-  142 |                                 </ul>
-  143 |                             </div>
-  144 |                         </div>
+  19 |                 {buttonText && 
+  20 |                 buttonText.split('').map((character, idx)=>{
+> 21 |                     const ref 
+     |                           ^^^
+  22 |                     return <span key={idx}>{character}</span>
+  23 |                 })}
+  24 |             </div>
 
-Expected '</', got '}'
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:41:49.021] Browser ERROR   uncaughtError: TypeError: can't access property "map", selectedProject.tools is undefined
-[01:42:14.523] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:42:14.664] Server  LOG      ✓ Compiled in 50ms
-[01:42:16.436] Server  LOG      ✓ Compiled in 56ms
-[01:42:16.945] Server  ERROR    ⨯ ReferenceError: tools is not defined
-[01:42:18.049] Browser ERROR   uncaughtError: ReferenceError: tools is not defined
-[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/components/projects/Projects.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:42:19.627] Server  LOG      ✓ Compiled in 48ms
-[01:42:20.661] Server  LOG      ✓ Compiled in 48ms
-[01:42:24.214] Server  LOG      ✓ Compiled in 52ms
-[01:42:26.200] Server  LOG      ✓ Compiled in 41ms
-[01:42:30.338] Server  LOG      ✓ Compiled in 35ms
-[01:42:43.103] Server  LOG      ✓ Compiled in 41ms
-[01:42:48.508] Server  LOG      ✓ Compiled in 42ms
-[01:42:50.670] Server  LOG      ✓ Compiled in 40ms
-[01:42:56.347] Server  LOG      ✓ Compiled in 42ms
-[01:42:58.687] Server  LOG      ✓ Compiled in 48ms
-[01:43:10.255] Server  LOG      ✓ Compiled in 66ms
-[01:43:14.870] Server  LOG      ✓ Compiled in 45ms
-[01:43:17.875] Server  LOG      ✓ Compiled in 58ms
-[01:43:21.059] Server  LOG      ✓ Compiled in 47ms
-[01:44:18.901] Server  LOG      ✓ Compiled in 188ms
-[01:44:21.027] Server  LOG      ✓ Compiled in 152ms
-[01:44:22.179] Server  LOG      ✓ Compiled in 151ms
-[01:45:23.652] Server  LOG      ✓ Compiled in 187ms
-[01:45:32.345] Server  LOG      ✓ Compiled in 199ms
-[01:45:47.487] Server  LOG      ✓ Compiled in 144ms
-[01:46:47.099] Server  LOG      ✓ Compiled in 22ms
-[01:46:47.873] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:38
+[00:47:42.027] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:42.054] Server  LOG      ✓ Compiled in 62ms
+[00:47:43.134] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:43.135] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:47:43.268] Server  LOG      ✓ Compiled in 27ms
+[00:47:44.594] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:47:44.790] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:44.909] Server  LOG      ✓ Compiled in 18ms
+[00:47:46.248] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:47:48.957] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:49.080] Server  LOG      ✓ Compiled in 18ms
+[00:47:50.433] Browser ERROR   uncaughtError: Error: Expected ref to be a function, an object returned by React.createRef(), or undefined/null.
+[00:47:51.307] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:51.428] Server  LOG      ✓ Compiled in 27ms
+[00:47:52.683] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:47:58.531] Server  LOG      ✓ Compiled in 18ms
+[00:47:58.824] Browser ERROR   ./src/components/utils/Button.js:7:11
 Parsing ecmascript source code failed
-  140 |                                         <li key={idx}>{tool}</li>
-  141 |                                     }))}
-> 142 |                                 </ul>
-      |                                      ^
-> 143 |                             </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  144 |                         </div>
-  145 |                     </div>
-  146 |                 </div>
+   5 |     const buttonRef = useRef(null);
+   6 |     const [mouseState, setMouseState] = useState(false);
+>  7 |     const refArr
+     |           ^^^^^^
+   8 |
+   9 |     useEffect(()=>{
+  10 |         gsap.to()
 
-Expected '</', got 'jsx text (
-                            )'
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:46:55.858] Server  LOG      ✓ Compiled in 20ms
-[01:46:56.001] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:37
+[00:48:00.353] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:01.768] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:48:24.786] Server  LOG      ✓ Compiled in 20ms
+[00:48:25.839] Browser ERROR   ./src/components/utils/Button.js:7:11
 Parsing ecmascript source code failed
-  139 |                                     {selectedProject && (selectedProject.tools.map((tool, idx)=>{
-  140 |                                         <div key={idx}>{tool}</li>
-> 141 |                                     }))}
-      |                                     ^
-  142 |                                 </div>
-  143 |                             </div>
-  144 |                         </div>
+   5 |     const buttonRef = useRef(null);
+   6 |     const [mouseState, setMouseState] = useState(false);
+>  7 |     const [refArr, setRefArr]
+     |           ^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 |     useEffect(()=>{
+  10 |         gsap.to()
 
-Expected '</', got '}'
+'const' declarations must be initialized
 
 Import traces:
   Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[01:48:55.335] Server  LOG      ✓ Compiled in 207ms
-[01:49:42.233] Server  LOG      ✓ Compiled in 94ms
-[01:49:49.484] Server  LOG      ✓ Compiled in 85ms
-[01:49:53.461] Server  LOG      ✓ Compiled in 157ms
-[01:50:51.690] Server  LOG      ✓ Compiled in 218ms
-[01:51:30.969] Server  LOG      ✓ Compiled in 163ms
-[01:51:35.530] Server  LOG      ✓ Compiled in 158ms
-[01:52:12.869] Server  LOG      ✓ Compiled in 190ms
-[01:52:13.998] Server  LOG      ✓ Compiled in 152ms
-[01:52:52.157] Server  LOG      ✓ Compiled in 22ms
-[01:52:52.518] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:24
+[00:48:27.849] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:29.010] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:48:29.144] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:29.273] Server  LOG      ✓ Compiled in 27ms
+[00:48:30.620] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:48:40.631] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:40.652] Server  LOG      ✓ Compiled in 20ms
+[00:48:42.123] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:48:50.247] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:50.384] Server  LOG      ✓ Compiled in 43ms
+[00:48:50.628] Server  ERROR    ⨯ ReferenceError: re is not defined
+[00:48:51.590] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:51.590] Browser ERROR   uncaughtError: ReferenceError: re is not defined
+[00:48:51.717] Server  LOG      ✓ Compiled in 18ms
+[00:48:53.095] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:48:57.613] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:57.633] Server  LOG      ✓ Compiled in 19ms
+[00:48:59.068] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:49:30.711] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:30.848] Server  LOG      ✓ Compiled in 18ms
+[00:49:32.205] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:49:39.673] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:39.811] Server  LOG      ✓ Compiled in 28ms
+[00:49:41.147] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:49:52.785] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:52.914] Server  LOG      ✓ Compiled in 17ms
+[00:49:53.883] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:53.883] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:49:54.008] Server  LOG      ✓ Compiled in 20ms
+[00:49:55.329] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:49:56.077] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:49:56.202] Server  LOG      ✓ Compiled in 17ms
+[00:49:57.546] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:04.082] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:04.203] Server  LOG      ✓ Compiled in 20ms
+[00:50:05.524] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:06.820] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:06.944] Server  LOG      ✓ Compiled in 19ms
+[00:50:08.297] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:09.639] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:09.757] Server  LOG      ✓ Compiled in 26ms
+[00:50:11.071] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:12.076] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:12.196] Server  LOG      ✓ Compiled in 18ms
+[00:50:13.517] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:16.149] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:16.272] Server  LOG      ✓ Compiled in 21ms
+[00:50:17.588] Browser ERROR   uncaughtError: TypeError: can't access property "parent", vars is undefined
+[00:50:21.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:21.707] Server  LOG      ✓ Compiled in 15ms
+[00:50:33.965] Server  LOG      ✓ Compiled in 15ms
+[00:50:37.253] Server  LOG      ✓ Compiled in 19ms
+[00:50:38.307] Browser ERROR   React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Button 1. useRef                     useRef
+2. useState                   useState
+3. useEffect                  useEffect
+4. useRef                     useRef
+5. useRef                     useRef
+6. useRef                     useRef
+7. useRef                     useRef
+8. useRef                     useRef
+9. undefined                  useRef
+
+[00:50:38.307] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:50:53.191] Server  LOG      ✓ Compiled in 18ms
+[00:50:53.395] Browser ERROR   ./src/components/utils/Button.js:11:9
 Parsing ecmascript source code failed
-  113 |             <div className="flex flex-col w-full h-full absolute z-30 p-5 justify-between">
-  114 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
-> 115 |                 <div></>
-      |                        ^
-  116 |                 <h1 className="text-2xl">
-  117 |                     {selectedProject && (selectedProject.name)}
-  118 |                 </h1>
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:52:54.366] Server  LOG      ✓ Compiled in 879ms
-[01:52:55.354] Server  LOG      ✓ Compiled in 175ms
-[01:53:02.445] Server  LOG      ✓ Compiled in 141ms
-[01:53:03.820] Server  LOG      ✓ Compiled in 164ms
-[01:53:09.152] Server  LOG      ✓ Compiled in 168ms
-[01:54:15.432] Server  LOG      ✓ Compiled in 189ms
-[01:54:17.955] Server  LOG      ✓ Compiled in 146ms
-[01:54:19.266] Server  LOG      ✓ Compiled in 147ms
-[01:54:23.027] Server  LOG      ✓ Compiled in 117ms
-[01:54:27.088] Server  LOG      ✓ Compiled in 119ms
-[01:54:39.194] Server  LOG      ✓ Compiled in 138ms
-[01:54:49.040] Server  LOG      ✓ Compiled in 204ms
-[01:55:47.656] Server  LOG      ✓ Compiled in 187ms
-[01:55:49.167] Server  LOG      ✓ Compiled in 137ms
-[01:55:55.337] Server  LOG      ✓ Compiled in 152ms
-[01:56:20.390] Server  LOG      ✓ Compiled in 132ms
-[01:56:25.641] Server  LOG      ✓ Compiled in 132ms
-[01:56:27.521] Server  LOG      ✓ Compiled in 117ms
-[01:57:31.332] Server  LOG      ✓ Compiled in 187ms
-[01:57:35.488] Server  LOG      ✓ Compiled in 132ms
-[01:58:15.908] Server  LOG      ✓ Compiled in 22ms
-[01:58:16.936] Browser ERROR   ./src/components/projects/Projects.js:11:19
-Parsing ecmascript source code failed
-   9 |         name : "Cloud Drive",
-  10 |         description : "This is some desc about the cloud drive project.",
-> 11 |         tagline : ,
-     |                   ^
-  12 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
-  13 |     },
-  14 |     {
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:58:53.074] Server  LOG      ✓ Compiled in 241ms
-[01:59:02.864] Server  LOG      ✓ Compiled in 159ms
-[01:59:12.896] Server  LOG      ✓ Compiled in 130ms
-[01:59:24.875] Server  LOG      ✓ Compiled in 21ms
-[01:59:25.027] Browser ERROR   ./src/components/projects/Projects.js:12:16
-Parsing ecmascript source code failed
-  10 |         description : "This is some desc about the cloud drive project.",
-  11 |         tagline : "This is a tagline." ,
-> 12 |         year : ,
-     |                ^
-  13 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
-  14 |     },
-  15 |     {
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[01:59:29.341] Server  LOG      ✓ Compiled in 81ms
-[02:00:11.223] Server  LOG      ✓ Compiled in 222ms
-[02:00:16.810] Server  LOG      ✓ Compiled in 150ms
-[02:00:26.950] Server  LOG      ✓ Compiled in 160ms
-[02:00:30.083] Server  LOG      ✓ Compiled in 127ms
-[02:00:50.805] Server  LOG      ✓ Compiled in 138ms
-[02:00:52.562] Server  LOG      ✓ Compiled in 159ms
-[02:00:54.521] Server  LOG      ✓ Compiled in 135ms
-[02:01:03.490] Server  LOG      ✓ Compiled in 141ms
-[02:01:04.896] Server  LOG      ✓ Compiled in 144ms
-[02:01:45.341] Server  LOG      ✓ Compiled in 197ms
-[02:01:51.965] Server  LOG      ✓ Compiled in 131ms
-[02:02:30.125] Server  LOG      ✓ Compiled in 141ms
-[02:02:36.081] Server  LOG      ✓ Compiled in 133ms
-[02:02:37.491] Server  LOG      ✓ Compiled in 129ms
-[02:02:53.615] Server  LOG      ✓ Compiled in 181ms
-[02:02:56.419] Server  LOG      ✓ Compiled in 133ms
-[02:03:02.423] Server  LOG      ✓ Compiled in 120ms
-[02:03:04.493] Server  LOG      ✓ Compiled in 105ms
-[02:03:06.022] Server  LOG      ✓ Compiled in 101ms
-[02:03:08.801] Server  LOG      ✓ Compiled in 108ms
-[02:03:16.773] Server  LOG      ✓ Compiled in 108ms
-[02:04:18.080] Server  LOG      ✓ Compiled in 184ms
-[02:04:19.527] Server  LOG      ✓ Compiled in 136ms
-[02:04:23.781] Server  LOG      ✓ Compiled in 137ms
-[02:04:27.324] Server  LOG      ✓ Compiled in 117ms
-[02:04:39.090] Server  LOG      ✓ Compiled in 120ms
-[02:04:40.095] Server  LOG      ✓ Compiled in 103ms
-[02:04:53.332] Server  LOG      ✓ Compiled in 96ms
-[02:04:58.510] Server  LOG      ✓ Compiled in 105ms
-[02:05:02.200] Server  LOG      ✓ Compiled in 96ms
-[02:05:04.424] Server  LOG      ✓ Compiled in 101ms
-[02:05:15.507] Server  LOG      ✓ Compiled in 96ms
-[02:05:20.008] Server  LOG      ✓ Compiled in 98ms
-[02:05:21.073] Server  LOG      ✓ Compiled in 99ms
-[02:05:40.092] Server  LOG      ✓ Compiled in 108ms
-[02:05:58.884] Server  LOG      ✓ Compiled in 113ms
-[02:06:10.053] Server  LOG      ✓ Compiled in 111ms
-[02:06:20.614] Server  LOG      ✓ Compiled in 108ms
-[02:06:31.709] Server  LOG      ✓ Compiled in 112ms
-[02:06:33.842] Server  LOG      ✓ Compiled in 104ms
-[02:06:37.205] Server  LOG      ✓ Compiled in 65ms
-[02:06:46.424] Server  LOG      ✓ Compiled in 112ms
-[02:07:26.590] Server  LOG      ✓ Compiled in 117ms
-[02:09:30.239] Server  LOG      ✓ Compiled in 114ms
-[02:09:45.269] Server  LOG      ✓ Compiled in 114ms
-[02:09:47.233] Server  LOG      ✓ Compiled in 116ms
-[02:09:48.274] Server  LOG      ✓ Compiled in 118ms
-[02:11:22.687] Server  LOG      ✓ Compiled in 25ms
-[02:11:23.364] Browser ERROR   ./src/components/projects/Projects.js:10:23
-Parsing ecmascript source code failed
-   8 |         img : "/p1.webp",
-   9 |         name : "Cloud Drive",
-> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.
-     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 | The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
+   9 |         gsap.to("#char", {
+  10 |             y:
+> 11 |         })
+     |         ^
+  12 |     }, [mouseState])
   13 |
+  14 |     return (
 
-Unterminated string constant
+Expression expected
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/components/utils/Button.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/components/utils/Button.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[02:11:28.125] Server  LOG      ✓ Compiled in 18ms
-[02:11:28.458] Browser ERROR   ./src/components/projects/Projects.js:11:9
+[00:50:57.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:57.539] Server  LOG      ✓ Compiled in 721ms
+[00:51:04.740] Server  LOG      ✓ Compiled in 36ms
+[00:51:06.876] Server  LOG      ✓ Compiled in 21ms
+[00:51:12.224] Server  LOG      ✓ Compiled in 20ms
+[00:52:25.172] Server  LOG      ✓ Compiled in 34ms
+[00:52:25.383] Browser ERROR   uncaughtError: Error: Rendered fewer hooks than expected. This may be caused by an accidental early return statement.
+[00:52:44.486] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:44.510] Server  LOG      ✓ Compiled in 156ms
+[00:53:15.270] Server  LOG      ✓ Compiled in 34ms
+[00:53:32.648] Server  LOG      ✓ Compiled in 26ms
+[00:53:42.042] Server  LOG      ✓ Compiled in 24ms
+[00:53:48.214] Server  LOG      ✓ Compiled in 22ms
+[00:53:54.970] Server  LOG      ✓ Compiled in 35ms
+[00:53:57.768] Server  LOG      ✓ Compiled in 23ms
+[00:54:21.765] Server  LOG      ✓ Compiled in 20ms
+[00:54:34.717] Server  LOG      ✓ Compiled in 23ms
+[00:55:20.773] Server  LOG      ✓ Compiled in 28ms
+[00:55:21.815] Browser ERROR   uncaughtError: ReferenceError: mouseState is not defined
+[00:55:22.782] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:55:22.809] Server  LOG      ✓ Compiled in 29ms
+[00:55:38.338] Server  LOG      ✓ Compiled in 20ms
+[00:55:44.232] Server  LOG      ✓ Compiled in 18ms
+[00:55:52.087] Server  LOG      ✓ Compiled in 18ms
+[00:55:58.167] Server  LOG      ✓ Compiled in 23ms
+[00:56:10.172] Server  LOG      ✓ Compiled in 18ms
+[00:56:11.208] Browser ERROR   uncaughtError: ReferenceError: onMouseEnter is not defined
+[00:56:14.317] Server  LOG      ✓ Compiled in 17ms
+[00:56:15.334] Browser ERROR   ./src/components/utils/Button.js:21:23
 Parsing ecmascript source code failed
-   9 |         name : "Cloud Drive",
-  10 |         description : "
-> 11 |         ",
-     |         ^^
-  12 |         tagline : "This is a tagline." ,
-  13 |         year : 2024,
-  14 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:11:35.458] Browser ERROR   ./src/components/projects/Projects.js:10:23
-Parsing ecmascript source code failed
-   8 |         img : "/p1.webp",
-   9 |         name : "Cloud Drive",
-> 10 |         description : ,
+  19 |     <button 
+  20 |     onMouseEnter={onMouseEnter}
+> 21 |     onMouseLeave={onMo)}
      |                       ^
-  11 |         tagline : "This is a tagline." ,
-  12 |         year : 2024,
-  13 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+  22 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  23 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  24 |             <div className="inline-block ">
+
+Expected '}', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:56:16.333] Browser ERROR   ./src/components/utils/Button.js:21:31
+Parsing ecmascript source code failed
+  19 |     <button 
+  20 |     onMouseEnter={onMouseEnter}
+> 21 |     onMouseLeave={onMouseLeave)}
+     |                               ^
+  22 |     ref={buttonRef} className="text-white font-oswald border border-white p-1 overflow-hidden w-fit" onClick={onClickFn}>
+  23 |         <div className="h-[2rem] flex flex-col overflow-hidden">
+  24 |             <div className="inline-block ">
+
+Expected '}', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/utils/Button.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/utils/Button.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:56:17.057] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:56:17.086] Server  LOG      ✓ Compiled in 27ms
+[00:56:17.493] Server  ERROR    ⨯ ReferenceError: onMouseEnter is not defined
+[00:56:18.222] Browser ERROR   uncaughtError: ReferenceError: onMouseEnter is not defined
+[00:56:24.838] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:56:24.864] Server  LOG      ✓ Compiled in 20ms
+[00:56:25.230] Server  ERROR    ⨯ ReferenceError: onMouseEnter is not defined
+[00:56:26.338] Browser ERROR   uncaughtError: ReferenceError: onMouseEnter is not defined
+[00:56:31.129] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:56:31.255] Server  LOG      ✓ Compiled in 22ms
+[00:56:31.485] Server  ERROR    ⨯ ReferenceError: onMouseLeave is not defined
+[00:56:32.586] Browser ERROR   uncaughtError: ReferenceError: onMouseLeave is not defined
+[00:56:35.408] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:56:35.525] Server  LOG      ✓ Compiled in 32ms
+[00:57:20.513] Server  LOG      ✓ Compiled in 30ms
+[00:57:47.174] Server  LOG      ✓ Compiled in 26ms
+[00:57:51.686] Server  LOG      ✓ Compiled in 22ms
+[00:57:52.949] Server  LOG      ✓ Compiled in 20ms
+[00:59:07.285] Server  LOG      ✓ Compiled in 36ms
+[00:59:10.897] Server  LOG      ✓ Compiled in 30ms
+[00:59:46.368] Server  LOG      ✓ Compiled in 23ms
+[00:59:49.937] Server  LOG      ✓ Compiled in 23ms
+[01:00:05.735] Server  LOG      ✓ Compiled in 19ms
+[01:00:47.964] Server  LOG      ✓ Compiled in 23ms
+[01:00:51.529] Server  LOG      ✓ Compiled in 20ms
+[01:01:25.393] Server  LOG      ✓ Compiled in 30ms
+[01:01:39.864] Server  LOG      ✓ Compiled in 24ms
+[01:02:10.973] Server  LOG      ✓ Compiled in 19ms
+[01:02:11.290] Browser ERROR   uncaughtError: ReferenceError: tl is not defined
+[01:02:15.617] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:02:15.643] Server  LOG      ✓ Compiled in 26ms
+[01:02:24.024] Server  LOG      ✓ Compiled in 21ms
+[01:02:29.974] Server  LOG      ✓ Compiled in 19ms
+[01:02:32.532] Server  LOG      ✓ Compiled in 32ms
+[01:02:47.947] Server  LOG      ✓ Compiled in 22ms
+[01:02:52.577] Server  LOG      ✓ Compiled in 19ms
+[01:02:54.671] Server  LOG      ✓ Compiled in 18ms
+[01:02:57.507] Server  LOG      ✓ Compiled in 16ms
+[01:03:01.201] Server  LOG      ✓ Compiled in 19ms
+[01:03:39.604] Server  LOG      ✓ Compiled in 32ms
+[01:03:41.206] Server  LOG      ✓ Compiled in 18ms
+[01:03:50.958] Server  LOG      ✓ Compiled in 18ms
+[01:06:14.527] Server  LOG      ✓ Compiled in 37ms
+[01:06:21.706] Server  LOG      ✓ Compiled in 193ms
+[01:06:26.797] Server  LOG      ✓ Compiled in 173ms
+[01:07:00.176] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.177] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.179] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.181] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.193] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.195] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.197] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.198] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.200] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.202] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.204] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.205] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.208] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.209] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.211] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.212] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.214] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.215] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.216] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.218] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.221] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.222] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.223] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.225] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.227] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.228] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.229] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.230] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.232] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.233] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.234] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.235] Server  ERROR    ⨯ ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:00.237] Server  LOG      ✓ Compiled in 40ms
+[01:07:01.154] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:5:1
+Module not found: Can't resolve '@/components/utils/Button'
+  3 | import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+  4 | import { closeProject } from "@/lib/slices/projectSlice";
+> 5 | import AnimatedButton from "@/components/utils/Button";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // projectName : string,
+  8 | // projectDesc : string,
+
+Import map: aliased to relative './src/components/utils/Button' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:08:53.871] Server  LOG      ✓ Compiled in 185ms
+[01:08:55.178] Server  LOG      ✓ Compiled in 141ms
+[01:08:57.764] Server  LOG      ✓ Compiled in 20ms
+[01:08:58.788] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:118:29
+Parsing ecmascript source code failed
+  116 |
+  117 |                 {/* Content div */}
+> 118 |                 <div ref={} id="project_content" className="flex flex-col gap-2">
+      |                             ^^
+  119 |                     <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
+  120 |                         {selectedProject && (selectedProject.name)}
+  121 |                     </h1>
+
+Expected '</', got 'id'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:09:09.841] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:119:29
+Parsing ecmascript source code failed
+  117 |
+  118 |                 {/* Content div */}
+> 119 |                 <div ref={} id="project_content" className="flex flex-col gap-2">
+      |                             ^^
+  120 |                     <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
+  121 |                         {selectedProject && (selectedProject.name)}
+  122 |                     </h1>
+
+Expected '</', got 'id'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:09:37.101] Server  LOG      ✓ Compiled in 180ms
+[01:09:56.578] Server  LOG      ✓ Compiled in 181ms
+[01:09:59.882] Server  LOG      ✓ Compiled in 144ms
+[01:10:01.060] Server  LOG      ✓ Compiled in 155ms
+[01:10:05.712] Server  LOG      ✓ Compiled in 118ms
+[01:10:12.235] Server  LOG      ✓ Compiled in 22ms
+[01:10:13.255] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:74:13
+Parsing ecmascript source code failed
+  72 |                 opacity : 1,
+  73 |                 duration : 
+> 74 |             })
+     |             ^
+  75 |             ;}
+  76 |
+  77 |             tlRef.current = tl;
 
 Expression expected
 
 Import traces:
   Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
     ./src/app/page.js [Client Component Browser]
     ./src/app/page.js [Server Component]
 
   Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[02:11:39.400] Server  LOG      ✓ Compiled in 18ms
-[02:11:39.915] Browser ERROR   ./src/components/projects/Projects.js:10:23
-Parsing ecmascript source code failed
-   8 |         img : "/p1.webp",
-   9 |         name : "Cloud Drive",
-> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.
-     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 | The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
-  13 |
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:11:44.999] Browser ERROR   ./src/components/projects/Projects.js:10:23
-Parsing ecmascript source code failed
-   8 |         img : "/p1.webp",
-   9 |         name : "Cloud Drive",
-> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
-     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 | Security was a priority; the application features robust authentication and authorization gates, ensuring that users can only access their own private silos. The UI was crafted with a focus on accessibility and drag-and-drop ergonomics, making file management feel native to the desktop environment.",
-  13 |         tagline : "This is a tagline." ,
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:11:46.126] Browser ERROR   ./src/components/projects/Projects.js:10:23
-Parsing ecmascript source code failed
-   8 |         img : "/p1.webp",
-   9 |         name : "Cloud Drive",
-> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface. The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
-     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 | Security was a priority; the application features robust authentication and authorization gates, ensuring that users can only access their own private silos. The UI was crafted with a focus on accessibility and drag-and-drop ergonomics, making file management feel native to the desktop environment.",
-  13 |         tagline : "This is a tagline." ,
-
-Unterminated string constant
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/Projects.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/Projects.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[02:12:47.315] Server  LOG      ✓ Compiled in 153ms
-[02:12:49.505] Server  LOG      ✓ Compiled in 198ms
-[02:12:51.214] Server  LOG      ✓ Compiled in 147ms
-[02:12:53.486] Server  LOG      ✓ Compiled in 142ms
-[02:13:29.857] Server  LOG      ✓ Compiled in 206ms
-[02:13:31.967] Server  LOG      ✓ Compiled in 135ms
-[02:13:44.706] Server  LOG      ✓ Compiled in 150ms
-[02:14:12.712] Server  LOG      ✓ Compiled in 38ms
-[02:14:54.980] Server  LOG      ✓ Compiled in 168ms
-[02:17:51.102] Server  LOG      ✓ Compiled in 163ms
-[02:18:13.857] Server  LOG      ✓ Compiled in 199ms
-[02:18:16.433] Server  LOG      ✓ Compiled in 140ms
-[02:19:02.867] Server  LOG      ✓ Compiled in 151ms
-[02:19:06.572] Server  LOG      ✓ Compiled in 172ms
-[02:19:33.610] Server  LOG      ✓ Compiled in 192ms
-[02:19:35.204] Server  LOG      ✓ Compiled in 142ms
-[02:19:36.605] Server  LOG      ✓ Compiled in 158ms
-[02:19:42.226] Server  LOG      ✓ Compiled in 119ms
-[02:19:54.528] Server  LOG      ✓ Compiled in 117ms
-[02:20:08.131] Server  LOG      ✓ Compiled in 153ms
-[02:20:13.779] Server  LOG      ✓ Compiled in 114ms
-[02:20:36.405] Server  LOG      ✓ Compiled in 81ms
-[02:20:58.513] Server  LOG      ✓ Compiled in 56ms
+[01:10:16.204] Server  LOG      ✓ Compiled in 183ms
+[01:10:19.255] Browser WARN    Invalid property opacity set to 1 Missing plugin? gsap.registerPlugin()
+[01:10:36.034] Server  LOG      ✓ Compiled in 208ms
+[01:10:51.256] Server  LOG      ✓ Compiled in 150ms
+[01:10:52.863] Server  LOG      ✓ Compiled in 180ms
+[01:11:14.537] Server  LOG      ✓ Compiled in 220ms
+[01:11:33.604] Server  LOG      ✓ Compiled in 160ms
+[01:11:36.677] Server  LOG      ✓ Compiled in 174ms
+[01:12:47.527] Server  LOG      ✓ Compiled in 212ms
+[01:12:56.489] Server  LOG      ✓ Compiled in 154ms
+[01:13:41.564] Server  LOG      ✓ Compiled in 133ms
+[01:13:46.574] Server  LOG      ✓ Compiled in 118ms
+[01:13:46.809] Browser ERROR   uncaughtError: ReferenceError: assignment to undeclared variable ref
+[01:13:48.324] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:13:48.351] Server  LOG      ✓ Compiled in 126ms
+[01:13:50.164] Server  LOG      ✓ Compiled in 128ms
+[01:13:51.638] Server  LOG      ✓ Compiled in 155ms
+[01:14:06.465] Server  LOG      ✓ Compiled in 147ms
+[01:14:10.774] Server  LOG      ✓ Compiled in 140ms
+[01:15:26.746] Server  LOG      ✓ Compiled in 212ms
+[01:15:41.105] Server  LOG      ✓ Compiled in 142ms
+[01:15:43.838] Server  LOG      ✓ Compiled in 176ms
+[01:15:57.244] Server  LOG      ✓ Compiled in 151ms
+[01:16:06.410] Server  LOG      ✓ Compiled in 152ms
+[01:16:18.606] Server  LOG      ✓ Compiled in 225ms
+[01:16:37.599] Server  LOG      ✓ Compiled in 203ms
+[01:20:33.832] Server  LOG      ✓ Compiled in 157ms
+[01:20:35.406] Server  LOG      ✓ Compiled in 132ms
+[01:20:36.879] Server  LOG      ✓ Compiled in 140ms
+[01:20:39.188] Server  LOG      ✓ Compiled in 104ms
+[01:20:42.583] Server  LOG      ✓ Compiled in 117ms
+[01:21:10.501] Server  LOG      ✓ Compiled in 225ms
