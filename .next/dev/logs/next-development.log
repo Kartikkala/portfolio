@@ -1,63 +1,19 @@
-[00:00:00.656] Server  LOG      ✓ Ready in 397ms
-[00:00:05.136] Server  LOG      ○ Compiling / ...
-[00:00:14.746] Browser LOG     Close called!
-[00:00:45.988] Server  LOG      ✓ Compiled in 87ms
-[00:00:46.757] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [] [false, /p1.webp]
-[00:01:31.709] Server  LOG      ✓ Compiled in 70ms
-[00:01:34.427] Server  LOG      ✓ Compiled in 35ms
-[00:01:40.461] Server  LOG      ✓ Compiled in 36ms
-[00:01:43.463] Server  LOG      ✓ Compiled in 57ms
-[00:01:51.114] Browser LOG     Close called!
-[00:02:01.505] Server  LOG      ✓ Compiled in 62ms
-[00:02:02.641] Server  LOG      ✓ Compiled in 67ms
-[00:02:07.772] Browser LOG     Close called!
-[00:02:17.239] Server  LOG      ✓ Compiled in 34ms
-[00:02:18.658] Server  LOG      ✓ Compiled in 53ms
-[00:02:21.145] Server  LOG      ✓ Compiled in 29ms
-[00:02:39.878] Server  LOG      ✓ Compiled in 69ms
-[00:02:39.970] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [false, /p1.webp] [/p1.webp]
-[00:02:54.176] Browser LOG     Close called!
-[00:03:01.761] Server  LOG      ✓ Compiled in 34ms
-[00:04:57.675] Server  LOG      ✓ Compiled in 128ms
-[00:05:08.754] Server  LOG      ✓ Compiled in 88ms
-[00:06:54.457] Server  LOG      ✓ Compiled in 16ms
-[00:06:55.206] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:19:11
+[00:00:00.660] Server  LOG      ✓ Ready in 400ms
+[00:00:05.420] Server  LOG      ○ Compiling / ...
+[00:27:50.127] Server  LOG      ✓ Compiled in 147ms
+[00:28:31.318] Server  LOG      ✓ Compiled in 106ms
+[00:28:39.007] Server  LOG      ✓ Compiled in 105ms
+[00:28:40.311] Server  LOG      ✓ Compiled in 98ms
+[00:28:45.894] Server  LOG      ✓ Compiled in 18ms
+[00:28:46.583] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:58:35
 Parsing ecmascript source code failed
-  17 |     const containerRef = useRef(null);
-  18 |     const ghostImgRef = useRef(null);
-> 19 |     const local
-     |           ^^^^^
-  20 |     const tlRef = useRef(null);
-  21 |
-  22 |     useEffect(() => {
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:57.207] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:5
-Parsing ecmascript source code failed
-  18 |     const ghostImgRef = useRef(null);
-  19 |     const 
-> 20 |     const tlRef = useRef(null);
-     |     ^^^^^
-  21 |
-  22 |     useEffect(() => {
-  23 |             const tl = gsap.timeline({
+  56 |                 tl.from(ghostImgRef.current, {
+  57 |                     top: rectPos.top,       // Final Y pos
+> 58 |                     left: rectPos.,       // Final X pos
+     |                                   ^
+  59 |                     width: "40vw",    // Final Width
+  60 |                     height: "60vh",   // Final Height
+  61 |                     borderRadius: "12px",
 
 Expected ident
 
@@ -71,17 +27,21 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:06:58.208] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:19:11
+[00:29:00.732] Server  LOG      ✓ Compiled in 118ms
+[00:29:06.778] Server  LOG      ✓ Compiled in 98ms
+[00:29:12.606] Server  LOG      ✓ Compiled in 132ms
+[00:29:21.138] Server  LOG      ✓ Compiled in 16ms
+[00:29:21.661] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:63:21
 Parsing ecmascript source code failed
-  17 |     const containerRef = useRef(null);
-  18 |     const ghostImgRef = useRef(null);
-> 19 |     const local
-     |           ^^^^^
-  20 |     const tlRef = useRef(null);
-  21 |
-  22 |     useEffect(() => {
+  61 |                     borderRadius: "0px",
+  62 |                     opacity : 1
+> 63 |                     objectFit: "cover", // Ensure image doesn't stretch weirdly
+     |                     ^^^^^^^^^
+  64 |                     duration: 1.2,
+  65 |                     ease: "power4.inOut",
+  66 |                     delay : 0.1
 
-'const' declarations must be initialized
+Expected ',', got 'objectFit'
 
 Import traces:
   Client Component Browser:
@@ -93,140 +53,126 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:07:03.336] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:11
+[00:29:35.047] Server  LOG      ✓ Compiled in 90ms
+[00:29:40.175] Server  LOG      ✓ Compiled in 135ms
+[00:29:49.636] Server  LOG      ✓ Compiled in 53ms
+[00:30:52.309] Server  LOG      ✓ Compiled in 107ms
+[00:30:54.462] Server  LOG      ✓ Compiled in 94ms
+[00:30:55.612] Server  LOG      ✓ Compiled in 90ms
+[00:31:00.408] Server  LOG      ✓ Compiled in 104ms
+[00:31:01.897] Server  LOG      ✓ Compiled in 81ms
+[00:31:03.896] Server  LOG      ✓ Compiled in 77ms
+[00:31:06.781] Server  LOG      ✓ Compiled in 81ms
+[00:31:10.207] Server  LOG      ✓ Compiled in 90ms
+[00:31:15.657] Server  LOG      ✓ Compiled in 75ms
+[00:31:17.912] Server  LOG      ✓ Compiled in 81ms
+[00:31:20.601] Server  LOG      ✓ Compiled in 75ms
+[00:31:22.235] Server  LOG      ✓ Compiled in 72ms
+[00:31:24.695] Server  LOG      ✓ Compiled in 72ms
+[00:31:30.142] Server  LOG      ✓ Compiled in 70ms
+[00:31:32.823] Server  LOG      ✓ Compiled in 71ms
+[00:31:39.899] Server  LOG      ✓ Compiled in 15ms
+[00:31:40.123] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:101:14
 Parsing ecmascript source code failed
-  18 |     const ghostImgRef = useRef(null);
-  19 |     const tlRef = useRef(null);
-> 20 |     const localOverlay
-     |           ^^^^^^^^^^^^
-  21 |
-  22 |     useEffect(() => {
-  23 |             const tl = gsap.timeline({
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:05.337] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
-Parsing ecmascript source code failed
-  19 |     const tlRef = useRef(null);
-  20 |     
-> 21 |     const localOverlay
-     |           ^^^^^^^^^^^^
-  22 |
-  23 |     useEffect(() => {
-  24 |             const tl = gsap.timeline({
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:07.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:20:11
-Parsing ecmascript source code failed
-  18 |     const ghostImgRef = useRef(null);
-  19 |     const tlRef = useRef(null);
-> 20 |     const localOverlay
-     |           ^^^^^^^^^^^^
-  21 |
-  22 |     useEffect(() => {
-  23 |             const tl = gsap.timeline({
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:08.356] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
-Parsing ecmascript source code failed
-  19 |     const tlRef = useRef(null);
-  20 |     
-> 21 |     const localOverlay
-     |           ^^^^^^^^^^^^
-  22 |
-  23 |     useEffect(() => {
-  24 |             const tl = gsap.timeline({
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:13.535] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:21:11
-Parsing ecmascript source code failed
-  19 |     const tlRef = useRef(null);
-  20 |
-> 21 |     const [localOverlay]
-     |           ^^^^^^^^^^^^^^
-  22 |
-  23 |     useEffect(() => {
-  24 |             const tl = gsap.timeline({
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:07:22.199] Server  LOG      ✓ Compiled in 77ms
-[00:07:24.590] Server  LOG      ✓ Compiled in 111ms
-[00:07:33.609] Server  LOG      ✓ Compiled in 94ms
-[00:07:37.261] Server  LOG      ✓ Compiled in 89ms
-[00:07:53.635] Server  LOG      ✓ Compiled in 98ms
-[00:08:01.191] Server  LOG      ✓ Compiled in 77ms
-[00:08:33.272] Server  LOG      ✓ Compiled in 141ms
-[00:08:44.302] Server  LOG      ✓ Compiled in 99ms
-[00:08:48.252] Server  LOG      ✓ Compiled in 51ms
-[00:09:10.123] Server  LOG      ✓ Compiled in 55ms
-[00:09:22.152] Server  LOG      ✓ Compiled in 53ms
-[00:09:32.926] Server  LOG      ✓ Compiled in 87ms
-[00:12:51.699] Server  LOG      ✓ Compiled in 103ms
-[00:12:58.949] Server  LOG      ✓ Compiled in 83ms
-[00:13:03.174] Server  LOG      ✓ Compiled in 18ms
-[00:13:03.364] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:100:7
-Parsing ecmascript source code failed
-   98 |             tlRef.current.reverse();
-   99 |         }
-> 100 |     };)
-      |       ^
-  101 |     };
+   99 |                     className="fixed z-35 object-cover shadow-2xl w-[20vw] h-3px" // Start hidden, GSAP makes it visible
+  100 |                 />
+> 101 |             )}
+      |              ^
   102 |
-  103 |     return (
+  103 |             <div className="flex flex-col w-full h-full absolute z-30">
+  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:31:48.576] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'img')
+[00:31:49.204] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
+[00:32:21.532] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:21.672] Server  LOG      ✓ Compiled in 124ms
+[00:32:26.323] Server  LOG      ✓ Compiled in 114ms
+[00:32:28.733] Server  LOG      ✓ Compiled in 86ms
+[00:32:32.404] Server  LOG      ✓ Compiled in 16ms
+[00:32:33.033] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:101:14
+Parsing ecmascript source code failed
+   99 |                     className="fixed z-35 object-cover shadow-2xl w-[20vw] h-3px" // Start hidden, GSAP makes it visible
+  100 |                 />
+> 101 |             )}
+      |              ^
+  102 |
+  103 |             <div className="flex flex-col w-full h-full absolute z-30">
+  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:32:34.414] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
+[00:32:35.861] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'img')
+[00:32:36.454] Browser ERROR   uncaughtError: TypeError: can't access property "img", selectedProject is null
+[00:32:54.515] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:54.540] Server  LOG      ✓ Compiled in 95ms
+[00:32:58.735] Server  LOG      ✓ Compiled in 76ms
+[00:33:00.333] Server  LOG      ✓ Compiled in 79ms
+[00:33:14.935] Server  LOG      ✓ Compiled in 78ms
+[00:33:22.609] Server  LOG      ✓ Compiled in 77ms
+[00:33:23.669] Server  LOG      ✓ Compiled in 87ms
+[00:33:33.474] Server  LOG      ✓ Compiled in 114ms
+[00:33:38.942] Server  LOG      ✓ Compiled in 88ms
+[00:33:40.194] Server  LOG      ✓ Compiled in 80ms
+[00:34:09.598] Server  LOG      ✓ Compiled in 85ms
+[00:34:13.772] Server  LOG      ✓ Compiled in 73ms
+[00:34:15.524] Server  LOG      ✓ Compiled in 81ms
+[00:34:16.758] Server  LOG      ✓ Compiled in 75ms
+[00:34:19.771] Server  LOG      ✓ Compiled in 78ms
+[00:34:23.383] Server  LOG      ✓ Compiled in 65ms
+[00:34:26.229] Server  LOG      ✓ Compiled in 65ms
+[00:34:39.925] Server  LOG      ✓ Compiled in 68ms
+[00:34:43.616] Server  LOG      ✓ Compiled in 69ms
+[00:34:46.695] Server  LOG      ✓ Compiled in 66ms
+[00:34:48.761] Server  LOG      ✓ Compiled in 80ms
+[00:35:01.399] Server  LOG      ✓ Compiled in 124ms
+[00:35:04.573] Server  LOG      ✓ Compiled in 111ms
+[00:35:30.572] Server  LOG      ✓ Compiled in 85ms
+[00:35:32.719] Server  LOG      ✓ Compiled in 76ms
+[00:35:33.951] Server  LOG      ✓ Compiled in 76ms
+[00:35:35.977] Server  LOG      ✓ Compiled in 70ms
+[00:35:41.334] Server  LOG      ✓ Compiled in 83ms
+[00:35:53.039] Server  LOG      ✓ Compiled in 68ms
+[00:36:11.606] Server  LOG      ✓ Compiled in 77ms
+[00:36:31.747] Server  LOG      ✓ Compiled in 77ms
+[00:36:50.816] Server  LOG      ✓ Compiled in 94ms
+[00:37:06.875] Server  LOG      ✓ Compiled in 99ms
+[00:37:08.419] Server  LOG      ✓ Compiled in 103ms
+[00:37:13.656] Server  LOG      ✓ Compiled in 74ms
+[00:37:17.855] Server  LOG      ✓ Compiled in 87ms
+[00:41:30.140] Server  LOG      ✓ Compiled in 76ms
+[00:41:33.418] Server  LOG      ✓ Compiled in 17ms
+[00:41:33.543] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:105:23
+Parsing ecmascript source code failed
+  103 |             <div className="flex flex-col w-full h-full absolute z-30">
+  104 |                 <div>
+> 105 |                     </>
+      |                       ^
+  106 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+  107 |             </div>
+  108 |         </div>
 
 Expression expected
 
@@ -240,17 +186,37 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:13:07.427] Server  LOG      ✓ Compiled in 829ms
-[00:13:09.934] Server  LOG      ✓ Compiled in 21ms
-[00:13:10.403] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:95:9
+[00:41:33.543] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:107:14
 Parsing ecmascript source code failed
-  93 |
-  94 |     const handleClose = () => {
-> 95 |         )
-     |         ^
-  96 |     };
-  97 |
-  98 |     return (
+  105 |                     </>
+  106 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+> 107 |             </div>
+      |              ^^^^^
+  108 |         </div>
+  109 |     );
+  110 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:41:35.580] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:23
+Parsing ecmascript source code failed
+  104 |                 <div>
+  105 |                     
+> 106 |                     </>
+      |                       ^
+  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+  108 |             </div>
+  109 |         </div>
 
 Expression expected
 
@@ -264,18 +230,17 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:13:15.491] Server  LOG      ✓ Compiled in 15ms
-[00:13:16.441] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:96:5
+[00:41:35.580] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:14
 Parsing ecmascript source code failed
-  94 |     const handleClose = () => {
-  95 |         tl.
-> 96 |     };
-     |     ^
-  97 |
-  98 |     return (
-  99 |         <div ref={containerRef} className="fixed inset-0 w-screen h-screen z-20 flex -translate-y-full">
+  106 |                     </>
+  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+> 108 |             </div>
+      |              ^^^^^
+  109 |         </div>
+  110 |     );
+  111 | }
 
-Expected ident
+Unterminated regexp literal
 
 Import traces:
   Client Component Browser:
@@ -287,17 +252,17 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:13:19.506] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:95:5
+[00:41:36.736] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:19
 Parsing ecmascript source code failed
-  93 |     const handleClose = () => {
-  94 |         tl.
-> 95 |     };
-     |     ^
-  96 |
-  97 |     return (
-  98 |         <div ref={containerRef} className="fixed inset-0 w-screen h-screen z-20 flex -translate-y-full">
+  104 |                 <div>
+  105 |                     
+> 106 |                 </>
+      |                   ^
+  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+  108 |             </div>
+  109 |         </div>
 
-Expected ident
+Expression expected
 
 Import traces:
   Client Component Browser:
@@ -309,19 +274,1865 @@ Import traces:
     ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
     ./src/app/page.js [Client Component SSR]
     ./src/app/page.js [Server Component]
-[00:13:34.577] Server  LOG      ✓ Compiled in 152ms
-[00:13:40.085] Server  LOG      ✓ Compiled in 128ms
-[00:13:41.994] Server  LOG      ✓ Compiled in 96ms
-[00:14:21.262] Server  LOG      ✓ Compiled in 108ms
-[00:14:27.337] Server  LOG      ✓ Compiled in 90ms
-[00:15:11.431] Server  LOG      ✓ Compiled in 93ms
-[00:15:13.388] Server  LOG      ✓ Compiled in 71ms
-[00:15:13.439] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+[00:41:36.736] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:14
+Parsing ecmascript source code failed
+  106 |                 </>
+  107 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+> 108 |             </div>
+      |              ^^^^^
+  109 |         </div>
+  110 |     );
+  111 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:41:40.459] Server  LOG      ✓ Compiled in 117ms
+[00:41:43.731] Server  LOG      ✓ Compiled in 98ms
+[00:41:46.512] Server  LOG      ✓ Compiled in 89ms
+[00:42:43.796] Server  LOG      ✓ Compiled in 140ms
+[00:42:45.951] Server  LOG      ✓ Compiled in 106ms
+[00:42:50.085] Server  LOG      ✓ Compiled in 100ms
+[00:42:52.271] Server  LOG      ✓ Compiled in 20ms
+[00:42:53.299] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:13
+Parsing ecmascript source code failed
+  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+  105 |                 <h1></>
+> 106 |             </div>
+      |             ^
+  107 |         </div>
+  108 |     );
+  109 | }
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:42:53.299] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:106:14
+Parsing ecmascript source code failed
+  104 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+  105 |                 <h1></>
+> 106 |             </div>
+      |              ^^^^^
+  107 |         </div>
+  108 |     );
+  109 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:42:55.017] Server  LOG      ✓ Compiled in 834ms
+[00:42:55.928] Server  LOG      ✓ Compiled in 116ms
+[00:43:06.285] Server  LOG      ✓ Compiled in 16ms
+[00:43:06.403] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:108:21
+Parsing ecmascript source code failed
+  106 |                     {
+  107 |                         selectedProject && 
+> 108 |                     }
+      |                     ^
+  109 |                 </h1>
+  110 |             </div>
+  111 |         </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:43:19.909] Server  LOG      ✓ Compiled in 144ms
+[00:43:24.287] Server  LOG      ✓ Compiled in 99ms
+[00:43:48.023] Server  LOG      ✓ Compiled in 136ms
+[00:43:53.383] Server  LOG      ✓ Compiled in 112ms
+[00:43:54.784] Server  LOG      ✓ Compiled in 95ms
+[00:44:00.634] Server  LOG      ✓ Compiled in 89ms
+[00:44:16.148] Server  LOG      ✓ Compiled in 108ms
+[00:44:17.485] Server  LOG      ✓ Compiled in 17ms
+[00:44:17.694] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:13
+Parsing ecmascript source code failed
+  107 |                 </h1>
+  108 |                 <div></>
+> 109 |             </div>
+      |             ^
+  110 |         </div>
+  111 |     );
+  112 | }
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:44:17.694] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:14
+Parsing ecmascript source code failed
+  107 |                 </h1>
+  108 |                 <div></>
+> 109 |             </div>
+      |              ^^^^^
+  110 |         </div>
+  111 |     );
+  112 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:44:22.075] Server  LOG      ✓ Compiled in 158ms
+[00:44:24.675] Server  LOG      ✓ Compiled in 102ms
+[00:44:37.096] Server  LOG      ✓ Compiled in 137ms
+[00:44:44.425] Server  LOG      ✓ Compiled in 111ms
+[00:44:49.799] Server  LOG      ✓ Compiled in 89ms
+[00:44:52.347] Server  LOG      ✓ Compiled in 130ms
+[00:44:56.662] Server  LOG      ✓ Compiled in 87ms
+[00:44:58.066] Server  LOG      ✓ Compiled in 92ms
+[00:45:06.127] Server  LOG      ✓ Compiled in 91ms
+[00:45:12.886] Server  LOG      ✓ Compiled in 89ms
+[00:45:20.994] Server  LOG      ✓ Compiled in 145ms
+[00:45:28.826] Server  LOG      ✓ Compiled in 123ms
+[00:45:54.043] Server  LOG      ✓ Compiled in 81ms
+[00:46:00.390] Server  LOG      ✓ Compiled in 17ms
+[00:46:00.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:13
+Parsing ecmascript source code failed
+  115 |                 </div>
+  116 |                 <div></>
+> 117 |             </div>
+      |             ^
+  118 |         </div>
+  119 |     );
+  120 | }
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:00.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:14
+Parsing ecmascript source code failed
+  115 |                 </div>
+  116 |                 <div></>
+> 117 |             </div>
+      |              ^^^^^
+  118 |         </div>
+  119 |     );
+  120 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:06.388] Server  LOG      ✓ Compiled in 136ms
+[00:46:12.259] Server  LOG      ✓ Compiled in 19ms
+[00:46:12.610] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:116:27
+Parsing ecmascript source code failed
+  114 |                     </div>
+  115 |                 </div>
+> 116 |                 <button></>
+      |                           ^
+  117 |                 <div className="flex">
+  118 |
+  119 |                 </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:12.611] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:120:14
+Parsing ecmascript source code failed
+  118 |
+  119 |                 </div>
+> 120 |             </div>
+      |              ^^^^^
+  121 |         </div>
+  122 |     );
+  123 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:22.345] Server  LOG      ✓ Compiled in 75ms
+[00:46:26.837] Server  LOG      ✓ Compiled in 174ms
+[00:46:32.150] Server  LOG      ✓ Compiled in 17ms
+[00:46:32.857] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:117:17
+Parsing ecmascript source code failed
+  115 |                 </div>
+  116 |                 <
+> 117 |                 <button>Live Link</button>
+      |                 ^
+  118 |                 <div className="flex">
+  119 |
+  120 |                 </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:35.755] Server  LOG      ✓ Compiled in 20ms
+[00:46:35.859] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:116:24
+Parsing ecmascript source code failed
+  114 |                     </div>
+  115 |                 </div>
+> 116 |                 <div></>
+      |                        ^
+  117 |                 <button>Live Link</button>
+  118 |                 <div className="flex">
+  119 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:46:39.552] Server  LOG      ✓ Compiled in 78ms
+[00:46:41.944] Server  LOG      ✓ Compiled in 131ms
+[00:46:45.801] Server  LOG      ✓ Compiled in 124ms
+[00:46:50.291] Server  LOG      ✓ Compiled in 100ms
+[00:46:51.845] Server  LOG      ✓ Compiled in 138ms
+[00:47:01.003] Server  LOG      ✓ Compiled in 99ms
+[00:47:05.481] Server  LOG      ✓ Compiled in 102ms
+[00:47:07.600] Server  LOG      ✓ Compiled in 101ms
+[00:47:09.722] Server  LOG      ✓ Compiled in 101ms
+[00:47:15.154] Server  LOG      ✓ Compiled in 108ms
+[00:47:18.440] Server  LOG      ✓ Compiled in 107ms
+[00:47:19.765] Server  LOG      ✓ Compiled in 94ms
+[00:47:23.449] Server  LOG      ✓ Compiled in 88ms
+[00:47:39.494] Server  LOG      ✓ Compiled in 107ms
+[00:47:48.606] Server  LOG      ✓ Compiled in 146ms
+[00:47:57.561] Server  LOG      ✓ Compiled in 80ms
+[00:49:22.437] Server  LOG      ✓ Compiled in 117ms
+[00:49:29.814] Server  LOG      ✓ Compiled in 17ms
+[00:49:30.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div></>
+> 122 |                 </div>
+      |                 ^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:30.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div></>
+> 122 |                 </div>
+      |                  ^^^^^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:31.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div ></>
+> 122 |                 </div>
+      |                 ^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:31.448] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div ></>
+> 122 |                 </div>
+      |                  ^^^^^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:34.464] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id=""></>
+> 122 |                 </div>
+      |                 ^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:34.464] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id=""></>
+> 122 |                 </div>
+      |                  ^^^^^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:36.465] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id="img"></>
+> 122 |                 </div>
+      |                 ^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:36.465] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id="img"></>
+> 122 |                 </div>
+      |                  ^^^^^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:39.466] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:17
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id="img_div"></>
+> 122 |                 </div>
+      |                 ^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:39.466] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:122:18
+Parsing ecmascript source code failed
+  120 |                 <div className="flex items-start">
+  121 |                     <div id="img_div"></>
+> 122 |                 </div>
+      |                  ^^^^^
+  123 |             </div>
+  124 |         </div>
+  125 |     );
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:49:44.066] Server  LOG      ✓ Compiled in 132ms
+[00:49:47.868] Server  LOG      ✓ Compiled in 116ms
+[00:49:50.218] Server  LOG      ✓ Compiled in 104ms
+[00:49:53.460] Server  LOG      ✓ Compiled in 106ms
+[00:49:55.453] Server  LOG      ✓ Compiled in 97ms
+[00:49:57.169] Server  LOG      ✓ Compiled in 111ms
+[00:50:00.946] Server  LOG      ✓ Compiled in 99ms
+[00:50:03.271] Server  LOG      ✓ Compiled in 99ms
+[00:50:04.704] Server  LOG      ✓ Compiled in 96ms
+[00:50:08.087] Server  LOG      ✓ Compiled in 98ms
+[00:50:11.072] Server  LOG      ✓ Compiled in 92ms
+[00:50:44.087] Server  LOG      ✓ Compiled in 152ms
+[00:51:15.749] Server  LOG      ✓ Compiled in 131ms
+[00:51:33.879] Server  LOG      ✓ Compiled in 111ms
+[00:51:41.707] Server  LOG      ✓ Compiled in 16ms
+[00:51:42.190] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:121:29
+Parsing ecmascript source code failed
+  119 |                     <button>Github Link</button>
+  120 |                 </div>
+> 121 |                 <div ref={} className="flex items-start">
+      |                             ^^^^^^^^^
+  122 |                     <div  id="img_div" className="w-[35w] h-[40vh]"></div>
+  123 |                 </div>
+  124 |             </div>
+
+Expected '</', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:51:57.303] Server  LOG      ✓ Compiled in 158ms
+[00:52:02.606] Server  LOG      ✓ Compiled in 115ms
+[00:52:03.914] Server  LOG      ✓ Compiled in 106ms
+[00:52:23.700] Server  LOG      ✓ Compiled in 162ms
+[00:52:25.849] Server  LOG      ✓ Compiled in 112ms
+[00:52:30.325] Server  LOG      ✓ Compiled in 126ms
+[00:52:34.028] Server  LOG      ✓ Compiled in 63ms
+[00:52:36.129] Server  LOG      ✓ Compiled in 102ms
+[00:52:37.707] Server  LOG      ✓ Compiled in 112ms
+[00:52:39.763] Server  LOG      ✓ Compiled in 100ms
+[00:52:43.019] Server  LOG      ✓ Compiled in 93ms
+[00:52:44.465] Server  LOG      ✓ Compiled in 114ms
+[00:52:45.475] Server  LOG      ✓ Compiled in 93ms
+[00:52:47.265] Server  LOG      ✓ Compiled in 96ms
+[00:52:50.764] Server  LOG      ✓ Compiled in 111ms
+[00:52:52.620] Server  LOG      ✓ Compiled in 15ms
+[00:52:53.647] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:59:17
+Parsing ecmascript source code failed
+  57 |                 {
+  58 |                     top : 
+> 59 |                 }
+     |                 ^
+  60 |             );}
+  61 |
+  62 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:01.715] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:09.866] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:12.867] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:14.917] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:18.917] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:43.922] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:44.922] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:46.923] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:48.935] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:61:17
+Parsing ecmascript source code failed
+  59 |                 {
+  60 |                     top : 
+> 61 |                 }
+     |                 ^
+  62 |             );}
+  63 |
+  64 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:53:52.963] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:60:17
+Parsing ecmascript source code failed
+  58 |                 {
+  59 |                     top : 
+> 60 |                 }
+     |                 ^
+  61 |             );}
+  62 |
+  63 |             tlRef.current = tl;
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:54:10.665] Server  LOG      ✓ Compiled in 173ms
+[00:54:17.733] Server  LOG      ✓ Compiled in 120ms
+[00:54:22.611] Server  LOG      ✓ Compiled in 137ms
+[00:54:25.788] Server  LOG      ✓ Compiled in 111ms
+[00:54:27.897] Server  LOG      ✓ Compiled in 113ms
+[00:56:10.507] Server  LOG      ✓ Compiled in 226ms
+[00:56:11.227] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
 Previous: %s
-Incoming: %s useEffect [/p1.webp] [/p1.webp, false]
-[00:15:36.690] Server  LOG      ✓ Compiled in 71ms
-[00:15:36.735] Browser ERROR   %cThe final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [[object Object]] [[object Object], [object Object]]
+[00:56:48.104] Server  LOG      ✓ Compiled in 137ms
+[00:57:20.582] Server  LOG      ✓ Compiled in 17ms
+[00:57:20.781] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:49:34
+Parsing ecmascript source code failed
+  47 |
+  48 |                 // 2. ANIMATE to Final Position (Floating to the left)
+> 49 |                 const finalTop = const finalTop = destRect.top + window.innerHeight;
+     |                                  ^^^^^
+  50 |                 tl.fromTo(ghostImgRef.current, {
+  51 |                     top: rectPos.top,       // Final Y pos
+  52 |                     left: rectPos.left,       // Final X pos
 
-Previous: %s
-Incoming: %s color: rgba(124, 124, 124, 0.75) useEffect [, false] []
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:57:31.387] Server  LOG      ✓ Compiled in 144ms
+[00:57:53.577] Server  LOG      ✓ Compiled in 192ms
+[00:58:12.676] Server  LOG      ✓ Compiled in 127ms
+[00:58:14.265] Server  LOG      ✓ Compiled in 121ms
+[00:58:16.459] Server  LOG      ✓ Compiled in 124ms
+[00:58:18.848] Server  LOG      ✓ Compiled in 101ms
+[00:58:24.258] Server  LOG      ✓ Compiled in 101ms
+[01:32:48.063] Server  LOG      ✓ Compiled in 162ms
+[01:32:49.516] Server  LOG      ✓ Compiled in 136ms
+[01:33:12.396] Server  LOG      ✓ Compiled in 118ms
+[01:33:16.975] Server  LOG      ✓ Compiled in 113ms
+[01:33:18.139] Server  LOG      ✓ Compiled in 121ms
+[01:33:31.762] Server  LOG      ✓ Compiled in 95ms
+[01:33:34.098] Server  LOG      ✓ Compiled in 91ms
+[01:33:41.079] Server  LOG      ✓ Compiled in 86ms
+[01:34:29.357] Server  LOG      ✓ Compiled in 134ms
+[01:34:33.860] Server  LOG      ✓ Compiled in 133ms
+[01:34:44.539] Server  LOG      ✓ Compiled in 101ms
+[01:34:46.583] Server  LOG      ✓ Compiled in 93ms
+[01:34:48.812] Server  LOG      ✓ Compiled in 105ms
+[01:35:10.455] Server  LOG      ✓ Compiled in 100ms
+[01:35:11.985] Server  LOG      ✓ Compiled in 117ms
+[01:35:23.895] Server  LOG      ✓ Compiled in 97ms
+[01:35:33.534] Server  LOG      ✓ Compiled in 91ms
+[01:35:42.188] Server  LOG      ✓ Compiled in 96ms
+[01:35:49.798] Server  LOG      ✓ Compiled in 19ms
+[01:35:50.831] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:28
+Parsing ecmascript source code failed
+  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
+  132 |                     <div  id="img_div" className="bg-red-200 flex">
+> 133 |                         div>
+      |                            ^
+  134 |                     </div>
+  135 |                 </div>
+  136 |             </div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:35:50.893] Server  LOG      ✓ Compiled in 15ms
+[01:35:51.846] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+Parsing ecmascript source code failed
+  137 |         </div>
+  138 |     );
+> 139 | }
+      | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:35:52.879] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+Parsing ecmascript source code failed
+  137 |         </div>
+  138 |     );
+> 139 | }
+      | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:35:55.967] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:34
+Parsing ecmascript source code failed
+  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
+  132 |                     <div  id="img_div" className="bg-red-200 flex">
+> 133 |                         <div><></div>
+      |                                  ^^^
+  134 |                     </div>
+  135 |                 </div>
+  136 |             </div>
+
+Expected '</', got 'div'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:35:56.984] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:34
+Parsing ecmascript source code failed
+  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
+  132 |                     <div  id="img_div" className="bg-red-200 flex">
+> 133 |                         <div>/div>
+      |                                  ^
+  134 |                     </div>
+  135 |                 </div>
+  136 |             </div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:35:56.984] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:139:1
+Parsing ecmascript source code failed
+  137 |         </div>
+  138 |     );
+> 139 | }
+      | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:36:00.058] Server  LOG      ✓ Compiled in 89ms
+[01:36:15.859] Server  LOG      ✓ Compiled in 18ms
+[01:36:16.882] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:133:27
+Parsing ecmascript source code failed
+  131 |                     <div  ref={ghostImgFinalPosRef} id="img_div" className="w-[35vw] h-[50vh] bg-black"></div>
+  132 |                     <div  id="img_div" className="bg-red-200 flex">
+> 133 |                         <>>
+      |                           ^
+  134 |                     </div>
+  135 |                 </div>
+  136 |             </div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:36:19.899] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:134:27
+Parsing ecmascript source code failed
+  132 |                     <div  id="img_div" className="bg-red-200 flex">
+  133 |                         <h2><></>
+> 134 |                     </div>
+      |                           ^
+> 135 |                 </div>
+      | ^^^^^^^^^^^^^^^^^
+  136 |             </div>
+  137 |         </div>
+  138 |     );
+
+Expected '</', got 'jsx text (
+                )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:36:28.424] Server  LOG      ✓ Compiled in 161ms
+[01:36:30.898] Server  LOG      ✓ Compiled in 136ms
+[01:36:32.886] Server  LOG      ✓ Compiled in 117ms
+[01:36:39.461] Server  LOG      ✓ Compiled in 115ms
+[01:36:41.834] Server  LOG      ✓ Compiled in 108ms
+[01:36:44.878] Server  LOG      ✓ Compiled in 19ms
+[01:36:45.956] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:135:21
+Parsing ecmascript source code failed
+  133 |                         <h2>Description</h2>
+  134 |                         <p></>
+> 135 |                     </div>
+      |                     ^
+  136 |                 </div>
+  137 |             </div>
+  138 |         </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:36:45.956] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:135:22
+Parsing ecmascript source code failed
+  133 |                         <h2>Description</h2>
+  134 |                         <p></>
+> 135 |                     </div>
+      |                      ^^^^^
+  136 |                 </div>
+  137 |             </div>
+  138 |         </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:37:00.578] Server  LOG      ✓ Compiled in 182ms
+[01:37:14.450] Server  LOG      ✓ Compiled in 19ms
+[01:37:14.607] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:134:50
+Parsing ecmascript source code failed
+  132 |                     <div  id="img_div" className="bg-red-200 flex flex-col">
+  133 |                         <h2>Description</h2>
+> 134 |                         <p>{selectedProject && ()}</p>
+      |                                                  ^
+  135 |                     </div>
+  136 |                 </div>
+  137 |             </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:37:21.498] Server  LOG      ✓ Compiled in 174ms
+[01:37:28.876] Server  LOG      ✓ Compiled in 136ms
+[01:37:33.033] Server  LOG      ✓ Compiled in 130ms
+[01:37:34.847] Server  LOG      ✓ Compiled in 120ms
+[01:37:37.786] Server  LOG      ✓ Compiled in 113ms
+[01:37:53.315] Server  LOG      ✓ Compiled in 18ms
+[01:37:54.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:25
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                         <div></>
+> 137 |                         </div>
+      |                         ^
+  138 |                     </div>
+  139 |                 </div>
+  140 |             </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:37:54.338] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:26
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                         <div></>
+> 137 |                         </div>
+      |                          ^^^^^
+  138 |                     </div>
+  139 |                 </div>
+  140 |             </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:37:57.008] Server  LOG      ✓ Compiled in 168ms
+[01:37:59.327] Server  LOG      ✓ Compiled in 133ms
+[01:38:02.845] Server  LOG      ✓ Compiled in 157ms
+[01:38:15.195] Server  LOG      ✓ Compiled in 138ms
+[01:38:16.698] Server  LOG      ✓ Compiled in 113ms
+[01:38:19.116] Server  LOG      ✓ Compiled in 128ms
+[01:38:41.947] Server  LOG      ✓ Compiled in 126ms
+[01:38:42.609] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, img, name, description}). If you meant to render a collection of children, use an array instead.
+[01:38:45.435] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:38:45.461] Server  LOG      ✓ Compiled in 131ms
+[01:38:47.895] Server  LOG      ✓ Compiled in 20ms
+[01:38:48.010] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:52
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                             <div className="flex flex-col">
+> 137 |                                 {selectedProject & }
+      |                                                    ^
+  138 |                             </div>
+  139 |                         </div>
+  140 |                     </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:38:50.108] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:54
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                             <div className="flex flex-col">
+> 137 |                                 {selectedProject & ()}
+      |                                                      ^
+  138 |                             </div>
+  139 |                         </div>
+  140 |                     </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:38:53.111] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:69
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                             <div className="flex flex-col">
+> 137 |                                 {selectedProject & (selectedProject.)}
+      |                                                                     ^
+  138 |                             </div>
+  139 |                         </div>
+  140 |                     </div>
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:39:00.314] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
+[01:39:02.465] Server  LOG      ✓ Compiled in 18ms
+[01:39:03.325] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:137:81
+Parsing ecmascript source code failed
+  135 |                         <div className="flex">
+  136 |                             <div className="flex flex-col">
+> 137 |                                 {selectedProject & (selectedProject.tools.map(()))}
+      |                                                                                 ^
+  138 |                             </div>
+  139 |                         </div>
+  140 |                     </div>
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:39:06.304] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:06.332] Server  LOG      ✓ Compiled in 884ms
+[01:39:06.693] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'tools')
+[01:39:07.825] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
+[01:39:08.282] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:08.406] Server  LOG      ✓ Compiled in 173ms
+[01:39:08.635] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'tools')
+[01:39:09.732] Browser ERROR   uncaughtError: TypeError: can't access property "tools", selectedProject is null
+[01:39:23.917] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:23.942] Server  LOG      ✓ Compiled in 196ms
+[01:39:28.332] Server  LOG      ✓ Compiled in 137ms
+[01:39:34.372] Server  LOG      ✓ Compiled in 151ms
+[01:39:36.599] Server  LOG      ✓ Compiled in 23ms
+[01:39:37.630] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:138:44
+Parsing ecmascript source code failed
+  136 |                             <div className="flex flex-col">
+  137 |                                 {selectedProject && (selectedProject.tools.map((tool, idx)=>{
+> 138 |                                     <div></>
+      |                                            ^
+  139 |                                 }))}
+  140 |                             </div>
+  141 |                         </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:39:42.634] Server  LOG      ✓ Compiled in 97ms
+[01:39:46.479] Server  LOG      ✓ Compiled in 152ms
+[01:39:49.094] Server  LOG      ✓ Compiled in 128ms
+[01:40:16.458] Server  LOG      ✓ Compiled in 179ms
+[01:40:17.499] Server  LOG      ✓ Compiled in 18ms
+[01:40:18.513] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:138:33
+Parsing ecmascript source code failed
+  136 |                             <div className="flex flex-col">
+  137 |                                 <
+> 138 |                                 {selectedProject && (selectedProject.tools.map((tool, idx)=>{
+      |                                 ^
+  139 |                                     <div key={idx}>{tool}</div>
+  140 |                                 }))}
+  141 |                             </div>
+
+Expected '</', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:40:20.360] Server  LOG      ✓ Compiled in 881ms
+[01:40:22.870] Server  LOG      ✓ Compiled in 26ms
+[01:40:23.380] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:29
+Parsing ecmascript source code failed
+  139 |                                     <div key={idx}>{tool}</div>
+  140 |                                 }))}
+> 141 |                             </div>
+      |                             ^
+  142 |                         </div>
+  143 |                     </div>
+  144 |                 </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:40:23.380] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:30
+Parsing ecmascript source code failed
+  139 |                                     <div key={idx}>{tool}</div>
+  140 |                                 }))}
+> 141 |                             </div>
+      |                              ^^^^^
+  142 |                         </div>
+  143 |                     </div>
+  144 |                 </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:40:29.425] Server  LOG      ✓ Compiled in 119ms
+[01:40:35.968] Server  LOG      ✓ Compiled in 187ms
+[01:40:38.303] Server  LOG      ✓ Compiled in 18ms
+[01:40:38.502] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:29
+Parsing ecmascript source code failed
+  140 |                                     <div key={idx}>{tool}</div>
+  141 |                                 }))}
+> 142 |                             </div>
+      |                             ^
+  143 |                         </div>
+  144 |                     </div>
+  145 |                 </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:40:38.502] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:30
+Parsing ecmascript source code failed
+  140 |                                     <div key={idx}>{tool}</div>
+  141 |                                 }))}
+> 142 |                             </div>
+      |                              ^^^^^
+  143 |                         </div>
+  144 |                     </div>
+  145 |                 </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:40:45.160] Server  LOG      ✓ Compiled in 178ms
+[01:40:49.127] Server  LOG      ✓ Compiled in 148ms
+[01:40:59.967] Server  LOG      ✓ Compiled in 135ms
+[01:41:05.392] Server  LOG      ✓ Compiled in 153ms
+[01:41:05.947] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? typeOf typeof
+[01:41:08.707] Server  LOG      ✓ Compiled in 121ms
+[01:41:12.583] Server  LOG      ✓ Compiled in 20ms
+[01:41:12.990] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:37
+Parsing ecmascript source code failed
+  139 |                                     {selectedProject && (selectedProject.tools.map((tool, idx)=>{
+  140 |                                         <li key={idx}>{tool}</div>
+> 141 |                                     }))}
+      |                                     ^
+  142 |                                 </ul>
+  143 |                             </div>
+  144 |                         </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:41:49.021] Browser ERROR   uncaughtError: TypeError: can't access property "map", selectedProject.tools is undefined
+[01:42:14.523] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:42:14.664] Server  LOG      ✓ Compiled in 50ms
+[01:42:16.436] Server  LOG      ✓ Compiled in 56ms
+[01:42:16.945] Server  ERROR    ⨯ ReferenceError: tools is not defined
+[01:42:18.049] Browser ERROR   uncaughtError: ReferenceError: tools is not defined
+[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/components/projects/Projects.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:42:19.510] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:42:19.627] Server  LOG      ✓ Compiled in 48ms
+[01:42:20.661] Server  LOG      ✓ Compiled in 48ms
+[01:42:24.214] Server  LOG      ✓ Compiled in 52ms
+[01:42:26.200] Server  LOG      ✓ Compiled in 41ms
+[01:42:30.338] Server  LOG      ✓ Compiled in 35ms
+[01:42:43.103] Server  LOG      ✓ Compiled in 41ms
+[01:42:48.508] Server  LOG      ✓ Compiled in 42ms
+[01:42:50.670] Server  LOG      ✓ Compiled in 40ms
+[01:42:56.347] Server  LOG      ✓ Compiled in 42ms
+[01:42:58.687] Server  LOG      ✓ Compiled in 48ms
+[01:43:10.255] Server  LOG      ✓ Compiled in 66ms
+[01:43:14.870] Server  LOG      ✓ Compiled in 45ms
+[01:43:17.875] Server  LOG      ✓ Compiled in 58ms
+[01:43:21.059] Server  LOG      ✓ Compiled in 47ms
+[01:44:18.901] Server  LOG      ✓ Compiled in 188ms
+[01:44:21.027] Server  LOG      ✓ Compiled in 152ms
+[01:44:22.179] Server  LOG      ✓ Compiled in 151ms
+[01:45:23.652] Server  LOG      ✓ Compiled in 187ms
+[01:45:32.345] Server  LOG      ✓ Compiled in 199ms
+[01:45:47.487] Server  LOG      ✓ Compiled in 144ms
+[01:46:47.099] Server  LOG      ✓ Compiled in 22ms
+[01:46:47.873] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:142:38
+Parsing ecmascript source code failed
+  140 |                                         <li key={idx}>{tool}</li>
+  141 |                                     }))}
+> 142 |                                 </ul>
+      |                                      ^
+> 143 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  144 |                         </div>
+  145 |                     </div>
+  146 |                 </div>
+
+Expected '</', got 'jsx text (
+                            )'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:46:55.858] Server  LOG      ✓ Compiled in 20ms
+[01:46:56.001] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:141:37
+Parsing ecmascript source code failed
+  139 |                                     {selectedProject && (selectedProject.tools.map((tool, idx)=>{
+  140 |                                         <div key={idx}>{tool}</li>
+> 141 |                                     }))}
+      |                                     ^
+  142 |                                 </div>
+  143 |                             </div>
+  144 |                         </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:48:55.335] Server  LOG      ✓ Compiled in 207ms
+[01:49:42.233] Server  LOG      ✓ Compiled in 94ms
+[01:49:49.484] Server  LOG      ✓ Compiled in 85ms
+[01:49:53.461] Server  LOG      ✓ Compiled in 157ms
+[01:50:51.690] Server  LOG      ✓ Compiled in 218ms
+[01:51:30.969] Server  LOG      ✓ Compiled in 163ms
+[01:51:35.530] Server  LOG      ✓ Compiled in 158ms
+[01:52:12.869] Server  LOG      ✓ Compiled in 190ms
+[01:52:13.998] Server  LOG      ✓ Compiled in 152ms
+[01:52:52.157] Server  LOG      ✓ Compiled in 22ms
+[01:52:52.518] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:24
+Parsing ecmascript source code failed
+  113 |             <div className="flex flex-col w-full h-full absolute z-30 p-5 justify-between">
+  114 |                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+> 115 |                 <div></>
+      |                        ^
+  116 |                 <h1 className="text-2xl">
+  117 |                     {selectedProject && (selectedProject.name)}
+  118 |                 </h1>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:52:54.366] Server  LOG      ✓ Compiled in 879ms
+[01:52:55.354] Server  LOG      ✓ Compiled in 175ms
+[01:53:02.445] Server  LOG      ✓ Compiled in 141ms
+[01:53:03.820] Server  LOG      ✓ Compiled in 164ms
+[01:53:09.152] Server  LOG      ✓ Compiled in 168ms
+[01:54:15.432] Server  LOG      ✓ Compiled in 189ms
+[01:54:17.955] Server  LOG      ✓ Compiled in 146ms
+[01:54:19.266] Server  LOG      ✓ Compiled in 147ms
+[01:54:23.027] Server  LOG      ✓ Compiled in 117ms
+[01:54:27.088] Server  LOG      ✓ Compiled in 119ms
+[01:54:39.194] Server  LOG      ✓ Compiled in 138ms
+[01:54:49.040] Server  LOG      ✓ Compiled in 204ms
+[01:55:47.656] Server  LOG      ✓ Compiled in 187ms
+[01:55:49.167] Server  LOG      ✓ Compiled in 137ms
+[01:55:55.337] Server  LOG      ✓ Compiled in 152ms
+[01:56:20.390] Server  LOG      ✓ Compiled in 132ms
+[01:56:25.641] Server  LOG      ✓ Compiled in 132ms
+[01:56:27.521] Server  LOG      ✓ Compiled in 117ms
+[01:57:31.332] Server  LOG      ✓ Compiled in 187ms
+[01:57:35.488] Server  LOG      ✓ Compiled in 132ms
+[01:58:15.908] Server  LOG      ✓ Compiled in 22ms
+[01:58:16.936] Browser ERROR   ./src/components/projects/Projects.js:11:19
+Parsing ecmascript source code failed
+   9 |         name : "Cloud Drive",
+  10 |         description : "This is some desc about the cloud drive project.",
+> 11 |         tagline : ,
+     |                   ^
+  12 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+  13 |     },
+  14 |     {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:58:53.074] Server  LOG      ✓ Compiled in 241ms
+[01:59:02.864] Server  LOG      ✓ Compiled in 159ms
+[01:59:12.896] Server  LOG      ✓ Compiled in 130ms
+[01:59:24.875] Server  LOG      ✓ Compiled in 21ms
+[01:59:25.027] Browser ERROR   ./src/components/projects/Projects.js:12:16
+Parsing ecmascript source code failed
+  10 |         description : "This is some desc about the cloud drive project.",
+  11 |         tagline : "This is a tagline." ,
+> 12 |         year : ,
+     |                ^
+  13 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+  14 |     },
+  15 |     {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[01:59:29.341] Server  LOG      ✓ Compiled in 81ms
+[02:00:11.223] Server  LOG      ✓ Compiled in 222ms
+[02:00:16.810] Server  LOG      ✓ Compiled in 150ms
+[02:00:26.950] Server  LOG      ✓ Compiled in 160ms
+[02:00:30.083] Server  LOG      ✓ Compiled in 127ms
+[02:00:50.805] Server  LOG      ✓ Compiled in 138ms
+[02:00:52.562] Server  LOG      ✓ Compiled in 159ms
+[02:00:54.521] Server  LOG      ✓ Compiled in 135ms
+[02:01:03.490] Server  LOG      ✓ Compiled in 141ms
+[02:01:04.896] Server  LOG      ✓ Compiled in 144ms
+[02:01:45.341] Server  LOG      ✓ Compiled in 197ms
+[02:01:51.965] Server  LOG      ✓ Compiled in 131ms
+[02:02:30.125] Server  LOG      ✓ Compiled in 141ms
+[02:02:36.081] Server  LOG      ✓ Compiled in 133ms
+[02:02:37.491] Server  LOG      ✓ Compiled in 129ms
+[02:02:53.615] Server  LOG      ✓ Compiled in 181ms
+[02:02:56.419] Server  LOG      ✓ Compiled in 133ms
+[02:03:02.423] Server  LOG      ✓ Compiled in 120ms
+[02:03:04.493] Server  LOG      ✓ Compiled in 105ms
+[02:03:06.022] Server  LOG      ✓ Compiled in 101ms
+[02:03:08.801] Server  LOG      ✓ Compiled in 108ms
+[02:03:16.773] Server  LOG      ✓ Compiled in 108ms
+[02:04:18.080] Server  LOG      ✓ Compiled in 184ms
+[02:04:19.527] Server  LOG      ✓ Compiled in 136ms
+[02:04:23.781] Server  LOG      ✓ Compiled in 137ms
+[02:04:27.324] Server  LOG      ✓ Compiled in 117ms
+[02:04:39.090] Server  LOG      ✓ Compiled in 120ms
+[02:04:40.095] Server  LOG      ✓ Compiled in 103ms
+[02:04:53.332] Server  LOG      ✓ Compiled in 96ms
+[02:04:58.510] Server  LOG      ✓ Compiled in 105ms
+[02:05:02.200] Server  LOG      ✓ Compiled in 96ms
+[02:05:04.424] Server  LOG      ✓ Compiled in 101ms
+[02:05:15.507] Server  LOG      ✓ Compiled in 96ms
+[02:05:20.008] Server  LOG      ✓ Compiled in 98ms
+[02:05:21.073] Server  LOG      ✓ Compiled in 99ms
+[02:05:40.092] Server  LOG      ✓ Compiled in 108ms
+[02:05:58.884] Server  LOG      ✓ Compiled in 113ms
+[02:06:10.053] Server  LOG      ✓ Compiled in 111ms
+[02:06:20.614] Server  LOG      ✓ Compiled in 108ms
+[02:06:31.709] Server  LOG      ✓ Compiled in 112ms
+[02:06:33.842] Server  LOG      ✓ Compiled in 104ms
+[02:06:37.205] Server  LOG      ✓ Compiled in 65ms
+[02:06:46.424] Server  LOG      ✓ Compiled in 112ms
+[02:07:26.590] Server  LOG      ✓ Compiled in 117ms
+[02:09:30.239] Server  LOG      ✓ Compiled in 114ms
+[02:09:45.269] Server  LOG      ✓ Compiled in 114ms
+[02:09:47.233] Server  LOG      ✓ Compiled in 116ms
+[02:09:48.274] Server  LOG      ✓ Compiled in 118ms
+[02:11:22.687] Server  LOG      ✓ Compiled in 25ms
+[02:11:23.364] Browser ERROR   ./src/components/projects/Projects.js:10:23
+Parsing ecmascript source code failed
+   8 |         img : "/p1.webp",
+   9 |         name : "Cloud Drive",
+> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.
+     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
+  13 |
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:11:28.125] Server  LOG      ✓ Compiled in 18ms
+[02:11:28.458] Browser ERROR   ./src/components/projects/Projects.js:11:9
+Parsing ecmascript source code failed
+   9 |         name : "Cloud Drive",
+  10 |         description : "
+> 11 |         ",
+     |         ^^
+  12 |         tagline : "This is a tagline." ,
+  13 |         year : 2024,
+  14 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:11:35.458] Browser ERROR   ./src/components/projects/Projects.js:10:23
+Parsing ecmascript source code failed
+   8 |         img : "/p1.webp",
+   9 |         name : "Cloud Drive",
+> 10 |         description : ,
+     |                       ^
+  11 |         tagline : "This is a tagline." ,
+  12 |         year : 2024,
+  13 |         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:11:39.400] Server  LOG      ✓ Compiled in 18ms
+[02:11:39.915] Browser ERROR   ./src/components/projects/Projects.js:10:23
+Parsing ecmascript source code failed
+   8 |         img : "/p1.webp",
+   9 |         name : "Cloud Drive",
+> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.
+     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
+  13 |
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:11:44.999] Browser ERROR   ./src/components/projects/Projects.js:10:23
+Parsing ecmascript source code failed
+   8 |         img : "/p1.webp",
+   9 |         name : "Cloud Drive",
+> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface.The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
+     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | Security was a priority; the application features robust authentication and authorization gates, ensuring that users can only access their own private silos. The UI was crafted with a focus on accessibility and drag-and-drop ergonomics, making file management feel native to the desktop environment.",
+  13 |         tagline : "This is a tagline." ,
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:11:46.126] Browser ERROR   ./src/components/projects/Projects.js:10:23
+Parsing ecmascript source code failed
+   8 |         img : "/p1.webp",
+   9 |         name : "Cloud Drive",
+> 10 |         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface. The architecture relies on a decoupled frontend and backend to ensure scalability. I implemented a recursive file system logic to handle infinite folder nesting, a challenge that required efficient database schema design to prevent query bottlenecks. For file transfers, the system utilizes chunked uploading to handle large files without freezing the browser thread, ensuring a smooth user experience even on slower connections.
+     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | Security was a priority; the application features robust authentication and authorization gates, ensuring that users can only access their own private silos. The UI was crafted with a focus on accessibility and drag-and-drop ergonomics, making file management feel native to the desktop environment.",
+  13 |         tagline : "This is a tagline." ,
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/components/projects/Projects.js [Client Component Browser]
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/projects/Projects.js [Client Component SSR]
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[02:12:47.315] Server  LOG      ✓ Compiled in 153ms
+[02:12:49.505] Server  LOG      ✓ Compiled in 198ms
+[02:12:51.214] Server  LOG      ✓ Compiled in 147ms
+[02:12:53.486] Server  LOG      ✓ Compiled in 142ms
+[02:13:29.857] Server  LOG      ✓ Compiled in 206ms
+[02:13:31.967] Server  LOG      ✓ Compiled in 135ms
+[02:13:44.706] Server  LOG      ✓ Compiled in 150ms
+[02:14:12.712] Server  LOG      ✓ Compiled in 38ms
+[02:14:54.980] Server  LOG      ✓ Compiled in 168ms
+[02:17:51.102] Server  LOG      ✓ Compiled in 163ms
+[02:18:13.857] Server  LOG      ✓ Compiled in 199ms
+[02:18:16.433] Server  LOG      ✓ Compiled in 140ms
+[02:19:02.867] Server  LOG      ✓ Compiled in 151ms
+[02:19:06.572] Server  LOG      ✓ Compiled in 172ms
+[02:19:33.610] Server  LOG      ✓ Compiled in 192ms
+[02:19:35.204] Server  LOG      ✓ Compiled in 142ms
+[02:19:36.605] Server  LOG      ✓ Compiled in 158ms
+[02:19:42.226] Server  LOG      ✓ Compiled in 119ms
+[02:19:54.528] Server  LOG      ✓ Compiled in 117ms
+[02:20:08.131] Server  LOG      ✓ Compiled in 153ms
+[02:20:13.779] Server  LOG      ✓ Compiled in 114ms
+[02:20:36.405] Server  LOG      ✓ Compiled in 81ms
+[02:20:58.513] Server  LOG      ✓ Compiled in 56ms

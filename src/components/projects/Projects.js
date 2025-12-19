@@ -7,7 +7,10 @@ const projects = [
         id : 1,
         img : "/p1.webp",
         name : "Cloud Drive",
-        description : "This is some desc about the cloud drive project."
+        description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface. Also it supports adaptive bitrate streaming for video files that enhances user experience by reducing the amount of data usage.",
+        tagline : "This is a tagline." ,
+        year : 2024,
+        tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
     },
     {
         id : 2,
@@ -31,7 +34,7 @@ const projects = [
 
 export default function Projects({}){
     const [activeProjectImage, setActiveProjectImage] = useState(null)
-    
+
     return (
         <div className="h-screen w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
             <div className="absolute md:right-10 h-full w-[90%] md:w-fit self-center flex flex-col justify-center mb-20">

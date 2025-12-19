@@ -16,6 +16,7 @@ export default function ProjectDetailsOverlay() {
     const barsRef = useRef([]); // To store references to the 5 bars
     const containerRef = useRef(null);
     const ghostImgRef = useRef(null);
+    const ghostImgFinalPosRef = useRef(null);
     const tlRef = useRef(null);
 
     useEffect(() => {
@@ -42,35 +43,33 @@ export default function ProjectDetailsOverlay() {
             );
 
             if (rectPos && ghostImgRef.current) {
-                // 1. SET Initial Position (Exactly where the small image is)
-                tl.set(ghostImgRef.current, {
-                    top: rectPos.top,
-                    left: rectPos.left,
-                    width: rectPos.width,
-                    height: rectPos.height,
-                    borderRadius: "0px", // Assuming grid image is square-ish
-                    opacity: 1
-                }, 0); // Start at time 0
+                const destRect = ghostImgFinalPosRef.current.getBoundingClientRect();
 
                 // 2. ANIMATE to Final Position (Floating to the left)
-                tl.to(ghostImgRef.current, {
-                    top: "15%",       // Final Y pos
-                    left: "5%",       // Final X pos
-                    width: "40vw",    // Final Width
-                    height: "60vh",   // Final Height
-                    borderRadius: "12px",
-                    objectFit: "cover", // Ensure image doesn't stretch weirdly
+                const finalTop = destRect.top + window.innerHeight;
+                tl.fromTo(ghostImgRef.current, {
+                    top: rectPos.top,       // Final Y pos
+                    left: rectPos.left,       // Final X pos
+                    width: rectPos.width,    // Final Width
+                    height: rectPos.height,   // Final Height
                     duration: 1.2,
                     ease: "power4.inOut",
                     delay : 0.1
-                });
-
-                
-            }
+                },
+                {
+                    top: finalTop,
+                    left: destRect.left,
+                    width: destRect.width,
+                    height: destRect.height,
+                    borderRadius: "12px", // Or whatever you want
+                    duration: 1.2,
+                    ease: "power4.inOut",
+                },
+            );}
 
             tlRef.current = tl;
             
-    }, [rectPos]);
+    }, [rectPos, ghostImgFinalPosRef]);
 
     useEffect(()=>{
         if(!tlRef.current)
@@ -107,12 +106,47 @@ export default function ProjectDetailsOverlay() {
                     ref={ghostImgRef}
                     src={selectedProject.img}
                     alt="Project Hero"
-                    className="fixed z-35 object-cover shadow-2xl opacity-0" // Start hidden, GSAP makes it visible
+                    className="fixed z-35 object-cover shadow-2xl w-[35vw] h-[40vh] rounded-md" // Start hidden, GSAP makes it visible
                 />
             )}
 
-            <div className="flex flex-col w-full h-full absolute z-30">
+            <div className="flex flex-col w-full h-full absolute z-30 p-5 justify-between text-teal-50">
                 <button className="text-white w-fit z-40" onClick={handleClose}><span>X</span> Close</button>
+                {/* Content div */}
+                <div id="project_content" className="flex flex-col gap-2">
+                    <h1 className="text-8xl font-oswald font-bold">
+                        {selectedProject && (selectedProject.name)}
+                    </h1>
+                    <div className="flex gap-6">
+                        <div className="font-oswald">
+                            {selectedProject && (selectedProject.year)}
+                        </div>
+                        <div>
+                            {selectedProject && (selectedProject.tagline)}
+                        </div>
+                    </div>
+                    <div className="flex gap-6 font-oswald">
+                        <button>Live Link</button>
+                        <button>Github Link</button>
+                    </div>
+                    <div  className="flex items-end gap-8">
+                        <div ref={ghostImgFinalPosRef} id="img_div" className="w-[45vw] h-[60vh] bg-black"></div>
+                        <div className="flex flex-col gap-6 max-w-1/2">
+                            <h2 className="text-5xl font-oswald">Description</h2>
+                            <p className="">{selectedProject && selectedProject.description}</p>
+                            <div className="flex">
+                                <div className="flex flex-col gap-2">
+                                    <h3 className="font-oswald text-3xl">Tech Stack</h3>
+                                    <div className="">
+                                        {selectedProject && (selectedProject.tools.map((tool, idx)=>{
+                                            return <div key={idx}>{tool}</div>
+                                        }))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
