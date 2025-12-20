@@ -1,9 +1,19 @@
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import RisingAnimation from "../utils/RisingAnimation";
+import AnimatedButton from "../utils/AnimatedButton";
 
 export default function Navbar() {
     const nav = useRef(null)
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "/resume.pdf"; // Path to your file in /public folder
+        link.download = "Kartik_Kala_Resume.pdf"; // The name the user will see
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger);
         const navbar = nav.current;
@@ -38,14 +48,12 @@ export default function Navbar() {
             </div>
             {/* Navigation Links - Aligned to Top Right */}
             <nav className="absolute right-4 md:right-10 pointer-events-auto flex gap-8 items-center font-oswald tracking-wider text-sm md:text-base">
-                <a href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">About</a>
-                <a href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Projects</a>
-                <a href="#recognition" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Recognition</a>
-                <a href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block">Contact</a>
+                <a href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"ABOUT"}/></a>
+                <a href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"PROJECTS"}/></a>
+                <a href="#recognition" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"RECOGNITIONS"}/></a>
+                <a href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"CONTACT"}/></a>
 
-                <a href="/resume.pdf" download className="border border-text-muted px-4 py-2 hover:bg-accent hover:text-surface hover:border-accent transition-all duration-300 uppercase">
-                    Resume
-                </a>
+                <AnimatedButton buttonText={"DOWNLOAD RESUME"} onClickFn={handleDownload}/>
             </nav>
         </div>
     );

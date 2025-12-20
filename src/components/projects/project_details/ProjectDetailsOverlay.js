@@ -98,7 +98,7 @@ export default function ProjectDetailsOverlay() {
     };
 
     return (
-        <div ref={containerRef} className="fixed inset-0 w-screen h-screen z-20 flex -translate-y-full">
+        <div ref={containerRef} className="fixed inset-0 w-screen h-dvh z-20 flex -translate-y-full">
             
             {[...Array(5)].map((_, i) => (
                 <div

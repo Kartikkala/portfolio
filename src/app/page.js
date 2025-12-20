@@ -26,7 +26,7 @@ export default function Home() {
 
   }, [])
   return (
-    <div ref={mainRef} id="main-scroll-container" className="min-h-screen bg-background font-sans relative text-text-muted overflow-x-hidden w-full">
+    <div ref={mainRef} id="main-scroll-container" className="min-h-dvh bg-background font-sans relative text-text-muted overflow-x-hidden w-full">
 
       <ProjectDetailsOverlay/>
       <Navbar />
@@ -34,16 +34,16 @@ export default function Home() {
       {/* Main parent container containing sections */}
       <div ref={contentRef} className="flex flex-col w-full">
 
-        <section className="min-h-screen flex flex-col justify-center">
+        <section className="min-h-dvh flex flex-col justify-center">
           <Hero />
         </section>
         
-        <section id="tools_technologies" className="min-h-screen justify-center flex">
+        <section id="tools_technologies" className="min-h-dvh justify-center flex">
           <Tools/>
         </section>
 
 
-        <section id="projects" className="min-h-screen justify-center">
+        <section id="projects" className="min-h-dvh justify-center">
           <Projects/>
         </section>
 

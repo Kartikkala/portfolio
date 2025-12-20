@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/sirkartik/vscode/portfolio/src/lib/store.js"],"sourcesContent":["import { configureStore } from '@reduxjs/toolkit'\n\nexport const makeStore = () => {\n  return configureStore({\n    reducer: {}\n  })\n}"],"names":[],"mappings":";;;;AAAA;;AAEO,MAAM,YAAY;IACvB,OAAO,IAAA,gNAAc,EAAC;QACpB,SAAS,CAAC;IACZ;AACF","debugId":null}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///home/sirkartik/vscode/portfolio/src/app/StoreProvider.jsx"],"sourcesContent":["'use client'\nimport { useRef } from 'react'\nimport { Provider } from 'react-redux'\nimport { makeStore } from '../lib/store'\n\nexport default function StoreProvider({ count, children }) {\n  const storeRef = useRef(null)\n  if (!storeRef.current) {\n    storeRef.current = makeStore()\n  }\n\n  return <Provider store={storeRef.current}>{children}</Provider>\n}"],"names":["useRef","Provider","makeStore","StoreProvider","count","children","storeRef","current"],"mappings":";;;;;AACA,SAASA,MAAM,QAAQ,OAAO;AAC9B,SAASC,QAAQ,QAAQ,aAAa;AACtC,SAASC,SAAS,QAAQ,cAAc;;;AAHxC,YAAY;;;;AAKG,uBAAuB,EAAEE,KAAK,EAAEC,QAAAA,EAAU,EAAE;;IACzD,MAAMC,QAAQ,OAAGN,uKAAM,EAAC,IAAI,CAAC;IAC7B,IAAI,CAACM,QAAQ,CAACC,OAAO,EAAE;QACrBD,QAAQ,CAACC,OAAO,OAAGL,mIAAS,CAAC,CAAC;IAChC;IAEA,qBAAO,6LAAC,wKAAQ;QAAC,KAAK,CAAC,CAACI,QAAQ,CAACC,OAAO,CAAC,CAAC;kBAACF,QAAQ,CAAC,EAAE,QAAQ,CAAC;;;;;;AACjE;;KAPwBF,aAAaA","ignoreList":[],"debugId":null}}]
-}

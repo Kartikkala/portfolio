@@ -36,7 +36,7 @@ export default function Projects({}){
     const [activeProjectImage, setActiveProjectImage] = useState(null)
 
     return (
-        <div className="h-screen w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
+        <div className="h-[100dvh] w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
             <div className="absolute md:right-10 h-full w-[90%] md:w-fit self-center flex flex-col justify-center mb-20">
                 <ProjectShowcase activeProjectImage={activeProjectImage}/>
             </div>
