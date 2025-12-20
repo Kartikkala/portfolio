@@ -15,6 +15,8 @@ export default function Home() {
   const contentRef = useRef(null);
 
   useEffect(()=>{
+    if(window.innerWidth <= 1280)
+      return;
     gsap.registerPlugin(ScrollSmoother);
     const mainPage = mainRef.current;
 

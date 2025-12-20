@@ -30,6 +30,7 @@
 
 @layer theme {
   :root, :host {
+    --color-red-500: #fb2c36;
     --color-green-800: #016630;
     --color-teal-50: #f0fdfa;
     --color-gray-300: #d1d5dc;
@@ -79,6 +80,7 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
+      --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-green-800: lab(37.4616% -36.7971 22.9692);
       --color-teal-50: lab(98.3189% -4.74921 -.111711);
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
@@ -488,8 +490,44 @@
     height: .9em;
   }
 
+  .h-\[0em\] {
+    height: 0;
+  }
+
+  .h-\[1dem\] {
+    height: 1dem;
+  }
+
+  .h-\[1em\] {
+    height: 1em;
+  }
+
+  .h-\[2dem\] {
+    height: 2dem;
+  }
+
   .h-\[2em\] {
     height: 2em;
+  }
+
+  .h-\[2rem\] {
+    height: 2rem;
+  }
+
+  .h-\[2vh\] {
+    height: 2vh;
+  }
+
+  .h-\[3em\] {
+    height: 3em;
+  }
+
+  .h-\[8em\] {
+    height: 8em;
+  }
+
+  .h-\[10em\] {
+    height: 10em;
   }
 
   .h-\[10vh\] {
@@ -500,12 +538,36 @@
     height: 20vh;
   }
 
-  .h-\[100dvh\], .h-dvh {
+  .h-\[100dvh\] {
+    height: 100dvh;
+  }
+
+  .h-\[em\] {
+    height: em;
+  }
+
+  .h-dvh {
     height: 100dvh;
   }
 
   .h-full {
     height: 100%;
+  }
+
+  .max-h-\[3em\] {
+    max-height: 3em;
+  }
+
+  .max-h-\[10em\] {
+    max-height: 10em;
+  }
+
+  .max-h-\[20em\] {
+    max-height: 20em;
+  }
+
+  .max-h-\[30em\] {
+    max-height: 30em;
   }
 
   .min-h-\[200px\] {
@@ -562,16 +624,6 @@
 
   .-translate-y-full {
     --tw-translate-y: -100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .translate-y-\[-\$\] {
-    --tw-translate-y:  - $ ;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .translate-y-\[-\] {
-    --tw-translate-y:  - ;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
@@ -659,6 +711,10 @@
     align-self: center;
   }
 
+  .overflow-auto {
+    overflow: auto;
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
@@ -709,6 +765,10 @@
 
   .bg-green-800 {
     background-color: var(--color-green-800);
+  }
+
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
 
   .bg-surface\/50 {

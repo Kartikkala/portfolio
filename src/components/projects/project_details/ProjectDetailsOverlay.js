@@ -146,7 +146,7 @@ export default function ProjectDetailsOverlay() {
                         <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]"></div>
                         <div className="flex flex-col md:gap-6 gap-4 md:max-w-1/2">
                             <h2 className="md:text-[clamp(2rem,3vw,3rem)] text-[clamp(1rem,2rem,8rem)] font-oswald">Description</h2>
-                            <p className="">{selectedProject && selectedProject.description}</p>
+                            <p className="overflow-auto h-[10em]">{selectedProject && selectedProject.description}</p>
                             <div className="flex">
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-oswald text-3xl">Tech Stack</h3>

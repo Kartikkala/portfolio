@@ -1,880 +1,126 @@
-[00:00:00.694] Server  LOG      ✓ Ready in 422ms
-[00:00:05.766] Server  LOG      ○ Compiling / ...
-[00:00:06.712] Server  LOG     Width is:  0
-[00:00:07.429] Browser LOG     Width is:  0
-[00:00:07.429] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:00:07.429] Browser LOG     Width:  0
-[00:00:07.429] Browser LOG     Width is:  1580
-[00:00:07.429] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:10.851] Browser LOG     Width:  0
-[00:00:10.852] Browser LOG     Width is:  1184
-[00:00:10.852] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1184
-[00:00:15.277] Browser LOG     Width:  0
-[00:00:15.277] Browser LOG     Width is:  1580
-[00:00:15.278] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:16.611] Browser LOG     Width:  0
-[00:00:16.612] Browser LOG     Width is:  1184
-[00:00:16.612] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1184
-[00:00:21.435] Browser LOG     Width:  0
-[00:00:21.435] Browser LOG     Width is:  1580
-[00:00:21.436] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:23.735] Browser LOG     Width:  0
-[00:00:23.735] Browser LOG     Width is:  1184
-[00:00:23.735] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1184
-[00:00:31.210] Browser LOG     Width:  0
-[00:00:31.210] Browser LOG     Width is:  1580
-[00:00:31.210] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:41.027] Server  LOG      ✓ Compiled in 91ms
-[00:00:41.997] Browser LOG     Width is:  1580
-[00:00:41.997] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:42.051] Server  LOG      ✓ Compiled in 27ms
-[00:00:43.025] Browser LOG     Width is:  1580
-[00:00:43.025] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:00:56.001] Server  LOG      ✓ Compiled in 30ms
-[00:00:56.134] Browser LOG     Width is:  1580
-[00:00:56.134] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:01:11.259] Server  LOG      ✓ Compiled in 205ms
-[00:01:12.293] Browser LOG     Width is:  1580
-[00:01:12.293] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:01:13.675] Server  LOG      ✓ Compiled in 80ms
-[00:01:14.294] Browser LOG     Width is:  1580
-[00:01:14.294] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:01:17.298] Server  LOG     Width is:  0
-[00:01:17.879] Browser LOG     Width is:  0
-[00:01:17.879] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:01:17.879] Browser LOG     Width is:  1580
-[00:01:17.879] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:01:24.149] Server  LOG      ✓ Compiled in 95ms
-[00:01:24.224] Browser LOG     Width is:  1580
-[00:01:24.224] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:01:25.378] Server  LOG     Width is:  0
-[00:01:25.949] Browser LOG     Width is:  0
-[00:01:25.949] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:01:25.949] Browser LOG     Width is:  1580
-[00:01:25.949] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:17.824] Server  LOG      ✓ Compiled in 164ms
-[00:02:17.905] Browser LOG     Width is:  1580
-[00:02:17.905] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:19.913] Server  LOG      ✓ Compiled in 174ms
-[00:02:20.915] Browser LOG     Width is:  1580
-[00:02:20.915] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:21.705] Server  LOG      ✓ Compiled in 137ms
-[00:02:21.915] Browser LOG     Width is:  1580
-[00:02:21.915] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:25.097] Server  LOG      ✓ Compiled in 143ms
-[00:02:26.099] Browser LOG     Width is:  1580
-[00:02:26.100] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:28.677] Server  LOG      ✓ Compiled in 127ms
-[00:02:29.100] Browser LOG     Width is:  1580
-[00:02:29.100] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:30.794] Server  LOG      ✓ Compiled in 21ms
-[00:02:31.102] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:46:13
-Parsing ecmascript source code failed
-  44 |             .fromTo(contentRef.current, {
-  45 |                 y :
-> 46 |             })
-     |             ^
-  47 |             .to(containerRef.current, {
-  48 |                 yPercent : 100,
-  49 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:02:32.101] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:46:13
-Parsing ecmascript source code failed
-  44 |             .fromTo(contentRef.current, {
-  45 |                 y : 
-> 46 |             })
-     |             ^
-  47 |             .to(containerRef.current, {
-  48 |                 yPercent : 100,
-  49 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:02:34.723] Server  LOG      ✓ Compiled in 893ms
-[00:02:35.103] Browser LOG     Width is:  1580
-[00:02:35.103] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:46.010] Server  LOG      ✓ Compiled in 134ms
-[00:02:46.200] Browser LOG     Width is:  1580
-[00:02:46.200] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:02:53.107] Server  LOG      ✓ Compiled in 18ms
-[00:02:53.221] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:49:13
-Parsing ecmascript source code failed
-  47 |             {
-  48 |                 y: 
-> 49 |             })
-     |             ^
-  50 |             .to(containerRef.current, {
-  51 |                 yPercent : 100,
-  52 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:02:55.220] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:49:13
-Parsing ecmascript source code failed
-  47 |             {
-  48 |                 y : 
-> 49 |             })
-     |             ^
-  50 |             .to(containerRef.current, {
-  51 |                 yPercent : 100,
-  52 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:03:01.239] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:49:13
-Parsing ecmascript source code failed
-  47 |             {
-  48 |                 y : 
-> 49 |             })
-     |             ^
-  50 |             .to(containerRef.current, {
-  51 |                 yPercent : 100,
-  52 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:03:05.048] Browser LOG     Width is:  1580
-[00:03:05.048] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:03:08.520] Server  LOG     Width is:  0
-[00:03:09.087] Browser LOG     Width is:  0
-[00:03:09.087] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:03:09.087] Browser LOG     Width is:  1580
-[00:03:09.087] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:03:55.048] Server  LOG      ✓ Compiled in 227ms
-[00:03:55.413] Browser LOG     Width is:  1580
-[00:03:55.413] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:04:47.719] Server  LOG      ✓ Compiled in 213ms
-[00:04:47.804] Browser LOG     Width is:  1580
-[00:04:47.804] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:04:50.402] Server  LOG     Width is:  0
-[00:04:50.962] Browser LOG     Width is:  0
-[00:04:50.962] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:04:50.962] Browser LOG     Width is:  1580
-[00:04:50.962] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:04:54.388] Server  LOG      ✓ Compiled in 78ms
-[00:04:54.887] Browser LOG     Width is:  1580
-[00:04:54.887] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:04:56.244] Server  LOG     Width is:  0
-[00:04:56.789] Browser LOG     Width is:  0
-[00:04:56.789] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:04:56.789] Browser LOG     Width is:  1580
-[00:04:56.789] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:05:17.348] Server  LOG      ✓ Compiled in 16ms
-[00:05:18.035] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:43:13
-Parsing ecmascript source code failed
-  41 |             });
-  42 |
-> 43 |             .to(containerRef.current, {
-     |             ^
-  44 |                 yPercent : 100,
-  45 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-  46 |             })
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:05:20.761] Server  LOG      ✓ Compiled in 890ms
-[00:05:21.075] Browser LOG     Width is:  1580
-[00:05:21.075] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:05:26.740] Server  LOG      ✓ Compiled in 97ms
-[00:05:27.217] Browser LOG     Width is:  1580
-[00:05:27.218] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:05:29.309] Server  LOG     Width is:  0
-[00:05:29.887] Browser LOG     Width is:  0
-[00:05:29.887] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:05:29.887] Browser LOG     Width is:  1580
-[00:05:29.887] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:14.750] Server  LOG      ✓ Compiled in 128ms
-[00:06:15.082] Browser LOG     Width is:  1580
-[00:06:15.082] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:17.397] Server  LOG      ✓ Compiled in 172ms
-[00:06:18.399] Browser LOG     Width is:  1580
-[00:06:18.399] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:19.194] Server  LOG      ✓ Compiled in 151ms
-[00:06:19.400] Browser LOG     Width is:  1580
-[00:06:19.400] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:20.717] Server  LOG      ✓ Compiled in 16ms
-[00:06:21.403] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:36
-Parsing ecmascript source code failed
-  113 |                     key={i}
-  114 |                     ref={addToRefs}
-> 115 |                     className="w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full" 
-      |                                    ^
-  116 |                 >
-  117 |                 </div>
-  118 |             ))}
-
-Expected '>', got 'numeric literal (5, 5)'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:24.405] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:115:36
-Parsing ecmascript source code failed
-  113 |                     key={i}
-  114 |                     ref={addToRefs}
-> 115 |                     className="w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full" 
-      |                                    ^
-  116 |                 >
-  117 |                 </div>
-  118 |             ))}
-
-Expected '>', got 'numeric literal (5, 5)'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:28.440] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:43
-Parsing ecmascript source code failed
-  107 |
-  108 |     return (
-> 109 |         <div ref={containerRef} className=`fixed inset-0 w-screen h-dvh z-20 flex`}>
-      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  110 |             
-  111 |             {[...Array(5)].map((_, i) => (
-  112 |                 <div
-
-JSX value should be either an expression or a quoted JSX text
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:31.442] Browser LOG     Width is:  1580
-[00:06:31.442] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:33.125] Server  LOG      ✓ Compiled in 191ms
-[00:06:33.478] Browser LOG     Width is:  1580
-[00:06:33.478] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:34.694] Server  LOG      ✓ Compiled in 149ms
-[00:06:35.480] Browser LOG     Width is:  1580
-[00:06:35.480] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:38.690] Server  LOG      ✓ Compiled in 16ms
-[00:06:39.731] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:86
-Parsing ecmascript source code failed
-  107 |
-  108 |     return (
-> 109 |         <div ref={containerRef} className={`fixed inset-0 w-screen h-dvh z-20 flex ${}`}>
-      |                                                                                      ^
-  110 |             
-  111 |             {[...Array(5)].map((_, i) => (
-  112 |                 <div
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:41.731] Browser LOG     Width is:  1580
-[00:06:41.731] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:47.164] Server  LOG      ✓ Compiled in 101ms
-[00:06:47.768] Browser LOG     Width is:  1580
-[00:06:47.768] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:48.756] Server  LOG      ✓ Compiled in 161ms
-[00:06:49.769] Browser LOG     Width is:  1580
-[00:06:49.769] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:50.234] Server  LOG      ✓ Compiled in 78ms
-[00:06:50.770] Browser LOG     Width is:  1580
-[00:06:50.770] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:51.283] Server  LOG      ✓ Compiled in 23ms
-[00:06:51.772] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:109:100
-Parsing ecmascript source code failed
-  107 |
-  108 |     return (
-> 109 |         <div ref={containerRef} className={`fixed inset-0 w-screen h-dvh z-20 flex translate-y-[-${}]`}>
-      |                                                                                                    ^
-  110 |             
-  111 |             {[...Array(5)].map((_, i) => (
-  112 |                 <div
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:06:58.012] Browser LOG     Width is:  1580
-[00:06:58.012] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:06:59.722] Server  LOG      ✓ Compiled in 196ms
-[00:07:00.031] Browser LOG     Width is:  1580
-[00:07:00.031] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:01.947] Server  LOG      ✓ Compiled in 170ms
-[00:07:02.022] Browser LOG     Width is:  1580
-[00:07:02.022] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:04.333] Server  LOG     Width is:  0
-[00:07:04.906] Browser LOG     Width is:  0
-[00:07:04.906] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:07:04.906] Browser LOG     Width is:  1580
-[00:07:04.906] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:11.867] Server  LOG      ✓ Compiled in 141ms
-[00:07:12.838] Browser LOG     Width is:  1580
-[00:07:12.838] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:14.133] Server  LOG      ✓ Compiled in 135ms
-[00:07:14.839] Browser LOG     Width is:  1580
-[00:07:14.839] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:20.821] Server  LOG      ✓ Compiled in 153ms
-[00:07:20.979] Browser LOG     Width is:  1580
-[00:07:20.979] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:21.946] Server  LOG      ✓ Compiled in 140ms
-[00:07:22.981] Browser LOG     Width is:  1580
-[00:07:22.981] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:23.249] Server  LOG      ✓ Compiled in 161ms
-[00:07:23.982] Browser LOG     Width is:  1580
-[00:07:23.982] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:26.257] Server  LOG      ✓ Compiled in 127ms
-[00:07:27.101] Browser LOG     Width is:  1580
-[00:07:27.101] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:28.900] Server  LOG      ✓ Compiled in 145ms
-[00:07:28.975] Browser LOG     Width is:  1580
-[00:07:28.975] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:07:37.509] Server  LOG      ✓ Compiled in 128ms
-[00:07:38.191] Browser LOG     Width is:  1580
-[00:07:38.192] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:12.365] Server  LOG      ✓ Compiled in 190ms
-[00:08:13.397] Browser LOG     Width is:  1580
-[00:08:13.397] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:18.181] Server  LOG      ✓ Compiled in 15ms
-[00:08:18.406] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:46:26
-Parsing ecmascript source code failed
-  44 |             .to(containerRef.current, {
-  45 |                 y :
-> 46 |                 yPercent : 100,
-     |                          ^
-  47 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-  48 |             })
-  49 |             .to(barsRef.current,
-
-Expected ',', got ':'
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:08:20.452] Server  LOG      ✓ Compiled in 14ms
-[00:08:21.519] Browser ERROR   ./src/components/projects/project_details/ProjectDetailsOverlay.js:45:21
-Parsing ecmascript source code failed
-  43 |             tl
-  44 |             .to(containerRef.current, {
-> 45 |                 y : ,
-     |                     ^
-  46 |                 yPercent : 100,
-  47 |                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
-  48 |             })
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component Browser]
-    ./src/app/page.js [Client Component Browser]
-    ./src/app/page.js [Server Component]
-
-  Client Component SSR:
-    ./src/components/projects/project_details/ProjectDetailsOverlay.js [Client Component SSR]
-    ./src/app/page.js [Client Component SSR]
-    ./src/app/page.js [Server Component]
-[00:08:22.750] Browser LOG     Width is:  1580
-[00:08:22.750] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:25.787] Browser LOG     Width is:  1580
-[00:08:25.787] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:26.239] Browser LOG     Width is:  1580
-[00:08:26.239] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:26.239] Browser LOG     Height :  767
-[00:08:26.239] Browser LOG     1580
-[00:08:30.399] Server  LOG     Width is:  0
-[00:08:30.943] Browser LOG     Width is:  0
-[00:08:30.943] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:08:30.943] Browser LOG     Width is:  1580
-[00:08:30.943] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:31.411] Browser LOG     Width is:  1580
-[00:08:31.411] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:31.892] Browser LOG     Width is:  1580
-[00:08:31.892] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:31.892] Browser LOG     Height :  767
-[00:08:31.892] Browser LOG     1580
-[00:08:38.491] Server  LOG      ✓ Compiled in 161ms
-[00:08:38.569] Browser LOG     Width is:  1580
-[00:08:38.569] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:39.578] Server  LOG     Width is:  0
-[00:08:40.132] Browser LOG     Width is:  0
-[00:08:40.132] Browser LOG     Width is:  0
-[00:08:40.132] Browser LOG     Width is:  1580
-[00:08:40.132] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:40.707] Browser LOG     Width is:  1580
-[00:08:40.707] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:41.201] Browser LOG     Width is:  1580
-[00:08:41.201] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:41.201] Browser LOG     Height :  767
-[00:08:41.201] Browser LOG     1580
-[00:08:43.777] Server  LOG     Width is:  0
-[00:08:44.298] Browser LOG     Width is:  0
-[00:08:44.298] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:08:44.298] Browser LOG     Width is:  1580
-[00:08:44.298] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:44.999] Browser LOG     Width is:  1580
-[00:08:44.999] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:45.442] Browser LOG     Width is:  1580
-[00:08:45.442] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:45.442] Browser LOG     Height :  767
-[00:08:45.442] Browser LOG     1580
-[00:08:48.360] Server  LOG     Width is:  0
-[00:08:48.886] Browser LOG     Width is:  0
-[00:08:48.886] Browser LOG     Width is:  0
-[00:08:48.886] Browser LOG     Width is:  1580
-[00:08:48.886] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:55.300] Server  LOG      ✓ Compiled in 159ms
-[00:08:55.380] Browser LOG     Width is:  1580
-[00:08:55.380] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:55.818] Server  LOG     Width is:  0
-[00:08:56.355] Browser LOG     Width is:  0
-[00:08:56.355] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  0
-[00:08:56.355] Browser LOG     Width is:  1580
-[00:08:56.355] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:56.740] Browser LOG     Width is:  1580
-[00:08:56.740] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:57.188] Browser LOG     Width is:  1580
-[00:08:57.188] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:08:57.188] Browser LOG     Height :  767
-[00:08:57.188] Browser LOG     1580
-[00:09:06.262] Browser LOG     Width is:  1580
-[00:09:06.262] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:09:06.262] Browser LOG     Width is:  1580
-[00:09:06.262] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:09:16.884] Server  LOG     Width is:  0
-[00:09:17.878] Server  WARN     ⚠ Cross origin request detected from 192.168.187.158 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:00.654] Server  LOG      ✓ Ready in 395ms
+[00:13:20.227] Server  WARN     ⚠ Cross origin request detected from 192.168.187.158 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:09:17.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:18.536] Browser LOG     Width is:  0
-[00:09:18.536] Browser LOG     Width is:  0
-[00:09:18.536] Browser LOG     Width is:  414
-[00:09:18.536] Browser LOG     Width is:  414
-[00:09:19.394] Browser LOG     Width is:  414
-[00:09:19.394] Browser LOG     Width is:  414
-[00:09:20.690] Browser LOG     Width is:  414
-[00:09:20.690] Browser LOG     Width is:  414
-[00:09:21.443] Browser LOG     Width is:  414
-[00:09:21.443] Browser LOG     Width is:  414
-[00:09:21.607] Browser LOG     Width is:  414
-[00:09:21.607] Browser LOG     Width is:  414
-[00:09:21.607] Browser LOG     Height :  794
-[00:09:21.607] Browser LOG     414
-[00:09:26.273] Browser LOG     Width is:  414
-[00:09:26.273] Browser LOG     Width is:  414
-[00:09:26.273] Browser LOG     Width is:  414
-[00:09:26.273] Browser LOG     Width is:  414
-[00:09:28.013] Browser LOG     Width is:  414
-[00:09:28.013] Browser LOG     Width is:  414
-[00:09:28.141] Browser LOG     Width is:  414
-[00:09:28.141] Browser LOG     Width is:  414
-[00:09:28.141] Browser LOG     Height :  794
-[00:09:28.141] Browser LOG     414
-[00:09:32.735] Browser LOG     Width is:  414
-[00:09:32.735] Browser LOG     Width is:  414
-[00:09:32.735] Browser LOG     Width is:  414
-[00:09:32.735] Browser LOG     Width is:  414
-[00:09:33.334] Browser LOG     Width is:  414
-[00:09:33.334] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Width is:  414
-[00:09:34.286] Browser LOG     Height :  794
-[00:09:34.286] Browser LOG     414
-[00:09:39.043] Browser LOG     Width is:  414
-[00:09:39.043] Browser LOG     Width is:  414
-[00:09:39.043] Browser LOG     Width is:  414
-[00:09:39.043] Browser LOG     Width is:  414
-[00:09:41.323] Browser LOG     Width is:  414
-[00:09:41.323] Browser LOG     Width is:  414
-[00:09:41.431] Browser LOG     Width is:  414
-[00:09:41.431] Browser LOG     Width is:  414
-[00:09:41.431] Browser LOG     Height :  794
-[00:09:41.431] Browser LOG     414
-[00:09:45.666] Browser LOG     Width is:  414
-[00:09:45.666] Browser LOG     Width is:  414
-[00:09:45.666] Browser LOG     Width is:  414
-[00:09:45.666] Browser LOG     Width is:  414
-[00:09:47.185] Browser LOG     Width is:  414
-[00:09:47.185] Browser LOG     Width is:  414
-[00:09:47.437] Browser LOG     Width is:  414
-[00:09:47.437] Browser LOG     Width is:  414
-[00:09:48.187] Browser LOG     Width is:  414
-[00:09:48.187] Browser LOG     Width is:  414
-[00:09:48.290] Browser LOG     Width is:  414
-[00:09:48.290] Browser LOG     Width is:  414
-[00:09:48.290] Browser LOG     Height :  794
-[00:09:48.290] Browser LOG     414
-[00:09:53.046] Browser LOG     Width is:  414
-[00:09:53.046] Browser LOG     Width is:  414
-[00:09:53.046] Browser LOG     Width is:  414
-[00:09:53.046] Browser LOG     Width is:  414
-[00:10:27.243] Browser LOG     Width is:  414
-[00:10:27.243] Browser LOG     Width is:  414
-[00:10:27.355] Browser LOG     Width is:  414
-[00:10:27.355] Browser LOG     Width is:  414
-[00:10:27.355] Browser LOG     Height :  794
-[00:10:27.355] Browser LOG     414
-[00:10:31.600] Browser LOG     Width is:  414
-[00:10:31.600] Browser LOG     Width is:  414
-[00:10:31.600] Browser LOG     Width is:  414
-[00:10:31.600] Browser LOG     Width is:  414
-[00:10:33.050] Browser LOG     Width is:  414
-[00:10:33.050] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Width is:  414
-[00:10:34.395] Browser LOG     Height :  794
-[00:10:34.395] Browser LOG     414
-[00:10:38.648] Browser LOG     Width is:  414
-[00:10:38.648] Browser LOG     Width is:  414
-[00:10:38.648] Browser LOG     Width is:  414
-[00:10:38.648] Browser LOG     Width is:  414
-[00:10:45.553] Server  LOG     Width is:  0
-[00:10:46.372] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:47.584] Browser LOG     Width is:  0
-[00:10:47.584] Browser LOG     Width is:  0
-[00:10:47.584] Browser LOG     Width is:  414
-[00:10:47.584] Browser LOG     Width is:  414
-[00:10:49.516] Browser LOG     Width is:  414
-[00:10:49.516] Browser LOG     Width is:  414
-[00:10:49.653] Browser LOG     Width is:  414
-[00:10:49.653] Browser LOG     Width is:  414
-[00:10:49.653] Browser LOG     Height :  794
-[00:10:49.653] Browser LOG     414
-[00:10:54.104] Browser LOG     Width is:  414
-[00:10:54.104] Browser LOG     Width is:  414
-[00:10:54.104] Browser LOG     Width is:  414
-[00:10:54.104] Browser LOG     Width is:  414
-[00:11:06.354] Server  LOG      ✓ Compiled in 141ms
-[00:11:06.516] Browser LOG     Width is:  414
-[00:11:06.516] Browser LOG     Width is:  414
-[00:11:06.749] Browser LOG     Width is:  1580
-[00:11:06.750] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:11:09.133] Server  LOG     Width is:  0
-[00:11:09.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:10.768] Browser LOG     Width is:  0
-[00:11:10.768] Browser LOG     Width is:  0
-[00:11:10.768] Browser LOG     Width is:  414
-[00:11:10.768] Browser LOG     Width is:  414
-[00:11:11.127] Browser LOG     Width is:  414
-[00:11:11.127] Browser LOG     Width is:  414
-[00:11:11.956] Browser LOG     Width is:  414
-[00:11:11.956] Browser LOG     Width is:  414
-[00:11:11.956] Browser LOG     Width is:  414
-[00:11:11.956] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Width is:  414
-[00:11:13.061] Browser LOG     Height :  794
-[00:11:13.061] Browser LOG     414
-[00:11:17.309] Browser LOG     Width is:  414
-[00:11:17.309] Browser LOG     Width is:  414
-[00:11:17.309] Browser LOG     Width is:  414
-[00:11:17.309] Browser LOG     Width is:  414
-[00:11:19.132] Server  LOG      ✓ Compiled in 142ms
-[00:11:19.325] Browser LOG     Width is:  414
-[00:11:19.325] Browser LOG     Width is:  414
-[00:11:20.134] Browser LOG     Width is:  1580
-[00:11:20.134] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:11:22.290] Server  LOG     Width is:  0
-[00:11:23.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:24.132] Browser LOG     Width is:  0
-[00:11:24.132] Browser LOG     Width is:  0
-[00:11:24.132] Browser LOG     Width is:  414
-[00:11:24.132] Browser LOG     Width is:  414
-[00:11:24.961] Browser LOG     Width is:  414
-[00:11:24.961] Browser LOG     Width is:  414
-[00:11:26.429] Browser LOG     Width is:  414
-[00:11:26.429] Browser LOG     Width is:  414
-[00:11:26.429] Browser LOG     Width is:  414
-[00:11:26.429] Browser LOG     Width is:  414
-[00:11:26.919] Browser LOG     Width is:  414
-[00:11:26.919] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Width is:  414
-[00:11:26.920] Browser LOG     Height :  794
-[00:11:26.920] Browser LOG     414
-[00:11:31.590] Browser LOG     Width is:  414
-[00:11:31.590] Browser LOG     Width is:  414
-[00:11:32.338] Server  LOG     Width is:  0
-[00:11:33.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:33.820] Browser LOG     Width is:  0
-[00:11:33.820] Browser LOG     Width is:  0
-[00:11:33.820] Browser LOG     Width is:  414
-[00:11:33.820] Browser LOG     Width is:  414
-[00:11:34.480] Browser LOG     Width is:  414
-[00:11:34.480] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Width is:  414
-[00:11:39.010] Browser LOG     Height :  794
-[00:11:39.010] Browser LOG     414
-[00:11:44.171] Browser LOG     Width is:  414
-[00:11:44.171] Browser LOG     Width is:  414
-[00:11:44.171] Browser LOG     Width is:  414
-[00:11:44.171] Browser LOG     Width is:  414
-[00:11:48.939] Server  LOG      ✓ Compiled in 126ms
-[00:11:49.100] Browser LOG     Width is:  414
-[00:11:49.100] Browser LOG     Width is:  414
-[00:11:49.379] Browser LOG     Width is:  1580
-[00:11:49.379] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:11:50.329] Server  LOG      ✓ Compiled in 68ms
-[00:11:50.462] Browser LOG     Width is:  414
-[00:11:50.462] Browser LOG     Width is:  414
-[00:11:51.231] Browser LOG     Width is:  1580
-[00:11:51.231] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:11:53.052] Server  LOG     Width is:  0
-[00:11:53.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:54.626] Browser LOG     Width is:  0
-[00:11:54.626] Browser LOG     Width is:  0
-[00:11:54.626] Browser LOG     Width is:  414
-[00:11:54.626] Browser LOG     Width is:  414
-[00:11:55.512] Browser LOG     Width is:  414
-[00:11:55.512] Browser LOG     Width is:  414
-[00:11:57.186] Browser LOG     Width is:  414
-[00:11:57.186] Browser LOG     Width is:  414
-[00:11:57.186] Browser LOG     Width is:  414
-[00:11:57.186] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Width is:  414
-[00:11:58.399] Browser LOG     Height :  794
-[00:11:58.399] Browser LOG     414
-[00:12:03.535] Browser LOG     Width is:  414
-[00:12:03.535] Browser LOG     Width is:  414
-[00:12:04.504] Browser LOG     Width is:  414
-[00:12:04.504] Browser LOG     Width is:  414
-[00:12:04.616] Browser LOG     Width is:  414
-[00:12:04.617] Browser LOG     Width is:  414
-[00:12:04.617] Browser LOG     Height :  794
-[00:12:04.617] Browser LOG     414
-[00:12:08.934] Browser LOG     Width is:  414
-[00:12:08.934] Browser LOG     Width is:  414
-[00:12:08.934] Browser LOG     Width is:  414
-[00:12:08.934] Browser LOG     Width is:  414
-[00:12:10.350] Browser LOG     Width is:  414
-[00:12:10.350] Browser LOG     Width is:  414
-[00:12:10.439] Browser LOG     Width is:  414
-[00:12:10.439] Browser LOG     Width is:  414
-[00:12:10.439] Browser LOG     Height :  794
-[00:12:10.439] Browser LOG     414
-[00:12:15.197] Browser LOG     Width is:  414
-[00:12:15.197] Browser LOG     Width is:  414
-[00:12:15.197] Browser LOG     Width is:  414
-[00:12:15.197] Browser LOG     Width is:  414
-[00:12:56.880] Server  LOG     Width is:  0
-[00:13:03.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:12.604] Browser LOG     Width is:  0
-[00:13:12.604] Browser LOG     Width is:  0
-[00:13:12.604] Browser LOG     Width is:  392
-[00:13:12.604] Browser LOG     Width is:  392
-[00:13:15.069] Browser LOG     Width is:  392
-[00:13:15.070] Browser LOG     Width is:  392
-[00:13:17.462] Browser LOG     Width is:  392
-[00:13:17.462] Browser LOG     Width is:  392
-[00:13:17.610] Browser LOG     Width is:  392
-[00:13:17.611] Browser LOG     Width is:  392
-[00:13:17.611] Browser LOG     Height :  837
-[00:13:17.611] Browser LOG     392
-[00:13:22.357] Browser LOG     Width is:  392
-[00:13:22.357] Browser LOG     Width is:  392
-[00:13:22.357] Browser LOG     Width is:  392
-[00:13:22.357] Browser LOG     Width is:  392
-[00:13:22.868] Browser LOG     Width is:  392
-[00:13:22.868] Browser LOG     Width is:  392
-[00:13:23.631] Browser LOG     Width is:  392
-[00:13:23.631] Browser LOG     Width is:  392
-[00:13:23.789] Browser LOG     Width is:  392
-[00:13:23.789] Browser LOG     Width is:  392
-[00:13:23.789] Browser LOG     Height :  757
-[00:13:23.789] Browser LOG     392
-[00:13:30.117] Browser LOG     Width is:  392
-[00:13:30.117] Browser LOG     Width is:  392
-[00:13:30.117] Browser LOG     Width is:  392
-[00:13:30.117] Browser LOG     Width is:  392
-[00:13:31.652] Browser LOG     Width is:  392
-[00:13:31.652] Browser LOG     Width is:  392
-[00:13:32.331] Browser LOG     Width is:  392
-[00:13:32.331] Browser LOG     Width is:  392
-[00:13:32.402] Browser LOG     Width is:  392
-[00:13:32.402] Browser LOG     Width is:  392
-[00:13:32.402] Browser LOG     Height :  837
-[00:13:32.402] Browser LOG     392
-[00:13:36.970] Browser LOG     Width is:  392
-[00:13:36.970] Browser LOG     Width is:  392
-[00:13:36.970] Browser LOG     Width is:  392
-[00:13:36.970] Browser LOG     Width is:  392
-[00:13:42.588] Browser LOG     Width is:  392
-[00:13:42.588] Browser LOG     Width is:  392
-[00:13:44.379] Browser LOG     Width is:  392
-[00:13:44.380] Browser LOG     Width is:  392
-[00:13:51.389] Server  LOG      ✓ Compiled in 137ms
-[00:13:51.856] Browser LOG     Width is:  414
-[00:13:51.856] Browser LOG     Width is:  414
-[00:13:52.043] Browser LOG     Width is:  1580
-[00:13:52.043] Browser LOG     %c%s %i color: rgba(124, 124, 124, 0.75) Width is:  1580
-[00:13:55.227] Browser LOG     Width is:  392
-[00:13:55.227] Browser LOG     Width is:  392
-[00:13:59.227] Server  LOG      ✓ Compiled in 143ms
-[00:14:00.206] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:00.215] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:01.553] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:02.475] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:02.500] Server  LOG      ✓ Compiled in 119ms
-[00:14:02.830] Server  ERROR    ⨯ ReferenceError: width is not defined
-[00:14:02.845] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:02.936] Server  ERROR    ⨯ ReferenceError: width is not defined
-[00:14:03.090] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:03.290] Server  ERROR    ⨯ ReferenceError: width is not defined
-[00:14:03.948] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:04.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:05.948] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:06.077] Server  LOG      ✓ Compiled in 121ms
-[00:14:06.272] Server  ERROR    ⨯ ReferenceError: width is not defined
-[00:14:06.413] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:07.400] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:08.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:29.527] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:30.686] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:30.709] Server  LOG      ✓ Compiled in 214ms
-[00:14:31.029] Server  ERROR    ⨯ ReferenceError: height is not defined
-[00:14:31.044] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:31.084] Server  ERROR    ⨯ ReferenceError: height is not defined
-[00:14:31.657] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:31.719] Server  ERROR    ⨯ ReferenceError: height is not defined
-[00:14:32.131] Browser ERROR   uncaughtError: ReferenceError: height is not defined
-[00:14:35.717] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:41.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:41.604] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:41.627] Server  LOG      ✓ Compiled in 154ms
-[00:14:41.937] Server  ERROR    ⨯ ReferenceError: width is not defined
-[00:14:42.096] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:43.031] Browser ERROR   uncaughtError: ReferenceError: width is not defined
-[00:14:44.052] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:44.184] Server  LOG      ✓ Compiled in 126ms
-[00:14:44.373] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:14:47.096] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:57.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:05.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:49.549] Server  LOG      ✓ Compiled in 145ms
-[00:21:34.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:43.368] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:22.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:52.805] Server  LOG      ✓ Compiled in 144ms
+[00:18:07.416] Server  LOG      ✓ Compiled in 68ms
+[00:18:17.580] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:30.649] Server  LOG      ✓ Compiled in 120ms
+[00:18:32.324] Server  LOG      ✓ Compiled in 106ms
+[00:18:41.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:47.944] Server  LOG      ✓ Compiled in 106ms
+[00:18:54.403] Server  LOG      ✓ Compiled in 102ms
+[00:19:00.189] Server  LOG      ✓ Compiled in 60ms
+[00:19:04.316] Server  LOG      ✓ Compiled in 94ms
+[00:19:07.093] Server  LOG      ✓ Compiled in 51ms
+[00:19:11.559] Server  LOG      ✓ Compiled in 102ms
+[00:20:22.118] Server  LOG      ✓ Compiled in 46ms
+[00:20:26.516] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:39.953] Server  LOG      ✓ Compiled in 56ms
+[00:21:22.714] Server  LOG      ✓ Compiled in 32ms
+[00:21:24.797] Server  LOG      ✓ Compiled in 45ms
+[00:21:27.767] Server  LOG      ✓ Compiled in 48ms
+[00:21:39.151] Server  LOG      ✓ Compiled in 47ms
+[00:21:42.861] Server  LOG      ✓ Compiled in 24ms
+[00:21:46.068] Server  LOG      ✓ Compiled in 41ms
+[00:21:50.851] Server  LOG      ✓ Compiled in 40ms
+[00:21:54.041] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:11.083] Server  LOG      ✓ Compiled in 48ms
+[00:22:14.142] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:54.518] Server  LOG      ✓ Compiled in 32ms
+[00:23:59.272] Server  LOG      ✓ Compiled in 27ms
+[00:24:01.888] Server  LOG      ✓ Compiled in 16ms
+[00:24:02.202] Browser ERROR   ./src/app/page.js:18:29
+Parsing ecmascript source code failed
+  16 |
+  17 |   useEffect(()=>{
+> 18 |     if(window.innerHeight < )
+     |                             ^
+  19 |     gsap.registerPlugin(ScrollSmoother);
+  20 |     const mainPage = mainRef.current;
+  21 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:24:02.919] Browser ERROR   ./src/app/page.js:18:29
+Parsing ecmascript source code failed
+  16 |
+  17 |   useEffect(()=>{
+> 18 |     if(window.innerHeight < )
+     |                             ^
+  19 |     gsap.registerPlugin(ScrollSmoother);
+  20 |     const mainPage = mainRef.current;
+  21 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.js [Client Component Browser]
+    ./src/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.js [Client Component SSR]
+    ./src/app/page.js [Server Component]
+[00:24:08.751] Server  LOG      ✓ Compiled in 23ms
+[00:24:14.651] Server  LOG      ✓ Compiled in 26ms
+[00:24:15.998] Server  LOG      ✓ Compiled in 42ms
+[00:24:19.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:14.901] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:00.550] Server  LOG      ✓ Compiled in 28ms
+[00:27:01.612] Server  LOG      ✓ Compiled in 33ms
+[00:27:05.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:23.989] Server  LOG      ✓ Compiled in 28ms
+[00:27:42.708] Server  LOG      ✓ Compiled in 155ms
+[00:27:44.001] Server  LOG      ✓ Compiled in 141ms
+[00:27:46.143] Server  LOG      ✓ Compiled in 67ms
+[00:27:48.665] Server  LOG      ✓ Compiled in 120ms
+[00:27:50.200] Server  LOG      ✓ Compiled in 63ms
+[00:27:57.446] Server  LOG      ✓ Compiled in 69ms
+[00:28:03.441] Server  LOG      ✓ Compiled in 61ms
+[00:28:11.279] Server  LOG      ✓ Compiled in 195ms
+[00:28:16.595] Server  LOG      ✓ Compiled in 75ms
+[00:28:22.105] Server  LOG      ✓ Compiled in 138ms
+[00:28:26.349] Server  LOG      ✓ Compiled in 121ms
+[00:28:32.453] Server  LOG      ✓ Compiled in 130ms
+[00:28:49.405] Server  LOG      ✓ Compiled in 113ms
+[00:28:51.582] Server  LOG      ✓ Compiled in 88ms
+[00:28:54.289] Server  LOG      ✓ Compiled in 135ms
+[00:28:56.387] Server  LOG      ✓ Compiled in 70ms
+[00:29:20.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:00.137] Server  LOG      ✓ Compiled in 75ms
+[00:30:03.677] Server  LOG      ✓ Compiled in 117ms
+[00:30:13.795] Server  LOG      ✓ Compiled in 102ms
+[00:30:18.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:36.345] Server  LOG      ✓ Compiled in 98ms
+[00:30:43.301] Server  LOG      ✓ Compiled in 142ms
+[00:30:47.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:01.222] Server  LOG      ✓ Compiled in 134ms
+[00:31:06.789] Server  LOG      ✓ Compiled in 126ms
+[00:31:10.999] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:32.392] Server  LOG      ✓ Compiled in 113ms
+[00:31:34.129] Server  LOG      ✓ Compiled in 79ms
+[00:31:37.616] Server  LOG      ✓ Compiled in 72ms
+[00:31:39.879] Server  LOG      ✓ Compiled in 75ms
+[00:31:43.737] Server  LOG      ✓ Compiled in 121ms
+[00:31:44.782] Server  LOG      ✓ Compiled in 61ms
+[00:31:48.697] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:21.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:18.357] Browser ERROR   uncaughtError: TypeError: can't access property "map", selectedProject.tools is undefined
+[00:33:21.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:05.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:09.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:17.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:21.497] Browser ERROR   uncaughtError: Error: Failed to load chunk /_next/static/chunks/node_modules_react-icons_si_index_mjs_86623806._.js from module [project]/node_modules/next/dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.browser.development.js [app-client] (ecmascript)
+[00:35:24.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:35.462] Server  LOG      ✓ Compiled in 38ms
+[00:38:36.671] Server  LOG      ✓ Compiled in 59ms
+[00:39:00.591] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
