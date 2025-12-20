@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { closeProject } from "@/lib/slices/projectSlice";
 import AnimatedButton from "@/components/utils/AnimatedButton";
@@ -11,7 +11,7 @@ import AnimatedButton from "@/components/utils/AnimatedButton";
 // tools : array<string>,
 // state : boolean
 export default function ProjectDetailsOverlay() {
-    const { rectPos, selectedProject, isOverlayOpen } = useAppSelector((state) => state.project);
+    const { imageId , selectedProject, isOverlayOpen } = useAppSelector((state) => state.project);
     const dispatch = useAppDispatch();
     
     const barsRef = useRef([]); // To store references to the 5 bars
@@ -21,7 +21,11 @@ export default function ProjectDetailsOverlay() {
     const contentRef = useRef(null);
     const tlRef = useRef(null);
 
-    useEffect(() => {
+    
+
+    useLayoutEffect(() => {
+            if(!isOverlayOpen || !imageId) return;
+
             const tl = gsap.timeline({
                 paused : true,
                 onReverseComplete : ()=>{
@@ -32,60 +36,58 @@ export default function ProjectDetailsOverlay() {
 
             tl
             .to(containerRef.current, {
-                yPercent : 100,
+                y : 0,
                 duration : 0.0001 // Set this duration insanely small so that the layout appears instantly
             })
             .to(barsRef.current,
                 {
-                    yPercent: 100,  
+                    y: 0,  
                     duration: 0.5,
                     stagger: 0.1,  
                     ease: "power3.inOut"
                 }
             );
+            const sourceEl = document.getElementById(imageId);
+            const destEl = ghostImgFinalPosRef.current;
 
-            if (rectPos && ghostImgRef.current) {
-                const destRect = ghostImgFinalPosRef.current.getBoundingClientRect();
+            let startRect = { top: 0, left: 0, width: 0, height: 0 };
+            let destRect = { top: 0, left: 0, width: 0, height: 0 };
+            
+            if (sourceEl && destEl) {
+                startRect = sourceEl.getBoundingClientRect();
+                destRect = destEl.getBoundingClientRect();
+            }
 
-                // 2. ANIMATE to Final Position (Floating to the left)
-                const finalTop = destRect.top + window.innerHeight;
-                tl.fromTo(ghostImgRef.current, {
-                    top: rectPos.top,       // Final Y pos
-                    left: rectPos.left,       // Final X pos
-                    width: rectPos.width,    // Final Width
-                    height: rectPos.height,   // Final Height
-                    duration: 1.2,
-                    ease: "power4.inOut",
-                    delay : 0.1
-                },
-                {
-                    top: finalTop,
-                    left: destRect.left,
-                    width: destRect.width,
-                    height: destRect.height,
-                    borderRadius: "12px", // Or whatever you want
-                    duration: 1.2,
-                    ease: "power4.inOut",
-                },
+            const finalTop = destRect.top + window.innerHeight;
+            
+
+            // 2. ANIMATE to Final Position (Floating to the left)
+            tl.fromTo(ghostImgRef.current, {
+                top: startRect.top,       // Final Y pos
+                left: startRect.left,       // Final X pos
+                width: startRect.width,    // Final Width
+                height: startRect.height,   // Final Height
+            },
+            {
+                top: finalTop,
+                left: destRect.left,
+                width: destRect.width,
+                height: destRect.height,
+                borderRadius: "12px",
+                duration: 1.2,
+                ease: "power4.inOut",
+            },
             )
             .to(contentRef.current, {
                 opacity : 1,
                 duration : 0.6,
                 ease : "power2.out"
             }, "<0.3")
-            ;}
 
             tlRef.current = tl;
+            tl.play();
             
-    }, [rectPos, ghostImgFinalPosRef]);
-
-    useEffect(()=>{
-        if(!tlRef.current)
-            return;
-        if(isOverlayOpen)
-            tlRef.current.play();
-        
-    }, [isOverlayOpen])
+    }, [imageId, isOverlayOpen]);
 
     const addToRefs = (el) => {
         if (el && !barsRef.current.includes(el)) {
@@ -104,7 +106,7 @@ export default function ProjectDetailsOverlay() {
                 <div
                     key={i}
                     ref={addToRefs}
-                    className="w-1/5 h-full bg-green-800 relative pointer-events-auto -translate-y-full" 
+                    className="w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full" 
                 >
                 </div>
             ))}
@@ -114,7 +116,7 @@ export default function ProjectDetailsOverlay() {
                     ref={ghostImgRef}
                     src={selectedProject.img}
                     alt="Project Hero"
-                    className="fixed z-35 object-cover shadow-2xl w-[35vw] h-[40vh] rounded-md" // Start hidden, GSAP makes it visible
+                    className="fixed z-35 object-cover shadow-2xl"
                 />
             )}
 

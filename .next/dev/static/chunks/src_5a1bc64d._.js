@@ -1805,6 +1805,82 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/src/components/utils/UseWindowDimensions.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>useWindowDimensions
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+;
+;
+function useWindowDimensions() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
+    if ($[0] !== "828640691160f004aed1afdda2e20d4568b9b363a0f1b37844ef196774beb600") {
+        for(let $i = 0; $i < 4; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "828640691160f004aed1afdda2e20d4568b9b363a0f1b37844ef196774beb600";
+    }
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = {
+            width: 0,
+            height: 0
+        };
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    const [dimensions, setDimensions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
+    let t1;
+    let t2;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = ({
+            "useWindowDimensions[useLayoutEffect()]": ()=>{
+                const update = {
+                    "useWindowDimensions[useLayoutEffect() > update]": ()=>{
+                        setDimensions({
+                            width: window.innerWidth,
+                            height: window.innerHeight
+                        });
+                    }
+                }["useWindowDimensions[useLayoutEffect() > update]"];
+                update();
+                window.addEventListener("resize", {
+                    "useWindowDimensions[useLayoutEffect() > window.addEventListener()]": ()=>{
+                        update();
+                    }
+                }["useWindowDimensions[useLayoutEffect() > window.addEventListener()]"]);
+                window.addEventListener("orientationchange", update);
+                return ()=>{
+                    window.removeEventListener("resize", update);
+                    window.removeEventListener("orientationchange", update);
+                    if (window.visualViewport) {
+                        window.visualViewport.removeEventListener("resize", update);
+                    }
+                };
+            }
+        })["useWindowDimensions[useLayoutEffect()]"];
+        t2 = [];
+        $[2] = t1;
+        $[3] = t2;
+    } else {
+        t1 = $[2];
+        t2 = $[3];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t1, t2);
+    return dimensions;
+}
+_s(useWindowDimensions, "ceSrq1XLJTXn5r3nHHYdIvZdN2w=");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1819,8 +1895,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/hooks.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/slices/projectSlice.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/AnimatedButton.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$UseWindowDimensions$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/UseWindowDimensions.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 ;
@@ -1830,11 +1908,11 @@ var _s = __turbopack_context__.k.signature();
 function ProjectDetailsOverlay() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(44);
-    if ($[0] !== "009132a137485d7f062ee1c19bda6f491277d4ee67cae6fceb912803cc16704b") {
+    if ($[0] !== "52a39de5425348f7de18a7e3c7a45549ff792ccae4ffb3513804d40f42e6628d") {
         for(let $i = 0; $i < 44; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "009132a137485d7f062ee1c19bda6f491277d4ee67cae6fceb912803cc16704b";
+        $[0] = "52a39de5425348f7de18a7e3c7a45549ff792ccae4ffb3513804d40f42e6628d";
     }
     const { imageId, selectedProject, isOverlayOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"])(_ProjectDetailsOverlayUseAppSelector);
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppDispatch"])();
@@ -1971,7 +2049,7 @@ function ProjectDetailsOverlay() {
                     className: "w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 151,
+                    lineNumber: 152,
                     columnNumber: 57
                 }, this)
         }["ProjectDetailsOverlay[(anonymous)()]"]);
@@ -1988,7 +2066,7 @@ function ProjectDetailsOverlay() {
             className: "fixed z-35 object-cover shadow-2xl"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 159,
+            lineNumber: 160,
             columnNumber: 29
         }, this);
         $[12] = selectedProject;
@@ -2003,7 +2081,7 @@ function ProjectDetailsOverlay() {
             buttonText: "CLOSE"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 167,
+            lineNumber: 168,
             columnNumber: 10
         }, this);
         $[14] = t7;
@@ -2018,7 +2096,7 @@ function ProjectDetailsOverlay() {
             children: t8
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 175,
+            lineNumber: 176,
             columnNumber: 10
         }, this);
         $[15] = t8;
@@ -2034,7 +2112,7 @@ function ProjectDetailsOverlay() {
             children: t10
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 184,
+            lineNumber: 185,
             columnNumber: 11
         }, this);
         $[17] = t10;
@@ -2049,7 +2127,7 @@ function ProjectDetailsOverlay() {
             children: t12
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 193,
+            lineNumber: 194,
             columnNumber: 11
         }, this);
         $[19] = t12;
@@ -2067,7 +2145,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 201,
+            lineNumber: 202,
             columnNumber: 11
         }, this);
         $[21] = t11;
@@ -2086,20 +2164,20 @@ function ProjectDetailsOverlay() {
                     children: "Live Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 210,
+                    lineNumber: 211,
                     columnNumber: 51
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     children: "Github Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 210,
+                    lineNumber: 211,
                     columnNumber: 90
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 210,
+            lineNumber: 211,
             columnNumber: 11
         }, this);
         $[24] = t15;
@@ -2114,7 +2192,7 @@ function ProjectDetailsOverlay() {
             className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh]"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 217,
+            lineNumber: 218,
             columnNumber: 11
         }, this);
         $[25] = t16;
@@ -2128,7 +2206,7 @@ function ProjectDetailsOverlay() {
             children: "Description"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 224,
+            lineNumber: 225,
             columnNumber: 11
         }, this);
         $[26] = t17;
@@ -2143,7 +2221,7 @@ function ProjectDetailsOverlay() {
             children: t18
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 232,
+            lineNumber: 233,
             columnNumber: 11
         }, this);
         $[27] = t18;
@@ -2158,7 +2236,7 @@ function ProjectDetailsOverlay() {
             children: "Tech Stack"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 240,
+            lineNumber: 241,
             columnNumber: 11
         }, this);
         $[29] = t20;
@@ -2186,18 +2264,18 @@ function ProjectDetailsOverlay() {
                         children: t21
                     }, void 0, false, {
                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                        lineNumber: 255,
+                        lineNumber: 256,
                         columnNumber: 75
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 255,
+                lineNumber: 256,
                 columnNumber: 33
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 255,
+            lineNumber: 256,
             columnNumber: 11
         }, this);
         $[32] = t21;
@@ -2220,13 +2298,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 263,
+                    lineNumber: 264,
                     columnNumber: 84
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 263,
+            lineNumber: 264,
             columnNumber: 11
         }, this);
         $[34] = t19;
@@ -2253,13 +2331,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 272,
+                    lineNumber: 273,
                     columnNumber: 141
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 272,
+            lineNumber: 273,
             columnNumber: 11
         }, this);
         $[37] = t14;
@@ -2281,7 +2359,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 282,
+            lineNumber: 283,
             columnNumber: 11
         }, this);
         $[41] = t24;
@@ -2304,7 +2382,7 @@ function _ProjectDetailsOverlaySelectedProjectToolsMap(tool, idx) {
         children: tool
     }, idx, false, {
         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-        lineNumber: 292,
+        lineNumber: 293,
         columnNumber: 10
     }, this);
 }
@@ -2511,4 +2589,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_4eb27f98._.js.map
+//# sourceMappingURL=src_5a1bc64d._.js.map

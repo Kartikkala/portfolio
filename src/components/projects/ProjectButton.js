@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { openProject, setMouseInsideProject } from "@/lib/slices/projectSlice";
 import { useEffect } from "react";
 
-export default function ProjectButton({projectData, img, setActiveProjectImage}){
+export default function ProjectButton({projectData, img, setActiveProjectImage, setActiveProjectId}){
     const {isOverlayOpen, mouseInsideProject} = useAppSelector((state)=> state.project)
     const dispatch = useAppDispatch();
 
@@ -19,16 +19,8 @@ export default function ProjectButton({projectData, img, setActiveProjectImage})
 
     const handleClick = (e)=>{
         document.body.style.overflow = "hidden";
-        const showcase = document.getElementById("project_showcase")
-        const rawRect = showcase.getBoundingClientRect();
-        
-        // Construct a POJO for redux to not throw non-serializable issues
-        const rect = {
-            top: rawRect.top,
-            left: rawRect.left,
-            width: rawRect.width,
-            height: rawRect.height
-        };
+        const image_id = `${projectData.id}`;
+        setActiveProjectId(image_id);
         let delay = 100;
         if(!mouseInsideProject){
             delay = 600;
@@ -37,7 +29,7 @@ export default function ProjectButton({projectData, img, setActiveProjectImage})
         setTimeout(()=>{
             dispatch(openProject({
                 project : projectData, 
-                rect : rect
+                imageId : image_id
             }))
         }, delay)
     }

@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     selectedProject: null,
     isOverlayOpen: false,
-    rectPos : null,
+    imageId : null,
     mouseInsideProject : false,
 };
 
@@ -17,7 +17,7 @@ export const projectSlice = createSlice({
         // Call this when user clicks a project
         openProject: (state, action) => {
             state.selectedProject = action.payload.project;
-            state.rectPos = action.payload.rect;
+            state.imageId = action.payload.imageId;
             state.isOverlayOpen = true;
         },
         // Call this when user clicks "Close" on the overlay

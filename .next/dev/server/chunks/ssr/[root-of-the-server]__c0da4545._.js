@@ -25,7 +25,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f
 const initialState = {
     selectedProject: null,
     isOverlayOpen: false,
-    rectPos: null,
+    imageId: null,
     mouseInsideProject: false
 };
 const projectSlice = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createSlice"])({
@@ -38,7 +38,7 @@ const projectSlice = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
         // Call this when user clicks a project
         openProject: (state, action)=>{
             state.selectedProject = action.payload.project;
-            state.rectPos = action.payload.rect;
+            state.imageId = action.payload.imageId;
             state.isOverlayOpen = true;
         },
         // Call this when user clicks "Close" on the overlay

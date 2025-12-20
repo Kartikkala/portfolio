@@ -278,7 +278,6 @@
     --tracking-wider: .05em;
     --tracking-widest: .1em;
     --leading-relaxed: 1.625;
-    --radius-md: .375rem;
     --radius-lg: .5rem;
     --radius-xl: .75rem;
     --default-transition-duration: .15s;
@@ -555,10 +554,6 @@
     pointer-events: none;
   }
 
-  .visible {
-    visibility: visible;
-  }
-
   .absolute {
     position: absolute;
   }
@@ -716,20 +711,12 @@
     height: 20vh;
   }
 
-  .h-\[40vh\] {
-    height: 40vh;
-  }
-
   .h-\[100dvh\], .h-dvh {
     height: 100dvh;
   }
 
   .h-full {
     height: 100%;
-  }
-
-  .h-screen {
-    height: 100vh;
   }
 
   .min-h-\[200px\] {
@@ -746,10 +733,6 @@
 
   .w-\[20vw\] {
     width: 20vw;
-  }
-
-  .w-\[35vw\] {
-    width: 35vw;
   }
 
   .w-\[90\%\] {
@@ -793,12 +776,26 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
+  .translate-y-\[-\$\] {
+    --tw-translate-y:  - $ ;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .translate-y-\[-\] {
+    --tw-translate-y:  - ;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
   .scale-\[1\.1\] {
     scale: 1.1;
   }
 
   .cursor-pointer {
     cursor: pointer;
+  }
+
+  .resize {
+    resize: both;
   }
 
   .scroll-mt-32 {
@@ -883,10 +880,6 @@
 
   .rounded-lg {
     border-radius: var(--radius-lg);
-  }
-
-  .rounded-md {
-    border-radius: var(--radius-md);
   }
 
   .rounded-xl {

@@ -2,7 +2,7 @@ import { useAppSelector } from "@/lib/hooks";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-export default function ProjectShowcase({ activeProjectImage }) {
+export default function ProjectShowcase({ activeProjectImage, activeProjectImageId }) {
     const maskRef = useRef(null); // The div that unfolds (Clip Path)
     const imgRef = useRef(null);  // The image that scales (Zoom)
     const tlRef = useRef(null);
@@ -49,7 +49,7 @@ export default function ProjectShowcase({ activeProjectImage }) {
         }
     }, [mouseInsideProject, activeProjectImage, isOverlayOpen]);
     return (
-        <div id="project_showcase" className="lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full">
+        <div id={activeProjectImageId} className="lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full">
             <div 
                 ref={maskRef}
                 className="w-full h-full overflow-hidden" 
