@@ -369,11 +369,11 @@ var _s = __turbopack_context__.k.signature();
 function Navbar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "dc4ebc9c654847c91e3813f3d85f215df328e5a8578cdeac7120570897e67446") {
+    if ($[0] !== "312ecb97fb00fe03dc86e9c812c66871c555831cd4ed3631a5f48babe2b1a591") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "dc4ebc9c654847c91e3813f3d85f215df328e5a8578cdeac7120570897e67446";
+        $[0] = "312ecb97fb00fe03dc86e9c812c66871c555831cd4ed3631a5f48babe2b1a591";
     }
     const nav = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const handleDownload = _NavbarHandleDownload;
@@ -384,23 +384,35 @@ function Navbar() {
             "Navbar[useEffect()]": ()=>{
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
                 const navbar = nav.current;
+                let isHidden = false;
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
+                    y: 0,
+                    duration: 1.9,
+                    ease: "circ.out"
+                });
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
                     start: "top top",
                     end: 999999,
                     scrub: 3,
                     onUpdate: (self)=>{
-                        if (self.direction === 1) {
+                        if (self.direction === 1 && !isHidden) {
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
                                 y: -160,
-                                duration: 2.9,
-                                ease: "circ.out"
+                                duration: 1.9,
+                                ease: "circ.out",
+                                overwrite: true
                             });
+                            isHidden = true;
                         } else {
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
-                                y: 0,
-                                duration: 2.9,
-                                ease: "circ.out"
-                            });
+                            if (self.direction == -1 && isHidden) {
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(navbar, {
+                                    y: 0,
+                                    duration: 1.9,
+                                    ease: "circ.out",
+                                    overwrite: true
+                                });
+                                isHidden = false;
+                            }
                         }
                     }
                 });
@@ -424,7 +436,7 @@ function Navbar() {
                     children: "Kartik Kala"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 56,
+                    lineNumber: 68,
                     columnNumber: 89
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -432,13 +444,13 @@ function Navbar() {
                     children: "Portfolio'25"
                 }, void 0, false, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 56,
+                    lineNumber: 68,
                     columnNumber: 219
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 56,
+            lineNumber: 68,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -454,12 +466,12 @@ function Navbar() {
                 text: "ABOUT"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.js",
-                lineNumber: 63,
+                lineNumber: 75,
                 columnNumber: 117
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 63,
+            lineNumber: 75,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -475,12 +487,12 @@ function Navbar() {
                 text: "PROJECTS"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.js",
-                lineNumber: 70,
+                lineNumber: 82,
                 columnNumber: 120
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 70,
+            lineNumber: 82,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -496,12 +508,12 @@ function Navbar() {
                 text: "RECOGNITIONS"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.js",
-                lineNumber: 77,
+                lineNumber: 89,
                 columnNumber: 123
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 77,
+            lineNumber: 89,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -511,7 +523,7 @@ function Navbar() {
     let t6;
     if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex fixed z-15 p-4 md:p-10 pointer-events-none w-full",
+            className: "flex fixed z-15 p-4 md:p-10 pointer-events-none w-full -translate-y-40",
             ref: nav,
             children: [
                 t2,
@@ -528,32 +540,32 @@ function Navbar() {
                                 text: "CONTACT"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/navbar/Navbar.js",
-                                lineNumber: 84,
-                                columnNumber: 355
+                                lineNumber: 96,
+                                columnNumber: 371
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 84,
-                            columnNumber: 246
+                            lineNumber: 96,
+                            columnNumber: 262
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             buttonText: "DOWNLOAD RESUME",
                             onClickFn: handleDownload
                         }, void 0, false, {
                             fileName: "[project]/src/components/navbar/Navbar.js",
-                            lineNumber: 84,
-                            columnNumber: 393
+                            lineNumber: 96,
+                            columnNumber: 409
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/navbar/Navbar.js",
-                    lineNumber: 84,
-                    columnNumber: 96
+                    lineNumber: 96,
+                    columnNumber: 112
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/navbar/Navbar.js",
-            lineNumber: 84,
+            lineNumber: 96,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -598,12 +610,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Hero() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
-    if ($[0] !== "9f277edfd8b313dc5c893058209e76b35e320f5ffbf2bf23cbf129e356641786") {
-        for(let $i = 0; $i < 12; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "48baccd36de9c3575dfe449c3c05257a7e259b61cf3f9f0edfdc144c7ad951e6") {
+        for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "9f277edfd8b313dc5c893058209e76b35e320f5ffbf2bf23cbf129e356641786";
+        $[0] = "48baccd36de9c3575dfe449c3c05257a7e259b61cf3f9f0edfdc144c7ad951e6";
     }
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
@@ -759,7 +771,20 @@ function Hero() {
     }
     let t8;
     if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+            className: "font-oswald text-2xl md:text-3xl text-text-main uppercase md:block",
+            children: [
+                "Move People, Not Just ",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "font-playfair italic lowercase",
+                    children: "screens."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/hero/Hero.js",
+                    lineNumber: 77,
+                    columnNumber: 115
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/hero/Hero.js",
             lineNumber: 77,
             columnNumber: 10
@@ -770,19 +795,58 @@ function Hero() {
     }
     let t9;
     if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-            className: "font-oswald text-2xl md:text-3xl text-text-main uppercase md:block",
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            id: "hero",
+            className: "h-[100dvh] w-full relative overflow-hidden bg-transparent",
             children: [
-                "Move People, ",
-                t8,
-                " Not Just ",
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-playfair italic lowercase",
-                    children: "screens."
-                }, void 0, false, {
+                t2,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute gap-4 w-full flex bottom-4 px-4 md:bottom-10 md:justify-between md:px-10 md:flex-row flex-col",
+                    children: [
+                        t6,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "z-10 flex flex-col md:items-start md:text-left gap-4 max-w-md md:justify-end",
+                            children: [
+                                t7,
+                                t8,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "#contact",
+                                            className: "btn-primary uppercase text-sm tracking-widest",
+                                            children: "Let's Collaborate"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/hero/Hero.js",
+                                            lineNumber: 84,
+                                            columnNumber: 357
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "mailto:hello@example.com",
+                                            className: "btn-solid uppercase text-sm tracking-widest",
+                                            children: "Hire Me"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/hero/Hero.js",
+                                            lineNumber: 84,
+                                            columnNumber: 455
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/hero/Hero.js",
+                                    lineNumber: 84,
+                                    columnNumber: 329
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/hero/Hero.js",
+                            lineNumber: 84,
+                            columnNumber: 227
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/components/hero/Hero.js",
                     lineNumber: 84,
-                    columnNumber: 120
+                    columnNumber: 103
                 }, this)
             ]
         }, void 0, true, {
@@ -794,72 +858,7 @@ function Hero() {
     } else {
         t9 = $[10];
     }
-    let t10;
-    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            id: "hero",
-            className: "h-[100dvh] w-full relative overflow-hidden bg-transparent",
-            children: [
-                t2,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute gap-4 w-full flex bottom-4 px-4 md:bottom-10 md:justify-between md:px-10 md:flex-row flex-col",
-                    children: [
-                        t6,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "z-10 flex flex-col md:items-end md:text-right gap-4 max-w-md md:justify-end",
-                            children: [
-                                t7,
-                                t9,
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex gap-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "#contact",
-                                            className: "btn-primary uppercase text-sm tracking-widest",
-                                            children: "Let's Collaborate"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/hero/Hero.js",
-                                            lineNumber: 91,
-                                            columnNumber: 357
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "mailto:hello@example.com",
-                                            className: "btn-solid uppercase text-sm tracking-widest",
-                                            children: "Hire Me"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/hero/Hero.js",
-                                            lineNumber: 91,
-                                            columnNumber: 455
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/hero/Hero.js",
-                                    lineNumber: 91,
-                                    columnNumber: 329
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/hero/Hero.js",
-                            lineNumber: 91,
-                            columnNumber: 228
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/hero/Hero.js",
-                    lineNumber: 91,
-                    columnNumber: 104
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/hero/Hero.js",
-            lineNumber: 91,
-            columnNumber: 11
-        }, this);
-        $[11] = t10;
-    } else {
-        t10 = $[11];
-    }
-    return t10;
+    return t9;
 }
 _s(Hero, "yH8mEGw9zDQgg3u40vY4RuXceis=");
 _c = Hero;
@@ -1805,82 +1804,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/utils/UseWindowDimensions.js [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "default",
-    ()=>useWindowDimensions
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var _s = __turbopack_context__.k.signature();
-;
-;
-function useWindowDimensions() {
-    _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "828640691160f004aed1afdda2e20d4568b9b363a0f1b37844ef196774beb600") {
-        for(let $i = 0; $i < 4; $i += 1){
-            $[$i] = Symbol.for("react.memo_cache_sentinel");
-        }
-        $[0] = "828640691160f004aed1afdda2e20d4568b9b363a0f1b37844ef196774beb600";
-    }
-    let t0;
-    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = {
-            width: 0,
-            height: 0
-        };
-        $[1] = t0;
-    } else {
-        t0 = $[1];
-    }
-    const [dimensions, setDimensions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
-    let t1;
-    let t2;
-    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = ({
-            "useWindowDimensions[useLayoutEffect()]": ()=>{
-                const update = {
-                    "useWindowDimensions[useLayoutEffect() > update]": ()=>{
-                        setDimensions({
-                            width: window.innerWidth,
-                            height: window.innerHeight
-                        });
-                    }
-                }["useWindowDimensions[useLayoutEffect() > update]"];
-                update();
-                window.addEventListener("resize", {
-                    "useWindowDimensions[useLayoutEffect() > window.addEventListener()]": ()=>{
-                        update();
-                    }
-                }["useWindowDimensions[useLayoutEffect() > window.addEventListener()]"]);
-                window.addEventListener("orientationchange", update);
-                return ()=>{
-                    window.removeEventListener("resize", update);
-                    window.removeEventListener("orientationchange", update);
-                    if (window.visualViewport) {
-                        window.visualViewport.removeEventListener("resize", update);
-                    }
-                };
-            }
-        })["useWindowDimensions[useLayoutEffect()]"];
-        t2 = [];
-        $[2] = t1;
-        $[3] = t2;
-    } else {
-        t1 = $[2];
-        t2 = $[3];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t1, t2);
-    return dimensions;
-}
-_s(useWindowDimensions, "ceSrq1XLJTXn5r3nHHYdIvZdN2w=");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1895,10 +1818,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/hooks.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$slices$2f$projectSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/slices/projectSlice.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$AnimatedButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/AnimatedButton.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$utils$2f$UseWindowDimensions$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/utils/UseWindowDimensions.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
-;
 ;
 ;
 ;
@@ -1908,11 +1829,11 @@ var _s = __turbopack_context__.k.signature();
 function ProjectDetailsOverlay() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(44);
-    if ($[0] !== "52a39de5425348f7de18a7e3c7a45549ff792ccae4ffb3513804d40f42e6628d") {
+    if ($[0] !== "82ddc49aac0e30c636c5721227cd7d7edb418ea62ae0ad273a54494e78fb7b23") {
         for(let $i = 0; $i < 44; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "52a39de5425348f7de18a7e3c7a45549ff792ccae4ffb3513804d40f42e6628d";
+        $[0] = "82ddc49aac0e30c636c5721227cd7d7edb418ea62ae0ad273a54494e78fb7b23";
     }
     const { imageId, selectedProject, isOverlayOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppSelector"])(_ProjectDetailsOverlayUseAppSelector);
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppDispatch"])();
@@ -2049,7 +1970,7 @@ function ProjectDetailsOverlay() {
                     className: "w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full"
                 }, i, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 152,
+                    lineNumber: 151,
                     columnNumber: 57
                 }, this)
         }["ProjectDetailsOverlay[(anonymous)()]"]);
@@ -2066,7 +1987,7 @@ function ProjectDetailsOverlay() {
             className: "fixed z-35 object-cover shadow-2xl"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 160,
+            lineNumber: 159,
             columnNumber: 29
         }, this);
         $[12] = selectedProject;
@@ -2081,7 +2002,7 @@ function ProjectDetailsOverlay() {
             buttonText: "CLOSE"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 168,
+            lineNumber: 167,
             columnNumber: 10
         }, this);
         $[14] = t7;
@@ -2096,7 +2017,7 @@ function ProjectDetailsOverlay() {
             children: t8
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 176,
+            lineNumber: 175,
             columnNumber: 10
         }, this);
         $[15] = t8;
@@ -2112,7 +2033,7 @@ function ProjectDetailsOverlay() {
             children: t10
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 185,
+            lineNumber: 184,
             columnNumber: 11
         }, this);
         $[17] = t10;
@@ -2127,7 +2048,7 @@ function ProjectDetailsOverlay() {
             children: t12
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 194,
+            lineNumber: 193,
             columnNumber: 11
         }, this);
         $[19] = t12;
@@ -2145,7 +2066,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 202,
+            lineNumber: 201,
             columnNumber: 11
         }, this);
         $[21] = t11;
@@ -2164,20 +2085,20 @@ function ProjectDetailsOverlay() {
                     children: "Live Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 211,
+                    lineNumber: 210,
                     columnNumber: 51
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     children: "Github Link"
                 }, void 0, false, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 211,
+                    lineNumber: 210,
                     columnNumber: 90
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 211,
+            lineNumber: 210,
             columnNumber: 11
         }, this);
         $[24] = t15;
@@ -2192,7 +2113,7 @@ function ProjectDetailsOverlay() {
             className: "md:w-[45vw] md:h-[60vh] w-full h-[20vh]"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 218,
+            lineNumber: 217,
             columnNumber: 11
         }, this);
         $[25] = t16;
@@ -2206,7 +2127,7 @@ function ProjectDetailsOverlay() {
             children: "Description"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 225,
+            lineNumber: 224,
             columnNumber: 11
         }, this);
         $[26] = t17;
@@ -2217,11 +2138,11 @@ function ProjectDetailsOverlay() {
     let t19;
     if ($[27] !== t18) {
         t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "",
+            className: "overflow-auto h-[10em]",
             children: t18
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 233,
+            lineNumber: 232,
             columnNumber: 11
         }, this);
         $[27] = t18;
@@ -2236,7 +2157,7 @@ function ProjectDetailsOverlay() {
             children: "Tech Stack"
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 241,
+            lineNumber: 240,
             columnNumber: 11
         }, this);
         $[29] = t20;
@@ -2264,18 +2185,18 @@ function ProjectDetailsOverlay() {
                         children: t21
                     }, void 0, false, {
                         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                        lineNumber: 256,
+                        lineNumber: 255,
                         columnNumber: 75
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                lineNumber: 256,
+                lineNumber: 255,
                 columnNumber: 33
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 256,
+            lineNumber: 255,
             columnNumber: 11
         }, this);
         $[32] = t21;
@@ -2298,13 +2219,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 264,
+                    lineNumber: 263,
                     columnNumber: 84
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 264,
+            lineNumber: 263,
             columnNumber: 11
         }, this);
         $[34] = t19;
@@ -2331,13 +2252,13 @@ function ProjectDetailsOverlay() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-                    lineNumber: 273,
+                    lineNumber: 272,
                     columnNumber: 141
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 273,
+            lineNumber: 272,
             columnNumber: 11
         }, this);
         $[37] = t14;
@@ -2359,7 +2280,7 @@ function ProjectDetailsOverlay() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-            lineNumber: 283,
+            lineNumber: 282,
             columnNumber: 11
         }, this);
         $[41] = t24;
@@ -2382,7 +2303,7 @@ function _ProjectDetailsOverlaySelectedProjectToolsMap(tool, idx) {
         children: tool
     }, idx, false, {
         fileName: "[project]/src/components/projects/project_details/ProjectDetailsOverlay.js",
-        lineNumber: 293,
+        lineNumber: 292,
         columnNumber: 10
     }, this);
 }
@@ -2391,6 +2312,85 @@ function _ProjectDetailsOverlayUseAppSelector(state) {
 }
 var _c;
 __turbopack_context__.k.register(_c, "ProjectDetailsOverlay");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/background.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Background
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+;
+;
+function Background() {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
+    if ($[0] !== "0434b1a42cfcf36c581301b0e5e382b0d43607ceb9135ae2b7ca591f24e76e5b") {
+        for(let $i = 0; $i < 3; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "0434b1a42cfcf36c581301b0e5e382b0d43607ceb9135ae2b7ca591f24e76e5b";
+    }
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "absolute inset-0 w-full h-full bg-grid-pattern opacity-60"
+        }, void 0, false, {
+            fileName: "[project]/src/components/background.js",
+            lineNumber: 13,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    let t1;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "fixed inset-0 w-full h-full z-[-1] pointer-events-none bg-[#0a192f] overflow-hidden",
+            children: [
+                t0,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "font-oswald font-bold text-[30vw] leading-none tracking-tighter stroke-text select-none text-center whitespace-nowrap",
+                        children: "KARTIK"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/background.js",
+                        lineNumber: 20,
+                        columnNumber: 232
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/background.js",
+                    lineNumber: 20,
+                    columnNumber: 115
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 bg-radial-gradient from-transparent to-[#0a192f] opacity-80"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/background.js",
+                    lineNumber: 20,
+                    columnNumber: 383
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/background.js",
+            lineNumber: 20,
+            columnNumber: 10
+        }, this);
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    return t1;
+}
+_c = Background;
+var _c;
+__turbopack_context__.k.register(_c, "Background");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -2410,6 +2410,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$tools$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$Projects$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/projects/Projects.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/gsap/dist/ScrollSmoother.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$project_details$2f$ProjectDetailsOverlay$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/projects/project_details/ProjectDetailsOverlay.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$background$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/background.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
 ;
@@ -2424,14 +2425,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Home() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "6c59546a9c353fdbc6e9efb03c644f879362a06ca3a23ecc4416f1f4100c3871") {
-        for(let $i = 0; $i < 8; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "bc8afe24755aad17176f10747fa861d68e341f8d7eebfbfb5b77d622d183e2a9") {
+        for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6c59546a9c353fdbc6e9efb03c644f879362a06ca3a23ecc4416f1f4100c3871";
+        $[0] = "bc8afe24755aad17176f10747fa861d68e341f8d7eebfbfb5b77d622d183e2a9";
     }
     const mainRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const contentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -2440,6 +2442,9 @@ function Home() {
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = ({
             "Home[useEffect()]": ()=>{
+                if (window.innerWidth <= 1280) {
+                    return;
+                }
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
                 const mainPage = mainRef.current;
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$dist$2f$ScrollSmoother$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
@@ -2458,54 +2463,43 @@ function Home() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
     let t2;
     let t3;
+    let t4;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$project_details$2f$ProjectDetailsOverlay$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$background$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/app/page.js",
-            lineNumber: 46,
+            lineNumber: 51,
             columnNumber: 10
         }, this);
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$project_details$2f$ProjectDetailsOverlay$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/app/page.js",
-            lineNumber: 47,
+            lineNumber: 52,
+            columnNumber: 10
+        }, this);
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/page.js",
+            lineNumber: 53,
             columnNumber: 10
         }, this);
         $[3] = t2;
         $[4] = t3;
+        $[5] = t4;
     } else {
         t2 = $[3];
         t3 = $[4];
-    }
-    let t4;
-    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "min-h-dvh flex flex-col justify-center",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$hero$2f$Hero$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "[project]/src/app/page.js",
-                lineNumber: 56,
-                columnNumber: 70
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/src/app/page.js",
-            lineNumber: 56,
-            columnNumber: 10
-        }, this);
-        $[5] = t4;
-    } else {
         t4 = $[5];
     }
     let t5;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            id: "tools_technologies",
-            className: "min-h-dvh justify-center flex",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$tools$2f$Tools$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            className: "min-h-dvh flex flex-col justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$hero$2f$Hero$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.js",
-                lineNumber: 63,
-                columnNumber: 85
+                lineNumber: 64,
+                columnNumber: 70
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.js",
-            lineNumber: 63,
+            lineNumber: 64,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -2514,70 +2508,90 @@ function Home() {
     }
     let t6;
     if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            ref: mainRef,
-            id: "main-scroll-container",
-            className: "min-h-dvh bg-background font-sans relative text-text-muted overflow-x-hidden w-full",
-            children: [
-                t2,
-                t3,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: contentRef,
-                    className: "flex flex-col w-full",
-                    children: [
-                        t4,
-                        t5,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "projects",
-                            className: "min-h-dvh justify-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$Projects$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                                fileName: "[project]/src/app/page.js",
-                                lineNumber: 70,
-                                columnNumber: 283
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 70,
-                            columnNumber: 223
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "certifications"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 70,
-                            columnNumber: 305
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "stats"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 70,
-                            columnNumber: 336
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            id: "contact"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.js",
-                            lineNumber: 70,
-                            columnNumber: 358
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/page.js",
-                    lineNumber: 70,
-                    columnNumber: 160
-                }, this)
-            ]
-        }, void 0, true, {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            id: "tools_technologies",
+            className: "min-h-dvh justify-center flex",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$tools$2f$Tools$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/page.js",
+                lineNumber: 71,
+                columnNumber: 85
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/app/page.js",
-            lineNumber: 70,
+            lineNumber: 71,
             columnNumber: 10
         }, this);
         $[7] = t6;
     } else {
         t6 = $[7];
     }
-    return t6;
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: mainRef,
+            id: "main-scroll-container",
+            className: "min-h-dvh bg-background font-sans relative text-text-muted overflow-x-hidden w-full",
+            children: [
+                t2,
+                t3,
+                t4,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: contentRef,
+                    className: "flex flex-col w-full",
+                    children: [
+                        t5,
+                        t6,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            id: "projects",
+                            className: "min-h-dvh justify-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$projects$2f$Projects$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                fileName: "[project]/src/app/page.js",
+                                lineNumber: 78,
+                                columnNumber: 287
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.js",
+                            lineNumber: 78,
+                            columnNumber: 227
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            id: "certifications"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.js",
+                            lineNumber: 78,
+                            columnNumber: 309
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            id: "stats"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.js",
+                            lineNumber: 78,
+                            columnNumber: 340
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            id: "contact"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.js",
+                            lineNumber: 78,
+                            columnNumber: 362
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/page.js",
+                    lineNumber: 78,
+                    columnNumber: 164
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/page.js",
+            lineNumber: 78,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    return t7;
 }
 _s(Home, "Mn9bn+xmMNNeNZ2CNJxTDxxO9QU=");
 _c = Home;
@@ -2589,4 +2603,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_5a1bc64d._.js.map
+//# sourceMappingURL=src_75176d37._.js.map

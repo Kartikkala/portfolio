@@ -57,9 +57,6 @@ export default function Home() {
 
         </section>
 
-        <section id="contact">
-
-        </section>
 
       </div>
     </div>

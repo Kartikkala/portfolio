@@ -40,13 +40,13 @@ export default function Hero() {
                 </div>
 
                 {/* Bottom Right: Description & CTA */}
-                <div className="z-10 flex flex-col md:items-end md:text-right gap-4 max-w-md md:justify-end">
+                <div className="z-10 flex flex-col md:items-start md:text-left gap-4 max-w-md md:justify-end">
                     <p className="text-text-muted text-sm md:text-base leading-relaxed md:block">
                         A designer who loves to code and a developer who loves to design. I create things that look simple, but feel alive.
                     </p>
 
                     <h3 className="font-oswald text-2xl md:text-3xl text-text-main uppercase md:block">
-                        Move People, <br /> Not Just <span className="font-playfair italic lowercase">screens.</span>
+                        Move People, Not Just <span className="font-playfair italic lowercase">screens.</span>
                     </h3>
 
                     <div className="flex gap-4">
