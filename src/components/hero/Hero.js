@@ -1,27 +1,9 @@
-import { useEffect, useRef } from "react";
 import RisingAnimation from "../utils/RisingAnimation";
-import gsap from "gsap";
+
 
 export default function Hero() {
-    const imgRef = useRef(null);
-    useEffect(()=>{
-        gsap.to(imgRef.current, {
-            scale : 1,
-            duration : 0.6
-        })
-    },[])
     return (
         <section id="hero" className="h-[100dvh] w-full relative overflow-hidden bg-transparent">
-
-            {/* Center: Silhouette / Image */}
-            <div className="absolute inset-0 z-0">
-                <img
-                    ref={imgRef}
-                    src="/bg.jpg"
-                    alt="Profile Silhouette"
-                    className="w-full h-full object-cover opacity-80 scale-[1.1]"
-                />
-            </div>
 
             <div className="absolute gap-4 w-full flex bottom-4 px-4 md:bottom-10 md:justify-between md:px-10 md:flex-row flex-col">
                 {/* Bottom Left: Large Headline */}

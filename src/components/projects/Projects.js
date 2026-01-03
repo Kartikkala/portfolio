@@ -5,7 +5,7 @@ import { useState } from "react";
 const projects = [
     {
         id : 1,
-        img : "/p1.webp",
+        img : "/clouddrive.png",
         name : "Cloud Drive",
         description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface. Also it supports adaptive bitrate streaming for video files that enhances user experience by reducing the amount of data usage.",
         tagline : "This is a tagline." ,
@@ -14,22 +14,32 @@ const projects = [
     },
     {
         id : 2,
-        img : "/bg.jpg",
-        name : "Cloud Drive",
-        description : "This is some desc about the cloud drive project."
+        img : "/arise.png",
+        name : "ARISE - AI based Resume Scanner",
+        description : "This is some desc about ARISE (AI based Resume Scanner).",
+        tagline : "This is a tagline." ,
+        year : 2024,
+        tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
     },
     {
         id : 3,
         img : "/bg.jpg",
-        name : "Cloud Drive",
-        description : "This is some desc about the cloud drive project."
+        name : "Esports Website",
+        description : "This is some desc about the cloud drive project.",
+        tagline : "This is a tagline." ,
+        year : 2024,
+        tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
     },
     {
         id : 4,
-        img : "/bg.jpg",
-        name : "Cloud Drive",
-        description : "This is some desc about the cloud drive project."
-    }
+        img : "/efi.png",
+        name : "EFI Signing Binary",
+        description : "This is some desc about the efi signing binary.",
+        tagline : "This is a tagline." ,
+        year : 2024,
+        tools: ["C++", "sbctl", "Arch Linux"]
+    },
+    
 ]
 
 export default function Projects({}){

@@ -1,6 +1,7 @@
 import { useAppSelector } from "@/lib/hooks";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function ProjectShowcase({ activeProjectImage, activeProjectImageId }) {
     const maskRef = useRef(null); // The div that unfolds (Clip Path)
