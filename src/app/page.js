@@ -21,8 +21,7 @@ export default function Home() {
 
 
   useEffect(()=>{
-    if(window.innerWidth <= 1280)
-      return;
+    
     gsap.registerPlugin(ScrollSmoother);
     gsap.to(imgRef.current, {
             scale : 1.2,
@@ -52,6 +51,9 @@ export default function Home() {
     );
 
     const mainPage = mainRef.current;
+    
+    if(window.innerWidth <= 1280)
+      return;
 
     const smoother = ScrollSmoother.create({
       wrapper : mainPage,

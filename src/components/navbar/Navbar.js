@@ -19,7 +19,7 @@ export default function Navbar() {
         const navbar = nav.current;
         let isHidden = false;
         gsap.to( navbar, {
-            y : -20,
+            y : -10,
             duration : 1.9,
             ease : "circ.out"
         })
@@ -33,7 +33,7 @@ export default function Navbar() {
                 isHidden = true;
                 
               } else if(self.direction == -1 && isHidden) {
-                gsap.to(navbar, { y: -20, duration: 1.9, ease: "circ.out", overwrite : true });
+                gsap.to(navbar, { y: -10, duration: 1.9, ease: "circ.out", overwrite : true });
                 isHidden = false;
               }
             }

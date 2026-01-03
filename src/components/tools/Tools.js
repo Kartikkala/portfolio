@@ -35,7 +35,7 @@ export default function Tools({}){
 
     return (
         <div className="w-full flex justify-center relative" ref={parallaxWrapperRef}>
-            <div className="absolute z-[-10] top-0 left-0 max-h-[100vh] overflow-hidden" ref={parallaxBgRef}>
+            <div className="absolute top-0 left-0 max-h-[100vh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
                     src="/bg-tech.jpg"
@@ -43,7 +43,7 @@ export default function Tools({}){
                     className="w-[140vw] h-[140vh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
                 />
             </div>
-            <div className="flex flex-col w-[95%] gap-8 mt-20">
+            <div className="flex flex-col w-[95%] gap-8 mt-20 z-20">
                 
                 <h1 className="self-center mt-10 text-3xl font-oswald">Technologies I work upon</h1>
                 <div className="grid grid-cols-3 gap-4 w-full">
