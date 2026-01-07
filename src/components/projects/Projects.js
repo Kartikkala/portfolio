@@ -1,3 +1,4 @@
+import { useAppSelector } from "@/lib/hooks";
 import ProjectButton from "./ProjectButton";
 import ProjectShowcase from "./ProjectShowcase";
 import { useState } from "react";
@@ -6,9 +7,9 @@ const projects = [
     {
         id : 1,
         img : "/clouddrive.png",
-        name : "Cloud Drive",
-        description : "CloudVault is a full-stack cloud storage application engineered to mimic the core functionality of enterprise-level platforms like Google Drive. The primary goal was to build a system capable of handling complex file operations—uploads, folder nesting, and file visualization—while maintaining a high-performance, non-blocking user interface. Also it supports adaptive bitrate streaming for video files that enhances user experience by reducing the amount of data usage.",
-        tagline : "This is a tagline." ,
+        name : "Personal Cloud Drive",
+        description : "Personal Cloud Drive is a full-stack cloud storage application engineered to provide tech-savy and privacy conscious users the ability to self-host a Cloud-Drive on their own hardware. Supports features like video streaming, file uploads via non-conventional methods (torrents and URIs) besides the conventional method of uploads, and admin panel to manage users. Future improvements include Adaptive Bitrate support for video streaming, photo-gallery, built in music player, RBAC for user management and optinal sync via other cloud providers like Google Drive/One Drive for easier migration. For suggestions, feel free to open an issue on the github!",
+        tagline : "r/Selfhost" ,
         year : 2024,
         tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
     },
@@ -16,19 +17,19 @@ const projects = [
         id : 2,
         img : "/arise.png",
         name : "ARISE - AI based Resume Scanner",
-        description : "This is some desc about ARISE (AI based Resume Scanner).",
-        tagline : "This is a tagline." ,
+        description : "ARISE is a resume scanner, that uses machine learning model to assign each resume with a score and room for improvements. This project is targeted for job-seekers to optimize their resumes according to a job description. Future improvements include usage of transformers architecture for dynamic suggestions, addition of image recognition technologies for alignment detection.",
+        tagline : "Optimize your resume!" ,
         year : 2024,
-        tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+        tools: ["Java", "Spring Boot", "TF-IDF", "Flask", "React.js"]
     },
     {
         id : 3,
         img : "/bg.jpg",
         name : "Esports Website",
-        description : "This is some desc about the cloud drive project.",
-        tagline : "This is a tagline." ,
+        description : "Esports Website is a fully featured web-application, developed to help orgs create an event related to any multiplayer video game in their region and automate the flow of event. This web app supports creation of event for any kind of video game, put an entry fee and prizepool to it, collect the entry-fee via payment gateway (Razorpay), and then declare the winner via their in-game ID for easy user search. Future improvements include auto-pay to the winner which currently only gives their payment address (UPI-ID).",
+        tagline : "Play!" ,
         year : 2024,
-        tools: ["Typescript", "MERN Stack", "ffmpeg", "Jenkins"]
+        tools: ["Typescript", "MERN Stack", "Razorpay API", "Docker"]
     },
     {
         id : 4,
@@ -45,9 +46,34 @@ const projects = [
 export default function Projects({}){
     const [activeProjectImage, setActiveProjectImage] = useState(null)
     const [activeProjectId, setActiveProjectId] = useState(null)
+    const {mouseInsideProject} = useAppSelector(state => state.project)
 
     return (
-        <div className="h-[100dvh] w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
+        <div className="h-[100lvh] w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
+            <div className="absolute z-[-10] top-0 left-0 w-full h-[100vh] overflow-hidden">
+            {/* 1. Map through your projects array instead of a single img */}
+            {projects.map((project) => {
+                // Calculate the specific image path for this project
+                const bgImageSrc = `${project.img.split(".")[0]}-bg.png`;
+            
+                // 2. Check if THIS project is the active one
+                const isActive = mouseInsideProject && (activeProjectImage === project.img);
+            
+                return (
+                    <img
+                        key={project.id} // or project.name
+                        src={bgImageSrc}
+                        alt="Project Background"
+                        // 3. Stack them and use Opacity for the transition
+                        className={`
+                            absolute top-0 left-0 w-full h-full object-cover
+                            transition-opacity duration-500 ease-in-out
+                            ${isActive ? "opacity-100" : "opacity-0"}
+                        `}
+                    />
+                );
+            })}
+        </div>
             <div className="absolute md:right-10 h-full w-[90%] md:w-fit self-center flex flex-col justify-center mb-20">
                 <ProjectShowcase activeProjectImageId={activeProjectId} activeProjectImage={activeProjectImage}/>
             </div>
@@ -60,9 +86,7 @@ export default function Projects({}){
                 </h2>
                 <div className="z-10 w-full flex md:flex-row flex-col items-start md:items-center justify-between gap-6">
                     <p className="md:max-w-[25vw] text-start">
-                        This is something about me, I am the best!!! These are my projects here. 
-                        See nigga, you won't be able to see these ever again nigga, so see these ones carefully.
-                        Have you ever seen this "kahi bhi"?
+                        Each of my projects has been developed with a motive in mind. Most of these are backend-heavy project with functional and performant user-interface that aims to keep user-experience on the top priority. 
                     </p>
                     <div className="z-10 flex flex-row md:items-end gap-4 md:justify-end">
                         {projects.map((project, key)=>{

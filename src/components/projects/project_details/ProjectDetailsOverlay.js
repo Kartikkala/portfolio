@@ -100,13 +100,13 @@ export default function ProjectDetailsOverlay() {
     };
 
     return (
-        <div ref={containerRef} className="fixed inset-0 w-screen h-dvh z-20 flex -translate-y-full">
+        <div ref={containerRef} className="fixed inset-0 w-screen h-lvh z-20 flex -translate-y-full">
             
             {[...Array(5)].map((_, i) => (
                 <div
                     key={i}
                     ref={addToRefs}
-                    className="w-1/5 h-dvh bg-green-800 relative pointer-events-auto -translate-y-full" 
+                    className="w-1/5 h-lvh bg-green-800 relative pointer-events-auto -translate-y-full" 
                 >
                 </div>
             ))}

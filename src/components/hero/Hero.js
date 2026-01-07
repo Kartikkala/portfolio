@@ -3,7 +3,7 @@ import RisingAnimation from "../utils/RisingAnimation";
 
 export default function Hero() {
     return (
-        <section id="hero" className="h-[100dvh] w-full relative overflow-hidden bg-transparent">
+        <section id="hero" className="h-[100lvh] w-full relative overflow-hidden bg-transparent">
 
             <div className="absolute gap-4 w-full flex bottom-4 px-4 md:bottom-10 md:justify-between md:px-10 md:flex-row flex-col">
                 {/* Bottom Left: Large Headline */}

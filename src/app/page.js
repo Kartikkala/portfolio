@@ -63,7 +63,7 @@ export default function Home() {
 
   }, [])
   return (
-    <div ref={mainRef} id="main-scroll-container" className="min-h-dvh bg-background font-sans relative text-text-muted overflow-x-hidden w-full">
+    <div ref={mainRef} id="main-scroll-container" className="min-h-lvh bg-background font-sans relative text-text-muted overflow-x-hidden w-full">
 
       <ProjectDetailsOverlay/>
       <Navbar />
@@ -71,14 +71,14 @@ export default function Home() {
       {/* Main parent container containing sections */}
       <div ref={contentRef} className="flex flex-col w-full">
 
-        <section className="min-h-[200dvh] flex flex-col justify-center relative" ref={parallaxWrapperRef}>
+        <section className="min-h-[200lvh] flex flex-col justify-center relative" ref={parallaxWrapperRef}>
           {/* Center: Silhouette / Image */}
-            <div className="absolute z-0 top-0 left-0 max-h-[100vh] overflow-hidden" ref={parallaxBgRef}>
+            <div className="absolute z-0 top-0 left-0 max-h-[100lvh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
                     src="/bg-bw.jpg"
                     alt="Profile Silhouette"
-                    className="w-[140vw] h-[140vh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
+                    className="w-[140vw] h-[140lvh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
                 />
             </div>
           <Hero />
@@ -86,12 +86,12 @@ export default function Home() {
         </section>
         
 
-        <section id="tools_technologies" className="min-h-dvh justify-center flex">
+        <section id="tools_technologies" className="min-h-lvh justify-center flex">
           <Tools/>
         </section>
 
 
-        <section id="projects" className="min-h-dvh justify-center">
+        <section id="projects" className="min-h-lvh justify-center">
           <Projects/>
         </section>
 

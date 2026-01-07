@@ -1,41 +1,6 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
-export const projects = [
-  {
-    title: "Cloud Drive",
-    type: "Web Development",
-    description: "An easy to host, fully secure and private, self-hostable cloud drive, which turns any machine into a powerful, fully featured private cloud storage with features like video streaming, file transfer via download links/torrents by using the underlying filesystem.",
-    tools: ["Spring Boot", "Java", "Flask", "Python"],
-    demoLink: "#",
-    sourceCode: "#"
-  },
-  {
-    title: "AI Based Resume Scanner",
-    type: "Web Development",
-    description: "A tool that parses resumes and matches them against job descriptions using NLP techniques to provide a compatibility score.",
-    tools: ["Python", "Flask", "OpenAI API"],
-    demoLink: "#",
-    sourceCode: "#"
-  },
-  {
-    title: "Project Alpha",
-    type: "Mobile App",
-    description: "A cross-platform mobile application for tracking personal finance and investments with real-time market data integration.",
-    tools: ["React Native", "Firebase", "Redux"],
-    demoLink: "#",
-    sourceCode: "#"
-  },
-  {
-    title: "Project Beta",
-    type: "Machine Learning",
-    description: "An image recognition system designed to classify and tag photos automatically using deep learning models.",
-    tools: ["TensorFlow", "Keras", "Python"],
-    demoLink: "#",
-    sourceCode: "#"
-  }
-];
-
 export const certifications = [
   {
     title: "AWS Certified Solutions Architect",
