@@ -10,6 +10,7 @@ import ProjectDetailsOverlay from "@/components/projects/project_details/Project
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 
 
 export default function Home() {
@@ -99,8 +100,8 @@ export default function Home() {
 
         </section>
         
-        <section id="stats">
-
+        <section id="contact" className="min-h-lvh">
+          <Contact/>
         </section>
 
 

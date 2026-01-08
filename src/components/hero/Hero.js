@@ -35,7 +35,7 @@ export default function Hero() {
                         <a href="#contact" className="btn-primary uppercase text-sm tracking-widest">
                             Let's Collaborate
                         </a>
-                        <a href="mailto:hello@example.com" className="btn-solid uppercase text-sm tracking-widest">
+                        <a href="mailto:kartikkala10december@gmail.com" className="btn-solid uppercase text-sm tracking-widest">
                             Hire Me
                         </a>
                     </div>
