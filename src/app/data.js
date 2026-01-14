@@ -28,7 +28,73 @@ export const blogs = [
     summary: "Tips and tricks to make your Next.js applications fly.",
     date: "Sep 2024",
     link: "#"
-  }
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
+  {
+    title: "Optimizing Next.js Performance",
+    summary: "Tips and tricks to make your Next.js applications fly.",
+    date: "Sep 2024",
+    link: "#"
+  },
 ];
 
 export const socials = [

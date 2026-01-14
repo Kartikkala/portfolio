@@ -7,6 +7,7 @@ const projects = [
     {
         id : 1,
         img : "/clouddrive.png",
+        githubLink : "https://github.com/Kartikkala/personal_cloud_drive",
         name : "Personal Cloud Drive",
         description : "Personal Cloud Drive is a full-stack cloud storage application engineered to provide tech-savy and privacy conscious users the ability to self-host a Cloud-Drive on their own hardware. Supports features like video streaming, file uploads via non-conventional methods (torrents and URIs) besides the conventional method of uploads, and admin panel to manage users. Future improvements include Adaptive Bitrate support for video streaming, photo-gallery, built in music player, RBAC for user management and optinal sync via other cloud providers like Google Drive/One Drive for easier migration. For suggestions, feel free to open an issue on the github!",
         tagline : "r/Selfhost" ,
@@ -16,6 +17,7 @@ const projects = [
     {
         id : 2,
         img : "/arise.png",
+        githubLink : "https://github.com/Kartikkala/resume_checker_backend",
         name : "ARISE - AI based Resume Scanner",
         description : "ARISE is a resume scanner, that uses machine learning model to assign each resume with a score and room for improvements. This project is targeted for job-seekers to optimize their resumes according to a job description. Future improvements include usage of transformers architecture for dynamic suggestions, addition of image recognition technologies for alignment detection.",
         tagline : "Optimize your resume!" ,
@@ -24,9 +26,10 @@ const projects = [
     },
     {
         id : 3,
-        img : "/bg.jpg",
-        name : "Esports Website",
-        description : "Esports Website is a fully featured web-application, developed to help orgs create an event related to any multiplayer video game in their region and automate the flow of event. This web app supports creation of event for any kind of video game, put an entry fee and prizepool to it, collect the entry-fee via payment gateway (Razorpay), and then declare the winner via their in-game ID for easy user search. Future improvements include auto-pay to the winner which currently only gives their payment address (UPI-ID).",
+        img : "/egopeek.png",
+        githubLink : "https://github.com/Kartikkala/esports_website",
+        name : "Ego Peek",
+        description : "Ego Peek is a fully featured web-application, developed to help Esports-orgs create events related to any multiplayer video game in their region. This web app supports creation of event for any kind of video game, put an entry fee and prizepool to it, collect the entry-fee via payment gateway (Razorpay), and then declare the winner via their in-game ID for easy user search. Future improvements include auto-pay to the winner which currently only gives their payment address (UPI-ID).",
         tagline : "Play!" ,
         year : 2024,
         tools: ["Typescript", "MERN Stack", "Razorpay API", "Docker"]
@@ -34,9 +37,10 @@ const projects = [
     {
         id : 4,
         img : "/efi.png",
+        githubLink : "https://github.com/Kartikkala/efi_signing_binary",
         name : "EFI Signing Binary",
-        description : "This is some desc about the efi signing binary.",
-        tagline : "This is a tagline." ,
+        description : "This tool is used to sign .efi files on a system in buld (inside directories). This tool uses sbctl, so to utilise this tool, one has to install sbctl on their linux desktop.",
+        tagline : "Sign it!" ,
         year : 2024,
         tools: ["C++", "sbctl", "Arch Linux"]
     },

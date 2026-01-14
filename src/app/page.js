@@ -11,6 +11,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
+import Blogs from "@/components/blogs/Blogs";
 
 
 export default function Home() {
@@ -83,7 +84,7 @@ export default function Home() {
                 />
             </div>
           <Hero />
-          <About imgPath={"/bg.jpg"}/>
+          <About  imgPath={"/bg.jpg"}/>
         </section>
         
 
@@ -96,11 +97,11 @@ export default function Home() {
           <Projects/>
         </section>
 
-        <section id="certifications">
-
-        </section>
+        {/* <section id="blogs" className="min-h-lvh relative">
+          <Blogs/>
+        </section> */}
         
-        <section id="contact" className="min-h-lvh">
+        <section id="contact" className="min-h-lvh relative">
           <Contact/>
         </section>
 

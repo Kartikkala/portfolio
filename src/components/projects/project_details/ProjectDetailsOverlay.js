@@ -20,6 +20,15 @@ export default function ProjectDetailsOverlay() {
     const ghostImgFinalPosRef = useRef(null);
     const contentRef = useRef(null);
     const tlRef = useRef(null);
+    const handleGithub = () => {
+        const link = document.createElement("a");
+        link.href = selectedProject ? selectedProject.githubLink : "";
+        link.target = "_blank";
+        console.log("This is the console log:", selectedProject)
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     
 
@@ -137,10 +146,11 @@ export default function ProjectDetailsOverlay() {
                         </div>
                     </div>
                     <div className="flex gap-6 font-oswald">
-                        <button className="">
+                        {/* TODO : Add live links for projects */}
+                        {/* <button className="">
                             Live Link
-                        </button>
-                        <button>Github Link</button>
+                        </button> */}
+                        <button onClick={handleGithub}>Github Link</button>
                     </div>
                     <div  className="flex md:flex-row flex-col items-end md:gap-8 gap-2">
                         <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]"></div>

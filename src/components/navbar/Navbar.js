@@ -1,5 +1,6 @@
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
+import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import { useEffect, useRef, useState } from "react";
 import RisingAnimation from "../utils/RisingAnimation";
 import AnimatedButton from "../utils/AnimatedButton";
@@ -14,8 +15,23 @@ export default function Navbar() {
         link.click();
         document.body.removeChild(link);
     };
+    const scrollToSection = (e, sectionId) => {
+        // 1. Stop the browser from jumping immediately
+        e.preventDefault();
+
+        // 2. Use GSAP to scroll to that section smoothly
+        gsap.to(window, {
+          duration: 1, // How long the scroll takes (in seconds)
+          scrollTo: {
+            y: sectionId, // The ID you want to go to (e.g., "#about")
+            offsetY: 70   // Optional: Leave space for your navbar so it doesn't cover the title
+          },
+          ease: "power2.out" // Smooth easing function
+        });
+    };
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollToPlugin);
         const navbar = nav.current;
         let isHidden = false;
         gsap.to( navbar, {
@@ -56,10 +72,9 @@ export default function Navbar() {
             </div>
             {/* Navigation Links - Aligned to Top Right */}
             <nav className="absolute right-4 md:right-10 pointer-events-auto flex gap-8 items-center font-oswald tracking-wider text-sm md:text-base">
-                <a href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"ABOUT"}/></a>
-                <a href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"PROJECTS"}/></a>
-                <a href="#recognition" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"RECOGNITIONS"}/></a>
-                <a href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"CONTACT"}/></a>
+                <a onClick={(e) => scrollToSection(e, "#about")} href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"ABOUT"}/></a>
+                <a onClick={(e) => scrollToSection(e, "#projects")} href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"PROJECTS"}/></a>
+                <a onClick={(e) => scrollToSection(e, "#contact")} href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"CONTACT"}/></a>
 
                 <AnimatedButton buttonText={"DOWNLOAD RESUME"} onClickFn={handleDownload}/>
             </nav>
