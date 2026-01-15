@@ -2,11 +2,12 @@ import { useAppSelector } from "@/lib/hooks";
 import ProjectButton from "./ProjectButton";
 import ProjectShowcase from "./ProjectShowcase";
 import { useState } from "react";
+import Image from "next/image";
 
 const projects = [
     {
         id : 1,
-        img : "/clouddrive.png",
+        img : "/clouddrive.webp",
         githubLink : "https://github.com/Kartikkala/personal_cloud_drive",
         name : "Personal Cloud Drive",
         description : "Personal Cloud Drive is a full-stack cloud storage application engineered to provide tech-savy and privacy conscious users the ability to self-host a Cloud-Drive on their own hardware. Supports features like video streaming, file uploads via non-conventional methods (torrents and URIs) besides the conventional method of uploads, and admin panel to manage users. Future improvements include Adaptive Bitrate support for video streaming, photo-gallery, built in music player, RBAC for user management and optinal sync via other cloud providers like Google Drive/One Drive for easier migration. For suggestions, feel free to open an issue on the github!",
@@ -16,7 +17,7 @@ const projects = [
     },
     {
         id : 2,
-        img : "/arise.png",
+        img : "/arise.webp",
         githubLink : "https://github.com/Kartikkala/resume_checker_backend",
         name : "ARISE - AI based Resume Scanner",
         description : "ARISE is a resume scanner, that uses machine learning model to assign each resume with a score and room for improvements. This project is targeted for job-seekers to optimize their resumes according to a job description. Future improvements include usage of transformers architecture for dynamic suggestions, addition of image recognition technologies for alignment detection.",
@@ -26,7 +27,7 @@ const projects = [
     },
     {
         id : 3,
-        img : "/egopeek.png",
+        img : "/egopeek.webp",
         githubLink : "https://github.com/Kartikkala/esports_website",
         name : "Ego Peek",
         description : "Ego Peek is a fully featured web-application, developed to help Esports-orgs create events related to any multiplayer video game in their region. This web app supports creation of event for any kind of video game, put an entry fee and prizepool to it, collect the entry-fee via payment gateway (Razorpay), and then declare the winner via their in-game ID for easy user search. Future improvements include auto-pay to the winner which currently only gives their payment address (UPI-ID).",
@@ -36,7 +37,7 @@ const projects = [
     },
     {
         id : 4,
-        img : "/efi.png",
+        img : "/efi.webp",
         githubLink : "https://github.com/Kartikkala/efi_signing_binary",
         name : "EFI Signing Binary",
         description : "This tool is used to sign .efi files on a system in buld (inside directories). This tool uses sbctl, so to utilise this tool, one has to install sbctl on their linux desktop.",
@@ -58,17 +59,19 @@ export default function Projects({}){
             {/* 1. Map through your projects array instead of a single img */}
             {projects.map((project) => {
                 // Calculate the specific image path for this project
-                const bgImageSrc = `${project.img.split(".")[0]}-bg.png`;
+                const bgImageSrc = `${project.img.split(".")[0]}-bg.webp`;
             
                 // 2. Check if THIS project is the active one
                 const isActive = mouseInsideProject && (activeProjectImage === project.img);
             
                 return (
-                    <img
+                    <Image
                         key={project.id} // or project.name
                         src={bgImageSrc}
+                        sizes="100vw"
+                        fill
                         alt="Project Background"
-                        // 3. Stack them and use Opacity for the transition
+                        priority={false}
                         className={`
                             absolute top-0 left-0 w-full h-full object-cover
                             transition-opacity duration-500 ease-in-out

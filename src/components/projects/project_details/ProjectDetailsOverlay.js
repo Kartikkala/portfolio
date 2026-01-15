@@ -122,6 +122,7 @@ export default function ProjectDetailsOverlay() {
 
             {selectedProject && (
                 <img
+                    loading="lazy"
                     ref={ghostImgRef}
                     src={selectedProject.img}
                     alt="Project Hero"

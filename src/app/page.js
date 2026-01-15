@@ -78,13 +78,14 @@ export default function Home() {
             <div className="absolute z-0 top-0 left-0 max-h-[100lvh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
-                    src="/bg-bw.jpg"
+                    src="/bg-bw.webp"
                     alt="Profile Silhouette"
                     className="w-[140vw] h-[140lvh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
+                    loading="lazy"
                 />
             </div>
           <Hero />
-          <About  imgPath={"/bg.jpg"}/>
+          <About  imgPath={"/bg.webp"}/>
         </section>
         
 

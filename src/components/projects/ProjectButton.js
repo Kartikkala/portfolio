@@ -43,6 +43,7 @@ export default function ProjectButton({projectData, img, setActiveProjectImage, 
             <div>
                 <img
                     src={img}
+                    loading="lazy"
                     className="object-cover opacity-80"
                 />
             </div>

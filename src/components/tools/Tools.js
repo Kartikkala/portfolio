@@ -38,8 +38,9 @@ export default function Tools({}){
             <div className="absolute top-0 left-0 max-h-[100vh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
-                    src="/bg-tech.jpg"
+                    src="/bg-tech.webp"
                     alt="Profile Silhouette"
+                    loading="lazy"
                     className="w-[140vw] h-[140vh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
                 />
             </div>
