@@ -3,7 +3,6 @@ import { useLayoutEffect, useRef } from "react";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { closeProject } from "@/lib/slices/projectSlice";
 import AnimatedButton from "@/components/utils/AnimatedButton";
-import useWindowDimensions from "@/components/utils/UseMaxViewportHeight";
 
 // projectName : string,
 // projectDesc : string,
@@ -11,13 +10,22 @@ import useWindowDimensions from "@/components/utils/UseMaxViewportHeight";
 // highlight : string,
 // tools : array<string>,
 // state : boolean
+function measureScreenHeight() {
+    const testDiv = document.createElement('div');
+    testDiv.style.height = '100lvh';
+    testDiv.style.position = 'absolute';
+    testDiv.style.visibility = 'hidden';
+    testDiv.style.pointerEvents = 'none';
+              
+    document.body.appendChild(testDiv);
+    const value = testDiv.clientHeight;
+    document.body.removeChild(testDiv);
+    return value;
+}
+
 export default function ProjectDetailsOverlay() {
     const { imageId , selectedProject, isOverlayOpen } = useAppSelector((state) => state.project);
     const dispatch = useAppDispatch();
-    selectedProject
-    
-    const height = useWindowDimensions();
-
     const barsRef = useRef([]); // To store references to the 5 bars
     const containerRef = useRef(null);
     const ghostImgRef = useRef(null);
@@ -72,7 +80,7 @@ export default function ProjectDetailsOverlay() {
                 destRect = destEl.getBoundingClientRect();
             }
 
-            const finalTop = destRect.top + height;
+            const finalTop = destRect.top + measureScreenHeight();
             
 
             // 2. ANIMATE to Final Position (Floating to the left)
