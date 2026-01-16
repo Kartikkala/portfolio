@@ -3,6 +3,7 @@ import { useLayoutEffect, useRef } from "react";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { closeProject } from "@/lib/slices/projectSlice";
 import AnimatedButton from "@/components/utils/AnimatedButton";
+import useWindowDimensions from "@/components/utils/UseMaxViewportHeight";
 
 // projectName : string,
 // projectDesc : string,
@@ -13,11 +14,15 @@ import AnimatedButton from "@/components/utils/AnimatedButton";
 export default function ProjectDetailsOverlay() {
     const { imageId , selectedProject, isOverlayOpen } = useAppSelector((state) => state.project);
     const dispatch = useAppDispatch();
+    selectedProject
     
+    const height = useWindowDimensions();
+
     const barsRef = useRef([]); // To store references to the 5 bars
     const containerRef = useRef(null);
     const ghostImgRef = useRef(null);
     const ghostImgFinalPosRef = useRef(null);
+    const finalImgRef = useRef(null);
     const contentRef = useRef(null);
     const tlRef = useRef(null);
     const handleGithub = () => {
@@ -67,7 +72,7 @@ export default function ProjectDetailsOverlay() {
                 destRect = destEl.getBoundingClientRect();
             }
 
-            const finalTop = destRect.top + window.innerHeight;
+            const finalTop = destRect.top + height;
             
 
             // 2. ANIMATE to Final Position (Floating to the left)
@@ -92,6 +97,14 @@ export default function ProjectDetailsOverlay() {
                 duration : 0.6,
                 ease : "power2.out"
             }, "<0.3")
+            .to(ghostImgRef.current, {
+                opacity : 0,
+                duration : 0.0001
+            })
+            .to(finalImgRef.current, {
+                opacity : 1,
+                duration : 0.0001
+            })
 
             tlRef.current = tl;
             tl.play();
@@ -109,7 +122,7 @@ export default function ProjectDetailsOverlay() {
     };
 
     return (
-        <div ref={containerRef} className="fixed inset-0 w-screen h-lvh z-20 flex -translate-y-full">
+        <div ref={containerRef} className="fixed inset-0 w-screen min-h-lvh z-20 flex -translate-y-full">
             
             {[...Array(5)].map((_, i) => (
                 <div
@@ -130,11 +143,12 @@ export default function ProjectDetailsOverlay() {
                 />
             )}
 
-            <div ref={contentRef} className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 justify-between text-teal-50 opacity-0">
+            <div ref={contentRef} className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 md:justify-between text-teal-50 bg-red opacity-0">
                 <AnimatedButton onClickFn={handleClose} buttonText={"CLOSE"}/>
 
                 {/* Content div */}
-                <div id="project_content" className="flex flex-col gap-2">
+                {/* Fix the height for overflow auto on mobile */}
+                <div id="project_content" className="flex flex-col gap-2 h-[46em] overflow-auto lg:overflow-visible lg:h-max">
                     <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
                         {selectedProject && (selectedProject.name)}
                     </h1>
@@ -154,10 +168,13 @@ export default function ProjectDetailsOverlay() {
                         <button onClick={handleGithub}>Github Link</button>
                     </div>
                     <div  className="flex md:flex-row flex-col items-end md:gap-8 gap-2">
-                        <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]"></div>
+                        <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]">
+                            <img src={selectedProject ? selectedProject.img: null}
+                            ref={finalImgRef} className="opacity-0 rounded-[12px] md:w-[45vw] md:h-[60vh] w-full h-[20vh] object-cover"/>
+                        </div>
                         <div className="flex flex-col md:gap-6 gap-4 md:max-w-1/2">
                             <h2 className="md:text-[clamp(2rem,3vw,3rem)] text-[clamp(1rem,2rem,8rem)] font-oswald">Description</h2>
-                            <p className="overflow-auto h-[10em]">{selectedProject && selectedProject.description}</p>
+                            <p className="">{selectedProject && selectedProject.description}</p>
                             <div className="flex">
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-oswald text-3xl">Tech Stack</h3>
