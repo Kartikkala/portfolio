@@ -72,6 +72,7 @@ export default function Navbar() {
             </div>
             {/* Navigation Links - Aligned to Top Right */}
             <nav className="absolute right-4 md:right-10 pointer-events-auto flex gap-8 items-center font-oswald tracking-wider text-sm md:text-base">
+                <a href="https://github.com/Kartikkala" target="_blank" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"GITHUB"}/></a>
                 <a onClick={(e) => scrollToSection(e, "#about")} href="#about" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"ABOUT"}/></a>
                 <a onClick={(e) => scrollToSection(e, "#projects")} href="#projects" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"PROJECTS"}/></a>
                 <a onClick={(e) => scrollToSection(e, "#contact")} href="#contact" className="text-text-muted hover:text-accent transition-colors uppercase hidden md:block"><RisingAnimation text={"CONTACT"}/></a>

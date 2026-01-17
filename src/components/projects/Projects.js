@@ -31,7 +31,7 @@ const projects = [
         githubLink : "https://github.com/Kartikkala/esports_website",
         name : "Ego Peek",
         description : "Ego Peek is a fully featured web-application, developed to help Esports-orgs create events related to any multiplayer video game in their region. This web app supports creation of event for any kind of video game, put an entry fee and prizepool to it, collect the entry-fee via payment gateway (Razorpay), and then declare the winner via their in-game ID for easy user search. Future improvements include auto-pay to the winner which currently only gives their payment address (UPI-ID).",
-        tagline : "Play!" ,
+        tagline : "Stop being bleak, just peek!" ,
         year : 2024,
         tools: ["Typescript", "MERN Stack", "Razorpay API", "Docker"]
     },
@@ -40,8 +40,9 @@ const projects = [
         img : "/efi.webp",
         githubLink : "https://github.com/Kartikkala/efi_signing_binary",
         name : "EFI Signing Binary",
-        description : "This tool is used to sign .efi files on a system in buld (inside directories). This tool uses sbctl, so to utilise this tool, one has to install sbctl on their linux desktop.",
-        tagline : "Sign it!" ,
+        description : "This tool is used to sign .efi files on a system in bulk (inside directories). Originally, sbctl is used to do the actual signing process, however it lacks the feature to sign multiple files (let's say in a directory). This tool automates that part and helps you sign multiple .efi files all at once. This tool uses sbctl internally, so to utilise this tool, one has to install sbctl on their linux desktop.",
+        hasSbctlLink : true,
+        tagline : "Sign em' all!" ,
         year : 2024,
         tools: ["C++", "sbctl", "Arch Linux"]
     },

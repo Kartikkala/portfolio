@@ -156,25 +156,24 @@ export default function ProjectDetailsOverlay() {
 
                 {/* Content div */}
                 {/* Fix the height for overflow auto on mobile */}
-                <div id="project_content" className="flex flex-col gap-2 h-[46em] overflow-auto lg:overflow-visible lg:h-max">
+                <div id="project_content" className="flex flex-col gap-5 h-[46em] overflow-auto lg:overflow-visible lg:h-max">
                     <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
                         {selectedProject && (selectedProject.name)}
                     </h1>
-                    <div className="flex gap-6">
+                    <div className="flex gap-6 text-xl">
                         <div className="font-oswald">
                             {selectedProject && (selectedProject.year)}
                         </div>
-                        <div>
+                        <div className="font-light">
                             {selectedProject && (selectedProject.tagline)}
                         </div>
                     </div>
                     <div className="flex gap-6 font-oswald">
                         {/* TODO : Add live links for projects */}
-                        {/* <button className="">
-                            Live Link
-                        </button> */}
-                        <button onClick={handleGithub}>Github Link</button>
+
+                        <AnimatedButton buttonText={"GITHUB LINK"} onClickFn={handleGithub}/>
                     </div>
+
                     <div  className="flex md:flex-row flex-col items-end md:gap-8 gap-2">
                         <div ref={ghostImgFinalPosRef} id="img_div" className="md:w-[45vw] md:h-[60vh] w-full h-[20vh]">
                             <img src={selectedProject ? selectedProject.img: null}
@@ -182,7 +181,12 @@ export default function ProjectDetailsOverlay() {
                         </div>
                         <div className="flex flex-col md:gap-6 gap-4 md:max-w-1/2">
                             <h2 className="md:text-[clamp(2rem,3vw,3rem)] text-[clamp(1rem,2rem,8rem)] font-oswald">Description</h2>
-                            <p className="">{selectedProject && selectedProject.description}</p>
+                            <p className="">{selectedProject && selectedProject.description}{
+                                selectedProject && selectedProject.hasSbctlLink &&
+                            (<>{" "}
+                            More about sbctl <a className="underline" href="https://github.com/Foxboron/sbctl">here</a>.
+                            </>
+                        )}</p>
                             <div className="flex">
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-oswald text-3xl">Tech Stack</h3>
