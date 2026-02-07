@@ -151,12 +151,12 @@ export default function ProjectDetailsOverlay() {
                 />
             )}
 
-            <div ref={contentRef} className="flex flex-col w-full h-full absolute z-30 md:p-5 p-2 md:justify-between text-teal-50 bg-red opacity-0">
+            <div ref={contentRef} className="flex flex-col w-full h-full absolute z-30 md:px-5 pt-5 pb-0 p-2 md:justify-between text-teal-50 bg-red opacity-0">
                 <AnimatedButton onClickFn={handleClose} buttonText={"CLOSE"}/>
 
                 {/* Content div */}
                 {/* Fix the height for overflow auto on mobile */}
-                <div id="project_content" className="flex flex-col gap-5 h-[46em] overflow-auto lg:overflow-visible lg:h-max">
+                <div id="project_content" className="flex flex-col gap-5 h-lvh overflow-auto">
                     <h1 className="text-[clamp(3rem,7vw,7rem)] font-oswald font-bold leading-none">
                         {selectedProject && (selectedProject.name)}
                     </h1>
