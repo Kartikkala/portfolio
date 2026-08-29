@@ -2,7 +2,7 @@
 
 :root {
   /* New Theme Variables */
-  --hero-bg: #0a192f;
+  --hero-bg: #1a1c1f;
   --hero-text: #e6f1ff;
   --hero-muted: #8892b0;
   --hero-accent: #64ffda;
@@ -38,6 +38,18 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+}
+
+.hollow-text {
+  color: transparent; /* Makes the inside hollow */
+  -webkit-text-stroke: 2px var(--text-main); /* Width and color of outline */
+  /* text-stroke: 2px #000000; */
+}
+
+.bordered-text {
+  -webkit-text-fill-color: var(--text-main);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .inverted-shadow {

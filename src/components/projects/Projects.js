@@ -90,7 +90,7 @@ export default function Projects({}){
                 {/* Bottom Left: Large Headline */}
                 <h2 className="font-oswald text-5xl md:text-8xl lg:text-9xl font-bold text-text-main leading-[0.85] tracking-tight uppercase">
                     My
-                    <span className="text-text-muted"> Projects</span> <br />
+                    <span className="hollow-text"> Projects</span> <br />
                 </h2>
                 <div className="z-10 w-full flex md:flex-row flex-col items-start md:items-center justify-between gap-6">
                     <p className="md:max-w-[25vw] text-start">

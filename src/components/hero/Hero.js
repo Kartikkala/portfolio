@@ -9,8 +9,8 @@ export default function Hero() {
                 {/* Bottom Left: Large Headline */}
                 <div className=" z-10 max-w-2xl">
                     <h2 className="font-oswald text-5xl md:text-8xl lg:text-9xl font-bold text-text-main leading-[0.85] tracking-tight uppercase">
-                        <RisingAnimation text={" "} secondaryText={"performance"} className={"h-[0.9em] inline-block"} trigger={true} duration={0.6}/> <br />
-                        <span className="text-text-muted">
+                        <RisingAnimation text={" "} secondaryText={"performance"} className={"h-[0.9em] inline-block bordered-text"} trigger={true} duration={0.6}/> <br />
+                        <span className="hollow-text">
                             <RisingAnimation text={" "}
                             duration={0.7}
                             secondaryText={"focused"} className={"h-[0.9em] inline-block"} trigger={true}/>

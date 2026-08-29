@@ -40,7 +40,7 @@ export default function Home() {
       });
 
       gsap.to(imgRef.current, {
-        scale: 1.2,
+        scale: 1.0,
         duration: 0.6,
         ease: "power2.out",
       });
@@ -82,7 +82,7 @@ export default function Home() {
             <div className="absolute z-0 top-0 left-0 max-h-[100lvh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
-                    src="/bg-bw.webp"
+                    src="/portrait.png"
                     alt="Profile Silhouette"
                     className="w-[140vw] h-[140lvh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
                     loading="lazy"

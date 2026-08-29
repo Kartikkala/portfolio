@@ -4,7 +4,7 @@ export default function About({imgPath}){
     <div id="about" className="flex flex-col p-10 justify-end gap-4 min-h-lvh z-20">
         <div className="flex w-fit self-start">   
             <h1 className="font-oswald text-7xl w-fit self-start">
-                <span className="font-bold">ABOUT</span> <span className="text-white">ME</span>
+                <span className="font-bold hollow-text">ABOUT</span> <span className="text-white">ME</span>
             </h1>
         </div>
         
