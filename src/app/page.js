@@ -25,42 +25,46 @@ export default function Home() {
   useEffect(()=>{
     
     gsap.registerPlugin(ScrollSmoother);
-    gsap.to(imgRef.current, {
-            scale : 1.2,
-            duration : 0.6,
-        })
+    const ctx = gsap.context(() => {
+      if (window.innerWidth > 1280) {
+        ScrollSmoother.create({
+          wrapper: mainRef.current,
+          content: contentRef.current,
+          smooth: 1.2,
+          effects: true,
+        });
+      }
 
+      gsap.set(imgRef.current, {
+        scale: 1.3,
+      });
 
-    ScrollTrigger.create({
-      trigger : parallaxWrapperRef.current,
-      start : "top top",
-      end : "bottom bottom",
-      pin : parallaxBgRef.current,
-      pinSpacing : false,
-      scrub : true
-    })
-    gsap.to(imgRef.current, 
-      {
-        yPercent: 10, // Move UP by 20% of its height
+      gsap.to(imgRef.current, {
+        scale: 1.2,
+        duration: 0.6,
+        ease: "power2.out",
+      });
+
+      ScrollTrigger.create({
+        trigger: parallaxWrapperRef.current,
+        start: "top top",
+        end: "bottom bottom",
+        pin: parallaxBgRef.current,
+        pinSpacing: false,
+      });
+
+      gsap.to(imgRef.current, {
+        yPercent: 10,
         ease: "none",
         scrollTrigger: {
           trigger: parallaxWrapperRef.current,
           start: "top top",
-          end: "bottom top",
-          scrub: true // Link movement to scroll bar
-        }
-      }
-    );
-
-    const mainPage = mainRef.current;
-    
-    if(window.innerWidth <= 1280)
-      return;
-
-    const smoother = ScrollSmoother.create({
-      wrapper : mainPage,
-      content : contentRef.current
-    })
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
+    }, mainRef);
+    return () => ctx.revert()
 
 
   }, [])

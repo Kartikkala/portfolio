@@ -19,18 +19,21 @@ export default function Tools({}){
     const imgRef = useRef(null);
     gsap.registerPlugin(ScrollTrigger);
     useEffect(()=>{
-        gsap.to(imgRef.current, 
-        {
-          yPercent: 60, // Move UP by 20% of its height
-          ease: "none",
-          scrollTrigger: {
-            trigger: parallaxWrapperRef.current,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true // Link movement to scroll bar
-          }
-        }
-    );
+        const ctx = gsap.context(()=> {
+            gsap.to(imgRef.current, 
+                {
+                  yPercent: 60, // Move UP by 20% of its height
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: parallaxWrapperRef.current,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true // Link movement to scroll bar
+                    }
+                });
+            })
+
+            return () => ctx.revert()
     }, [])
 
     return (

@@ -16,17 +16,14 @@ export default function Navbar() {
         document.body.removeChild(link);
     };
     const scrollToSection = (e, sectionId) => {
-        // 1. Stop the browser from jumping immediately
         e.preventDefault();
 
-        // 2. Use GSAP to scroll to that section smoothly
         gsap.to(window, {
-          duration: 1, // How long the scroll takes (in seconds)
+          duration: 1,
           scrollTo: {
-            y: sectionId, // The ID you want to go to (e.g., "#about")
-            offsetY: 70   // Optional: Leave space for your navbar so it doesn't cover the title
+            y: sectionId, 
           },
-          ease: "power2.out" // Smooth easing function
+          ease: "power2.out"
         });
     };
     useEffect(()=>{
@@ -67,7 +64,7 @@ export default function Navbar() {
                     Kartik Kala
                 </h1>
                 <p className="font-playfair italic text-xl text-text-muted mt-1">
-                    Portfolio'25
+                    Portfolio'26
                 </p>
             </div>
             {/* Navigation Links - Aligned to Top Right */}
