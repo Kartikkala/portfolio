@@ -37,17 +37,16 @@ export default function ProjectShowcase({ activeProjectImage, activeProjectImage
         );
 
         tlRef.current = tl;
+        tlRef.current.play();
 
     }, [activeProjectImage]);
 
     useEffect(()=>{
         if(!tlRef.current) return;
-        else if(mouseInsideProject)
-            tlRef.current.play();
-        else{
-            tlRef.current.reverse();
+        if(isOverlayOpen) {
+            // Option to handle overlay open state if needed
         }
-    }, [mouseInsideProject, activeProjectImage, isOverlayOpen]);
+    }, [activeProjectImage, isOverlayOpen]);
     return (
         <div id={activeProjectImageId} className="lg:h-[50vh] lg:w-[35vw] h-[20vh] w-full">
             <div 

@@ -1,7 +1,7 @@
 import { useAppSelector } from "@/lib/hooks";
 import ProjectButton from "./ProjectButton";
 import ProjectShowcase from "./ProjectShowcase";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const projects = [
@@ -50,20 +50,32 @@ const projects = [
 ]
 
 export default function Projects({}){
-    const [activeProjectImage, setActiveProjectImage] = useState(null)
-    const [activeProjectId, setActiveProjectId] = useState(null)
+    const [activeIndex, setActiveIndex] = useState(0);
     const {mouseInsideProject} = useAppSelector(state => state.project)
+
+    useEffect(() => {
+        if (mouseInsideProject) return;
+
+        const interval = setInterval(() => {
+            setActiveIndex((prev) => (prev + 1) % projects.length);
+        }, 4000); // 4 seconds interval
+
+        return () => clearInterval(interval);
+    }, [mouseInsideProject]);
+
+    const activeProjectImage = projects[activeIndex]?.img || null;
+    const activeProjectId = projects[activeIndex]?.id || null;
 
     return (
         <div className="h-[100lvh] w-screen relative bg-transparent flex justify-end flex-col overflow-hidden">
             <div className="absolute z-[-10] top-0 left-0 w-full h-[100vh] overflow-hidden">
             {/* 1. Map through your projects array instead of a single img */}
-            {projects.map((project) => {
+            {projects.map((project, index) => {
                 // Calculate the specific image path for this project
                 const bgImageSrc = `${project.img.split(".")[0]}-bg.webp`;
             
                 // 2. Check if THIS project is the active one
-                const isActive = mouseInsideProject && (activeProjectImage === project.img);
+                const isActive = activeIndex === index;
             
                 return (
                     <Image
@@ -99,9 +111,8 @@ export default function Projects({}){
                     <div className="z-10 flex flex-row md:items-end gap-4 md:justify-end">
                         {projects.map((project, key)=>{
                             return <ProjectButton projectData={project} key={key} img={project.img} 
-                            setActiveProjectImage={setActiveProjectImage} 
-                            activeProjectImage={activeProjectImage}
-                            setActiveProjectId={setActiveProjectId}/>
+                            index={key}
+                            setActiveIndex={setActiveIndex} />
                         })}
                     </div>
                 </div>
