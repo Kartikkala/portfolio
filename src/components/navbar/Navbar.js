@@ -7,6 +7,8 @@ import AnimatedButton from "../utils/AnimatedButton";
 
 export default function Navbar() {
     const nav = useRef(null);
+    const headingRef = useRef(null)
+    const hoverTweenRef = useRef(null)
     const handleDownload = () => {
         const link = document.createElement("a");
         link.href = "/resume.pdf"; // Path to your file in /public folder
@@ -26,6 +28,14 @@ export default function Navbar() {
           ease: "power2.out"
         });
     };
+
+    const handleHover = (e) => {
+        if (e.type === "mouseenter") {
+          hoverTweenRef.current.play();
+        } else if (e.type === "mouseleave") {
+          hoverTweenRef.current.reverse();
+        }
+    };
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(ScrollToPlugin);
@@ -36,6 +46,13 @@ export default function Navbar() {
             duration : 1.9,
             ease : "circ.out"
         })
+
+        hoverTweenRef.current = gsap.to(headingRef.current, {
+            webkitTextFillColor: "transparent",
+            webkitTextStroke: "2px #e6f1ff",
+            duration: 0.3,
+            paused: true,
+        });
         ScrollTrigger.create({
             start: "top top",
             end: 999999,
@@ -51,16 +68,16 @@ export default function Navbar() {
               }
             }
         });
-        
 
+        return () => hoverTweenRef.current?.kill()
     }, [])
 
 
     return (
-        <div className="flex fixed z-15 p-4 md:p-10 pointer-events-none w-full -translate-y-40" ref={nav}>
+        <div className="flex fixed z-15 p-4 md:p-10 w-full -translate-y-40" ref={nav}>
             {/* Top Left: Name & Year */}
             <div className="absolute top-4 left-4 md:top-10 md:left-10 z-10 flex flex-col">
-                <h1 className="font-oswald text-4xl md:text-6xl font-bold tracking-tighter text-text-main leading-none uppercase">
+                <h1 className="font-oswald text-4xl md:text-6xl font-bold tracking-tighter text-text-main leading-none cursor-pointer uppercase" ref={headingRef} onClick={(e) => scrollToSection(e, "#hero")} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                     Kartik Kala
                 </h1>
                 <p className="font-playfair italic text-xl text-text-muted mt-1">

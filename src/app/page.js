@@ -95,7 +95,7 @@ export default function Home() {
       {/* Main parent container containing sections */}
       <div ref={contentRef} className="flex flex-col w-full">
 
-        <section className="min-h-[200lvh] flex flex-col justify-center relative" ref={parallaxWrapperRef}>
+        <section id="hero" className="min-h-[200lvh] flex flex-col justify-center relative" ref={parallaxWrapperRef}>
           {/* Center: Silhouette / Image */}
             <div className="absolute z-0 top-0 left-0 max-h-[100lvh] overflow-hidden" ref={parallaxBgRef}>
                 <img
