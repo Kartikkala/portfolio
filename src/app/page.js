@@ -18,6 +18,7 @@ export default function Home() {
   const mainRef = useRef(null);
   const contentRef = useRef(null);
   const imgRef = useRef(null);
+  const imgSecondRef = useRef(null);
   const parallaxWrapperRef = useRef(null);
   const parallaxBgRef = useRef(null);
 
@@ -35,13 +36,19 @@ export default function Home() {
         });
       }
 
-      gsap.set(imgRef.current, {
+      gsap.set([imgRef.current, imgSecondRef.current], {
         scale: 1.3,
+        yPercent : 10,
       });
 
-      gsap.to(imgRef.current, {
-        scale: 1.0,
+      gsap.set(imgSecondRef.current, {
+        opacity : 0
+      })
+
+      gsap.to([imgRef.current, imgSecondRef.current], {
+        scale: 1,
         duration: 0.6,
+        yPercent : 10,
         ease: "power2.out",
       });
 
@@ -53,16 +60,28 @@ export default function Home() {
         pinSpacing: false,
       });
 
-      gsap.to(imgRef.current, {
-        yPercent: 10,
-        ease: "none",
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: parallaxWrapperRef.current,
           start: "top top",
           end: "bottom bottom",
           scrub: true,
         },
+      })
+
+
+
+      tl.to([imgRef.current, imgSecondRef.current], {
+        yPercent: 20,
+        ease: "none",
       });
+
+      tl.fromTo(imgSecondRef.current, {
+        opacity : 0
+      }, {
+        opacity : 1,
+      }, 0.2);
+
     }, mainRef);
     return () => ctx.revert()
 
@@ -82,10 +101,17 @@ export default function Home() {
             <div className="absolute z-0 top-0 left-0 max-h-[100lvh] overflow-hidden" ref={parallaxBgRef}>
                 <img
                     ref={imgRef}
-                    src="/portrait.png"
-                    alt="Profile Silhouette"
-                    className="w-[140vw] h-[140lvh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
+                    src="/portrait-formal.webp"
+                    alt="Profile Background"
+                    className="w-[115vw] h-[115lvh] object-cover opacity-80 scale-[1.3] -translate-y-[20%]"
                     loading="lazy"
+                />
+                <img
+                  ref={imgSecondRef}
+                  src="/portrait-formal-blur.webp"
+                  alt="Profile Background Transition"
+                  className="absolute top-0 left-0 w-[115vw] h-[115lvh] object-cover opacity-0 -translate-y-[20%]"
+                  loading="lazy"
                 />
             </div>
           <Hero />
