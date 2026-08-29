@@ -38,7 +38,6 @@ export default function Home() {
 
       gsap.set([imgRef.current, imgSecondRef.current], {
         scale: 1.3,
-        yPercent : 10,
       });
 
       gsap.set(imgSecondRef.current, {
